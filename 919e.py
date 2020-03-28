@@ -1,5 +1,6 @@
 //Problem from https://codeforces.com/problemset/problem/919/E
 
+def pow(a,b,p):
     ans = 1
     base = a
     while b:
