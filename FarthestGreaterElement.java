@@ -84,3 +84,51 @@ class GFG {
     }
   }
 }
+
+// Another easier (less code with same tc) used by my frns
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class GFG2 {
+
+  static void solve(Integer a[], Integer ar[], int n) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    Arrays.sort(ar, Collections.reverseOrder());
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+      if (ar[j] == a[i]) {
+        while (j < n) {
+          if (!map.containsKey(ar[j]) || (map.get(ar[j]) != 1))
+            break;
+          else {
+            System.out.print(ar[j] + " ");
+            j++;
+          }
+        }
+        System.out.println();
+      } else {
+        System.out.println("Notpossible");
+        map.put(a[i], 1);
+      }
+    }
+  }
+
+  public static void main(String[] args) throws Exception {
+    BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+    int t = Integer.parseInt(bf.readLine());
+    while (t-- > 0) {
+      int n = Integer.parseInt(bf.readLine());
+      String s[] = bf.readLine().trim().split("\\s+");
+      Integer a[] = new Integer[n];
+      Integer ar[] = new Integer[n];
+      for (int i = 0; i < n; i++) {
+        a[i] = Integer.parseInt(s[i]);
+        ar[i] = a[i];
+      }
+
+      solve(a, ar, n);
+    }
+  }
+}
