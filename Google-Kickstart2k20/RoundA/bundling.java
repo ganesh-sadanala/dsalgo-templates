@@ -8,7 +8,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Solution {
+class Solution {
   static int n, k, ans = 0;
   static String str[] = new String[100001];
 
