@@ -73,15 +73,23 @@ class Codechef {
 
       for (int i = 0; i < m; i++)
         b[i] = Integer.parseInt(s[i]);
+      if (n == 1) {
+        int res = 0;
+        for (int i = 0; i < m; i++) {
+          if (Math.abs(b[i] - a[0]) <= x)
+            res++;
+        }
+        str.append(res + "\n");
+      } else {
+        int pat[] = new int[n - 1];
+        int act[] = new int[m - 1];
+        for (int i = 1; i < n; i++)
+          pat[i - 1] = a[i] - a[i - 1];
+        for (int i = 1; i < m; i++)
+          act[i - 1] = b[i] - b[i - 1];
 
-      int pat[] = new int[n - 1];
-      int act[] = new int[m - 1];
-      for (int i = 1; i < n; i++)
-        pat[i - 1] = a[i] - a[i - 1];
-      for (int i = 1; i < m; i++)
-        act[i - 1] = b[i] - b[i - 1];
-
-      str.append(kmp(a, b, pat, act, x) + "\n");
+        str.append(kmp(a, b, pat, act, x) + "\n");
+      }
     }
     System.out.println(str);
   }
