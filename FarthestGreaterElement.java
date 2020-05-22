@@ -96,22 +96,25 @@ class GFG2 {
   static void solve(Integer a[], Integer ar[], int n) {
     HashMap<Integer, Integer> map = new HashMap<>();
     Arrays.sort(ar, Collections.reverseOrder());
-    int j = 0;
-    for (int i = 0; i < n; i++) {
-      if (ar[j] == a[i]) {
-        while (j < n) {
-          if (!map.containsKey(ar[j]) || (map.get(ar[j]) != 1))
-            break;
-          else {
-            System.out.print(ar[j] + " ");
-            j++;
-          }
-        }
-        System.out.println();
-      } else {
-        System.out.println("Notpossible");
-        map.put(a[i], 1);
-      }
+    int prev=0;
+    for(int i=0;i<n;i++)
+    {
+       if(a[i]==ar[prev])
+       {
+         System.out.print(a[i]+" ");
+         prev++;
+         while(map.containsKey(ar[prev])&&(map.get(ar[prev])==1))
+         {
+           System.out.print(ar[prev]+" ");
+           prev++;
+         }
+         System.out.println();
+       }
+       else
+       {
+         System.out.println("Not Possible");
+         map.put(a[i],1);
+       }
     }
   }
 
