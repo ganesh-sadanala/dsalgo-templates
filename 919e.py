@@ -1,4 +1,4 @@
-//Problem from https://codeforces.com/problemset/problem/919/E
+# Problem from https://codeforces.com/problemset/problem/919/E
 
 def pow(a,b,p):
     ans = 1
