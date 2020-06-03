@@ -1,5 +1,6 @@
 // Was unable to implement a brute force solution even
 // Learned a new way of finding the lca (lowest common ancestor) using two parent pointers
+// Refer Editorial + youtube codechef
 
 #include <iostream>
 #include <bits/stdc++.h>
@@ -18,6 +19,7 @@ using namespace std;
 #define sz(a) (int)((a).size())
 #define ll long long
 #define ar array
+#define init(arr) memset(arr, 0, sizeof(arr))
 
 int n, q;
 vector<vi> adj;
@@ -26,33 +28,62 @@ int parent[N];
 
 void lca(int u, int v, int arr[])
 {
-  vector<int> list;
-  list.pb(arr[u]);
-  list.pb(arr[v]);
-  while (u != v)
+  int freq[101];
+  init(freq);
+  if (dist[v] < dist[u])
   {
-    if (dist[u] > dist[v])
-    {
-      u = parent[u];
-      list.pb(arr[u]);
-    }
-    else
-    {
-      v = parent[v];
-      list.pb(arr[v]);
-    }
-    if (list.size() > 100)
+    int temp = v;
+    v = u;
+    u = temp;
+  }
+
+  while (dist[v] > dist[u])
+  {
+    if (freq[arr[v]] > 0)
     {
       cout << 0 << "\n";
       return;
     }
+    freq[arr[v]]++;
+    v = parent[v];
   }
-  list.pop_back();
-  sort(list.begin(), list.end());
-  int MAX = INT_MAX;
-  for (int i = 1; i < list.size(); i++)
-    MAX = min(MAX, abs(list[i] - list[i - 1]));
-  cout << MAX << "\n";
+
+  while (u != v)
+  {
+    if (freq[arr[u]] > 0)
+    {
+      cout << 0 << "\n";
+      return;
+    }
+    freq[arr[u]]++;
+    if (freq[arr[v]] > 0)
+    {
+      cout << 0 << "\n";
+      return;
+    }
+    freq[arr[v]]++;
+    u = parent[u];
+    v = parent[v];
+  }
+  if (freq[arr[v]] > 0)
+  {
+    cout << 0 << "\n";
+    return;
+  }
+  freq[arr[v]]++;
+  int MIN = INT_MAX;
+  int prev = -1;
+  for (int i = 1; i <= 100; i++)
+  {
+    if (freq[i] > 0)
+    {
+      if (prev != -1)
+        MIN = min(MIN, i - prev);
+
+      prev = i;
+    }
+  }
+  cout << MIN << "\n";
 }
 
 void dfs(int u, int p, int h)
@@ -84,8 +115,8 @@ void solve()
     adj[u].pb(v);
     adj[v].pb(u);
   }
-  memset(dist, 0, sizeof(dist));
-  memset(parent, 0, sizeof(parent));
+  init(dist);
+  init(parent);
   dfs(0, -1, 0);
   while (q-- > 0)
   {

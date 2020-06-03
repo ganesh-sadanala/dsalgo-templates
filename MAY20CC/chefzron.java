@@ -1,5 +1,5 @@
 // Refer: Editorial
-
+// Refer Editorial + youtube codechef
 /* package codechef; // don't place package name! */
 
 import java.util.*;
