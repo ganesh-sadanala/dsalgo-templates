@@ -15,6 +15,7 @@ using namespace std;
 #define ll long long
 #define ar array
 #define init(arr) memset(arr, 0, sizeof(arr))
+#define endl "\n"
 
 int main()
 {
