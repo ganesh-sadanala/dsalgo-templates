@@ -1,0 +1,7 @@
+1.Cumulative xor of numbers from 1 to n-> https://www.geeksforgeeks.org/calculate-xor-1-n/
+2.Any number can be expressed as the difference of squares of two numbers
+ex: x=p^2-q^2 except the number whose remainder is 2 when divided by 4.
+Link : https://www.geeksforgeeks.org/check-whether-a-number-can-be-represented-as-difference-of-two-squares/
+3.The number of ways in which the sum of three non-negative numbers is n formed from numbers less than n
+is (n+2)*(n+1)/2.
+Link: https://www.codechef.com/CMYC2020/problems/TRPTTONY
