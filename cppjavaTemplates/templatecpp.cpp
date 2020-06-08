@@ -16,7 +16,11 @@ using namespace std;
 #define ar array
 #define init(arr) memset(arr, 0, sizeof(arr))
 #define endl "\n"
+#define mp make_pair
 
+void solve()
+{
+}
 int main()
 {
     ios_base::sync_with_stdio(false);
