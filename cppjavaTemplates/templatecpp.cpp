@@ -2,10 +2,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fast
-ios_base::sync_with_stdio(false);
-cin.tie(NULL);
-cout.tie(NULL);
 #define pb push_back
 #define vi vector<int>
 #define vpii vector<pair<int, int>>
@@ -27,6 +23,8 @@ void solve()
 }
 int main()
 {
-    fast
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
     solve();
 }
