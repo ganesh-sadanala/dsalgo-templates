@@ -23,6 +23,6 @@ class Codechef {
       String s[] = bf.readLine().trim().split("\\s+");
       solve();
     }
-    System.out.println(str);
+    System.out.print(str);
   }
 }
