@@ -3,6 +3,7 @@
     "*.erb": "erb",
     "deque": "cpp",
     "string": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "bitset": "cpp"
   }
 }
