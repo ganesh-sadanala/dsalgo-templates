@@ -13,3 +13,11 @@ Link : https://www.geeksforgeeks.org/check-whether-a-number-can-be-represented-a
 is (n+2)*(n+1)/2.
 
 Link: https://www.codechef.com/CMYC2020/problems/TRPTTONY
+
+4. a=x&y, b=x|y maintains the number of set bits
+
+5. from o to 10^9 , sum of the digits lies in the range of
+1 to 81.
+
+6. (a|b)-b is same as a&(~b), ~ is an operator in programming
+   ! is different from ~.
