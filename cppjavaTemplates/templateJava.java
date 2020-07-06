@@ -9,7 +9,7 @@ import java.math.*;
 class Codechef {
   static int n;
   static int a[];
-  static StringBuffer str = new StringBuffer("");
+  static StringBuilder str = new StringBuilder("");
 
   static void solve() {
 
