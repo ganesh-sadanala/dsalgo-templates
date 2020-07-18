@@ -1,7 +1,6 @@
 /* package codechef; // don't place package name! */
 
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 import java.math.*;
 
@@ -17,9 +16,9 @@ class Codechef {
 
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-    int t = Integer.parseInt(bf.readLine());
+    int t = Integer.parseInt(bf.readLine().trim());
     while (t-- > 0) {
-      n = Integer.parseInt(bf.readLine());
+      n = Integer.parseInt(bf.readLine().trim());
       String s[] = bf.readLine().trim().split("\\s+");
       solve();
     }
