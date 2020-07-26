@@ -20,3 +20,16 @@ Link: https://www.codechef.com/CMYC2020/problems/TRPTTONY
 
 6. (a|b)-b is same as a&(~b), ~ is an operator in programming
    ! is different from ~.
+
+7. Catalan Number(Source: GfG):
+   -> Count total ways of n matching parenthesis. -> c(n/2)
+   -> Number of possible Binary search trees with n keys or number of unlabeled trees -> catalan number
+   -> Number of possible binary trees with n keys or number of labeled trees-> catalan number * n!.
+   -> Number of full binary trees -> My article C(n-1/2)
+   -> Number of ways you can draw n chords in a circle with 2*n such that no two chords intersect.
+   -> Number of ways a convex polygon of n+2 sides can split into triangles by connecting vertices. -> catalan(n)
+   -> Number of different unlabeled binary trees.
+   -> Number of paths with 2n steps from bottom left to top right in a rectangular grid
+      that do not cross over the main diagonal.
+   -> Number of ways to insert n pairs of parentheses in a word of n+1 letters,
+      e.g., for n=2 there are 2 ways: ((ab)c) or (a(bc)). For n=3 there are 5 ways, ((ab)(cd)), (((ab)c)d), ((a(bc))d), (a((bc)d)), (a(b(cd))).
