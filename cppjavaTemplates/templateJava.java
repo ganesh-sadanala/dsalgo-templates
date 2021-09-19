@@ -106,7 +106,26 @@ class Codechef {
     update(l, v);
     if((r+1)<=n) update(r+1, -v);
   }
-
+  
+  // TOPO - BFS
+  static void topSort(){
+    // l is the adjacency list
+    vis=new boolean[n+1];
+    topo=new ArrayList<>();
+    Queue<Integer> q=new LinkedList<>();
+    for(int i=1;i<=n;i++) if(in[i]==0) q.add(i);
+    while(!q.isEmpty()){
+      int u=q.remove();
+      topo.add(u);
+      vis[u]=true;
+      for(int v:l.get(u)){
+        if(--ind[v]==0){
+          q.add(v);
+        }
+      }
+    }
+  }
+  
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     int t = Integer.parseInt(bf.readLine().trim());
