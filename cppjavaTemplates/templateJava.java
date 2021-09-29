@@ -14,6 +14,31 @@ class Codechef {
 
   }
   
+  
+  // Shuffle and sort
+  static void sort(int[] A){
+      int n = A.length;
+      Random rnd = new Random();
+      for(int i=0; i<n; ++i){
+          int tmp = A[i];
+          int randomPos = i + rnd.nextInt(n-i);
+          A[i] = A[randomPos];
+          A[randomPos] = tmp;
+      }
+      Arrays.sort(A);
+   }
+  static void sort(long[] A){
+      int n = A.length;
+      Random rnd = new Random();
+      for(int i=0; i<n; ++i){
+          long tmp = A[i];
+          int randomPos = i + rnd.nextInt(n-i);
+          A[i] = A[randomPos];
+          A[randomPos] = tmp;
+      }
+      Arrays.sort(A);
+  }
+  
   // Math 
   static void extendedGcd(long a, long b, long ar[]){
     if(b==0){
