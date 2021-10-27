@@ -151,6 +151,37 @@ class Codechef {
     }
   }
   
+  // LIS - nlogn
+  static int lowerBoundIndex(int len, int i){
+    int l=0, r=len;
+    int idx=0;
+    while(l<=r){
+      int mid=l+(r-l)/2;
+      if(a[t[mid]]>a[i]){
+        idx=mid;
+        r=mid-1;
+      }else l=mid+1;
+    }
+    return idx;
+  }
+  static void findList(){
+    int len=0;
+    for(int i=0;i<n;i++) r[i]=-1;
+    t[0]=0;
+    for(int i=1;i<n;i++){
+      if(a[t[0]] > a[i]){
+        t[0]=i;
+      }else if(a[t[len]] < a[i]){
+        r[i]=t[len];
+        len++;
+        t[len]=i;
+      }else{
+        int idx = lowerBoundIndex(len, i);
+        t[idx]=i;
+        r[i]=t[idx-1];
+      }
+    }
+  }
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     int t = Integer.parseInt(bf.readLine().trim());
