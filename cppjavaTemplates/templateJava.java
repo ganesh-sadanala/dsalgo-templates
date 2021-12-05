@@ -182,6 +182,58 @@ class Codechef {
       }
     }
   }
+  
+  // post order dfs
+    void euler(Map<Integer, Queue<Integer>> adj, List<int []> ans, int start){
+        Queue<Integer> q = adj.get(start);
+        while(q!=null && !q.isEmpty()){
+            int cur = q.remove();
+            euler(adj, ans, cur);
+            ans.add(new int[]{start, cur});
+        }
+    }
+  
+  // Eulerian Path/Cycle detection and also Eulerian Path/Cycle construction
+  Ex: https://leetcode.com/contest/weekly-contest-270/problems/valid-arrangement-of-pairs/
+    public int[][] validArrangement(int[][] pairs) {
+
+        Map<Integer, Queue<Integer>> map=new HashMap<>();
+        Map<Integer, Integer> in=new HashMap<>();
+        Map<Integer, Integer> out=new HashMap<>();
+        
+        // Indegree and Outdegree cal
+        for(int i=0;i<pairs.length;i++){
+            Queue<Integer> l=map.getOrDefault(pairs[i][0], new LinkedList<>());
+            l.add(pairs[i][1]);
+            map.put(pairs[i][0], l);
+            in.put(pairs[i][1], in.getOrDefault(pairs[i][1], 0)+1);
+            out.put(pairs[i][0], out.getOrDefault(pairs[i][0], 0)+1);
+        }
+        int start=-1;
+        for(Map.Entry<Integer, Queue<Integer>> m:map.entrySet()){
+            if(in.getOrDefault(m.getKey(), 0) == out.getOrDefault(m.getKey(), 0)-1){
+                // Eulerian Path
+                start=m.getKey();
+                break;
+            }
+        }
+        // Eulerian cycle
+        if(start==-1){
+            start=map.entrySet().iterator().next().getKey();
+        }
+        
+        // Eulerian Path/Cycle - Heriholzer's algorithm
+        List<int []> ans=new ArrayList<>();
+        euler(map, ans, start);
+        int [][]res=new int[pairs.length][2];
+        int idx=0;
+        for(int i=ans.size()-1;i>=0;i--){
+            res[idx]=ans.get(i);
+            idx++;
+        }
+        return res;
+    }
+  
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     int t = Integer.parseInt(bf.readLine().trim());
