@@ -257,6 +257,93 @@ class Codechef {
         return der[n];
     }
   
+  
+  // Sparse Table
+  int [][]smn;
+  int [][]smx;
+  int n;
+  int a[];
+  // static StringBuffer str=new StringBuffer();
+  
+  void build(){
+      int sz=(int)(Math.log(n)/Math.log(2));
+      smn=new int[n][sz+1];
+      smx=new int[n][sz+1];
+      for(int i=0;i<n;i++){smn[i][0]=a[i];smx[i][0]=a[i];}
+      for(int j=1;j<=sz;j++){
+          for(int i=0;(i+(1<<j)-1)<n;i++){
+              smn[i][j]=Math.min(smn[i][j-1], smn[i+(1<<(j-1))][j-1]);
+              smx[i][j]=Math.max(smx[i][j-1], smx[i+(1<<(j-1))][j-1]);
+          }
+      }
+  }
+ 
+  int queryMin(int l, int r){
+      int len=r-l+1;
+      int p=(int)(Math.log(len)/Math.log(2));
+      int k=(int)Math.pow(2, p);
+      return Math.min(smn[l][p], smn[r-k+1][p]);
+  }
+
+  int queryMax(int l, int r){
+      int len=r-l+1;
+      int p=(int)(Math.log(len)/Math.log(2));
+      int k=(int)Math.pow(2, p);
+      return Math.max(smx[l][p], smx[r-k+1][p]);
+  }
+  
+  // Segment Tree
+  static int a[];
+  static HashSet<Integer> []seg;
+  static int l,r;
+  static int smn[];
+  static int smx[];
+  static StringBuffer str=new StringBuffer();
+  
+  static int constructMin(int ss, int se, int si){
+      if(ss==se){
+          smn[si]=a[ss];
+          return smn[si];
+      }
+      
+      int mid=ss+(se-ss)/2;
+      return smn[si]=Math.min(constructMin(ss, mid, 2*si+1), constructMin(mid+1, se, 2*si+2));
+  }
+  
+  static int constructMax(int ss, int se, int si){
+      if(ss==se){
+          smx[si]=a[ss];
+          return smx[si];
+      }
+      
+      int mid=ss+(se-ss)/2;
+      return smx[si]=Math.max(constructMax(ss, mid, 2*si+1), constructMax(mid+1, se, 2*si+2));
+  }
+  
+  static int getMax(int ss, int se, int si, int qs, int qe){
+      if(qs<=ss && qe>=se) return smx[si];
+      
+      if(qs>se || qe<ss) return Integer.MIN_VALUE;
+      int mid=ss+(se-ss)/2;
+      return Math.max(getMax(ss, mid, 2*si+1, qs, qe), getMax(mid+1, se, 2*si+2, qs, qe));
+  }
+  
+  static int getMin(int ss, int se, int si, int qs, int qe){
+      if(qs<=ss && qe>=se) return smn[si];
+      
+      if(qs>se || qe<ss) return Integer.MAX_VALUE;
+      int mid=ss+(se-ss)/2;
+      return Math.min(getMin(ss, mid, 2*si+1, qs, qe), getMin(mid+1, se, 2*si+2, qs, qe));
+  }
+  
+  static void build(){
+      int sz=2 * (int)Math.pow(2, (int)Math.ceil(Math.log(n)/Math.log(2))) - 1;
+      smn=new int[sz];
+      smx=new int[sz];
+      constructMin(0, n-1, 0);
+      constructMax(0, n-1, 0);
+  }
+  
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     int t = Integer.parseInt(bf.readLine().trim());
