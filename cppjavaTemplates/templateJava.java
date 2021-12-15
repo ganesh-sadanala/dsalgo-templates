@@ -1,5 +1,9 @@
 /* package codechef; // don't place package name! */
 
+/* 
+Find number of solutions of a linear equation of n variables -> https://www.geeksforgeeks.org/find-number-of-solutions-of-a-linear-equation-of-n-variables/
+
+**/
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -390,6 +394,37 @@ class Codechef {
       constructMin(0, n-1, 0);
       constructMax(0, n-1, 0);
   }
+  
+  // Subset sum problem O(sum)
+  bool isPossible(int elements[], int sum, int n)
+{
+    int dp[sum + 1];
+     
+    // Initializing with 1 as sum 0 is
+    // always possible
+    dp[0] = 1;
+     
+    // Loop to go through every element of
+    // the elements array
+    for(int i = 0; i < n; i++)
+    {
+         
+        // To change the values of all possible sum
+        // values to 1
+        for(int j = sum; j >= elements[i]; j--)
+        {
+            if (dp[j - elements[i]] == 1)
+                dp[j] = 1;
+        }
+    }
+     
+    // If sum is possible then return 1
+    if (dp[sum] == 1)
+        return true;
+         
+    return false;
+}
+  
   
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
