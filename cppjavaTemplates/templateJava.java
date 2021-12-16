@@ -322,6 +322,7 @@ class Codechef {
   // Sparse Table
   int [][]smn;
   int [][]smx;
+  int sum[][];
   int n;
   int a[];
   // static StringBuffer str=new StringBuffer();
@@ -352,6 +353,32 @@ class Codechef {
       int k=(int)Math.pow(2, p);
       return Math.max(smx[l][p], smx[r-k+1][p]);
   }
+  void build(){
+      int sz=(int)Math.log(n)/Math.log(2);
+      sum=new int[n][sz+1];
+      for(int i=0;i<n;i++) sum[i][0]=a[i];
+      for(int j=1;j<=sz;j++){
+        for(int i=0;(i+(1<<j)-1)<n;i++){
+          sum[i][j]=sum[i][j-1]+sum[i+(1<<(j-1))][j-1];
+        }  
+      }
+  }
+ 
+  // Associative queries
+  int querySum(int l, int r){
+      int len=r-l+1;
+      int p=(int)(Math.log(len)/Math.log(2));
+      int k=(int)Math.pow(2, p);
+      int ans=0;
+      for(int j=k;j>=0;j--){
+        if(r>=l+(1<<j)-1){
+          ans+=sum[l][j];
+          l=l+(1<<j);
+        }
+      }
+    return ans;
+  }
+  
   
   // Segment Tree
   static int a[];
