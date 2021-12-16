@@ -327,6 +327,7 @@ class Codechef {
   int a[];
   // static StringBuffer str=new StringBuffer();
   
+  // Sparse min and max
   void build(){
       int sz=(int)(Math.log(n)/Math.log(2));
       smn=new int[n][sz+1];
@@ -353,6 +354,8 @@ class Codechef {
       int k=(int)Math.pow(2, p);
       return Math.max(smx[l][p], smx[r-k+1][p]);
   }
+  
+  // Sparse Sum
   void build(){
       int sz=(int)Math.log(n)/Math.log(2);
       sum=new int[n][sz+1];
@@ -424,6 +427,7 @@ class Codechef {
       return Math.min(getMin(ss, mid, 2*si+1, qs, qe), getMin(mid+1, se, 2*si+2, qs, qe));
   }
   
+  // segment min and max
   static void build(){
       int sz=2 * (int)Math.pow(2, (int)Math.ceil(Math.log(n)/Math.log(2))) - 1;
       smn=new int[sz];
@@ -432,36 +436,78 @@ class Codechef {
       constructMax(0, n-1, 0);
   }
   
-  // Subset sum problem O(sum)
-  bool isPossible(int elements[], int sum, int n)
-{
-    int dp[sum + 1];
-     
-    // Initializing with 1 as sum 0 is
-    // always possible
-    dp[0] = 1;
-     
-    // Loop to go through every element of
-    // the elements array
-    for(int i = 0; i < n; i++)
-    {
-         
-        // To change the values of all possible sum
-        // values to 1
-        for(int j = sum; j >= elements[i]; j--)
-        {
-            if (dp[j - elements[i]] == 1)
-                dp[j] = 1;
-        }
+  static int constructSum(int ss, int se, int si){
+    if(ss==se){
+      return sum[si]=a[ss];
     }
-     
-    // If sum is possible then return 1
-    if (dp[sum] == 1)
-        return true;
-         
-    return false;
-}
+    
+    int mid=ss+(se-ss)/2;
+    return sum[mid]=constructSum(ss, mid, 2*si+1)+constructSum(mid+1, se, 2*si+2);
+  }
   
+  static int getSum(int ss, int se, int si, int qs, int qe){
+    if(qe<ss || qs>se) return 0;
+    if(qs<=ss && qe>=se) return sum[si];
+    
+    int mid=ss+(se-ss)/2;
+    return getSum(ss, mid, 2*si+1, qs, qe)+getSum(mid+1, se, 2*si+2, qs, qe);
+  }
+  
+  // segment sum
+   static void build(){
+     int x=(int)Math.pow(2, (int)Math.ceil(Math.log(n)/Math.log(2)))
+     int sz=(int)2*x-1;
+     sum=new int[sz];
+     constructSum(0, n-1, 0);
+  }
+  
+  
+  // Subset sum problem O(sum)
+      bool isPossible(int elements[], int sum, int n)
+    {
+        int dp[sum + 1];
+
+        // Initializing with 1 as sum 0 is
+        // always possible
+        dp[0] = 1;
+
+        // Loop to go through every element of
+        // the elements array
+        for(int i = 0; i < n; i++)
+        {
+
+            // To change the values of all possible sum
+            // values to 1
+            for(int j = sum; j >= elements[i]; j--)
+            {
+                if (dp[j - elements[i]] == 1)
+                    dp[j] = 1;
+            }
+        }
+
+        // If sum is possible then return 1
+        if (dp[sum] == 1)
+            return true;
+
+        return false;
+    }
+  
+  // Segment Scheduling Algorithm
+  // https://atcoder.jp/contests/abc230/tasks/abc230_d
+  static void segmentScheduling(){
+    Collections.sort(l, (a, b) -> {
+      return (int)(a[1]-b[1]);
+    });
+    long ans=0;
+    long x=-(1l<<40);
+    for(long []li:l){
+      if(x+d-1 < li[0]){
+        x=li[1];
+        ans++;
+      }
+    }
+    str.append(ans).append("\n");
+  }
   
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
