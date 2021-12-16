@@ -203,12 +203,15 @@ class Codechef {
     }
   
   // LIS - nlogn
-  static int lowerBoundIndex(int len, int i){
+  // Minimum last element of length len+1 is stored
+  // t stores minium last element index of length len+1
+  // r is used to traverse the subsequence of length len+1
+  static int upperBoundIndex(int len, int i){
     int l=0, r=len;
     int idx=0;
     while(l<=r){
       int mid=l+(r-l)/2;
-      if(a[t[mid]]>a[i]){
+      if(a[t[mid]]>=a[i]){
         idx=mid;
         r=mid-1;
       }else l=mid+1;
@@ -227,10 +230,17 @@ class Codechef {
         len++;
         t[len]=i;
       }else{
-        int idx = lowerBoundIndex(len, i);
+        int idx = upperBoundIndex(len, i);
         t[idx]=i;
         r[i]=t[idx-1];
       }
+    }
+    
+    // printing in reverse order
+    int idx=t[len];
+    while(idx!=-1){
+      str.append(a[idx]).append(" ");
+      idx=r[idx];
     }
   }
   
@@ -245,7 +255,7 @@ class Codechef {
     }
   
   // Eulerian Path/Cycle detection and also Eulerian Path/Cycle construction
-  Ex: https://leetcode.com/contest/weekly-contest-270/problems/valid-arrangement-of-pairs/
+  // Ex: https://leetcode.com/contest/weekly-contest-270/problems/valid-arrangement-of-pairs/
     public int[][] validArrangement(int[][] pairs) {
 
         Map<Integer, Queue<Integer>> map=new HashMap<>();
@@ -273,7 +283,7 @@ class Codechef {
             start=map.entrySet().iterator().next().getKey();
         }
         
-        // Eulerian Path/Cycle - Heriholzer's algorithm
+        // Eulerian Path/Cycle - Heirholzer's algorithm
         List<int []> ans=new ArrayList<>();
         euler(map, ans, start);
         int [][]res=new int[pairs.length][2];
