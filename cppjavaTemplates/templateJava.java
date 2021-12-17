@@ -2,6 +2,7 @@
 
 /* 
 Find number of solutions of a linear equation of n variables -> https://www.geeksforgeeks.org/find-number-of-solutions-of-a-linear-equation-of-n-variables/
+Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
 
 **/
 /* 
