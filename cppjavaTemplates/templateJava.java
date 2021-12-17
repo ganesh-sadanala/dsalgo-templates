@@ -4,6 +4,32 @@
 Find number of solutions of a linear equation of n variables -> https://www.geeksforgeeks.org/find-number-of-solutions-of-a-linear-equation-of-n-variables/
 
 **/
+/* 
+Math:
+----
+x is even, gcd(x-1, x+1) = 1
+x is odd, gcd(x-2, x+2) = 1
+
+If we want to get a number n as a remainder i.e; a[i]%x=n then a[i]>2*n
+For example:
+if x>a[i] then n=a[i]
+else a[i]=10
+x.   -> rem
+x=10 -> 0
+x=9  -> 1
+x=8  -> 2
+x=7  -> 3
+x=6  -> 4
+x=5  -> 0
+x=4
+x=3
+.
+.
+So rem is in the range of [0, (a[i]-1)/2]
+In other words: xmody < x/2 if x>=y and xmody=x if y>x
+
+
+**/
 import java.util.*;
 import java.io.*;
 import java.math.*;
