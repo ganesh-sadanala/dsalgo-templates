@@ -229,10 +229,11 @@ class Codechef {
             System.out.print(stack.pop() + " ");
     }
   
-  // LIS - nlogn
+  // LIS(Monotonically or Strictly increasing) - nlogn
   // Minimum last element of length len+1 is stored
   // t stores minium last element index of length len+1
   // r is used to traverse the subsequence of length len+1
+  // first element i.e; >= a[i]
   static int upperBoundIndex(int len, int i){
     int l=0, r=len;
     int idx=0;
@@ -270,6 +271,32 @@ class Codechef {
       idx=r[idx];
     }
   }
+  
+  // LIS(Non-Monotonically or Non-Strictly increasing or non-decreasing) - nlogn
+  // Minimum last element of length len+1 is stored
+  // t stores minium last element index of length len+1
+  // r is used to traverse the subsequence of length len+1
+  // first element i.e; >= a[i]
+  // Reference: https://stackoverflow.com/questions/21715892/longest-nondecreasing-subsequence-in-onlgn
+   public static int findArray(List<Integer> a) {
+     int n=a.size();
+     int dp[]=new int[n];
+     int ans=0;
+     for(int i=0;i<n;i++){
+       int ele=a.get(i);
+       int idx=Arrays.binarySearch(dp, 0, ans, ele); 
+       if(idx<0){
+         idx=-(idx+1);
+       }
+       if(dp[idx]==ele){
+         idx=Arrays.binarySearch(dp, 0, ans, ele+1);
+         if(idx<0) idx=-(idx+1);
+       }
+       dp[idx]=ele;
+       if(idx==ans) ans++;
+     }
+     return ans;
+   }
   
   // post order dfs
     void euler(Map<Integer, Queue<Integer>> adj, List<int []> ans, int start){
