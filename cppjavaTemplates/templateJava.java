@@ -30,7 +30,7 @@ x=3
 So rem is in the range of [0, (a[i]-1)/2]
 In other words: xmody < x/2 if x>=y and xmody=x if y>x
 
-DMCA: https://codeforces.com/problemset/problem/1505/B
+DMCA or digital root: https://codeforces.com/problemset/problem/1505/B
 **/
 import java.util.*;
 import java.io.*;
