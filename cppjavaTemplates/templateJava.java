@@ -30,7 +30,9 @@ x=3
 So rem is in the range of [0, (a[i]-1)/2]
 In other words: xmody < x/2 if x>=y and xmody=x if y>x
 
-DMCA or digital root: https://codeforces.com/problemset/problem/1505/B
+DMCA or digital root: https://codeforces.com/problemset/problem/1505/B => https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
+ans = n%9 if ans!=0
+else ans=9;
 **/
 import java.util.*;
 import java.io.*;
