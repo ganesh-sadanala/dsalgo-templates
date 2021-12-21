@@ -73,6 +73,10 @@ class Codechef {
     https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
   }
   
+  long mod_mul(long a, long b) {a = a % mod; b = b % mod; return (((a * b) % mod) + mod) % mod;}
+ 
+  long mod_add(long a, long b) {a = a % mod; b = b % mod; return (((a + b) % mod) + mod) % mod;}
+  
   // Shuffle and sort
   static void sort(int[] A){
       int n = A.length;
