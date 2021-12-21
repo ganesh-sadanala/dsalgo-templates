@@ -11,6 +11,8 @@ nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF pr
 the use of == ... The comparison was ok on Long < 128 but ko on greater values.
 Generally it's not a good idea to use == to compare Objects, use .equals() as much as possible ! Keep ==, >, <, <= etc. for primitives.
 More read on https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
+
+Amazing questions on composite and prime numbers: https://codeforces.com/problemset/problem/1423/K 
 *
 Math:
 ----
