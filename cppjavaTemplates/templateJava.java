@@ -5,6 +5,16 @@ Find number of solutions of a linear equation of n variables -> https://www.geek
 Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
 Variation of coin sum dp problem (If can't form change and change given to us in back is also a cost) -> https://atcoder.jp/contests/abc231/tasks/abc231_e
 nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF prob:https://codeforces.com/problemset/problem/30/A
+Pigeon hole principle Ques: https://codeforces.com/contest/1619/problem/D : https://www.youtube.com/watch?v=UGLQtUVbkhg
+Topic question:
+Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
+
+Hard:
+Number of distinct values of bitwise or value of all subarrays of an array: https://codeforces.com/problemset/problem/243/A
+Number of different triangle formed from the side ranges using Two Pointers: https://codeforces.com/problemset/problem/1355/C
+Math + Dividing two number and taking ceil without using pre function + exponentiation : https://codeforces.com/contest/1606/problem/B
+Awesome question on LCM usage: https://codeforces.com/contest/1604/problem/C
+Number of subarrays with valid bracket sequence: https://codeforces.com/problemset/problem/1556/C => sol:https://www.youtube.com/watch?v=7AHvvTWSsqY
 **/
 /* 
 /*Interesting Observations
