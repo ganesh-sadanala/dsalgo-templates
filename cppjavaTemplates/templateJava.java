@@ -33,6 +33,8 @@ In other words: xmody < x/2 if x>=y and xmody=x if y>x
 DMCA or digital root: https://codeforces.com/problemset/problem/1505/B => https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
 ans = n%9 if ans!=0
 else ans=9;
+
+Number of perfect cubes or squares : https://www.geeksforgeeks.org/perfect-cubes-range/
 **/
 import java.util.*;
 import java.io.*;
