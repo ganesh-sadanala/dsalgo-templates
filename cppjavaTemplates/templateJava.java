@@ -7,6 +7,11 @@ Variation of coin sum dp problem (If can't form change and change given to us in
 nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF prob:https://codeforces.com/problemset/problem/30/A
 **/
 /* 
+/*Interesting Observations
+the use of == ... The comparison was ok on Long < 128 but ko on greater values.
+Generally it's not a good idea to use == to compare Objects, use .equals() as much as possible ! Keep ==, >, <, <= etc. for primitives.
+More read on https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
+*
 Math:
 ----
 x is even, gcd(x-1, x+1) = 1
