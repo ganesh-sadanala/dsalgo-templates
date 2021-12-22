@@ -52,6 +52,13 @@ ans = n%9 if ans!=0
 else ans=9;
 
 Number of perfect cubes or squares : https://www.geeksforgeeks.org/perfect-cubes-range/
+
+Stars and bars problem: https://cp-algorithms.com/combinatorics/stars_and_bars.html     https://www.youtube.com/watch?v=qvqPZkPURCo  - 
+positive => with k boxes or k-1 bars and n balls is (n-1)Ck-1.
+Non-negative with sticks can overlap => with k boxes or k-1 bars and n balls is (n+k-1)Ck-1 or (n+k-1)Cn
+Non-negative with sticks cannot overlap => with k boxes or k-1 bars and n balls is (n+1)Ck-1.
+
+https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/ - https://www.codechef.com/DEC21B/problems/PYRAMIDMOVES
 **/
 import java.util.*;
 import java.io.*;
