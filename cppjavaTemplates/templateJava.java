@@ -23,6 +23,8 @@ Generally it's not a good idea to use == to compare Objects, use .equals() as mu
 More read on https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
 
 Amazing questions on composite and prime numbers: https://codeforces.com/problemset/problem/1423/K 
+Amazing question on combinatorics forming sequence from given elements such that there isn't a subarray in the sequence whose xor sum is 0 - https://codeforces.com/problemset/problem/238/A - https://codeforces.com/blog/entry/5765
+
 *
 Math:
 ----
