@@ -1,7 +1,6 @@
 /* package codechef; // don't place package name! */
 
 /* 
-Find number of solutions of a linear equation of n variables -> https://www.geeksforgeeks.org/find-number-of-solutions-of-a-linear-equation-of-n-variables/
 Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
 Variation of coin sum dp problem (If can't form change and change given to us in back is also a cost) -> https://atcoder.jp/contests/abc231/tasks/abc231_e
 nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF prob:https://codeforces.com/problemset/problem/30/A
@@ -55,12 +54,15 @@ else ans=9;
 
 Number of perfect cubes or squares : https://www.geeksforgeeks.org/perfect-cubes-range/
 
+Find number of solutions of a linear equation of n variables -> https://www.geeksforgeeks.org/find-number-of-solutions-of-a-linear-equation-of-n-variables/
 Stars and bars problem: https://cp-algorithms.com/combinatorics/stars_and_bars.html     https://www.youtube.com/watch?v=qvqPZkPURCo  - 
 positive => with k boxes or k-1 bars and n balls is (n-1)Ck-1.
 Non-negative with sticks can overlap => with k boxes or k-1 bars and n balls is (n+k-1)Ck-1 or (n+k-1)Cn
 Non-negative with sticks cannot overlap => with k boxes or k-1 bars and n balls is (n+1)Ck-1.
 
 https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/ - https://www.codechef.com/DEC21B/problems/PYRAMIDMOVES
+https://atcoder.jp/contests/abc232/tasks/abc232_e
+
 **/
 import java.util.*;
 import java.io.*;
