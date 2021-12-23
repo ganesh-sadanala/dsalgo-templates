@@ -35,6 +35,9 @@ Math:
 x is even, gcd(x-1, x+1) = 1
 x is odd, gcd(x-2, x+2) = 1
 
+lcm(gcd(x, y), gcd(x, z)) = gcd(x, lcm(y, z))
+gcd(lcm(x, y), lcm(x, z)) = lcm(x, gcd(y, z))
+
 If we want to get a number n as a remainder i.e; a[i]%x=n then a[i]>2*n
 For example:
 if x>a[i] then n=a[i]
