@@ -24,6 +24,11 @@ More read on https://stackoverflow.com/questions/19485818/why-are-2-long-variabl
 Amazing questions on composite and prime numbers: https://codeforces.com/problemset/problem/1423/K 
 Amazing question on combinatorics forming sequence from given elements such that there isn't a subarray in the sequence whose xor sum is 0 - https://codeforces.com/problemset/problem/238/A - https://codeforces.com/blog/entry/5765
 Similar to # subarray with given xor sum or sum 
+
+Amazing question on base of the number : https://codeforces.com/contest/1620/problem/C : See the editorial and https://www.youtube.com/watch?v=0wtOyCcdUWo
+Number system conversion: https://www.tutorialspoint.com/computer_logical_organization/number_system_conversion.htm
+
+
 *
 Math:
 ----
