@@ -71,6 +71,8 @@ Non-negative with sticks cannot overlap => with k boxes or k-1 bars and n balls 
 https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/ - https://www.codechef.com/DEC21B/problems/PYRAMIDMOVES
 https://atcoder.jp/contests/abc232/tasks/abc232_e
 
+Amazing question on (x%a)%b) != (x%b)%a => Number of such x in a range => https://codeforces.com/problemset/problem/1342/C
+
 **/
 import java.util.*;
 import java.io.*;
