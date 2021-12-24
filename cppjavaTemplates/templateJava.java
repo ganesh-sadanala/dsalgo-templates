@@ -28,6 +28,7 @@ Similar to # subarray with given xor sum or sum
 Amazing question on base of the number : https://codeforces.com/contest/1620/problem/C : See the editorial and https://www.youtube.com/watch?v=0wtOyCcdUWo
 Number system conversion: https://www.tutorialspoint.com/computer_logical_organization/number_system_conversion.htm
 
+https://codeforces.com/problemset/problem/1305/C -> Interesting observation on modulus question
 
 *
 Math:
