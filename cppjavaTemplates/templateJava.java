@@ -11,7 +11,20 @@ Topic question:
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
 
 Array formed using sum of absolute differences of that element with all other elements -> https://www.geeksforgeeks.org/array-formed-using-sum-of-absolute-differences-of-that-element-with-all-other-elements/
-https://www.geeksforgeeks.org/sum-of-absolute-differences-of-indices-of-occurrences-of-each-array-element/
+////
+The intuition behind this algorithm is that since the array is sorted, think how would you do it manually.
+Let's take an array as an example and do a dry run,
+[2, 3, 5, 6]
+For 2 -> (3+5+6) - (3*2)
+For 3 -> (5+6) - (2*3) + 3 - 2 {Since 3 is greater than 2}
+For 5 -> 6-(1*5) + (2*5) - (2+3) {Since 5 is greater than 2 and 3}
+For 6 -> 0-(0*6) + (3*6)-(2+3+5) {Since 6 is greater than 2, 3 and 5}
+
+In general,
+(sum of ele to the right) - (# ele to_the_right * current_value) + (# ele to_the_left * current_value) - (sum of ele to the left).
+
+If i > j then 2 * i greater than j+i => This is the key intuition behind this algorithm.
+////
 
 Amazing question on valid parentheseis which people usually get into the trap of Stack: https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
 
