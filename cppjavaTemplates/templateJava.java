@@ -1,4 +1,4 @@
-/* package codechef; // don't place package name! */
+/* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
 
 /* 
 Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
@@ -9,6 +9,10 @@ nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF pr
 Pigeon hole principle Ques: https://codeforces.com/contest/1619/problem/D : https://www.youtube.com/watch?v=UGLQtUVbkhg
 Topic question:
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
+
+Array formed using sum of absolute differences of that element with all other elements -> https://www.geeksforgeeks.org/array-formed-using-sum-of-absolute-differences-of-that-element-with-all-other-elements/
+
+Amazing question on valid parentheseis which people usually get into the trap of Stack: https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
 
 Hard:
 Number of distinct values of bitwise or value of all subarrays of an array: https://codeforces.com/problemset/problem/243/A
