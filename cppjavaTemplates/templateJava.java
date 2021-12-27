@@ -28,6 +28,8 @@ If i > j then 2 * i greater than j+i => This is the key intuition behind this al
 
 Amazing question on valid parentheseis which people usually get into the trap of Stack: https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
 
+https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/
+
 Hard:
 Number of distinct values of bitwise or value of all subarrays of an array: https://codeforces.com/problemset/problem/243/A
 Number of different triangle formed from the side ranges using Two Pointers: https://codeforces.com/problemset/problem/1355/C
