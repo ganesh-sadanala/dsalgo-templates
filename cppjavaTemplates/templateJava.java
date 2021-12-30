@@ -51,6 +51,8 @@ Amazing question on base of the number : https://codeforces.com/contest/1620/pro
 Number system conversion: https://www.tutorialspoint.com/computer_logical_organization/number_system_conversion.htm
 
 Array of Doubled Pairs -> https://codeforces.com/problemset/problem/1305/C -> Interesting observation on modulus question (https://leetcode.com/problems/array-of-doubled-pairs/)
+Similar question -> https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
+
 
 *
 Math:
