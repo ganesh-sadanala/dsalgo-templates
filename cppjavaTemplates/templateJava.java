@@ -59,6 +59,8 @@ Getting the first n and last n digits of a huge multiplication -> https://leetco
 Good problem to fall in trap of binary and ternary search : https://codeforces.com/contest/1622/problem/C
 
 Standard kind of dp problem (Asked in different ways) Min/Max l and r -> https://codeforces.com/problemset/problem/573/B
+
+Standard sorting and finding max cost/pay/ans -> sometimes greedy works and sometimes not -> https://codeforces.com/problemset/problem/416/C
 *
 Math:
 ----
