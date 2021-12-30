@@ -113,6 +113,14 @@ class Codechef {
   }
   
   
+  // sorting template of normal array []
+  static void templateSortArray(){
+    List<Integer> l=new ArrayList<>();
+    for(int i=0;i<n;i++) l.add(a[i]);
+    Collections.sort(l, Collections.reverseOrder());
+    for(int i=0;i<n;i++) a[i]=l.get(i);
+  }
+  
   // Heaps algorithm -> to find all the permutations of an array
   static void heapsAlgorithm(){
     https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
