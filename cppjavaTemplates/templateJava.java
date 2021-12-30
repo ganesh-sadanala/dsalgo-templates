@@ -54,6 +54,8 @@ Array of Doubled Pairs -> https://codeforces.com/problemset/problem/1305/C -> In
 Similar question -> https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
 
 
+Getting the first n and last n digits of a huge multiplication -> https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
+
 *
 Math:
 ----
