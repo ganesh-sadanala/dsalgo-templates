@@ -56,6 +56,9 @@ Similar question -> https://leetcode.com/contest/weekly-contest-273/problems/rec
 
 Getting the first n and last n digits of a huge multiplication -> https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
 
+Good problem to fall in trap of binary and ternary search : https://codeforces.com/contest/1622/problem/C
+
+
 *
 Math:
 ----
