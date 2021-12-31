@@ -170,14 +170,16 @@ class Codechef {
   // counting sort 
   static void countSort(int mx){
     
+    int n=arr.length;
+    int output[]=new int[mx];
     int count[] = new int[mx];
     for (int i = 0; i < 2; ++i)
         count[i] = 0;
 
     for (int i = 0; i < n; ++i)
-        ++count[ans[i]];
+        ++count[arr[i]];
     
-    for (int i = 1; i <= 255; ++i)
+    for (int i = 1; i <= mx; ++i)
         count[i] += count[i - 1];
     
     for (int i = n - 1; i >= 0; i--) {
