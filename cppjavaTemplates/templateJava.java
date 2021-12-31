@@ -167,6 +167,28 @@ class Codechef {
       Arrays.sort(A);
   }
   
+  // counting sort 
+  static void countSort(int mx){
+    
+    int count[] = new int[mx];
+    for (int i = 0; i < 2; ++i)
+        count[i] = 0;
+
+    for (int i = 0; i < n; ++i)
+        ++count[ans[i]];
+    
+    for (int i = 1; i <= 255; ++i)
+        count[i] += count[i - 1];
+    
+    for (int i = n - 1; i >= 0; i--) {
+        output[count[arr[i]] - 1] = arr[i];
+        --count[arr[i]];
+    }
+    
+    for (int i = 0; i < n; ++i)
+        arr[i] = output[i];
+  }
+  
   // Math 
   // https://www.youtube.com/watch?v=8Fqv4ddMC3I
   static void extendedGcd(long a, long b, long ar[]){
