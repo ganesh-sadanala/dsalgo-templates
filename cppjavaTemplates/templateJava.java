@@ -67,6 +67,9 @@ Standard kind of dp problem (Asked in different ways) Min/Max l and r -> https:/
 Standard sorting and finding max cost/pay/ans -> sometimes greedy works and sometimes not -> https://codeforces.com/problemset/problem/416/C
 
 Standard problem of adjacent cells having different colors -> https://codeforces.com/problemset/problem/219/C
+
+Difficult to observe as binary search problem -> https://codeforces.com/contest/1623/problem/C 
+Note: Whenever you hear as max(min) or min(max), try to use binary search here. Most of the times binary search works.
 *
 Math:
 ----
