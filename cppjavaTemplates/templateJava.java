@@ -65,6 +65,8 @@ Good problem to fall in trap of binary and ternary search : https://codeforces.c
 Standard kind of dp problem (Asked in different ways) Min/Max l and r -> https://codeforces.com/problemset/problem/573/B
 
 Standard sorting and finding max cost/pay/ans -> sometimes greedy works and sometimes not -> https://codeforces.com/problemset/problem/416/C
+
+Standard problem of adjacent cells having different colors -> https://codeforces.com/problemset/problem/219/C
 *
 Math:
 ----
