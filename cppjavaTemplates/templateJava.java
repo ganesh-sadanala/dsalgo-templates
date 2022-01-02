@@ -290,6 +290,34 @@ class Codechef {
     if((r+1)<=n) update(r+1, -v);
   }
   
+  // print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
+  static int cyclenumber;
+  
+	static void dfs_cycle(int u, int p, int[] color,
+					int[] mark, int[] par)
+    { 
+		if (color[u] == 1)
+		{
+			cyclenumber++;
+            int cur = p;
+            cycles[cyclenumber].add(cur);
+
+            while (cur != u) {
+                cur = par[cur];
+                cycles[cyclenumber].add(cur);
+            }
+			return;
+		}
+		par[u] = p;
+		color[u] = 1;
+		for (int v : graph[u])
+		{
+			if (v == par[u]) continue;
+			dfs_cycle(v, u, color, mark, par);
+		}
+		color[u] = 2;
+	}
+  
   // TOPO - BFS
   static void topSort(){
     // l is the adjacency list
