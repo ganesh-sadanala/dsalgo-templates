@@ -1,6 +1,8 @@
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
 
 /* 
+sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
+
 Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
 https://leetcode.com/problems/132-pattern/
 
