@@ -115,6 +115,9 @@ https://atcoder.jp/contests/abc232/tasks/abc232_e
 Amazing question on (x%a)%b) != (x%b)%a => Number of such x in a range => https://codeforces.com/problemset/problem/1342/C
 
 Amazing question on given a[i]-k and a[i]+k find array a -> https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
+
+Wonderful question on AP -> https://codeforces.com/contest/1616/problem/C
+Got to know some observation in AP
 **/
 import java.util.*;
 import java.io.*;
