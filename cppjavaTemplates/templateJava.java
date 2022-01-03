@@ -1,5 +1,5 @@
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
-
+/* Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog */
 /* 
 sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
 
