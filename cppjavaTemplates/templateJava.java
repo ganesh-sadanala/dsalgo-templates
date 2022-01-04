@@ -73,7 +73,7 @@ Standard problem of adjacent cells having different colors -> https://codeforces
 Difficult to observe as binary search problem -> https://codeforces.com/contest/1623/problem/C 
 Note: Whenever you hear as max(min) or min(max), try to use binary search here. Most of the times binary search works.
 
-Wonderful Implementation question using Pair datastructure as key in HashMap : https://codeforces.com/contest/1621/problem/B
+Wonderful Implementation question to use PAIR data structure to find the min and max easily? : https://codeforces.com/contest/1621/problem/B : https://www.youtube.com/watch?v=HsLu6Shu9iE
 *
 Math:
 ----
