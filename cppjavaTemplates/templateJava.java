@@ -72,6 +72,8 @@ Standard problem of adjacent cells having different colors -> https://codeforces
 
 Difficult to observe as binary search problem -> https://codeforces.com/contest/1623/problem/C 
 Note: Whenever you hear as max(min) or min(max), try to use binary search here. Most of the times binary search works.
+
+Wonderful Implementation question : https://codeforces.com/contest/1621/problem/B
 *
 Math:
 ----
