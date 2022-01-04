@@ -122,6 +122,9 @@ Amazing question on given a[i]-k and a[i]+k find array a -> https://leetcode.com
 
 Wonderful question on AP -> https://codeforces.com/contest/1616/problem/C
 Got to know some observation in AP
+
+min(-c) = max(c)
+max(-c) = min(c)
 **/
 import java.util.*;
 import java.io.*;
