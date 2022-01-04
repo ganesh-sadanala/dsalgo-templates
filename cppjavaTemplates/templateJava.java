@@ -136,6 +136,31 @@ class Codechef {
   static void solve() {
 
   }
+	
+  // pair datastructure
+  static class Pair implements Comparable<Pair> {
+    	 int x;
+    	 int y;
+    	 Pair(int x,int y){
+		 this.x=x;
+		 this.y=y;
+    	 }
+	@Override
+	public int compareTo(Pair o) {
+		if(this.x>o.x)
+			return 1;
+		else if(this.x<o.x)
+			return -1;
+		else {
+			if(this.y>o.y)
+				return 1;
+			else if(this.y<o.y)
+				return -1;
+			else
+				return 0;
+		}
+	}
+   }
   
   
   // sorting template of normal array []
