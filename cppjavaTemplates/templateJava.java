@@ -140,30 +140,38 @@ class Codechef {
 
   }
 	
-  // pair datastructure
-  static class Pair implements Comparable<Pair> {
-    	 int x;
-    	 int y;
-    	 Pair(int x,int y){
-		 this.x=x;
-		 this.y=y;
-    	 }
-	@Override
-	public int compareTo(Pair o) {
-		if(this.x>o.x)
-			return 1;
-		else if(this.x<o.x)
-			return -1;
-		else {
-			if(this.y>o.y)
-				return 1;
-			else if(this.y<o.y)
-				return -1;
-			else
-				return 0;
-		}
-	}
-   }
+  // pair datastructure 
+  // equals and hashCode should be overriden when you want to 
+  // use something like hashmap or hashset
+  // to compare them
+  // Make use of Intellij to generate equals and hashcode
+  static class Pair {
+    long x, y;
+
+    public Pair(long x, long y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Pair pair = (Pair) o;
+
+        if (x != pair.x) return false;
+        return y == pair.y;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (int) (x ^ (x >>> 32));
+        result = 31 * result + (int) (y ^ (y >>> 32));
+        return result;
+    }
+}
+
   
   
   // sorting template of normal array []
