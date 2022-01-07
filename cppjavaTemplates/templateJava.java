@@ -126,6 +126,8 @@ Got to know some observation in AP
 
 min(-c) = max(c)
 max(-c) = min(c)
+
+Interesting math question: https://codeforces.com/problemset/problem/1482/B
 **/
 import java.util.*;
 import java.io.*;
