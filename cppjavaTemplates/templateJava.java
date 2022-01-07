@@ -75,6 +75,8 @@ Difficult to observe as binary search problem -> https://codeforces.com/contest/
 Note: Whenever you hear as max(min) or min(max), try to use binary search here. Most of the times binary search works.
 
 Wonderful Implementation question to use PAIR data structure to find the min and max easily? : https://codeforces.com/contest/1621/problem/B : https://www.youtube.com/watch?v=HsLu6Shu9iE
+
+Wonderful dp, greedy, bs, sortings question - https://codeforces.com/problemset/problem/1257/D
 *
 Math:
 ----
