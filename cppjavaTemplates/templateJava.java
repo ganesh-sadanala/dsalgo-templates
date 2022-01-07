@@ -131,6 +131,12 @@ max(-c) = min(c)
 
 Interesting math question: https://codeforces.com/problemset/problem/1482/B
 **/
+/* 
+DP + Greedy
+https://codeforces.com/problemset/problem/1295/C
+https://codeforces.com/problemset/problem/1257/D
+
+*/
 import java.util.*;
 import java.io.*;
 import java.math.*;
