@@ -127,6 +127,8 @@ min(-c) = max(c)
 max(-c) = min(c)
 
 Interesting math question: https://codeforces.com/problemset/problem/1482/B
+
+https://codeforces.com/contest/110/problem/C => Equation type questions (but not coin sum dp)
 **/
 /* 
 DP + Greedy
@@ -146,6 +148,15 @@ Map+Alphabets Variation: https://codeforces.com/contest/797/problem/C
 DP + Math or Dp + Combinatorics DP + Optimization
 https://codeforces.com/contest/1327/problem/E -> Whenever a problem like this calculate separately, find out a formula
 https://codeforces.com/contest/166/problem/E  -> Normal dp is easy and i did -> DP + Optimization is hard
+
+*/
+/* 
+Amazing and tricky implementation https://codeforces.com/contest/883/problem/F
+
+*/
+/* 
+(Modulo comparsion or Breaking into blocks or Blockwise comparison)
+String + Hashing + Implementation + math (Modulo comparison actually avoids extra burden) -> https://codeforces.com/contest/182/problem/D
 
 */
 import java.util.*;
