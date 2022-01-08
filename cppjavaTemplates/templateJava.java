@@ -4,9 +4,6 @@
 /* 
 sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
 
-Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
-https://leetcode.com/problems/132-pattern/
-
 Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
 https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
 Amazing variation of this: https://codeforces.com/problemset/problem/375/B
@@ -137,6 +134,20 @@ https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/problemset/problem/1257/D
 
 */
+/* 
+Next greatest element, Next least element, Monotonic stack
+Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
+https://leetcode.com/problems/132-pattern/
+https://codeforces.com/contest/281/problem/D
+Map+Alphabets Variation: https://codeforces.com/contest/797/problem/C
+
+*/
+/*
+DP + Math or Dp + Combinatorics DP + Optimization
+https://codeforces.com/contest/1327/problem/E -> Whenever a problem like this calculate separately, find out a formula
+https://codeforces.com/contest/166/problem/E  -> Normal dp is easy and i did -> DP + Optimization is hard
+
+*/
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -155,7 +166,7 @@ class Codechef {
   // equals and hashCode should be overriden when you want to 
   // use something like hashmap or hashset
   // to compare them
-  // Make use of Intellij to generate equals and hashcode
+  // Make use of Intellij IDE to generate equals and hashcode
   static class Pair {
     long x, y;
 
