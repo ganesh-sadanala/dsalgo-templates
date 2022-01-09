@@ -1,4 +1,10 @@
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
+/*
+Interesting hidden things in java
+https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
+https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
+
+*/
 // Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
 /* Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog */
 /* 
