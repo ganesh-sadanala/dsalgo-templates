@@ -165,6 +165,10 @@ Amazing and tricky implementation https://codeforces.com/contest/883/problem/F
 String + Hashing + Implementation + math (Modulo comparison actually avoids extra burden) -> https://codeforces.com/contest/182/problem/D
 
 */
+/* 
+String Question where bitwise operation is efficient
+https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/
+*/
 import java.util.*;
 import java.io.*;
 import java.math.*;
