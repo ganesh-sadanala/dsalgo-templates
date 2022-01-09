@@ -166,8 +166,9 @@ String + Hashing + Implementation + math (Modulo comparison actually avoids extr
 
 */
 /* 
-String Question where bitwise operation is efficient
+String Question where bitwise operation is efficient , can also be solved using Trie
 https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/
+Tried to solve it using trie but could not get the 0/1 choice usage idea. Finally upsolved-> https://leetcode.com/submissions/detail/616175094/
 */
 import java.util.*;
 import java.io.*;
