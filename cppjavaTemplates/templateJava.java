@@ -1,4 +1,6 @@
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
+// Whenever you don't able to solve, it means u did not solve closer idea problem -> so make a lot of observations.
+// +Key to Excel: Think more, Think all, Never Give Up!
 /*
 Interesting hidden things in java
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
@@ -170,6 +172,11 @@ String Question where bitwise operation is efficient , can also be solved using 
 https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/
 Tried to solve it using trie but could not get the 0/1 choice usage idea. Finally upsolved-> https://leetcode.com/submissions/detail/616175094/
 */
+/*
+Brute Force + Observation
+https://atcoder.jp/contests/abc234/tasks/abc234_e
+*/
+
 import java.util.*;
 import java.io.*;
 import java.math.*;
