@@ -5,6 +5,7 @@
 Interesting hidden things in java
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
 https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
+https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 
 */
 // Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
@@ -176,7 +177,17 @@ Tried to solve it using trie but could not get the 0/1 choice usage idea. Finall
 Brute Force + Observation
 https://atcoder.jp/contests/abc234/tasks/abc234_e
 */
+/*
+Thinks that Greedy won't work, dp only works but actually it's a greedy question
+https://codeforces.com/contest/1108/problem/D -> Always this kind of questions by dividing into blocks
+https://codeforces.com/contest/1154/problem/D -> Normal Gredy
 
+
+*/
+/*
+Interesting Greedy
+https://codeforces.com/contest/1203/problem/E
+*/
 import java.util.*;
 import java.io.*;
 import java.math.*;
