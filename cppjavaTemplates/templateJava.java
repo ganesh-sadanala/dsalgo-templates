@@ -138,6 +138,13 @@ max(-c) = min(c)
 Interesting math question: https://codeforces.com/problemset/problem/1482/B
 
 https://codeforces.com/contest/110/problem/C => Equation type questions (but not coin sum dp)
+
+Notes: https://stackoverflow.com/questions/3269013/difference-between-hamiltonian-path-and-euler-path
+An Euler path is a path that passes through every edge exactly once. If it ends at the initial vertex then it is an Euler cycle.
+A Hamiltonian path is a path that passes through every vertex exactly once (NOT every edge). If it ends at the initial vertex then it is a Hamiltonian cycle.
+In an Euler path you might pass through a vertex more than once.
+In a Hamiltonian path you may not pass through all edges.
+
 **/
 /* 
 DP + Greedy
@@ -187,10 +194,11 @@ https://codeforces.com/contest/1154/problem/D -> Normal Gredy
 /*
 Interesting Greedy
 https://codeforces.com/contest/1203/problem/E
+https://codeforces.com/contest/1131/problem/C -> Application of Hamiltonian path -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
 
 */
 /*Game theory
-https://codeforces.com/contest/1102/problem/C
+https://codeforces.com/contest/1102/problem/C 
 
 */
 
