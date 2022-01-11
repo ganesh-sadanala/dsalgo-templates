@@ -525,6 +525,44 @@ class Codechef {
             System.out.print(stack.pop() + " ");
     }
   
+  // LIS(Monotonically increasing or Strictly increasing) where elements are 
+  // consecutive elements {eg: x, x+1, x+2, ... x+k}
+  static void LISConsecutive(int []arr)
+    {
+       HashMap<Integer,Integer> map=new HashMap<>();
+       int n=arr.length;
+       int max=0,num=0;
+	   for(int i=0;i<n;i++)
+	   {
+	       if(!map.containsKey(arr[i]-1))
+	          map.put(arr[i],1);
+	       
+	       else
+	          map.put(arr[i],map.get(arr[i]-1)+1);
+	          
+	        if(max<map.get(arr[i]))
+	        {
+	            num=arr[i];
+	            max=map.get(arr[i]);
+	        }
+	   }
+	   System.out.println(max);
+	   
+	   ArrayList<Integer> list=new ArrayList<>();
+	   for(int i=n-1;i>=0;i--)
+	   {
+	       if(arr[i]==num)
+	       {
+	           list.add(i+1);
+	           num--;
+	       }
+	   }
+	   int sz=list.size();
+	   for(int i=sz-1;i>=0;i--)
+	     System.out.print(list.get(i)+" ");
+    }
+	
+	
   // LIS(Monotonically or Strictly increasing) - nlogn
   // Minimum last element of length len+1 is stored
   // t stores minium last element index of length len+1
