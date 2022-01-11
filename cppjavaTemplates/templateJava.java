@@ -201,7 +201,10 @@ https://codeforces.com/contest/1131/problem/C -> Application of Hamiltonian path
 https://codeforces.com/contest/1102/problem/C 
 
 */
-
+/*
+Standard Sliding Window
+https://codeforces.com/contest/958/problem/F1
+*/
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -411,32 +414,52 @@ class Codechef {
   
   // print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
   static int cyclenumber;
+  static void dfs_cycle(int u, int p, int[] color, int[] mark, int[] par)
+  {
+      if(color[u] == 1)
+      {
+	  cyclenumber++;
+	  int cur = p;
+	  cycles[cyclenumber].add(cur);
+	  while(cur != u)
+	  {
+	      cur = par[cur];
+	      cycles[cyclenumber].add(cur);
+	  }
+	  return;
+      }
+      par[u] = p;
+      color[u] = 1;
+      for(int v: graph[u])
+      {
+	  if(v == par[u]) continue;
+	  dfs_cycle(v, u, color, mark, par);
+      }
+      color[u] = 2;
+  }
   
-	static void dfs_cycle(int u, int p, int[] color,
-					int[] mark, int[] par)
-    { 
-		if (color[u] == 1)
-		{
-			cyclenumber++;
-            int cur = p;
-            cycles[cyclenumber].add(cur);
-
-            while (cur != u) {
-                cur = par[cur];
-                cycles[cyclenumber].add(cur);
-            }
-			return;
-		}
-		par[u] = p;
-		color[u] = 1;
-		for (int v : graph[u])
-		{
-			if (v == par[u]) continue;
-			dfs_cycle(v, u, color, mark, par);
-		}
-		color[u] = 2;
-	}
-  
+    // detect cycle in an undirected graph using color
+    static int v,e;
+    static boolean flag;
+    static ArrayList<ArrayList<Integer>> edg=new ArrayList<>();
+    static char color[]; 
+    static void dfs(int u,int p)
+    {
+        color[u]='g';
+        ArrayList<Integer> list=edg.get(u);
+        for(int ver:list)
+        {
+            char c=color[ver];
+            if(c=='b'||ver==p)
+             continue;
+            if(c=='g')
+             flag=true;
+            if(c=='w')
+             dfs(ver,u);
+        }
+        color[u]='b';
+    }
+	
   // TOPO - BFS
   static void topSort(){
     // l is the adjacency list
