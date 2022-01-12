@@ -86,6 +86,8 @@ Wonderful dp, greedy, bs, sortings question - https://codeforces.com/problemset/
 *
 Math:
 ----
+https://codeforces.com/contest/515/problem/C
+
 x is even, gcd(x-1, x+1) = 1
 x is odd, gcd(x-2, x+2) = 1
 
@@ -213,6 +215,13 @@ https://codeforces.com/contest/1144/problem/F
 Remove this or that to make string valid questions
 https://codeforces.com/contest/363/problem/C
 https://codeforces.com/contest/401/problem/C
+
+*/
+/*
+Interesting and tricky problems where we generally fall into trap of PQ 
+but we should not use it, instead use normal approach.
+PQ is used when is data is changing its value
+https://codeforces.com/contest/492/problem/C
 
 */
 import java.util.*;
