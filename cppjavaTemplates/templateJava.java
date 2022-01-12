@@ -205,6 +205,16 @@ https://codeforces.com/contest/1102/problem/C
 Standard Sliding Window
 https://codeforces.com/contest/958/problem/F1
 */
+/*
+Solving Graph problems using colors
+https://codeforces.com/contest/1144/problem/F
+*/
+/*
+Remove this or that to make string valid questions
+https://codeforces.com/contest/363/problem/C
+https://codeforces.com/contest/401/problem/C
+
+*/
 import java.util.*;
 import java.io.*;
 import java.math.*;
