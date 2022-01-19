@@ -1,3 +1,8 @@
+/*
+My Questions:
+1. Maximum sum alternating sign subsequence in an array.
+
+*/
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
 // Whenever you don't able to solve, it means u did not solve closer idea problem -> so make a lot of observations.
 // +Key to Excel: Think more, Think all, Never Give Up!
@@ -197,6 +202,7 @@ https://codeforces.com/contest/1154/problem/D -> Normal Gredy
 Interesting Greedy
 https://codeforces.com/contest/1203/problem/E
 https://codeforces.com/contest/1131/problem/C -> Application of Hamiltonian path -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
+https://codeforces.com/contest/1343/problem/D
 
 */
 /*Game theory
@@ -222,6 +228,11 @@ Interesting and tricky problems where we generally fall into trap of PQ
 but we should not use it, instead use normal approach.
 PQ is used when is data is changing its value
 https://codeforces.com/contest/492/problem/C
+
+*/
+/*
+Awesome Greedy + Graph
+https://codeforces.com/contest/1343/problem/E
 
 */
 import java.util.*;
