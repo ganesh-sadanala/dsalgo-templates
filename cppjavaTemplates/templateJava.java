@@ -1,5 +1,5 @@
 /*
-My Questions:
+God of:
 1. Maximum sum alternating sign subsequence in an array.
 
 */
@@ -91,6 +91,13 @@ Wonderful dp, greedy, bs, sortings question - https://codeforces.com/problemset/
 *
 Math:
 ----
+Fibonacci: https://en.wikipedia.org/wiki/Fibonacci_number
+Interesting observations on Fibonocci : https://www.youtube.com/watch?v=SjSHVDfXHQ4
+Problems based on Fib:
+https://codeforces.com/contest/1239/problem/A
+http://tech-queries.blogspot.com/2011/07/fit-12-dominos-in-2n-strip.html
+
+Golden Ratio: a>b>0 => a/b = (a+b)/a = k where k is a constant
 https://codeforces.com/contest/515/problem/C
 
 x is even, gcd(x-1, x+1) = 1
@@ -221,6 +228,11 @@ https://codeforces.com/contest/1144/problem/F
 Remove this or that to make string valid questions
 https://codeforces.com/contest/363/problem/C
 https://codeforces.com/contest/401/problem/C
+
+*/
+/*
+DP + Combinatorics 
+https://codeforces.com/contest/1239/problem/A
 
 */
 /*
