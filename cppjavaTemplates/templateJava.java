@@ -18,6 +18,9 @@ https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 /* 
 sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
 
+Next greatest element, Next least element, Monotonic stack
+Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
+
 Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
 https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
 Amazing variation of this: https://codeforces.com/problemset/problem/375/B
@@ -160,91 +163,39 @@ In an Euler path you might pass through a vertex more than once.
 In a Hamiltonian path you may not pass through all edges.
 
 **/
-/* 
-DP + Greedy
+/* Round Robin 
+Queue 1
+-------
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/problemset/problem/1257/D
-
-*/
-/* 
-Next greatest element, Next least element, Monotonic stack
-Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
-Map+Alphabets Variation: https://codeforces.com/contest/797/problem/C
-
-*/
-/*
-DP + Math or Dp + Combinatorics DP + Optimization
-https://codeforces.com/contest/1327/problem/E -> Whenever a problem like this calculate separately, find out a formula
-https://codeforces.com/contest/166/problem/E  -> Normal dp is easy and i did -> DP + Optimization is hard
-
-*/
-/* 
-Amazing and tricky implementation https://codeforces.com/contest/883/problem/F
-
-*/
-/* 
-(Modulo comparsion or Breaking into blocks or Blockwise comparison)
-String + Hashing + Implementation + math (Modulo comparison actually avoids extra burden) -> https://codeforces.com/contest/182/problem/D
-
-*/
-/* 
-String Question where bitwise operation is efficient , can also be solved using Trie
+https://codeforces.com/contest/797/problem/C
+https://codeforces.com/contest/1327/problem/E 
+https://codeforces.com/contest/166/problem/E 
+https://codeforces.com/contest/883/problem/F
+https://codeforces.com/contest/182/problem/D
 https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/
-Tried to solve it using trie but could not get the 0/1 choice usage idea. Finally upsolved-> https://leetcode.com/submissions/detail/616175094/
-*/
-/*
-Brute Force + Observation
 https://atcoder.jp/contests/abc234/tasks/abc234_e
-*/
-/*
-Thinks that Greedy won't work, dp only works but actually it's a greedy question
-https://codeforces.com/contest/1108/problem/D -> Always this kind of questions by dividing into blocks
-https://codeforces.com/contest/1154/problem/D -> Normal Gredy
-
-
-*/
-/*
-Interesting Greedy
+https://codeforces.com/contest/1108/problem/D
+https://codeforces.com/contest/1154/problem/D
 https://codeforces.com/contest/1203/problem/E
-https://codeforces.com/contest/1131/problem/C -> Application of Hamiltonian path -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
+https://codeforces.com/contest/1131/problem/C -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
 https://codeforces.com/contest/1343/problem/D
-
-*/
-/*Game theory
 https://codeforces.com/contest/1102/problem/C 
-
-*/
-/*
-Standard Sliding Window
 https://codeforces.com/contest/958/problem/F1
-*/
-/*
-Solving Graph problems using colors
 https://codeforces.com/contest/1144/problem/F
-*/
-/*
-Remove this or that to make string valid questions
 https://codeforces.com/contest/363/problem/C
 https://codeforces.com/contest/401/problem/C
-
-*/
-/*
-DP + Combinatorics 
 https://codeforces.com/contest/1239/problem/A
-
-*/
-/*
-Interesting and tricky problems where we generally fall into trap of PQ 
-but we should not use it, instead use normal approach.
-PQ is used when is data is changing its value
 https://codeforces.com/contest/492/problem/C
-
-*/
-/*
-Awesome Greedy + Graph
 https://codeforces.com/contest/1343/problem/E
+https://codeforces.com/contest/778/problem/A
+
+
+
+Queue 2
+-------
 
 */
 import java.util.*;
