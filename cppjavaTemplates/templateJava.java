@@ -166,10 +166,11 @@ In a Hamiltonian path you may not pass through all edges.
 /* Round Robin 
 cur
 ---
-https://codeforces.com/contest/1210/problem/B
+
 
 Queue 1
 -------
+https://codeforces.com/contest/1210/problem/B
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/problemset/problem/1257/D
 https://leetcode.com/problems/132-pattern/
@@ -195,7 +196,10 @@ https://codeforces.com/contest/1239/problem/A
 https://codeforces.com/contest/492/problem/C
 https://codeforces.com/contest/1343/problem/E
 https://codeforces.com/contest/778/problem/A
-
+https://codeforces.com/contest/1311/problem/F
+https://codeforces.com/contest/1335/problem/D
+https://codeforces.com/contest/1354/problem/C2
+https://codeforces.com/contest/1216/problem/E1
 
 
 Queue 2
