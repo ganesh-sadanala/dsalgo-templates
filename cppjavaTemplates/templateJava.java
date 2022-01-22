@@ -91,6 +91,8 @@ Note: Whenever you hear as max(min) or min(max), try to use binary search here. 
 Wonderful Implementation question to use PAIR data structure to find the min and max easily? : https://codeforces.com/contest/1621/problem/B : https://www.youtube.com/watch?v=HsLu6Shu9iE
 
 Wonderful dp, greedy, bs, sortings question - https://codeforces.com/problemset/problem/1257/D
+
+https://en.wikipedia.org/wiki/Gray_code
 *
 Math:
 ----
@@ -201,6 +203,10 @@ https://codeforces.com/contest/1335/problem/D
 https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/1216/problem/E1
 https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
+https://codeforces.com/contest/1365/problem/C
+https://codeforces.com/contest/1365/problem/E
+https://www.codechef.com/problems/GRAYSC
+https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
 
 Queue 2
 -------
