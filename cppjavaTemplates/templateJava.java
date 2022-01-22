@@ -200,7 +200,7 @@ https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1335/problem/D
 https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/1216/problem/E1
-
+https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
 
 Queue 2
 -------
