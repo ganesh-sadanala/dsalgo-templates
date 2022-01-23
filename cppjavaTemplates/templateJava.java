@@ -222,7 +222,7 @@ https://codeforces.com/contest/1364/problem/C
 https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=true -> GTC
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem?isFullScreen=true -> GTC
 https://www.hackerrank.com/challenges/tower-breakers-again-1/problem?isFullScreen=true -> GTC
-
+https://codeforces.com/contest/274/problem/A
 
 Queue 2
 -------
