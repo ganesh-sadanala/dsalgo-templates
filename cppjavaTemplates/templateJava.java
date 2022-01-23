@@ -12,6 +12,11 @@ https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-
 https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
 https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 
+/*
+Stars and Bars
+https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
+https://progvar.fun/problemsets/stars-and-bars
+*/
 */
 // Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
 /* Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog */
@@ -207,6 +212,9 @@ https://codeforces.com/contest/1365/problem/C
 https://codeforces.com/contest/1365/problem/E
 https://www.codechef.com/problems/GRAYSC
 https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
+https://codeforces.com/contest/1280/problem/A
+https://codeforces.com/contest/1132/problem/C
+
 
 Queue 2
 -------
