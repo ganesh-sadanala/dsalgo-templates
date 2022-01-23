@@ -211,10 +211,14 @@ https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
 https://codeforces.com/contest/1365/problem/C
 https://codeforces.com/contest/1365/problem/E
 https://www.codechef.com/problems/GRAYSC
-https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
+https://www.geeksforgeeks.org/find-a-non-empty-subset-in-anhttps://codeforces.com/contest/1364/problem/B
+https://codeforces.com/contest/1364/problem/C
+-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
 https://codeforces.com/contest/1280/problem/A
 https://codeforces.com/contest/1132/problem/C
-
+https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
+https://codeforces.com/contest/1364/problem/B
+https://codeforces.com/contest/1364/problem/C
 
 Queue 2
 -------
