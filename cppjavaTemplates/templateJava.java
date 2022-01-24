@@ -223,6 +223,10 @@ https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=true ->
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem?isFullScreen=true -> GTC
 https://www.hackerrank.com/challenges/tower-breakers-again-1/problem?isFullScreen=true -> GTC
 https://codeforces.com/contest/274/problem/A
+https://codeforces.com/contest/455/problem/A
+https://codeforces.com/contest/468/problem/A
+https://codeforces.com/contest/1367/problem/D
+https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751
 
 Queue 2
 -------
