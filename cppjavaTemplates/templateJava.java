@@ -3,6 +3,8 @@ God of:
 1. Maximum sum alternating sign subsequence in an array.
 
 */
+// cp book -> https://github.com/luisfcofv/competitive-programming-book
+// https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
 // Whenever you don't able to solve, it means u did not solve closer idea problem -> so make a lot of observations.
 // +Key to Excel: Think more, Think all, Never Give Up!
@@ -12,16 +14,24 @@ https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-
 https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
 https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 
+*/
 /*
 Stars and Bars
 https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
 https://progvar.fun/problemsets/stars-and-bars
 */
+/*
+Binary Search on Real Numbers -> https://codeforces.com/blog/entry/63085
+https://codeforces.com/blog/entry/73888
+https://codeforces.com/blog/entry/45281#:~:text=Precision%20error%20problems%20%2D%20Codeforces
+
 */
 // Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
 /* Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog */
 /* 
 sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
+
+Bi Partite graoh: https://www.geeksforgeeks.org/bipartite-graph/
 
 Next greatest element, Next least element, Monotonic stack
 Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
@@ -228,6 +238,8 @@ https://codeforces.com/contest/468/problem/A
 https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751
 https://codeforces.com/contest/1368/problem/D
+https://codeforces.com/contest/891/problem/A
+https://codeforces.com/contest/1010/problem/A -> Non integral value binary search
 
 Queue 2
 -------
@@ -397,6 +409,28 @@ class Codechef {
     }
   }
   
+  // Binary search on float values
+  /*
+  If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
+  100 iterations might hurt you if TL is tight and 30 iterations would be enough. Maybe you'll get TLE this way. 
+  That being said, a constant number of iterations is fine in competitive programming. You're avoiding one more 'if' where you could make a mistake.
+  */
+    // Type 1:
+    float l=0.00000000,r=100000.00000000;
+    cout << l << " " << r;
+    while((r-l)>0.0000000001){
+        float mid = (float)((l+r)/2);
+        cout << mid << endl;
+        if(mid>target) r=mid;
+        else l=mid;
+    }cout << l;
+    // Type 2:
+	int iterations = 0;
+	while(iterations < 300)
+	{
+	  // your binary search logic
+	  iterations++;
+	}
   // DSU
   static int find(int i){
     if(parent[i]!=i)
