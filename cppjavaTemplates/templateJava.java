@@ -227,6 +227,7 @@ https://codeforces.com/contest/455/problem/A
 https://codeforces.com/contest/468/problem/A
 https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751
+https://codeforces.com/contest/1368/problem/D
 
 Queue 2
 -------
