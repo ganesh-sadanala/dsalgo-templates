@@ -242,6 +242,10 @@ https://codeforces.com/contest/891/problem/A
 https://codeforces.com/contest/1010/problem/A -> Non integral value binary search
 https://codeforces.com/contest/1179/problem/A
 https://codeforces.com/contest/1242/problem/A
+https://codeforces.com/contest/1373/problem/D
+https://codeforces.com/contest/1299/problem/A
+https://codeforces.com/contest/1264/problem/A
+https://codeforces.com/contest/584/problem/B
 
 Queue 2
 -------
