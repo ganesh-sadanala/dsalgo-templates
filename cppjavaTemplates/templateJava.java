@@ -240,6 +240,8 @@ https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) 
 https://codeforces.com/contest/1368/problem/D
 https://codeforces.com/contest/891/problem/A
 https://codeforces.com/contest/1010/problem/A -> Non integral value binary search
+https://codeforces.com/contest/1179/problem/A
+https://codeforces.com/contest/1242/problem/A
 
 Queue 2
 -------
@@ -290,8 +292,6 @@ class Codechef {
         return result;
     }
 }
-
-  
   
   // sorting template of normal array []
   static void templateSortArray(){
@@ -373,6 +373,25 @@ class Codechef {
     ar[0]=temp;
     return;
   }
+
+ // Chinese Remainder Theorem
+  static void chineseRemainderTheorem(int num[], int rem[], int k){ 
+    int prod = 1;
+    for (int i = 0; i < k; i++)
+        prod *= num[i];
+ 
+    int result = 0;
+ 
+    for (int i = 0; i < k; i++) {
+        int pp = prod / num[i];
+	long ar[]=new long[3];
+	extendedGcd(pp, num[i], ar);
+        result += rem[i] * ar[0] * pp;
+    }
+ 
+    return result % prod;
+  }
+	
   // non prime b;
   static long invmod(long a, long b){
     long ar[]=new long[3];
