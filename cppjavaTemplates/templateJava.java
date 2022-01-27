@@ -245,7 +245,9 @@ https://codeforces.com/contest/1242/problem/A
 https://codeforces.com/contest/1373/problem/D
 https://codeforces.com/contest/1299/problem/A
 https://codeforces.com/contest/1264/problem/A
-https://codeforces.com/contest/584/problem/B
+https://codeforces.com/contest/1114/problem/B
+https://codeforces.com/contest/1278/problem/B
+https://codeforces.com/contest/743/problem/C
 
 Queue 2
 -------
