@@ -249,6 +249,8 @@ https://codeforces.com/contest/1114/problem/B
 https://codeforces.com/contest/1278/problem/B
 https://codeforces.com/contest/743/problem/C
 https://codeforces.com/contest/1166/problem/C
+https://codeforces.com/contest/340/problem/D
+https://codeforces.com/contest/1186/problem/D
 
 Queue 2
 -------
