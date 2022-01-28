@@ -2,7 +2,10 @@
 God of:
 1. Maximum sum alternating sign subsequence in an array.
 
+
 */
+// Learning -> Solving -> Contesting -> Upsolving -> Learning
+// A Holiday an Algo, New Stuff
 // cp book -> https://github.com/luisfcofv/competitive-programming-book
 // https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/
 /* Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg */
@@ -252,6 +255,7 @@ https://codeforces.com/contest/1166/problem/C
 https://codeforces.com/contest/340/problem/D
 https://codeforces.com/contest/1186/problem/D
 https://codeforces.com/contest/343/problem/A
+https://codeforces.com/contest/607/problem/A
 
 Queue 2
 -------
