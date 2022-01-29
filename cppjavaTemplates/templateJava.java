@@ -234,7 +234,6 @@ https://codeforces.com/contest/1364/problem/B
 https://codeforces.com/contest/1364/problem/C
 https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=true -> GTC
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem?isFullScreen=true -> GTC
-https://www.hackerrank.com/challenges/tower-breakers-again-1/problem?isFullScreen=true -> GTC
 https://codeforces.com/contest/274/problem/A
 https://codeforces.com/contest/455/problem/A
 https://codeforces.com/contest/468/problem/A
@@ -259,6 +258,8 @@ https://codeforces.com/contest/607/problem/A
 https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
 https://codeforces.com/contest/763/problem/A
+https://www.hackerrank.com/challenges/tower-breakers-again-1/problem?isFullScreen=true -> GTC
+https://www.hackerrank.com/challenges/zero-move-nim/problem?isFullScreen=true
 
 Queue 2
 -------
