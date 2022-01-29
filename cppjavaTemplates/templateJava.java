@@ -391,7 +391,21 @@ class Codechef {
     ar[0]=temp;
     return;
   }
-
+	
+  // Linear Diophontine
+  static void findLinearDiophontineSol(int a, int b, int c){
+	long ar[]=new long[3];
+	extendedGcd(a, b, ar);
+	int x0 = ar[0];
+	int y0 = ar[1];
+	int g = ar[2];
+	if(c%g != 0) return;
+	int x = x0 * c/g;
+	int y = y0 * c/g;
+	if (a < 0) x = -x;
+        if (b < 0) y = -y;
+  }
+  
  // Chinese Remainder Theorem
   static void chineseRemainderTheorem(int num[], int rem[], int k){ 
     int prod = 1;
