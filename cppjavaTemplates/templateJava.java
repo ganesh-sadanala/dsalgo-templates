@@ -256,6 +256,9 @@ https://codeforces.com/contest/340/problem/D
 https://codeforces.com/contest/1186/problem/D
 https://codeforces.com/contest/343/problem/A
 https://codeforces.com/contest/607/problem/A
+https://codeforces.com/contest/1385/problem/E
+https://codeforces.com/contest/704/problem/A
+https://codeforces.com/contest/763/problem/A
 
 Queue 2
 -------
@@ -585,7 +588,7 @@ class Codechef {
         // Recur for all the vertices adjacent
         // to thisvertex
         Iterator<Integer> it = adj.get(v).iterator();
-        while (it.hasNext()) {
+        while (it.hasNext()) {`
             i = it.next();
             if (!visited[i])
                 topologicalSortUtil(i, visited, stack);
@@ -618,6 +621,49 @@ class Codechef {
         // Print contents of stack
         while (stack.empty() == false)
             System.out.print(stack.pop() + " ");
+    }
+	
+    // find if there is a cycle in a directed graph by checking if it 
+    // has a valid TOPO sort or not
+    // or constructing a valid DAG using TOPO sort https://codeforces.com/contest/1385/problem/E
+    static void dfs(int u)
+    {
+      vis[u]=true;
+      for(int v:dedges.get(u))
+      {
+	  if(!vis[v])
+	    dfs(v);
+      }
+      stack.push(u); 
+    }
+
+    static void isValidTOPOSortOrCycleInDAG(){
+	 stack=new Stack<>();
+	 vis=new boolean[n+1];
+	 for(int i=1;i<=n;i++)
+	 {
+	     if(!vis[i])
+	        dfs(i);
+	 }
+	 ArrayList<Integer> top=new ArrayList<>();
+	 while(!stack.isEmpty())
+	    top.add(stack.pop());
+	 boolean flag=false;
+	 int pos[]=new int[n+1];
+	 for(int i=0;i<n;i++)
+	    pos[top.get(i)]=i;
+	 for(int i=1;i<=n;i++)
+	 {
+           for(int v:dedges.get(i))
+	    {
+	       if(pos[v]<pos[i])
+		{
+	            flag=true;
+		     break;
+		}
+	     }
+	  }
+	 return !flag; 
     }
   
   // LIS(Monotonically increasing or Strictly increasing) where elements are 
