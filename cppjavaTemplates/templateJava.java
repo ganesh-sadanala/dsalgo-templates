@@ -266,7 +266,6 @@ https://codeforces.com/contest/322/problem/B
 https://codeforces.com/contest/407/problem/B -> https://codeforces.com/blog/entry/11333?#comment-163504
 https://codeforces.com/contest/429/problem/B
 https://codeforces.com/contest/1399/problem/D
-https://codeforces.com/contest/1137/problem/B
 https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
 
 Queue 2
@@ -279,339 +278,345 @@ import java.math.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
 class Codechef {
-  static int n;
-  static int a[];
-  static StringBuilder str = new StringBuilder("");
+    static int n;
+    static int a[];
+    static StringBuilder str = new StringBuilder("");
 
-  static void solve() {
+    static void solve() {
 
-  }
-	
-  // pair datastructure 
-  // equals and hashCode should be overriden when you want to 
-  // use something like hashmap or hashset
-  // to compare them
-  // Make use of Intellij IDE to generate equals and hashcode
-  static class Pair {
-    long x, y;
-
-    public Pair(long x, long y) {
-        this.x = x;
-        this.y = y;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    // string hashing
 
-        Pair pair = (Pair) o;
 
-        if (x != pair.x) return false;
-        return y == pair.y;
+    // pair datastructure 
+    // equals and hashCode should be overriden when you want to 
+    // use something like hashmap or hashset
+    // to compare them
+    // Make use of Intellij IDE to generate equals and hashcode
+    static class Pair {
+        long x, y;
+
+        public Pair(long x, long y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Pair pair = (Pair) o;
+
+            if (x != pair.x) return false;
+            return y == pair.y;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = (int)(x ^ (x >>> 32));
+            result = 31 * result + (int)(y ^ (y >>> 32));
+            return result;
+        }
     }
 
-    @Override
-    public int hashCode() {
-        int result = (int) (x ^ (x >>> 32));
-        result = 31 * result + (int) (y ^ (y >>> 32));
-        return result;
+    // sorting template of normal array []
+    static void templateSortArray() {
+        List < Integer > l = new ArrayList < > ();
+        for (int i = 0; i < n; i++) l.add(a[i]);
+        Collections.sort(l, Collections.reverseOrder());
+        for (int i = 0; i < n; i++) a[i] = l.get(i);
     }
-}
-  
-  // sorting template of normal array []
-  static void templateSortArray(){
-    List<Integer> l=new ArrayList<>();
-    for(int i=0;i<n;i++) l.add(a[i]);
-    Collections.sort(l, Collections.reverseOrder());
-    for(int i=0;i<n;i++) a[i]=l.get(i);
-  }
-  
-  // Heaps algorithm -> to find all the permutations of an array
-  static void heapsAlgorithm(){
-    https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
-  }
-  
-  static long mod_mul(long a, long b) {a = a % mod; b = b % mod; return (((a * b) % mod) + mod) % mod;}
- 
-  static long mod_add(long a, long b) {a = a % mod; b = b % mod; return (((a + b) % mod) + mod) % mod;}
-  
-  // Shuffle and sort
-  static void sort(int[] A){
-      int n = A.length;
-      Random rnd = new Random();
-      for(int i=0; i<n; ++i){
-          int tmp = A[i];
-          int randomPos = i + rnd.nextInt(n-i);
-          A[i] = A[randomPos];
-          A[randomPos] = tmp;
-      }
-      Arrays.sort(A);
-   }
-  static void sort(long[] A){
-      int n = A.length;
-      Random rnd = new Random();
-      for(int i=0; i<n; ++i){
-          long tmp = A[i];
-          int randomPos = i + rnd.nextInt(n-i);
-          A[i] = A[randomPos];
-          A[randomPos] = tmp;
-      }
-      Arrays.sort(A);
-  }
-  
-  // counting sort 
-  static void countSort(int mx){
-    
-    int n=arr.length;
-    int output[]=new int[mx];
-    int count[] = new int[mx];
-    for (int i = 0; i < 2; ++i)
-        count[i] = 0;
 
-    for (int i = 0; i < n; ++i)
-        ++count[arr[i]];
-    
-    for (int i = 1; i <= mx; ++i)
-        count[i] += count[i - 1];
-    
-    for (int i = n - 1; i >= 0; i--) {
-        output[count[arr[i]] - 1] = arr[i];
-        --count[arr[i]];
+    // Heaps algorithm -> to find all the permutations of an array
+    static void heapsAlgorithm() {
+        https: //www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
     }
-    
-    for (int i = 0; i < n; ++i)
-        arr[i] = output[i];
-  }
-  
-  // Math 
-  // https://www.youtube.com/watch?v=8Fqv4ddMC3I
-  static void extendedGcd(long a, long b, long ar[]){
-    if(b==0){
-      ar[0]=1;
-      ar[1]=0;
-      ar[2]=a;
-      return;
+
+    static long mod_mul(long a, long b) {
+        a = a % mod;
+        b = b % mod;
+        return (((a * b) % mod) + mod) % mod;
     }
-    extendedGcd(b, a%b, ar);
-    long temp=ar[1];
-    ar[1]=(ar[0]- ar[1]*(a/b));
-    ar[0]=temp;
-    return;
-  }
-	
-  // Linear Diophontine
-  static void findLinearDiophontineSol(int a, int b, int c){
-	long ar[]=new long[3];
-	extendedGcd(a, b, ar);
-	int x0 = ar[0];
-	int y0 = ar[1];
-	int g = ar[2];
-	if(c%g != 0) return;
-	int x = x0 * c/g;
-	int y = y0 * c/g;
-	if (a < 0) x = -x;
+
+    static long mod_add(long a, long b) {
+        a = a % mod;
+        b = b % mod;
+        return (((a + b) % mod) + mod) % mod;
+    }
+
+    // Shuffle and sort
+    static void sort(int[] A) {
+        int n = A.length;
+        Random rnd = new Random();
+        for (int i = 0; i < n; ++i) {
+            int tmp = A[i];
+            int randomPos = i + rnd.nextInt(n - i);
+            A[i] = A[randomPos];
+            A[randomPos] = tmp;
+        }
+        Arrays.sort(A);
+    }
+    static void sort(long[] A) {
+        int n = A.length;
+        Random rnd = new Random();
+        for (int i = 0; i < n; ++i) {
+            long tmp = A[i];
+            int randomPos = i + rnd.nextInt(n - i);
+            A[i] = A[randomPos];
+            A[randomPos] = tmp;
+        }
+        Arrays.sort(A);
+    }
+
+    // counting sort 
+    static void countSort(int mx) {
+
+        int n = arr.length;
+        int output[] = new int[mx];
+        int count[] = new int[mx];
+        for (int i = 0; i < 2; ++i)
+            count[i] = 0;
+
+        for (int i = 0; i < n; ++i)
+            ++count[arr[i]];
+
+        for (int i = 1; i <= mx; ++i)
+            count[i] += count[i - 1];
+
+        for (int i = n - 1; i >= 0; i--) {
+            output[count[arr[i]] - 1] = arr[i];
+            --count[arr[i]];
+        }
+
+        for (int i = 0; i < n; ++i)
+            arr[i] = output[i];
+    }
+
+    // Math 
+    // https://www.youtube.com/watch?v=8Fqv4ddMC3I
+    static void extendedGcd(long a, long b, long ar[]) {
+        if (b == 0) {
+            ar[0] = 1;
+            ar[1] = 0;
+            ar[2] = a;
+            return;
+        }
+        extendedGcd(b, a % b, ar);
+        long temp = ar[1];
+        ar[1] = (ar[0] - ar[1] * (a / b));
+        ar[0] = temp;
+        return;
+    }
+
+    // Linear Diophontine
+    static void findLinearDiophontineSol(int a, int b, int c) {
+        long ar[] = new long[3];
+        extendedGcd(a, b, ar);
+        int x0 = ar[0];
+        int y0 = ar[1];
+        int g = ar[2];
+        if (c % g != 0) return;
+        int x = x0 * c / g;
+        int y = y0 * c / g;
+        if (a < 0) x = -x;
         if (b < 0) y = -y;
-  }
-  
- // Chinese Remainder Theorem
-  static void chineseRemainderTheorem(int num[], int rem[], int k){ 
-    int prod = 1;
-    for (int i = 0; i < k; i++)
-        prod *= num[i];
- 
-    int result = 0;
- 
-    for (int i = 0; i < k; i++) {
-        int pp = prod / num[i];
-	long ar[]=new long[3];
-	extendedGcd(pp, num[i], ar);
-        result += rem[i] * ar[0] * pp;
     }
- 
-    return result % prod;
-  }
-	
-  // non prime b;
-  static long invmod(long a, long b){
-    long ar[]=new long[3];
-    extendedGcd(a, b, ar);
-    return ar[0];
-  }
-  static long pow(long a, long b){
-    long res=1;
-    while(b>0){
-      if(b%2==1){
-        res = (res * a)%mod;
-        b--;
-      }else{
-        a = (a*a)%mod;
-        b=b>>1;
-      }
+
+    // Chinese Remainder Theorem
+    static void chineseRemainderTheorem(int num[], int rem[], int k) {
+        int prod = 1;
+        for (int i = 0; i < k; i++)
+            prod *= num[i];
+
+        int result = 0;
+
+        for (int i = 0; i < k; i++) {
+            int pp = prod / num[i];
+            long ar[] = new long[3];
+            extendedGcd(pp, num[i], ar);
+            result += rem[i] * ar[0] * pp;
+        }
+
+        return result % prod;
     }
-    return res;
-  }
-  static long combination(int a, int b){
-    long val1=fact[a];
-    long val2=ifact[a-b];
-    long val3=ifact[b];
-    return (((val1 * val2)%mod) * val3)%mod;
-  } 
-  static void cal(){
-    fact[0]=ifact[0]=1;
-    for(int i=1;i<sz;i++){
-      fact[i]=(i*fact[i-1])%mod;
+
+    // non prime b;
+    static long invmod(long a, long b) {
+        long ar[] = new long[3];
+        extendedGcd(a, b, ar);
+        return ar[0];
     }
-    ifact[sz-1]=pow(fact[sz-1], mod-2);
-    for(int i=sz-2;i>0;i--){
-      ifact[i]=((i+1)*ifact[i+1])%mod;
+    static long pow(long a, long b) {
+        long res = 1;
+        while (b > 0) {
+            if (b % 2 == 1) {
+                res = (res * a) % mod;
+                b--;
+            } else {
+                a = (a * a) % mod;
+                b = b >> 1;
+            }
+        }
+        return res;
     }
-  }
-  
-  // Binary search on float values
-  /*
-  If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
-  100 iterations might hurt you if TL is tight and 30 iterations would be enough. Maybe you'll get TLE this way. 
-  That being said, a constant number of iterations is fine in competitive programming. You're avoiding one more 'if' where you could make a mistake.
-  */
+    static long combination(int a, int b) {
+        long val1 = fact[a];
+        long val2 = ifact[a - b];
+        long val3 = ifact[b];
+        return (((val1 * val2) % mod) * val3) % mod;
+    }
+    static void cal() {
+        fact[0] = ifact[0] = 1;
+        for (int i = 1; i < sz; i++) {
+            fact[i] = (i * fact[i - 1]) % mod;
+        }
+        ifact[sz - 1] = pow(fact[sz - 1], mod - 2);
+        for (int i = sz - 2; i > 0; i--) {
+            ifact[i] = ((i + 1) * ifact[i + 1]) % mod;
+        }
+    }
+
+    // Binary search on float values
+    /*
+    If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
+    100 iterations might hurt you if TL is tight and 30 iterations would be enough. Maybe you'll get TLE this way. 
+    That being said, a constant number of iterations is fine in competitive programming. You're avoiding one more 'if' where you could make a mistake.
+    */
     // Type 1:
-    float l=0.00000000,r=100000.00000000;
+    float l = 0.00000000, r = 100000.00000000;
     cout << l << " " << r;
-    while((r-l)>0.0000000001){
-        float mid = (float)((l+r)/2);
+    while ((r - l) > 0.0000000001) {
+        float mid = (float)((l + r) / 2);
         cout << mid << endl;
-        if(mid>target) r=mid;
-        else l=mid;
-    }cout << l;
+        if (mid > target) r = mid;
+        else l = mid;
+    }
+    cout << l;
     // Type 2:
-	int iterations = 0;
-	while(iterations < 300)
-	{
-	  // your binary search logic
-	  iterations++;
-	}
-  // DSU
-  static int find(int i){
-    if(parent[i]!=i)
-      parent[i]=find(parent[i]);
-    return parent[i];
-  }
-  static boolean union(int x, int y){
-    int xr=find(x);
-    int yr=find(y);
-    if(xr==yr) return false;
-    if(rank[xr]<rank[yr]){
-      parent[xr]=yr;
-    }else if(rank[yr]<rank[xr]){
-      parent[yr]=xr;
-    }else{
-      parent[xr]=yr;
-      rank[yr]++;
+    int iterations = 0;
+    while (iterations < 300) {
+        // your binary search logic
+        iterations++;
     }
-    return true;
-  }
-  
-  // BIT
-  static long query(int idx){
-    long sum=0;
-    idx++;
-    while(idx>0){
-      sum=(sum+bit[idx])%mod;
-      idx-=(idx&(-idx));
+    // DSU
+    static int find(int i) {
+        if (parent[i] != i)
+            parent[i] = find(parent[i]);
+        return parent[i];
     }
-    return sum;
-  }
-  static void update(int idx, long v){
-    idx++;
-    while(idx<=n){
-      bit[idx]=(bit[idx]+v+mod)%mod;
-      idx+=(idx&(-idx));
+    static boolean union(int x, int y) {
+        int xr = find(x);
+        int yr = find(y);
+        if (xr == yr) return false;
+        if (rank[xr] < rank[yr]) {
+            parent[xr] = yr;
+        } else if (rank[yr] < rank[xr]) {
+            parent[yr] = xr;
+        } else {
+            parent[xr] = yr;
+            rank[yr]++;
+        }
+        return true;
     }
-  }
-  static void update(int l, int r, long v){
-    update(l, v);
-    if((r+1)<=n) update(r+1, -v);
-  }
-  
-  // print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
-  static int cyclenumber;
-  static void dfs_cycle(int u, int p, int[] color, int[] mark, int[] par)
-  {
-      if(color[u] == 1)
-      {
-	  cyclenumber++;
-	  int cur = p;
-	  cycles[cyclenumber].add(cur);
-	  while(cur != u)
-	  {
-	      cur = par[cur];
-	      cycles[cyclenumber].add(cur);
-	  }
-	  return;
-      }
-      par[u] = p;
-      color[u] = 1;
-      for(int v: graph[u])
-      {
-	  if(v == par[u]) continue;
-	  dfs_cycle(v, u, color, mark, par);
-      }
-      color[u] = 2;
-  }
-  
+
+    // BIT
+    static long query(int idx) {
+        long sum = 0;
+        idx++;
+        while (idx > 0) {
+            sum = (sum + bit[idx]) % mod;
+            idx -= (idx & (-idx));
+        }
+        return sum;
+    }
+    static void update(int idx, long v) {
+        idx++;
+        while (idx <= n) {
+            bit[idx] = (bit[idx] + v + mod) % mod;
+            idx += (idx & (-idx));
+        }
+    }
+    static void update(int l, int r, long v) {
+        update(l, v);
+        if ((r + 1) <= n) update(r + 1, -v);
+    }
+
+    // print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
+    static int cyclenumber;
+    static void dfs_cycle(int u, int p, int[] color, int[] mark, int[] par) {
+        if (color[u] == 1) {
+            cyclenumber++;
+            int cur = p;
+            cycles[cyclenumber].add(cur);
+            while (cur != u) {
+                cur = par[cur];
+                cycles[cyclenumber].add(cur);
+            }
+            return;
+        }
+        par[u] = p;
+        color[u] = 1;
+        for (int v: graph[u]) {
+            if (v == par[u]) continue;
+            dfs_cycle(v, u, color, mark, par);
+        }
+        color[u] = 2;
+    }
+
     // detect cycle in an undirected graph using color
-    static int v,e;
+    static int v, e;
     static boolean flag;
-    static ArrayList<ArrayList<Integer>> edg=new ArrayList<>();
-    static char color[]; 
-    static void dfs(int u,int p)
-    {
-        color[u]='g';
-        ArrayList<Integer> list=edg.get(u);
-        for(int ver:list)
-        {
-            char c=color[ver];
-            if(c=='b'||ver==p)
-             continue;
-            if(c=='g')
-             flag=true;
-            if(c=='w')
-             dfs(ver,u);
+    static ArrayList < ArrayList < Integer >> edg = new ArrayList < > ();
+    static char color[];
+    static void dfs(int u, int p) {
+        color[u] = 'g';
+        ArrayList < Integer > list = edg.get(u);
+        for (int ver: list) {
+            char c = color[ver];
+            if (c == 'b' || ver == p)
+                continue;
+            if (c == 'g')
+                flag = true;
+            if (c == 'w')
+                dfs(ver, u);
         }
-        color[u]='b';
+        color[u] = 'b';
     }
-	
-  // TOPO - BFS
-  static void topSort(){
-    // l is the adjacency list
-    vis=new boolean[n+1];
-    topo=new ArrayList<>();
-    Queue<Integer> q=new LinkedList<>();
-    for(int i=1;i<=n;i++) if(in[i]==0) q.add(i);
-    while(!q.isEmpty()){
-      int u=q.remove();
-      topo.add(u);
-      vis[u]=true;
-      for(int v:l.get(u)){
-        if(--ind[v]==0){
-          q.add(v);
+
+    // TOPO - BFS
+    static void topSort() {
+        // l is the adjacency list
+        vis = new boolean[n + 1];
+        topo = new ArrayList < > ();
+        Queue < Integer > q = new LinkedList < > ();
+        for (int i = 1; i <= n; i++)
+            if ( in [i] == 0) q.add(i);
+        while (!q.isEmpty()) {
+            int u = q.remove();
+            topo.add(u);
+            vis[u] = true;
+            for (int v: l.get(u)) {
+                if (--ind[v] == 0) {
+                    q.add(v);
+                }
+            }
         }
-      }
     }
-  }
-  
-  // TOPO-DFS
-  void topologicalSortUtil(int v, boolean visited[],
-                             Stack<Integer> stack)
-    {
-        // Mark the current node as visited.
-        visited[v] = true;
-        Integer i;
- 
-        // Recur for all the vertices adjacent
-        // to thisvertex
-        Iterator<Integer> it = adj.get(v).iterator();
-        while (it.hasNext()) {`
+
+    // TOPO-DFS
+    void topologicalSortUtil(int v, boolean visited[],
+            Stack < Integer > stack) {
+            // Mark the current node as visited.
+            visited[v] = true;
+            Integer i;
+
+            // Recur for all the vertices adjacent
+            // to thisvertex
+            Iterator < Integer > it = adj.get(v).iterator();
+            while (it.hasNext()) {
+                `
             i = it.next();
             if (!visited[i])
                 topologicalSortUtil(i, visited, stack);
