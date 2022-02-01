@@ -114,6 +114,11 @@ https://en.wikipedia.org/wiki/Gray_code
 *
 Math:
 ----
+
+https://codeforces.com/contest/735/problem/D
+Goldbach's conjecture: is one of the oldest and best-known unsolved problems in number theory and all of mathematics. 
+It states that every even whole number greater than 2 is the sum of two prime numbers.
+
 Fibonacci: https://en.wikipedia.org/wiki/Fibonacci_number
 Interesting observations on Fibonocci : https://www.youtube.com/watch?v=SjSHVDfXHQ4
 Problems based on Fib:
@@ -272,6 +277,8 @@ https://codeforces.com/contest/1291/problem/C
 https://codeforces.com/contest/1198/problem/B
 https://codeforces.com/contest/1282/problem/B2
 https://codeforces.com/contest/165/problem/C
+https://codeforces.com/contest/913/problem/C
+https://codeforces.com/contest/1036/problem/D
 
 Queue 2
 -------
