@@ -195,11 +195,6 @@ cur
 
 Queue 1
 -------
-https://codeforces.com/contest/1210/problem/B
-https://codeforces.com/problemset/problem/1295/C
-https://codeforces.com/problemset/problem/1257/D
-https://leetcode.com/problems/132-pattern/
-https://codeforces.com/contest/281/problem/D
 https://codeforces.com/contest/797/problem/C
 https://codeforces.com/contest/1327/problem/E 
 https://codeforces.com/contest/166/problem/E 
@@ -279,9 +274,17 @@ https://codeforces.com/contest/1282/problem/B2
 https://codeforces.com/contest/165/problem/C
 https://codeforces.com/contest/913/problem/C
 https://codeforces.com/contest/1036/problem/D
+https://codeforces.com/problemset/problem/1257/D
+https://codeforces.com/problemset/problem/1295/C
+https://codeforces.com/contest/1542/problem/B
+https://codeforces.com/contest/1542/problem/C
 
 Queue 2
 -------
+https://codeforces.com/contest/1210/problem/B
+https://leetcode.com/problems/132-pattern/
+https://codeforces.com/contest/281/problem/D
+https://codeforces.com/contest/797/problem/C
 
 */
 import java.util.*;
