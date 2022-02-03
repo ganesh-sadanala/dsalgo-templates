@@ -195,8 +195,6 @@ cur
 
 Queue 1
 -------
-https://codeforces.com/contest/797/problem/C
-https://codeforces.com/contest/1327/problem/E 
 https://codeforces.com/contest/166/problem/E 
 https://codeforces.com/contest/883/problem/F
 https://codeforces.com/contest/182/problem/D
@@ -278,6 +276,7 @@ https://codeforces.com/problemset/problem/1257/D
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/contest/1542/problem/B
 https://codeforces.com/contest/1542/problem/C
+https://codeforces.com/contest/1547/problem/D
 
 Queue 2
 -------
