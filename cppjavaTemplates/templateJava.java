@@ -195,7 +195,6 @@ cur
 
 Queue 1
 -------
-https://codeforces.com/contest/166/problem/E 
 https://codeforces.com/contest/883/problem/F
 https://codeforces.com/contest/182/problem/D
 https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/
@@ -289,6 +288,7 @@ https://codeforces.com/contest/1210/problem/B
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
 https://codeforces.com/contest/797/problem/C
+https://codeforces.com/contest/166/problem/E
 
 */
 import java.util.*;
