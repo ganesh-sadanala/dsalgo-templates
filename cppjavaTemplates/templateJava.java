@@ -195,8 +195,6 @@ https://codeforces.com/problemset/problem/1633/D
 
 Queue 1
 -------
-https://leetcode.com/contest/weekly-contest-275/problems/count-words-obtained-after-adding-a-letter/
-https://atcoder.jp/contests/abc234/tasks/abc234_e
 https://codeforces.com/contest/1108/problem/D
 https://codeforces.com/contest/1154/problem/D
 https://codeforces.com/contest/1203/problem/E
@@ -279,6 +277,10 @@ https://codeforces.com/contest/1526/problem/C2
 https://codeforces.com/contest/1535/problem/C
 https://codeforces.com/contest/1537/problem/D
 https://codeforces.com/contest/1540/problem/A
+https://codeforces.com/contest/1539/problem/D
+https://codeforces.com/contest/1528/problem/A
+https://codeforces.com/contest/1536/problem/C
+https://codeforces.com/problemset/problem/1632/C
 
 Queue 2
 -------
