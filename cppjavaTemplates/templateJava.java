@@ -195,7 +195,6 @@ https://codeforces.com/problemset/problem/1633/D
 
 Queue 1
 -------
-https://codeforces.com/contest/1108/problem/D
 https://codeforces.com/contest/1154/problem/D
 https://codeforces.com/contest/1203/problem/E
 https://codeforces.com/contest/1131/problem/C -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
@@ -281,6 +280,7 @@ https://codeforces.com/contest/1539/problem/D
 https://codeforces.com/contest/1528/problem/A
 https://codeforces.com/contest/1536/problem/C
 https://codeforces.com/problemset/problem/1632/C
+https://codeforces.com/contest/1530/problem/D
 
 Queue 2
 -------
