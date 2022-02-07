@@ -281,6 +281,7 @@ https://codeforces.com/contest/1536/problem/C
 https://codeforces.com/problemset/problem/1632/C
 https://codeforces.com/contest/1530/problem/D
 https://codeforces.com/contest/1514/problem/C
+https://codeforces.com/contest/1503/problem/A
 
 Queue 2
 -------
@@ -305,6 +306,14 @@ class Codechef {
 
     }
 
+    // Number of pairs in an array having bitwise AND as zero : https://codeforces.com/blog/entry/20174?#comment-249715
+    // https://www.geeksforgeeks.org/number-ordered-pairs-ai-aj-0/ 
+    // https://discuss.codechef.com/t/count-all-ordered-pairs-with-bitwise-and-equals-to-zero/36081/4
+    // SOS DP
+    static void countPairs(){
+    	
+    }
+	    
     // string hashing
 
 
