@@ -192,12 +192,10 @@ In a Hamiltonian path you may not pass through all edges.
 cur
 ---
 https://codeforces.com/problemset/problem/1633/D
-
+https://codeforces.com/problemset/problem/1630/B
 
 Queue 1
 -------
-https://codeforces.com/contest/1154/problem/D
-https://codeforces.com/contest/1203/problem/E
 https://codeforces.com/contest/1131/problem/C -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
 https://codeforces.com/contest/1343/problem/D
 https://codeforces.com/contest/1102/problem/C 
