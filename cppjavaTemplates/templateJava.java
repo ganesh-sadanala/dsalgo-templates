@@ -280,6 +280,8 @@ https://codeforces.com/problemset/problem/1632/C
 https://codeforces.com/contest/1530/problem/D
 https://codeforces.com/contest/1514/problem/C
 https://codeforces.com/contest/1503/problem/A
+https://codeforces.com/contest/1498/problem/C
+https://codeforces.com/contest/1498/problem/C -> See the comment section to learn more
 
 
 Queue 2
