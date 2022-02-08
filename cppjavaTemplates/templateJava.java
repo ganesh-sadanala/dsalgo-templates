@@ -196,8 +196,6 @@ https://codeforces.com/problemset/problem/1630/B
 
 Queue 1
 -------
-https://codeforces.com/contest/1131/problem/C -> exp: https://codeforces.com/blog/entry/65487?#comment-494720 
-https://codeforces.com/contest/1343/problem/D
 https://codeforces.com/contest/1102/problem/C 
 https://codeforces.com/contest/958/problem/F1
 https://codeforces.com/contest/1144/problem/F
@@ -283,6 +281,7 @@ https://codeforces.com/contest/1530/problem/D
 https://codeforces.com/contest/1514/problem/C
 https://codeforces.com/contest/1503/problem/A
 
+
 Queue 2
 -------
 https://codeforces.com/contest/1210/problem/B
@@ -290,6 +289,8 @@ https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
 https://codeforces.com/contest/797/problem/C
 https://codeforces.com/contest/166/problem/E
+https://codeforces.com/blog/entry/65487?#comment-494720
+https://codeforces.com/contest/1343/problem/D
 
 */
 import java.util.*;
@@ -306,10 +307,17 @@ class Codechef {
 
     }
 
+    // submask generation
+    // If you want 0 as a submask
+    for(int submask = mask; ; submask = (submask - 1) & mask) {
+	// do something
+	if(submask == 0) break;
+    }
+	
     // Number of pairs in an array having bitwise AND as zero : https://codeforces.com/blog/entry/20174?#comment-249715
     // https://www.geeksforgeeks.org/number-ordered-pairs-ai-aj-0/ 
     // https://discuss.codechef.com/t/count-all-ordered-pairs-with-bitwise-and-equals-to-zero/36081/4
-    // SOS DP
+    // SOS DP https://codeforces.com/blog/entry/45223
     static void countPairs(){
     	
     }
