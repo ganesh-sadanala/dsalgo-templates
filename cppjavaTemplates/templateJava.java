@@ -1041,7 +1041,31 @@ class Codechef {
       int mid=ss+(se-ss)/2;
       return Math.min(getMin(ss, mid, 2*si+1, qs, qe), getMin(mid+1, se, 2*si+2, qs, qe));
   }
-  
+	
+  static void updateMax(int ss, int se, int si, int idx, int val){
+	if(ss==se){
+		a[idx]=val;
+		smx[si]=val;
+	}else{
+		int mid=ss+(se-ss)/2;
+		if(idx>=ss && mid>=idx) updateMax(ss, mid, 2*si+1, idx, val);
+		else updateMax(mid+1, se, 2*si+2, idx, val);
+		smx[si]=Math.max(smx[2*si+1], smx[2*si+2]);
+	}
+  }
+	
+  static void updateMin(int ss, int se, int si, int idx, int val){
+	if(ss==se){
+		a[idx]=val;
+		smn[si]=val;
+	}else{
+		int mid=ss+(se-ss)/2;
+		if(idx>=ss && mid>=idx) updateMin(ss, mid, 2*si+1, idx, val);
+		else updateMin(mid+1, se, 2*si+2, idx, val);
+		smn[si]=Math.max(smn[2*si+1], smn[2*si+2]);
+	}
+  }
+	  
   // segment min and max
   static void build(){
       int sz=2 * (int)Math.pow(2, (int)Math.ceil(Math.log(n)/Math.log(2))) - 1;
