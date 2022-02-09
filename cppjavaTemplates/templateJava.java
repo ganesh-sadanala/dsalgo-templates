@@ -306,6 +306,27 @@ class Codechef {
     static void solve() {
 
     }
+	
+    // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
+    public int longestPalindromicSubsequenceLinearSpace(char []s){
+        int n=s.length;
+        int a[]=new int[n];
+        int pa[]=new int[n];
+        
+        for(int i=n-1;i>=0;i--){
+            for(int j=i;j<n;j++){
+                if(i==j) a[j]=1;
+                else if(s[i]==s[j]){
+                    // l[i+1][j-1]+2 => prev iter
+                    a[j]=pa[j-1]+2;
+                }else{
+                    a[j]=Math.max(a[j-1], a[j]);
+                }
+            }
+            for(int j=i;j<n;j++) pa[j]=a[j];
+        }
+        return a[n-1];
+    }
 
     // submask generation
     // If you want 0 as a submask
