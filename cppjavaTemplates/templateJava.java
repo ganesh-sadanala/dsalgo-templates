@@ -193,6 +193,7 @@ cur
 ---
 https://codeforces.com/problemset/problem/1633/D
 https://codeforces.com/problemset/problem/1630/B
+https://codeforces.com/problemset/problem/1628/B
 
 Queue 1
 -------
