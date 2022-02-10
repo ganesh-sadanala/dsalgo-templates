@@ -4,6 +4,7 @@ God of:
 
 
 */
+// Not a Cycle of odd length or Bipartite: https://www.geeksforgeeks.org/check-graphs-cycle-odd-length/
 // Learning -> Solving -> Contesting -> Upsolving -> Learning
 // A Holiday an Algo, New Stuff
 // cp book -> https://github.com/luisfcofv/competitive-programming-book
@@ -194,6 +195,7 @@ cur
 https://codeforces.com/problemset/problem/1633/D
 https://codeforces.com/problemset/problem/1630/B
 https://codeforces.com/problemset/problem/1628/B
+https://codeforces.com/problemset/problem/1627/D
 
 Queue 1
 -------
@@ -307,6 +309,9 @@ class Codechef {
     static void solve() {
 
     }
+	
+    // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
+    
 	
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
