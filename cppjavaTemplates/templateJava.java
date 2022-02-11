@@ -196,12 +196,10 @@ https://codeforces.com/problemset/problem/1633/D
 https://codeforces.com/problemset/problem/1630/B
 https://codeforces.com/problemset/problem/1628/B
 https://codeforces.com/problemset/problem/1627/D
+https://codeforces.com/problemset/problem/1627/B
 
 Queue 1
 -------
-https://codeforces.com/contest/1144/problem/F
-https://codeforces.com/contest/363/problem/C
-https://codeforces.com/contest/401/problem/C
 https://codeforces.com/contest/1239/problem/A
 https://codeforces.com/contest/492/problem/C
 https://codeforces.com/contest/1343/problem/E
@@ -283,7 +281,7 @@ https://codeforces.com/contest/1514/problem/C
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1498/problem/C
 https://codeforces.com/contest/1498/problem/C -> See the comment section to learn more
-
+https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
 
 Queue 2
 -------
@@ -294,6 +292,7 @@ https://codeforces.com/contest/797/problem/C
 https://codeforces.com/contest/166/problem/E
 https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/contest/1343/problem/D
+https://codeforces.com/contest/401/problem/C
 
 */
 import java.util.*;
@@ -349,8 +348,26 @@ class Codechef {
     	
     }
 	    
-    // string hashing
-
+    // string hashing - Polynomial Rolling Hash
+    // https://ideone.com/0sgZWx
+    // https://www.youtube.com/watch?v=X_YgMWvCRS8&list=PL2q4fbVm1Ik6ThrYKCzgEpmaS_XWDGHjx&index=6
+     public void rollHash(char []s){
+        // prefix sum
+        int n=s.length;
+        rh=new long[n];
+        inv=new long[n];
+        
+        // prime>=size of character set
+        long p=2;
+        long pw=1;
+        rh[n-1]=(s[n-1]-'0')%mod;
+        inv[n-1]=1;
+        for(int i=n-2;i>=0;i--){
+            pw=(pw * p)%mod;
+            rh[i]=mod_add(rh[i+1], (s[i]-'0') * pw);
+            inv[i]=pow(pw, mod-2);
+        }
+    }
 
     // pair datastructure 
     // equals and hashCode should be overriden when you want to 
