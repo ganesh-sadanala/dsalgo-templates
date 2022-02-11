@@ -197,6 +197,7 @@ https://codeforces.com/problemset/problem/1630/B
 https://codeforces.com/problemset/problem/1628/B
 https://codeforces.com/problemset/problem/1627/D
 https://codeforces.com/problemset/problem/1627/B
+https://codeforces.com/problemset/problem/1626/C
 
 Queue 1
 -------
