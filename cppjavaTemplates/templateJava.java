@@ -4,6 +4,7 @@ God of:
 
 
 */
+// Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
 // Not a Cycle of odd length or Bipartite: https://www.geeksforgeeks.org/check-graphs-cycle-odd-length/
 // Learning -> Solving -> Contesting -> Upsolving -> Learning
 // A Holiday an Algo, New Stuff
@@ -280,6 +281,7 @@ https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1498/problem/C
 https://codeforces.com/contest/1498/problem/C -> See the comment section to learn more
 https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
+https://codeforces.com/contest/1551/problem/D1
 
 Queue 2
 -------
