@@ -202,7 +202,6 @@ https://codeforces.com/problemset/problem/1626/C
 
 Queue 1
 -------
-https://codeforces.com/contest/778/problem/A
 https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1335/problem/D
 https://codeforces.com/contest/1354/problem/C2
