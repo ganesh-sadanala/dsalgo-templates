@@ -202,7 +202,6 @@ https://codeforces.com/problemset/problem/1626/C
 
 Queue 1
 -------
-https://codeforces.com/contest/1216/problem/E1
 https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
 https://codeforces.com/contest/1365/problem/C
 https://codeforces.com/contest/1365/problem/E
@@ -272,7 +271,6 @@ https://codeforces.com/contest/1528/problem/A
 https://codeforces.com/contest/1536/problem/C
 https://codeforces.com/problemset/problem/1632/C
 https://codeforces.com/contest/1530/problem/D
-https://codeforces.com/contest/1514/problem/C
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1498/problem/C
 https://codeforces.com/contest/1498/problem/C -> See the comment section to learn more
@@ -298,6 +296,7 @@ https://codeforces.com/contest/1343/problem/E
 https://codeforces.com/contest/1499/problem/C
 https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1354/problem/C2
+https://codeforces.com/contest/1216/problem/E1
 
 */
 import java.util.*;
