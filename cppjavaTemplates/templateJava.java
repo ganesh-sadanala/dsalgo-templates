@@ -278,6 +278,8 @@ https://codeforces.com/contest/1498/problem/C
 https://codeforces.com/contest/1498/problem/C -> See the comment section to learn more
 https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/
 https://codeforces.com/contest/1551/problem/D1
+https://codeforces.com/contest/466/problem/C
+https://codeforces.com/contest/1338/problem/A
 
 Queue 2
 -------
