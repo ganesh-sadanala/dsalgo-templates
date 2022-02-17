@@ -280,6 +280,8 @@ https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-siz
 https://codeforces.com/contest/1551/problem/D1
 https://codeforces.com/contest/466/problem/C
 https://codeforces.com/contest/1338/problem/A
+https://codeforces.com/contest/474/problem/D
+https://codeforces.com/contest/1538/problem/F
 
 Queue 2
 -------
