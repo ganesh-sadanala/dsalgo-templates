@@ -277,6 +277,7 @@ https://codeforces.com/contest/466/problem/C
 https://codeforces.com/contest/1338/problem/A
 https://codeforces.com/contest/474/problem/D
 https://codeforces.com/contest/1538/problem/F
+https://codeforces.com/contest/1516/problem/C
 
 Queue 2
 -------
