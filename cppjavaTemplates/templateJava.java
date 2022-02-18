@@ -202,9 +202,6 @@ https://codeforces.com/problemset/problem/1626/C
 
 Queue 1
 -------
-https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
-https://codeforces.com/contest/1365/problem/C
-https://codeforces.com/contest/1365/problem/E
 https://www.codechef.com/problems/GRAYSC
 https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
 https://codeforces.com/contest/1364/problem/B
@@ -297,6 +294,8 @@ https://codeforces.com/contest/1499/problem/C
 https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/1216/problem/E1
+https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
+https://codeforces.com/contest/1528/problem/B
 
 */
 import java.util.*;
