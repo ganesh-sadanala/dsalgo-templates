@@ -199,15 +199,11 @@ https://codeforces.com/problemset/problem/1628/B
 https://codeforces.com/problemset/problem/1627/D
 https://codeforces.com/problemset/problem/1627/B
 https://codeforces.com/problemset/problem/1626/C
+https://codeforces.com/problemset/problem/1638/D
 
 Queue 1
 -------
-https://www.codechef.com/problems/GRAYSC
-https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
-https://codeforces.com/contest/1364/problem/B
-https://codeforces.com/contest/1364/problem/C
 https://codeforces.com/contest/1280/problem/A
-https://codeforces.com/contest/1132/problem/C
 https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
 https://codeforces.com/contest/1364/problem/B
 https://codeforces.com/contest/1364/problem/C
@@ -253,6 +249,7 @@ https://codeforces.com/contest/1282/problem/B2
 https://codeforces.com/contest/165/problem/C
 https://codeforces.com/contest/913/problem/C
 https://codeforces.com/contest/1036/problem/D
+
 https://codeforces.com/problemset/problem/1257/D
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/contest/1542/problem/B
@@ -297,6 +294,9 @@ https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/1216/problem/E1
 https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
 https://codeforces.com/contest/1528/problem/B
+https://www.codechef.com/problems/GRAYSC
+https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
+https://codeforces.com/contest/1132/problem/C
 
 */
 import java.util.*;
@@ -315,7 +315,7 @@ class Codechef {
 	
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
-	
+
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
         int n=s.length;
