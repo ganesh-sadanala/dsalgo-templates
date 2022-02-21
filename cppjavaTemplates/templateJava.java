@@ -189,6 +189,10 @@ A Hamiltonian path is a path that passes through every vertex exactly once (NOT 
 In an Euler path you might pass through a vertex more than once.
 In a Hamiltonian path you may not pass through all edges.
 
+Let us denote by 𝑑(𝑛) the sum of all divisors of the number 𝑛, i.e. 𝑑(𝑛)=∑𝑘 such that k is a divisor of n.
+Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=1.
+
+
 **/
 /* Round Robin 
 cur
