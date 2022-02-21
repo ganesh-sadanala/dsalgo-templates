@@ -4,6 +4,7 @@ God of:
 
 
 */
+// https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
 // Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
 // Not a Cycle of odd length or Bipartite: https://www.geeksforgeeks.org/check-graphs-cycle-odd-length/
 // Learning -> Solving -> Contesting -> Upsolving -> Learning
@@ -279,6 +280,9 @@ https://codeforces.com/contest/1338/problem/A
 https://codeforces.com/contest/474/problem/D
 https://codeforces.com/contest/1538/problem/F
 https://codeforces.com/contest/1516/problem/C
+https://codeforces.com/contest/1555/problem/D
+https://codeforces.com/contest/1497/problem/E1
+https://codeforces.com/contest/1491/problem/C
 
 Queue 2
 -------
