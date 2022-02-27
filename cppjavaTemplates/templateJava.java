@@ -208,12 +208,6 @@ https://codeforces.com/problemset/problem/1638/D
 
 Queue 1
 -------
-https://codeforces.com/contest/1364/problem/B
-https://codeforces.com/contest/1364/problem/C
-https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=true -> GTC
-https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem?isFullScreen=true -> GTC
-https://codeforces.com/contest/274/problem/A
-https://codeforces.com/contest/455/problem/A
 https://codeforces.com/contest/468/problem/A
 https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751
@@ -285,6 +279,12 @@ https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1552/problem/D
 https://codeforces.com/contest/1487/problem/C
 https://codeforces.com/contest/1485/problem/C
+https://codeforces.com/contest/1474/problem/C
+https://codeforces.com/contest/1473/problem/D
+https://codeforces.com/contest/1469/problem/D
+https://codeforces.com/contest/1468/problem/F
+https://codeforces.com/contest/1557/problem/C
+https://codeforces.com/contest/868/problem/C
 
 Queue 2
 -------
@@ -308,6 +308,10 @@ https://www.codechef.com/problems/GRAYSC
 https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
 https://codeforces.com/contest/1132/problem/C
 https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
+https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=false
+https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
+https://codeforces.com/contest/274/problem/A
+https://codeforces.com/contest/455/problem/A
 
 */
 import java.util.*;
