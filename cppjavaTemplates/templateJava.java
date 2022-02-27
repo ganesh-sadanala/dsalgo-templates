@@ -4,6 +4,7 @@ God of:
 
 
 */
+// online tools for cp - https://codeforces.com/blog/entry/82884
 // https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
 // Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
 // Not a Cycle of odd length or Bipartite: https://www.geeksforgeeks.org/check-graphs-cycle-odd-length/
@@ -198,13 +199,7 @@ Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=
 /* Round Robin 
 cur
 ---
-https://codeforces.com/problemset/problem/1633/D
-https://codeforces.com/problemset/problem/1630/B
-https://codeforces.com/problemset/problem/1628/B
-https://codeforces.com/problemset/problem/1627/D
-https://codeforces.com/problemset/problem/1627/B
-https://codeforces.com/problemset/problem/1626/C
-https://codeforces.com/problemset/problem/1638/D
+CF unsolved
 
 Queue 1
 -------
@@ -285,6 +280,7 @@ https://codeforces.com/contest/1469/problem/D
 https://codeforces.com/contest/1468/problem/F
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/868/problem/C
+https://codeforces.com/problemset/problem/1637/D
 
 Queue 2
 -------
@@ -357,6 +353,27 @@ class Codechef {
     for(int submask = mask; ; submask = (submask - 1) & mask) {
 	// do something
 	if(submask == 0) break;
+    }
+    
+    // generating all possible sums by taking elements
+    // in 0/1 fashion from 2 array a and b
+    public void generateSum01Dp(){
+	dp[0][0]=1;
+    	for(int i=1; i<=n; i++)
+        {
+            for(int j=0; j<=10000; j++)
+            {
+                if(dp[i-1][j] == 0)continue;
+                if(j + a[i]<=10000)
+                {
+                    dp[i][j + a[i]] = 1;
+                }
+                if(j + b[i]<=10000)
+                {
+                    dp[i][j + b[i]] = 1;
+                }                
+            }
+        }
     }
 	
     // Number of pairs in an array having bitwise AND as zero : https://codeforces.com/blog/entry/20174?#comment-249715
