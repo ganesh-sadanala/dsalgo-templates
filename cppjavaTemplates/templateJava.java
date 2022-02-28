@@ -194,16 +194,9 @@ In a Hamiltonian path you may not pass through all edges.
 Let us denote by 𝑑(𝑛) the sum of all divisors of the number 𝑛, i.e. 𝑑(𝑛)=∑𝑘 such that k is a divisor of n.
 Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=1.
 
-
-**/
-/* Round Robin 
-cur
----
-CF unsolved
-
-Queue 1
--------
-https://codeforces.com/contest/468/problem/A
+**//* Round Robin 
+cur -> CF unsolved
+Queue 1 -----------------
 https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751
 https://codeforces.com/contest/1368/problem/D
@@ -241,7 +234,7 @@ https://codeforces.com/contest/1282/problem/B2
 https://codeforces.com/contest/165/problem/C
 https://codeforces.com/contest/913/problem/C
 https://codeforces.com/contest/1036/problem/D
-
+-------
 https://codeforces.com/problemset/problem/1257/D
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/contest/1542/problem/B
@@ -281,9 +274,7 @@ https://codeforces.com/contest/1468/problem/F
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/868/problem/C
 https://codeforces.com/problemset/problem/1637/D
-
-Queue 2
--------
+Queue 2----------------------------------
 https://codeforces.com/contest/1210/problem/B
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
