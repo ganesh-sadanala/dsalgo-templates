@@ -248,7 +248,6 @@ Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=
 **//* Round Robin 
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751
 https://codeforces.com/contest/1368/problem/D
 https://codeforces.com/contest/891/problem/A
