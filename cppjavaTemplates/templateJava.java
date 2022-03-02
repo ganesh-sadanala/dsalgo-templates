@@ -325,6 +325,10 @@ https://codeforces.com/problemset/problem/1637/D
 https://codeforces.com/contest/1494/problem/B
 https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/961/problem/C
+https://codeforces.com/contest/1395/problem/C
+https://codeforces.com/contest/812/problem/B
+https://codeforces.com/contest/244/problem/B
+https://codeforces.com/contest/243/problem/A
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -369,6 +373,29 @@ class Codechef {
 	
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
+	
+    // Number of distinct values of bitwise OR of all subarrays
+    // i;e; distinct OR values for all 1<=l<=r<=n 
+    static int distinctOROfAllSubarrays(){
+    int pre[]=new int[20];
+    int pos[]=new int[20];
+    boolean in[]=new boolean[1<<20];
+    int cnt=0;
+    for(int i=1;i<=n;i++){
+      for(int j=19;j>=0;j--) if((a[i]&(1<<j))>0) pre[j]=i;
+      int val=a[i];
+      if(!in[val]) cnt++;
+      in[val]=true;
+      for(int j=0;j<=19;j++) pos[j]=pre[j];
+      Arrays.sort(pos);
+      for(int j=19;j>=0;j--){
+        val|=a[pos[j]];
+        if(!in[val]) cnt++;
+        in[val]=true;
+      }
+    }
+    return cnt;
+  }
 
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
