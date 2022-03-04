@@ -248,10 +248,6 @@ Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=
 **//* Round Robin 
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/891/problem/A
-https://codeforces.com/contest/1010/problem/A -> Non integral value binary search
-https://codeforces.com/contest/1179/problem/A
-https://codeforces.com/contest/1242/problem/A
 https://codeforces.com/contest/1373/problem/D
 https://codeforces.com/contest/1299/problem/A
 https://codeforces.com/contest/1264/problem/A
@@ -355,6 +351,7 @@ https://codeforces.com/contest/274/problem/A
 https://codeforces.com/contest/455/problem/A
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
 https://codeforces.com/contest/1368/problem/D
+https://codeforces.com/contest/891/problem/A
 
 */
 import java.util.*;
