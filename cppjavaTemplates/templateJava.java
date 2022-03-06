@@ -194,7 +194,7 @@ In a Hamiltonian path you may not pass through all edges.
 Let us denote by 𝑑(𝑛) the sum of all divisors of the number 𝑛, i.e. 𝑑(𝑛)=∑𝑘 such that k is a divisor of n.
 Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=1.
 
-
+a+b=(a^b)+2*(a&b)
 
 
 
@@ -324,6 +324,8 @@ https://codeforces.com/contest/1395/problem/C
 https://codeforces.com/contest/812/problem/B
 https://codeforces.com/contest/244/problem/B
 https://codeforces.com/contest/243/problem/A
+https://codeforces.com/contest/1325/problem/D
+https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
