@@ -248,11 +248,6 @@ a+b=(a^b)+2*(a&b)
 **//* Round Robin 
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1299/problem/A
-https://codeforces.com/contest/1264/problem/A
-https://codeforces.com/contest/1114/problem/B
-https://codeforces.com/contest/1278/problem/B
-https://codeforces.com/contest/743/problem/C
 https://codeforces.com/contest/1166/problem/C
 https://codeforces.com/contest/340/problem/D
 https://codeforces.com/contest/1186/problem/D
@@ -326,6 +321,7 @@ https://codeforces.com/contest/244/problem/B
 https://codeforces.com/contest/243/problem/A
 https://codeforces.com/contest/1325/problem/D
 https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
+https://codeforces.com/contest/1560/problem/E
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -355,7 +351,10 @@ https://codeforces.com/contest/1368/problem/D
 https://codeforces.com/contest/891/problem/A
 https://codeforces.com/contest/1242/problem/A?locale=en
 https://codeforces.com/contest/1373/problem/D
-
+https://codeforces.com/contest/1278/problem/B
+https://codeforces.com/contest/743/problem/C
+https://codeforces.com/contest/1114/problem/B
+https://codeforces.com/contest/1299/problem/A
 */
 import java.util.*;
 import java.io.*;
