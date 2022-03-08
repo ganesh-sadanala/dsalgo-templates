@@ -322,6 +322,8 @@ https://codeforces.com/contest/243/problem/A
 https://codeforces.com/contest/1325/problem/D
 https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
 https://codeforces.com/contest/1560/problem/E
+https://codeforces.com/contest/960/problem/C
+https://codeforces.com/contest/484/problem/A
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
