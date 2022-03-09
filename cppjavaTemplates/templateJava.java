@@ -324,6 +324,7 @@ https://codeforces.com/contest/1559/problem/D2 // The key idea is after performi
 https://codeforces.com/contest/1560/problem/E
 https://codeforces.com/contest/960/problem/C
 https://codeforces.com/contest/484/problem/A
+https://codeforces.com/contest/1406/problem/C
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
