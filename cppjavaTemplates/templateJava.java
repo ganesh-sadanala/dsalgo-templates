@@ -329,6 +329,8 @@ https://codeforces.com/contest/1381/problem/A2 : https://www.youtube.com/watch?v
 https://codeforces.com/contest/1556/problem/B
 https://codeforces.com/contest/1292/problem/B
 https://codeforces.com/contest/1430/problem/D
+https://codeforces.com/contest/1383/problem/A
+https://codeforces.com/contest/1301/problem/C
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
