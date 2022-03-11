@@ -331,6 +331,7 @@ https://codeforces.com/contest/1292/problem/B
 https://codeforces.com/contest/1430/problem/D
 https://codeforces.com/contest/1383/problem/A
 https://codeforces.com/contest/1301/problem/C
+https://codeforces.com/contest/1561/problem/D1
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
