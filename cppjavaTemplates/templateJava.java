@@ -196,6 +196,8 @@ Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=
 
 a+b=(a^b)+2*(a&b)
 
+(a^(b^c))%m != (a^((b^c)%m))%m -> https://codeforces.com/problemset/problem/1594/E1
+
 
 
 
@@ -335,6 +337,9 @@ https://codeforces.com/contest/1561/problem/D1
 https://codeforces.com/contest/1567/problem/D
 https://codeforces.com/contest/1543/problem/D1
 https://codeforces.com/contest/1624/problem/C
+https://codeforces.com/problemset/problem/1627/B
+https://codeforces.com/problemset/problem/1546/B
+https://codeforces.com/problemset/problem/1534/C
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -647,18 +652,18 @@ class Codechef {
         return ar[0];
     }
     static long pow(long a, long b) {
-        long res = 1;
-        while (b > 0) {
-            if (b % 2 == 1) {
-                res = (res * a) % mod;
-                b--;
-            } else {
-                a = (a * a) % mod;
-                b = b >> 1;
-            }
+    long res = 1;
+    while (b > 0) {
+        if (b % 2 == 1) {
+            res = mod_mul(res, a);
+            b--;
+        } else {
+            a = mod_mul(a, a);
+            b = b >> 1l;
         }
-        return res;
     }
+    return res;
+  }
     static long combination(int a, int b) {
         long val1 = fact[a];
         long val2 = ifact[a - b];
