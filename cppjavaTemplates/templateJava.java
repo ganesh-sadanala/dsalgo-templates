@@ -340,6 +340,7 @@ https://codeforces.com/contest/1624/problem/C
 https://codeforces.com/problemset/problem/1627/B
 https://codeforces.com/problemset/problem/1546/B
 https://codeforces.com/problemset/problem/1495/A
+https://codeforces.com/problemset/problem/1450/B
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
