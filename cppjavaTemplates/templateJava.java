@@ -339,7 +339,7 @@ https://codeforces.com/contest/1543/problem/D1
 https://codeforces.com/contest/1624/problem/C
 https://codeforces.com/problemset/problem/1627/B
 https://codeforces.com/problemset/problem/1546/B
-https://codeforces.com/problemset/problem/1534/C
+https://codeforces.com/problemset/problem/1495/A
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
