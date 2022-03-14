@@ -4,6 +4,7 @@ God of:
 
 
 */
+// Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 // online tools for cp - https://codeforces.com/blog/entry/82884
 // https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
 // Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
@@ -341,6 +342,8 @@ https://codeforces.com/problemset/problem/1627/B
 https://codeforces.com/problemset/problem/1546/B
 https://codeforces.com/problemset/problem/1495/A
 https://codeforces.com/problemset/problem/1450/B
+https://codeforces.com/problemset/problem/1433/E
+https://codeforces.com/problemset/problem/1307/B
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
