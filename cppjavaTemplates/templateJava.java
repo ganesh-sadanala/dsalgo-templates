@@ -199,7 +199,8 @@ a+b=(a^b)+2*(a&b)
 
 (a^(b^c))%m != (a^((b^c)%m))%m -> https://codeforces.com/problemset/problem/1594/E1
 
-
+To cover a point (xi, yi), the length of the shorter side of the triangle should be at least xi + yi. 
+So the answer is max(xi + yi). : https://codeforces.com/problemset/problem/1047/B
 
 
 
@@ -346,6 +347,7 @@ https://codeforces.com/problemset/problem/1433/E
 https://codeforces.com/problemset/problem/1307/B
 https://codeforces.com/problemset/problem/1119/B
 https://codeforces.com/problemset/problem/1100/C : https://codeforces.com/blog/entry/64545?#comment-599941
+https://codeforces.com/problemset/problem/1047/B
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
