@@ -345,6 +345,7 @@ https://codeforces.com/problemset/problem/1450/B
 https://codeforces.com/problemset/problem/1433/E
 https://codeforces.com/problemset/problem/1307/B
 https://codeforces.com/problemset/problem/1119/B
+https://codeforces.com/problemset/problem/1100/C : https://codeforces.com/blog/entry/64545?#comment-599941
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
