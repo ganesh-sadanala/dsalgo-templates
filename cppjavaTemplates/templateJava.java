@@ -4,6 +4,14 @@ God of:
 
 
 */
+/*
+To be learned
+-------------
+https://codeforces.com/blog/entry/72285 : https://codeforces.com/problemset/problem/1047/B
+
+cp-algo pending
+
+*/
 // Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 // online tools for cp - https://codeforces.com/blog/entry/82884
 // https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
@@ -347,7 +355,8 @@ https://codeforces.com/problemset/problem/1433/E
 https://codeforces.com/problemset/problem/1307/B
 https://codeforces.com/problemset/problem/1119/B
 https://codeforces.com/problemset/problem/1100/C : https://codeforces.com/blog/entry/64545?#comment-599941
-https://codeforces.com/problemset/problem/1047/B
+https://codeforces.com/problemset/problem/840/A
+https://codeforces.com/problemset/problem/794/B
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
