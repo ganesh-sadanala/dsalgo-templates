@@ -8,8 +8,17 @@ God of:
 To be learned
 -------------
 https://codeforces.com/blog/entry/72285 : https://codeforces.com/problemset/problem/1047/B
-
 cp-algo pending
+https://codeforces.com/blog/entry/91363
+https://codeforces.com/blog/entry/88672
+https://codeforces.com/blog/entry/15729
+https://codeforces.com/blog/entry/92092
+https://codeforces.com/blog/entry/95106
+https://codeforces.com/blog/entry/92170
+https://codeforces.com/blog/entry/58747
+https://codeforces.com/blog/entry/55274
+https://codeforces.com/blog/entry/100826
+https://codeforces.com/blog/entry/48122
 
 */
 // Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
@@ -257,6 +266,37 @@ So the answer is max(xi + yi). : https://codeforces.com/problemset/problem/1
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **//* Round Robin 
 cur -> CF unsolved
 Queue 1 -----------------
@@ -356,7 +396,9 @@ https://codeforces.com/problemset/problem/1307/B
 https://codeforces.com/problemset/problem/1119/B
 https://codeforces.com/problemset/problem/1100/C : https://codeforces.com/blog/entry/64545?#comment-599941
 https://codeforces.com/problemset/problem/840/A
-https://codeforces.com/problemset/problem/794/B
+https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/entry/51962?#comment-359831
+https://codeforces.com/problemset/problem/766/B
+https://codeforces.com/problemset/problem/749/B : See the editorial for vector approach
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -390,6 +432,7 @@ https://codeforces.com/contest/1278/problem/B
 https://codeforces.com/contest/743/problem/C
 https://codeforces.com/contest/1114/problem/B
 https://codeforces.com/contest/1299/problem/A
+https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
 */
 import java.util.*;
 import java.io.*;
@@ -429,8 +472,17 @@ class Codechef {
       }
     }
     return cnt;
-  }
-
+   }
+ 
+   // a is sorted non-decreasing manner : https://codeforces.com/problemset/problem/766/B
+   static String findNonDegnerateSidesOfTriangle(long a[]){
+   	for(int i=1;i<n-1;i++) if(a[i-1]+a[i]>a[i+1]) return "YES\n";
+    	return "NO\n";
+   }
+   // set precision
+   static String setPrecision(double val){
+   	return String.format("%.20f", val);
+   }
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
         int n=s.length;
