@@ -219,12 +219,10 @@ a+b=(a^b)+2*(a&b)
 To cover a point (xi, yi), the length of the shorter side of the triangle should be at least xi + yi. 
 So the answer is max(xi + yi). : https://codeforces.com/problemset/problem/1047/B
 
+x<=y<=z are sides of triangle and if x and z are known, y=z-x+1 satisfies the property of degenerate triangle : https://codeforces.com/problemset/problem/766/B : https://codeforces.com/contest/667/problem/B
 
-
-
-
-
-
+In a square matrix n*n, In diagonal configuration1, i+j is same for same diagonal elements where is the row number and j is the column number and in 
+configuration2 (i-j) is same for same diagonal elements.
 
 
 
@@ -399,6 +397,7 @@ https://codeforces.com/problemset/problem/840/A
 https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/entry/51962?#comment-359831
 https://codeforces.com/problemset/problem/766/B
 https://codeforces.com/problemset/problem/749/B : See the editorial for vector approach
+https://codeforces.com/problemset/problem/667/B
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -619,28 +618,17 @@ class Codechef {
     }
 
     // Shuffle and sort
-    static void sort(int[] A) {
-        int n = A.length;
-        Random rnd = new Random();
-        for (int i = 0; i < n; ++i) {
-            int tmp = A[i];
-            int randomPos = i + rnd.nextInt(n - i);
-            A[i] = A[randomPos];
-            A[randomPos] = tmp;
-        }
-        Arrays.sort(A);
-    }
-    static void sort(long[] A) {
-        int n = A.length;
-        Random rnd = new Random();
-        for (int i = 0; i < n; ++i) {
-            long tmp = A[i];
-            int randomPos = i + rnd.nextInt(n - i);
-            A[i] = A[randomPos];
-            A[randomPos] = tmp;
-        }
-        Arrays.sort(A);
-    }
+    static void shuffle(int[] a) {
+	Random get = new Random();
+	for (int i = 0; i < a.length; i++) {
+		int r = get.nextInt(a.length);
+		int temp = a[i];
+		a[i] = a[r];
+		a[r] = temp;
+	}
+	Arrays.sort(a);
+     }
+ 
 
     // counting sort 
     static void countSort(int mx) {
