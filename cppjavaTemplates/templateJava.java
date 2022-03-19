@@ -298,7 +298,6 @@ configuration2 (i-j) is same for same diagonal elements.
 **//* Round Robin 
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1166/problem/C
 https://codeforces.com/contest/340/problem/D
 https://codeforces.com/contest/1186/problem/D
 https://codeforces.com/contest/343/problem/A
