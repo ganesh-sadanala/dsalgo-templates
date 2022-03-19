@@ -398,6 +398,7 @@ https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/en
 https://codeforces.com/problemset/problem/766/B
 https://codeforces.com/problemset/problem/749/B : See the editorial for vector approach
 https://codeforces.com/problemset/problem/667/B
+https://codeforces.com/problemset/problem/312/B
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -445,6 +446,48 @@ class Codechef {
 
     static void solve() {
 
+    }
+	
+    // Geometry
+    static Point intersect(Point a, Point b, Point c) {
+        double D = cross(a, b);
+        if (D != 0) {
+            return new Point(cross(c, b) / D, cross(a, c) / D);
+        }
+        return null;
+    }
+ 
+    static Point convert(Point a, double angle) {
+        double x = a.x * cos(angle) - a.y * sin(angle);
+        double y = a.x * sin(angle) + a.y * cos(angle);
+        return new Point(x, y);
+    }
+ 
+    static Point minus(Point a, Point b) {
+        return new Point(a.x - b.x, a.y - b.y);
+    }
+ 
+    static Point add(Point a, Point b) {
+        return new Point(a.x + b.x, a.y + b.y);
+    }
+ 
+    static double cross(Point a, Point b) {
+        return a.x * b.y - a.y * b.x;
+    }
+ 
+    static class Point {
+ 
+        double x, y;
+ 
+        Point(double x, double y) {
+            this.x = x;
+            this.y = y;
+        }
+ 
+        @Override
+        public String toString() {
+            return "Point: " + x + " " + y;
+        }
     }
 	
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
