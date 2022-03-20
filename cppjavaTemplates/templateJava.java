@@ -224,6 +224,11 @@ x<=y<=z are sides of triangle and if x and z are known, y=z-x+1 satisfies the pr
 In a square matrix n*n, In diagonal configuration1, i+j is same for same diagonal elements where is the row number and j is the column number and in 
 configuration2 (i-j) is same for same diagonal elements.
 
+ star numbers: 6*n*(n-1) + 1.
+ 
+ Parallelogram vector area: https://www.quora.com/What-is-the-area-of-parallelogram-in-vector-form
+ Distance from line to a point in vector form: https://www.youtube.com/watch?v=tYUtWYGUqgw
+ 
 
 
 
@@ -398,6 +403,7 @@ https://codeforces.com/problemset/problem/766/B
 https://codeforces.com/problemset/problem/749/B : See the editorial for vector approach
 https://codeforces.com/problemset/problem/667/B
 https://codeforces.com/problemset/problem/312/B
+https://codeforces.com/problemset/problem/227/A : learned the vector approach to find angle and direction : https://codeforces.com/blog/entry/101047
 Queue 2----------------------------------
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D
@@ -448,46 +454,7 @@ class Codechef {
     }
 	
     // Geometry
-    static Point intersect(Point a, Point b, Point c) {
-        double D = cross(a, b);
-        if (D != 0) {
-            return new Point(cross(c, b) / D, cross(a, c) / D);
-        }
-        return null;
-    }
- 
-    static Point convert(Point a, double angle) {
-        double x = a.x * cos(angle) - a.y * sin(angle);
-        double y = a.x * sin(angle) + a.y * cos(angle);
-        return new Point(x, y);
-    }
- 
-    static Point minus(Point a, Point b) {
-        return new Point(a.x - b.x, a.y - b.y);
-    }
- 
-    static Point add(Point a, Point b) {
-        return new Point(a.x + b.x, a.y + b.y);
-    }
- 
-    static double cross(Point a, Point b) {
-        return a.x * b.y - a.y * b.x;
-    }
- 
-    static class Point {
- 
-        double x, y;
- 
-        Point(double x, double y) {
-            this.x = x;
-            this.y = y;
-        }
- 
-        @Override
-        public String toString() {
-            return "Point: " + x + " " + y;
-        }
-    }
+    
 	
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
