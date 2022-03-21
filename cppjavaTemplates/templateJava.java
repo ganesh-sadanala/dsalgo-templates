@@ -300,12 +300,10 @@ configuration2 (i-j) is same for same diagonal elements.
 
 
 
-**//* Round Robin 
+**/
+/*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/340/problem/D
-https://codeforces.com/contest/1186/problem/D
-https://codeforces.com/contest/343/problem/A
 https://codeforces.com/contest/607/problem/A
 https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
@@ -363,6 +361,39 @@ https://codeforces.com/contest/1474/problem/C
 https://codeforces.com/contest/1473/problem/D
 https://codeforces.com/contest/1469/problem/D
 https://codeforces.com/contest/1468/problem/F
+https://leetcode.com/problems/132-pattern/
+https://codeforces.com/contest/281/problem/D
+https://codeforces.com/contest/797/problem/C
+https://codeforces.com/contest/166/problem/E
+https://codeforces.com/blog/entry/65487?#comment-494720
+https://codeforces.com/contest/1343/problem/D
+https://codeforces.com/contest/401/problem/C
+https://codeforces.com/contest/1239/problem/A
+https://codeforces.com/contest/1343/problem/E
+https://codeforces.com/contest/1499/problem/C
+https://codeforces.com/contest/1311/problem/F
+https://codeforces.com/contest/1354/problem/C2
+https://codeforces.com/contest/1216/problem/E1
+https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
+https://codeforces.com/contest/1528/problem/B
+https://www.codechef.com/problems/GRAYSC
+https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
+https://codeforces.com/contest/1132/problem/C
+https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
+https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=false
+https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
+https://codeforces.com/contest/274/problem/A
+https://codeforces.com/contest/455/problem/A
+https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
+https://codeforces.com/contest/1368/problem/D
+https://codeforces.com/contest/891/problem/A
+https://codeforces.com/contest/1242/problem/A?locale=en
+https://codeforces.com/contest/1373/problem/D
+https://codeforces.com/contest/1278/problem/B
+https://codeforces.com/contest/743/problem/C
+https://codeforces.com/contest/1114/problem/B
+https://codeforces.com/contest/1299/problem/A
+https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/868/problem/C
 https://codeforces.com/problemset/problem/1637/D
@@ -404,40 +435,7 @@ https://codeforces.com/problemset/problem/749/B : See the editorial for vector a
 https://codeforces.com/problemset/problem/667/B
 https://codeforces.com/problemset/problem/312/B
 https://codeforces.com/problemset/problem/227/A : learned the vector approach to find angle and direction : https://codeforces.com/blog/entry/101047
-Queue 2----------------------------------
-https://leetcode.com/problems/132-pattern/
-https://codeforces.com/contest/281/problem/D
-https://codeforces.com/contest/797/problem/C
-https://codeforces.com/contest/166/problem/E
-https://codeforces.com/blog/entry/65487?#comment-494720
-https://codeforces.com/contest/1343/problem/D
-https://codeforces.com/contest/401/problem/C
-https://codeforces.com/contest/1239/problem/A
-https://codeforces.com/contest/1343/problem/E
-https://codeforces.com/contest/1499/problem/C
-https://codeforces.com/contest/1311/problem/F
-https://codeforces.com/contest/1354/problem/C2
-https://codeforces.com/contest/1216/problem/E1
-https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
-https://codeforces.com/contest/1528/problem/B
-https://www.codechef.com/problems/GRAYSC
-https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
-https://codeforces.com/contest/1132/problem/C
-https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
-https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=false
-https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
-https://codeforces.com/contest/274/problem/A
-https://codeforces.com/contest/455/problem/A
-https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
-https://codeforces.com/contest/1368/problem/D
-https://codeforces.com/contest/891/problem/A
-https://codeforces.com/contest/1242/problem/A?locale=en
-https://codeforces.com/contest/1373/problem/D
-https://codeforces.com/contest/1278/problem/B
-https://codeforces.com/contest/743/problem/C
-https://codeforces.com/contest/1114/problem/B
-https://codeforces.com/contest/1299/problem/A
-https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
+https://codeforces.com/contest/340/problem/D
 */
 import java.util.*;
 import java.io.*;
@@ -454,6 +452,19 @@ class Codechef {
     }
 	
     // Geometry
+	// ax^2+bx+c=0 , a!=0
+	// source: https://vlecomte.github.io/cp-geo.pdf Page: 22
+	static void quadraticRoots(double a, double b, double c){
+		double disc = b*b - 4*a*c;
+		if(disc == 0){
+			double sum = (b >= 0) ? -b-Math.sqrt(disc) : -b+Math.sqrt(disc);
+			double root1 = sum/2*a;
+		}else if(disc > 0){
+			double sum = (b >= 0) ? -b-Math.sqrt(disc) : -b+Math.sqrt(disc);
+			double r1 = sum/2*a;
+			double r2 = 2*c/sum;
+		}else return;
+	}
     
 	
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
