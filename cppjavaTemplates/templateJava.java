@@ -304,6 +304,7 @@ configuration2 (i-j) is same for same diagonal elements.
 /*
 cur -> CF unsolved
 Queue 1 -----------------
+https://codeforces.com/contest/343/problem/A
 https://codeforces.com/contest/607/problem/A
 https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
