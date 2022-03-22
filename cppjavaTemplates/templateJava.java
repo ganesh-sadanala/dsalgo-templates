@@ -304,7 +304,6 @@ configuration2 (i-j) is same for same diagonal elements.
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/343/problem/A
 https://codeforces.com/contest/607/problem/A
 https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
@@ -325,7 +324,6 @@ https://codeforces.com/contest/1282/problem/B2
 https://codeforces.com/contest/165/problem/C
 https://codeforces.com/contest/913/problem/C
 https://codeforces.com/contest/1036/problem/D
--------
 https://codeforces.com/problemset/problem/1257/D
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/contest/1542/problem/B
@@ -437,6 +435,7 @@ https://codeforces.com/problemset/problem/667/B
 https://codeforces.com/problemset/problem/312/B
 https://codeforces.com/problemset/problem/227/A : learned the vector approach to find angle and direction : https://codeforces.com/blog/entry/101047
 https://codeforces.com/contest/340/problem/D
+https://codeforces.com/contest/343/problem/A
 */
 import java.util.*;
 import java.io.*;
