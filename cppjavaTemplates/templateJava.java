@@ -229,8 +229,9 @@ configuration2 (i-j) is same for same diagonal elements.
  Parallelogram vector area: https://www.quora.com/What-is-the-area-of-parallelogram-in-vector-form
  Distance from line to a point in vector form: https://www.youtube.com/watch?v=tYUtWYGUqgw
  
-
-
+https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree : https://codeforces.com/contest/343/problem/A : https://codeforces.com/blog/entry/8860?#comment-351231
+GCD(A, B) => GCD(B, A%B)
+A=B*Q+R
 
 
 
