@@ -305,7 +305,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/607/problem/A
 https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
 https://codeforces.com/contest/763/problem/A
@@ -472,7 +471,7 @@ class Codechef {
     
 	
     // Number of distinct values of bitwise OR of all subarrays
-    // i;e; distinct OR values for all 1<=l<=r<=n 
+    // i;e; distinct OR values for all 1<=l<=r<=n https://codeforces.com/problemset/problem/243/A
     static int distinctOROfAllSubarrays(){
     int pre[]=new int[20];
     int pos[]=new int[20];
