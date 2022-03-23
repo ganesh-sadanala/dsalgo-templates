@@ -305,8 +305,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/704/problem/A
-https://codeforces.com/contest/763/problem/A
 https://www.hackerrank.zcom/challenges/tower-breakers-again-1/problem?isFullScreen=true -> GTC
 https://www.hackerrank.com/challenges/zero-move-nim/problem?isFullScreen=true
 https://codeforces.com/contest/1188/problem/A1
@@ -436,6 +434,8 @@ https://codeforces.com/problemset/problem/227/A : learned the vector approach to
 https://codeforces.com/contest/340/problem/D
 https://codeforces.com/contest/343/problem/A
 https://codeforces.com/contest/1385/problem/E
+https://codeforces.com/contest/704/problem/A
+https://codeforces.com/contest/763/problem/A
 */
 import java.util.*;
 import java.io.*;
