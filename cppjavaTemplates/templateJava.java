@@ -305,8 +305,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1188/problem/A1
-https://codeforces.com/contest/1198/problem/A
 https://codeforces.com/contest/322/problem/B
 https://codeforces.com/contest/407/problem/B -> https://codeforces.com/blog/entry/11333?#comment-163504
 https://codeforces.com/contest/429/problem/B
