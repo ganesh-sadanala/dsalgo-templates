@@ -462,6 +462,20 @@ class Codechef {
 			double r2 = 2*c/sum;
 		}else return;
 	}
+	
+	static class Point implements Comparable<Point>{
+		static final double EPS = (double) 1e-9;
+		double x, y;
+		Point(double a, double b) { x = a; y = b; }  
+		public int compareTo(Point p)
+		{
+			if(Math.abs(x - p.x) > EPS) return x > p.x ? 1 : -1;
+			if(Math.abs(y - p.y) > EPS) return y > p.y ? 1 : -1;
+			return 0;
+		}
+		public boolean isEqual(Point a, Point b) return a.x==b.x && a.y==b.y;
+		
+	}
     
 	
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
