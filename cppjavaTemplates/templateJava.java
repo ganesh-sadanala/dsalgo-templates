@@ -444,151 +444,35 @@ class Codechef {
     static void solve() {
 
     }
-	
-    // Geometry
-	// ax^2+bx+c=0 , a!=0
-	// source: https://vlecomte.github.io/cp-geo.pdf Page: 22
-	static void quadraticRoots(double a, double b, double c){
-		double disc = b*b - 4*a*c;
-		if(disc == 0){
-			double sum = (b >= 0) ? -b-Math.sqrt(disc) : -b+Math.sqrt(disc);
-			double root1 = sum/2*a;
-		}else if(disc > 0){
-			double sum = (b >= 0) ? -b-Math.sqrt(disc) : -b+Math.sqrt(disc);
-			double r1 = sum/2*a;
-			double r2 = 2*c/sum;
-		}else return;
-	}
-	
-	static class Point implements Comparable<Point>{
-		static final double EPS = (double) 1e-9;
-		double x, y;
-		Point(double a, double b) { x = a; y = b; }  
-		public int compareTo(Point p)
-		{
-			if(Math.abs(x - p.x) > EPS) return x > p.x ? 1 : -1;
-			if(Math.abs(y - p.y) > EPS) return y > p.y ? 1 : -1;
-			return 0;
-		}
-		public boolean isEqual(Point a, Point b) return a.x==b.x && a.y==b.y;
-		
-	}
     
-	
+    // ------------------------------ General or Miscellaneous or interesting ---------------------------------
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
 	
     // Number of distinct values of bitwise OR of all subarrays
     // i;e; distinct OR values for all 1<=l<=r<=n https://codeforces.com/problemset/problem/243/A
-    static int distinctOROfAllSubarrays(){
-    int pre[]=new int[20];
-    int pos[]=new int[20];
-    boolean in[]=new boolean[1<<20];
-    int cnt=0;
-    for(int i=1;i<=n;i++){
-      for(int j=19;j>=0;j--) if((a[i]&(1<<j))>0) pre[j]=i;
-      int val=a[i];
-      if(!in[val]) cnt++;
-      in[val]=true;
-      for(int j=0;j<=19;j++) pos[j]=pre[j];
-      Arrays.sort(pos);
-      for(int j=19;j>=0;j--){
-        val|=a[pos[j]];
-        if(!in[val]) cnt++;
-        in[val]=true;
-      }
-    }
-    return cnt;
+    static int distinctOROfAllSubarrays(int a[]){
+	    int pre[]=new int[20];
+	    int pos[]=new int[20];
+	    boolean in[]=new boolean[1<<20];
+	    int cnt=0;
+	    for(int i=1;i<=n;i++){
+	      for(int j=19;j>=0;j--) if((a[i]&(1<<j))>0) pre[j]=i;
+	      int val=a[i];
+	      if(!in[val]) cnt++;
+	      in[val]=true;
+	      for(int j=0;j<=19;j++) pos[j]=pre[j];
+	      Arrays.sort(pos);
+	      for(int j=19;j>=0;j--){
+		val|=a[pos[j]];
+		if(!in[val]) cnt++;
+		in[val]=true;
+	      }
+	    }
+	    return cnt;
    }
- 
-   // a is sorted non-decreasing manner : https://codeforces.com/problemset/problem/766/B
-   static String findNonDegnerateSidesOfTriangle(long a[]){
-   	for(int i=1;i<n-1;i++) if(a[i-1]+a[i]>a[i+1]) return "YES\n";
-    	return "NO\n";
-   }
-   // set precision
-   static String setPrecision(double val){
-   	return String.format("%.20f", val);
-   }
-    // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
-    public int longestPalindromicSubsequenceLinearSpace(char []s){
-        int n=s.length;
-        int a[]=new int[n];
-        int pa[]=new int[n];
-        
-        for(int i=n-1;i>=0;i--){
-            for(int j=i;j<n;j++){
-                if(i==j) a[j]=1;
-                else if(s[i]==s[j]){
-                    // l[i+1][j-1]+2 => prev iter
-                    a[j]=pa[j-1]+2;
-                }else{
-                    a[j]=Math.max(a[j-1], a[j]);
-                }
-            }
-            for(int j=i;j<n;j++) pa[j]=a[j];
-        }
-        return a[n-1];
-    }
-
-    // submask generation
-    // If you want 0 as a submask
-    for(int submask = mask; ; submask = (submask - 1) & mask) {
-	// do something
-	if(submask == 0) break;
-    }
-    
-    // generating all possible sums by taking elements
-    // in 0/1 fashion from 2 array a and b
-    public void generateSum01Dp(){
-	dp[0][0]=1;
-    	for(int i=1; i<=n; i++)
-        {
-            for(int j=0; j<=10000; j++)
-            {
-                if(dp[i-1][j] == 0)continue;
-                if(j + a[i]<=10000)
-                {
-                    dp[i][j + a[i]] = 1;
-                }
-                if(j + b[i]<=10000)
-                {
-                    dp[i][j + b[i]] = 1;
-                }                
-            }
-        }
-    }
 	
-    // Number of pairs in an array having bitwise AND as zero : https://codeforces.com/blog/entry/20174?#comment-249715
-    // https://www.geeksforgeeks.org/number-ordered-pairs-ai-aj-0/ 
-    // https://discuss.codechef.com/t/count-all-ordered-pairs-with-bitwise-and-equals-to-zero/36081/4
-    // SOS DP https://codeforces.com/blog/entry/45223
-    static void countPairs(){
-    	
-    }
-	    
-    // string hashing - Polynomial Rolling Hash
-    // https://ideone.com/0sgZWx
-    // https://www.youtube.com/watch?v=X_YgMWvCRS8&list=PL2q4fbVm1Ik6ThrYKCzgEpmaS_XWDGHjx&index=6
-     public void rollHash(char []s){
-        // prefix sum
-        int n=s.length;
-        rh=new long[n];
-        inv=new long[n];
-        
-        // prime>=size of character set
-        long p=2;
-        long pw=1;
-        rh[n-1]=(s[n-1]-'0')%mod;
-        inv[n-1]=1;
-        for(int i=n-2;i>=0;i--){
-            pw=(pw * p)%mod;
-            rh[i]=mod_add(rh[i+1], (s[i]-'0') * pw);
-            inv[i]=pow(pw, mod-2);
-        }
-    }
-
-    // pair datastructure 
+   // pair datastructure 
     // equals and hashCode should be overriden when you want to 
     // use something like hashmap or hashset
     // to compare them
@@ -620,32 +504,18 @@ class Codechef {
         }
     }
 
-    // sorting template of normal array []
-    static void templateSortArray() {
+	
+   // ----------------------- SORTING -------------------------------
+	
+	// sorting template of normal array []
+    static void templateSortArray(int a[]) {
         List < Integer > l = new ArrayList < > ();
         for (int i = 0; i < n; i++) l.add(a[i]);
         Collections.sort(l, Collections.reverseOrder());
         for (int i = 0; i < n; i++) a[i] = l.get(i);
     }
 
-    // Heaps algorithm -> to find all the permutations of an array
-    static void heapsAlgorithm() {
-        https: //www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
-    }
-
-    static long mod_mul(long a, long b) {
-        a = a % mod;
-        b = b % mod;
-        return (((a * b) % mod) + mod) % mod;
-    }
-
-    static long mod_add(long a, long b) {
-        a = a % mod;
-        b = b % mod;
-        return (((a + b) % mod) + mod) % mod;
-    }
-
-    // Shuffle and sort
+	// Shuffle and sort
     static void shuffle(int[] a) {
 	Random get = new Random();
 	for (int i = 0; i < a.length; i++) {
@@ -659,7 +529,7 @@ class Codechef {
  
 
     // counting sort 
-    static void countSort(int mx) {
+    static void countSort(int arr[], int mx) {
 
         int n = arr.length;
         int output[] = new int[mx];
@@ -681,8 +551,370 @@ class Codechef {
         for (int i = 0; i < n; ++i)
             arr[i] = output[i];
     }
+	
+    // ----------------------------------Geometry----------------------------------
+	// ax^2+bx+c=0 , a!=0
+	// source: https://vlecomte.github.io/cp-geo.pdf Page: 22
+	static void quadraticRoots(double a, double b, double c){
+		double disc = b*b - 4*a*c;
+		if(disc == 0){
+			double sum = (b >= 0) ? -b-Math.sqrt(disc) : -b+Math.sqrt(disc);
+			double root1 = sum/2*a;
+		}else if(disc > 0){
+			double sum = (b >= 0) ? -b-Math.sqrt(disc) : -b+Math.sqrt(disc);
+			double r1 = sum/2*a;
+			double r2 = 2*c/sum;
+		}else return;
+	}
+	
+	static class Point implements Comparable<Point>{
+		static final double EPS = (double) 1e-9;
+		double x, y;
+		Point(double a, double b) { x = a; y = b; }  
+		public int compareTo(Point p)
+		{
+			if(Math.abs(x - p.x) > EPS) return x > p.x ? 1 : -1;
+			if(Math.abs(y - p.y) > EPS) return y > p.y ? 1 : -1;
+			return 0;
+		}
+		public boolean isEqual(Point a, Point b) return a.x==b.x && a.y==b.y;
+		
+	}
+ 
+   // a is sorted non-decreasing manner : https://codeforces.com/problemset/problem/766/B
+   static String findNonDegnerateSidesOfTriangle(long a[]){
+   	for(int i=1;i<n-1;i++) if(a[i-1]+a[i]>a[i+1]) return "YES\n";
+    	return "NO\n";
+   }
+	
+   // set precision
+   static String setPrecision(double val){
+   	return String.format("%.20f", val);
+   }
+	
+   
+	
+    // ---------------------------------- DP --------------------------------
+    // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
+    public int longestPalindromicSubsequenceLinearSpace(char []s){
+        int n=s.length;
+        int a[]=new int[n];
+        int pa[]=new int[n];
+        
+        for(int i=n-1;i>=0;i--){
+            for(int j=i;j<n;j++){
+                if(i==j) a[j]=1;
+                else if(s[i]==s[j]){
+                    // l[i+1][j-1]+2 => prev iter
+                    a[j]=pa[j-1]+2;
+                }else{
+                    a[j]=Math.max(a[j-1], a[j]);
+                }
+            }
+            for(int j=i;j<n;j++) pa[j]=a[j];
+        }
+        return a[n-1];
+    }
 
-    // Math 
+    // Subset sum problem O(sum) - GFG
+      bool isPossible(int elements[], int sum, int n)
+    {
+        int dp[sum + 1];
+
+        // Initializing with 1 as sum 0 is
+        // always possible
+        dp[0] = 1;
+
+        // Loop to go through every element of
+        // the elements array
+        for(int i = 0; i < n; i++)
+        {
+
+            // To change the values of all possible sum
+            // values to 1
+            for(int j = sum; j >= elements[i]; j--)
+            {
+                if (dp[j - elements[i]] == 1)
+                    dp[j] = 1;
+            }
+        }
+
+        // If sum is possible then return 1
+        if (dp[sum] == 1)
+            return true;
+
+        return false;
+    }
+
+	// generating all possible sums by taking elements
+    // in 0/1 fashion from 2 array a and b
+    public void generateSum01Dp(int a[], int b[]){
+	dp[0][0]=1;
+    	for(int i=1; i<=n; i++)
+        {
+            for(int j=0; j<=10000; j++)
+            {
+                if(dp[i-1][j] == 0)continue;
+                if(j + a[i]<=10000)
+                {
+                    dp[i][j + a[i]] = 1;
+                }
+                if(j + b[i]<=10000)
+                {
+                    dp[i][j + b[i]] = 1;
+                }                
+            }
+        }
+    }
+
+    // LIS(Monotonically increasing or Strictly increasing) where elements are 
+  // consecutive elements {eg: x, x+1, x+2, ... x+k}
+  static void LISConsecutive(int []arr)
+    {
+       HashMap<Integer,Integer> map=new HashMap<>();
+       int n=arr.length;
+       int max=0,num=0;
+	   for(int i=0;i<n;i++)
+	   {
+	       if(!map.containsKey(arr[i]-1))
+	          map.put(arr[i],1);
+	       
+	       else
+	          map.put(arr[i],map.get(arr[i]-1)+1);
+	          
+	        if(max<map.get(arr[i]))
+	        {
+	            num=arr[i];
+	            max=map.get(arr[i]);
+	        }
+	   }
+	   System.out.println(max);
+	   
+	   ArrayList<Integer> list=new ArrayList<>();
+	   for(int i=n-1;i>=0;i--)
+	   {
+	       if(arr[i]==num)
+	       {
+	           list.add(i+1);
+	           num--;
+	       }
+	   }
+	   int sz=list.size();
+	   for(int i=sz-1;i>=0;i--)
+	     System.out.print(list.get(i)+" ");
+    }
+	
+	
+  // LIS(Monotonically or Strictly increasing) - nlogn
+  // Minimum last element of length len+1 is stored
+  // t stores minium last element index of length len+1
+  // r is used to traverse the subsequence of length len+1
+  // first element i.e; >= a[i]
+  static int upperBoundIndex(int a[], int len, int i){
+    int l=0, r=len;
+    int idx=0;
+    while(l<=r){
+      int mid=l+(r-l)/2;
+      if(a[t[mid]]>=a[i]){
+        idx=mid;
+        r=mid-1;
+      }else l=mid+1;
+    }
+    return idx;
+  }
+  static void findLIS(int a[]){
+    int len=0;
+    for(int i=0;i<n;i++) r[i]=-1;
+    t[0]=0;
+    for(int i=1;i<n;i++){
+      if(a[t[0]] > a[i]){
+        t[0]=i;
+      }else if(a[t[len]] < a[i]){
+        r[i]=t[len];
+        len++;
+        t[len]=i;
+      }else{
+        int idx = upperBoundIndex(len, i);
+        t[idx]=i;
+        r[i]=t[idx-1];
+      }
+    }
+    
+    // printing in reverse order
+    int idx=t[len];
+    while(idx!=-1){
+      str.append(a[idx]).append(" ");
+      idx=r[idx];
+    }
+  }
+  
+  // LIS(Non-Monotonically or Non-Strictly increasing or non-decreasing) - nlogn
+  // Minimum last element of length len+1 is stored
+  // t stores minium last element index of length len+1
+  // r is used to traverse the subsequence of length len+1
+  // first element i.e; >= a[i]
+  // Reference: https://stackoverflow.com/questions/21715892/longest-nondecreasing-subsequence-in-onlgn
+   public static int findArray(List<Integer> a) {
+     int n=a.size();
+     int dp[]=new int[n];
+     int ans=0;
+     for(int i=0;i<n;i++){
+       int ele=a.get(i);
+       int idx=Arrays.binarySearch(dp, 0, ans, ele); 
+       if(idx<0){
+         idx=-(idx+1);
+       }
+       if(dp[idx]==ele){
+         idx=Arrays.binarySearch(dp, 0, ans, ele+1);
+         if(idx<0) idx=-(idx+1);
+       }
+       dp[idx]=ele;
+       if(idx==ans) ans++;
+     }
+     return ans;
+   }
+	
+    // ----------------------------------- BITWISE ---------------------------
+    // submask generation
+    // If you want 0 as a submask
+    for(int submask = mask; ; submask = (submask - 1) & mask) {
+	// do something
+	if(submask == 0) break;
+    }
+	
+    // Number of pairs in an array having bitwise AND as zero : https://codeforces.com/blog/entry/20174?#comment-249715
+    // https://www.geeksforgeeks.org/number-ordered-pairs-ai-aj-0/ 
+    // https://discuss.codechef.com/t/count-all-ordered-pairs-with-bitwise-and-equals-to-zero/36081/4
+    // SOS DP https://codeforces.com/blog/entry/45223
+    static void countPairs(){
+    	
+    }
+	    
+    // ------------------------------- STRINGS ------------------------------
+    // string hashing - Polynomial Rolling Hash
+    // https://ideone.com/0sgZWx
+    // https://www.youtube.com/watch?v=X_YgMWvCRS8&list=PL2q4fbVm1Ik6ThrYKCzgEpmaS_XWDGHjx&index=6
+     public void rollHash(char []s){
+        // prefix sum
+        int n=s.length;
+        rh=new long[n];
+        inv=new long[n];
+        
+        // prime>=size of character set
+        long p=2;
+        long pw=1;
+        rh[n-1]=(s[n-1]-'0')%mod;
+        inv[n-1]=1;
+        for(int i=n-2;i>=0;i--){
+            pw=(pw * p)%mod;
+            rh[i]=mod_add(rh[i+1], (s[i]-'0') * pw);
+            inv[i]=pow(pw, mod-2);
+        }
+     }
+
+     // KMP - GFG
+     // LPS -> Number of characters from which you can match
+     void KMPSearch(String pat, String txt)
+    {
+        int M = pat.length();
+        int N = txt.length();
+  
+        int lps[] = new int[M];
+        int j = 0; 
+
+        computeLPSArray(pat, M, lps);
+  
+        int i = 0; 
+        while (i < N) {
+            if (pat.charAt(j) == txt.charAt(i)) {
+                j++;
+                i++;
+            }
+            if (j == M) {
+                System.out.println("Found pattern "
+                                   + "at index " + (i - j));
+                j = lps[j - 1];
+            }
+  
+            else if (i < N && pat.charAt(j) != txt.charAt(i)) {
+                if (j != 0)
+                    j = lps[j - 1];
+                else
+                    i = i + 1;
+            }
+        }
+    }
+  
+    // computes LPS array
+    void computeLPSArray(String pat, int M, int lps[])
+    {
+        int len = 0;
+        int i = 1;
+        lps[0] = 0;
+	    
+        while (i < M) {
+            if (pat.charAt(i) == pat.charAt(len)) {
+                len++;
+                lps[i] = len;
+                i++;
+            }
+            else 
+            {
+                if (len != 0) {
+                    len = lps[len - 1];
+
+                }
+                else 
+                {
+                    lps[i] = len;
+                    i++;
+                }
+            }
+        }
+    }
+
+    // --------------------------- PERMUTATIONS AND COMBINATIONS ------------------------------
+    // Heaps algorithm -> to find all the permutations of an array
+    static void heapsAlgorithm() {
+        https: //www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
+    }
+
+    static long mod_mul(long a, long b) {
+        a = a % mod;
+        b = b % mod;
+        return (((a * b) % mod) + mod) % mod;
+    }
+
+    static long mod_add(long a, long b) {
+        a = a % mod;
+        b = b % mod;
+        return (((a + b) % mod) + mod) % mod;
+    }
+
+    // Function to count
+    // derangements
+    static int countDer(int n)
+    {
+        // Create an array to store
+        // counts for subproblems
+        int der[] = new int[n + 1];
+     
+        // Base cases
+        der[1] = 0;
+        der[2] = 1;
+     
+        // Fill der[0..n] in bottom up
+        // manner using above recursive
+        // formula
+        for (int i = 3; i <= n; ++i)
+            der[i] = (i - 1) * (der[i - 1] +
+                                der[i - 2]);
+     
+        // Return result for n
+        return der[n];
+    }
+
+    // ------------------------- NUMBER THEORY ------------------------ 
     // https://www.youtube.com/watch?v=8Fqv4ddMC3I
     static void extendedGcd(long a, long b, long ar[]) {
         if (b == 0) {
@@ -766,6 +998,7 @@ class Codechef {
         }
     }
 
+    // -------------------------------  BINARY SEARCH -------------------------
     // Binary search on float values
     /*
     If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
@@ -788,6 +1021,8 @@ class Codechef {
         // your binary search logic
         iterations++;
     }
+
+    // ----------------------------- GRAPHS -------------------------
     // DSU
     static int find(int i) {
         if (parent[i] != i)
@@ -807,28 +1042,6 @@ class Codechef {
             rank[yr]++;
         }
         return true;
-    }
-
-    // BIT
-    static long query(int idx) {
-        long sum = 0;
-        idx++;
-        while (idx > 0) {
-            sum = (sum + bit[idx]) % mod;
-            idx -= (idx & (-idx));
-        }
-        return sum;
-    }
-    static void update(int idx, long v) {
-        idx++;
-        while (idx <= n) {
-            bit[idx] = (bit[idx] + v + mod) % mod;
-            idx += (idx & (-idx));
-        }
-    }
-    static void update(int l, int r, long v) {
-        update(l, v);
-        if ((r + 1) <= n) update(r + 1, -v);
     }
 
     // print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
@@ -981,115 +1194,8 @@ class Codechef {
 	  }
 	 return !flag; 
     }
-  
-  // LIS(Monotonically increasing or Strictly increasing) where elements are 
-  // consecutive elements {eg: x, x+1, x+2, ... x+k}
-  static void LISConsecutive(int []arr)
-    {
-       HashMap<Integer,Integer> map=new HashMap<>();
-       int n=arr.length;
-       int max=0,num=0;
-	   for(int i=0;i<n;i++)
-	   {
-	       if(!map.containsKey(arr[i]-1))
-	          map.put(arr[i],1);
-	       
-	       else
-	          map.put(arr[i],map.get(arr[i]-1)+1);
-	          
-	        if(max<map.get(arr[i]))
-	        {
-	            num=arr[i];
-	            max=map.get(arr[i]);
-	        }
-	   }
-	   System.out.println(max);
-	   
-	   ArrayList<Integer> list=new ArrayList<>();
-	   for(int i=n-1;i>=0;i--)
-	   {
-	       if(arr[i]==num)
-	       {
-	           list.add(i+1);
-	           num--;
-	       }
-	   }
-	   int sz=list.size();
-	   for(int i=sz-1;i>=0;i--)
-	     System.out.print(list.get(i)+" ");
-    }
-	
-	
-  // LIS(Monotonically or Strictly increasing) - nlogn
-  // Minimum last element of length len+1 is stored
-  // t stores minium last element index of length len+1
-  // r is used to traverse the subsequence of length len+1
-  // first element i.e; >= a[i]
-  static int upperBoundIndex(int len, int i){
-    int l=0, r=len;
-    int idx=0;
-    while(l<=r){
-      int mid=l+(r-l)/2;
-      if(a[t[mid]]>=a[i]){
-        idx=mid;
-        r=mid-1;
-      }else l=mid+1;
-    }
-    return idx;
-  }
-  static void findList(){
-    int len=0;
-    for(int i=0;i<n;i++) r[i]=-1;
-    t[0]=0;
-    for(int i=1;i<n;i++){
-      if(a[t[0]] > a[i]){
-        t[0]=i;
-      }else if(a[t[len]] < a[i]){
-        r[i]=t[len];
-        len++;
-        t[len]=i;
-      }else{
-        int idx = upperBoundIndex(len, i);
-        t[idx]=i;
-        r[i]=t[idx-1];
-      }
-    }
-    
-    // printing in reverse order
-    int idx=t[len];
-    while(idx!=-1){
-      str.append(a[idx]).append(" ");
-      idx=r[idx];
-    }
-  }
-  
-  // LIS(Non-Monotonically or Non-Strictly increasing or non-decreasing) - nlogn
-  // Minimum last element of length len+1 is stored
-  // t stores minium last element index of length len+1
-  // r is used to traverse the subsequence of length len+1
-  // first element i.e; >= a[i]
-  // Reference: https://stackoverflow.com/questions/21715892/longest-nondecreasing-subsequence-in-onlgn
-   public static int findArray(List<Integer> a) {
-     int n=a.size();
-     int dp[]=new int[n];
-     int ans=0;
-     for(int i=0;i<n;i++){
-       int ele=a.get(i);
-       int idx=Arrays.binarySearch(dp, 0, ans, ele); 
-       if(idx<0){
-         idx=-(idx+1);
-       }
-       if(dp[idx]==ele){
-         idx=Arrays.binarySearch(dp, 0, ans, ele+1);
-         if(idx<0) idx=-(idx+1);
-       }
-       dp[idx]=ele;
-       if(idx==ans) ans++;
-     }
-     return ans;
-   }
-  
-  // post order dfs
+
+    // post order dfs
     void euler(Map<Integer, Queue<Integer>> adj, List<int []> ans, int start){
         Queue<Integer> q = adj.get(start);
         while(q!=null && !q.isEmpty()){
@@ -1139,28 +1245,28 @@ class Codechef {
         }
         return res;
     }
-  
-    // Function to count
-    // derangements
-    static int countDer(int n)
-    {
-        // Create an array to store
-        // counts for subproblems
-        int der[] = new int[n + 1];
-     
-        // Base cases
-        der[1] = 0;
-        der[2] = 1;
-     
-        // Fill der[0..n] in bottom up
-        // manner using above recursive
-        // formula
-        for (int i = 3; i <= n; ++i)
-            der[i] = (i - 1) * (der[i - 1] +
-                                der[i - 2]);
-     
-        // Return result for n
-        return der[n];
+
+    // ------------------------- ADVANCED DATA STRUCTURES ------------------------
+    // BIT
+    static long query(int idx) {
+        long sum = 0;
+        idx++;
+        while (idx > 0) {
+            sum = (sum + bit[idx]) % mod;
+            idx -= (idx & (-idx));
+        }
+        return sum;
+    }
+    static void update(int idx, long v) {
+        idx++;
+        while (idx <= n) {
+            bit[idx] = (bit[idx] + v + mod) % mod;
+            idx += (idx & (-idx));
+        }
+    }
+    static void update(int l, int r, long v) {
+        update(l, v);
+        if ((r + 1) <= n) update(r + 1, -v);
     }
   
   
@@ -1330,37 +1436,7 @@ class Codechef {
      constructSum(0, n-1, 0);
   }
   
-  
-  // Subset sum problem O(sum)
-      bool isPossible(int elements[], int sum, int n)
-    {
-        int dp[sum + 1];
-
-        // Initializing with 1 as sum 0 is
-        // always possible
-        dp[0] = 1;
-
-        // Loop to go through every element of
-        // the elements array
-        for(int i = 0; i < n; i++)
-        {
-
-            // To change the values of all possible sum
-            // values to 1
-            for(int j = sum; j >= elements[i]; j--)
-            {
-                if (dp[j - elements[i]] == 1)
-                    dp[j] = 1;
-            }
-        }
-
-        // If sum is possible then return 1
-        if (dp[sum] == 1)
-            return true;
-
-        return false;
-    }
-  
+  // -------------------------------- SCHEDULING ALGO --------------------------
   // Segment Scheduling Algorithm
   // https://atcoder.jp/contests/abc230/tasks/abc230_d
   static void segmentScheduling(){
