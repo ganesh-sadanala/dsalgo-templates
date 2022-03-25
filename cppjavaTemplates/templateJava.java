@@ -305,7 +305,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/429/problem/B
 https://codeforces.com/contest/1399/problem/D
 https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
 https://codeforces.com/contest/1175/problem/B
