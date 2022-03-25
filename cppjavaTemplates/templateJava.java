@@ -21,6 +21,7 @@ https://codeforces.com/blog/entry/100826
 https://codeforces.com/blog/entry/48122
 
 */
+// 5:1:1 => 5->Practice+Contests, 1->New Topics+Prac, 1->Revision of DSA and Math
 // Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 // online tools for cp - https://codeforces.com/blog/entry/82884
 // https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
