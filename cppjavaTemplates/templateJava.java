@@ -305,8 +305,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1399/problem/D
-https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
 https://codeforces.com/contest/1175/problem/B
 https://codeforces.com/contest/1291/problem/C
 https://codeforces.com/contest/1198/problem/B
@@ -430,6 +428,8 @@ https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
 https://codeforces.com/contest/763/problem/A
 https://www.hackerrank.com/challenges/zero-move-nim/problem?isFullScreen=true
+https://codeforces.com/contest/1399/problem/D
+https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
 */
 import java.util.*;
 import java.io.*;
