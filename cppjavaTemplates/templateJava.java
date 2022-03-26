@@ -7,6 +7,7 @@ God of:
 /*
 To be learned
 -------------
+https://www.csie.ntu.edu.tw/~r97002/temp/Concrete%20Mathematics%202e.pdf
 https://codeforces.com/blog/entry/72285 : https://codeforces.com/problemset/problem/1047/B
 cp-algo pending
 https://codeforces.com/blog/entry/91363
@@ -572,7 +573,99 @@ class Codechef {
 			if(Math.abs(y - p.y) > EPS) return y > p.y ? 1 : -1;
 			return 0;
 		}
-		public boolean isEqual(Point a, Point b) return a.x==b.x && a.y==b.y;
+		public boolean isEqual(Point b) return x==b.x && y==b.y;
+		public double square() return x*x+y*y;
+		public double abs() return Math.sqrt(square());
+		Point translate(Vector v) { return new Point(x + v.x , y + v.y); }
+		Point rotate(double angle)
+		{
+			double c = Math.cos(angle), s = Math.sin(angle);
+			return new Point(x * c - y * s, x * s + y * c);
+		}
+		// if the point p lies on vector ab
+		boolean onLine(Point a, Point b) 
+		{
+			if(a.compareTo(b) == 0) return compareTo(a) == 0;
+			Vector ab=new Vector(a, b);
+			Vector ap=new Vector(a, this);
+			return Math.abs(ab.cross(ap)) < EPS;
+		}
+		
+		// if the point p lies inside ab and ac vector plane
+		boolean insideABC(Point a, Point b, Point c) 
+		{
+			
+			Vector ab=new Vector(a, b);
+			Vector ac=new Vector(a, c);
+			double crossProd = ab.cross(ac);
+			if(crossProd < 0){
+				Point temp = b;
+				b=c;
+				c=temp;
+			}
+			Vector ap=new Vector(a, this);
+			double crossProdAB = ab.cross(ap);
+			double crossProdAC = ac.cross(ap);
+			return crossProdAB>=0 && crossProdAC<=0;
+		}
+		
+		double angle(Point a, Point o, Point b)  // angle AOB
+		{
+			Vector oa = new Vector(o, a), ob = new Vector(o, b);
+			return Math.acos(oa.dot(ob) / Math.sqrt(oa.norm2() * ob.norm2()));
+		}
+		
+		double cross(Point a, Point b, Point c){
+			Vector ab=new Vector(a, b);
+			Vector ac=new Vector(a, c);
+			return ab.cross(ac);
+		}
+		
+		boolean isConvex(List<Point> p){
+			boolean hasPos=false, hasNeg=false;
+			for(int i=0;i<p.size();i++){
+				double o = cross(p.get(i), p.get((i+1)%n), p.get((i+2)%n));
+				if(o > 0) hasPos=true;
+				if(o < 0) hasNeg=true;
+			}
+			return !(hasPos && hasNeg);
+		}
+	}
+	
+	static class Vector {
+		double x, y; 
+
+		Vector(double a, double b) { x = a; y = b; }
+
+		Vector(Point a, Point b) { this(b.x - a.x, b.y - a.y); }
+		
+		Vector scale(double s) { return new Vector(x * s, y * s); }              //s is a non-negative value
+
+		double dot(Vector v) { return (x * v.x + y * v.y); }
+
+		double cross(Vector v) { return x * v.y - y * v.x; }
+		
+		double norm2() { return x * x + y * y; }
+		
+		// [0, PI]
+		double angle(Vector v){
+			double cosTheta = dot(v) / norm2() / v.norm2();
+			return Math.acos(Math.max(-1.0, Math.min(1.0, cosTheta)));
+		}
+		
+		double orientedAngle(Vector v){
+			double crossProd = cross(v);
+			if(crossProd >= 0){
+				return angle(v);
+			}
+			return 2*Math.PI-angle(v);
+		}
+		
+		Vector normalize() 
+		{ 
+			double d = Math.sqrt(norm2());
+			return scale(1 / d);
+		}
 		
 	}
  
