@@ -306,13 +306,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1175/problem/B
-https://codeforces.com/contest/1291/problem/C
-https://codeforces.com/contest/1198/problem/B
-https://codeforces.com/contest/1282/problem/B2
-https://codeforces.com/contest/165/problem/C
-https://codeforces.com/contest/913/problem/C
-https://codeforces.com/contest/1036/problem/D
 https://codeforces.com/problemset/problem/1257/D
 https://codeforces.com/problemset/problem/1295/C
 https://codeforces.com/contest/1542/problem/B
@@ -431,6 +424,7 @@ https://codeforces.com/contest/763/problem/A
 https://www.hackerrank.com/challenges/zero-move-nim/problem?isFullScreen=true
 https://codeforces.com/contest/1399/problem/D
 https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
+https://codeforces.com/contest/1282/problem/B2 
 */
 import java.util.*;
 import java.io.*;
@@ -1293,14 +1287,14 @@ class Codechef {
       }
   }
  
-  int queryMin(int l, int r){
+  static int queryMin(int l, int r){
       int len=r-l+1;
       int p=(int)(Math.log(len)/Math.log(2));
       int k=(int)Math.pow(2, p);
       return Math.min(smn[l][p], smn[r-k+1][p]);
   }
 
-  int queryMax(int l, int r){
+  static int queryMax(int l, int r){
       int len=r-l+1;
       int p=(int)(Math.log(len)/Math.log(2));
       int k=(int)Math.pow(2, p);
@@ -1308,7 +1302,7 @@ class Codechef {
   }
   
   // Sparse Sum
-  void build(){
+  static void build(){
       int sz=(int)Math.log(n)/Math.log(2);
       sum=new int[n][sz+1];
       for(int i=0;i<n;i++) sum[i][0]=a[i];
@@ -1436,6 +1430,7 @@ class Codechef {
      sum=new int[sz];
      constructSum(0, n-1, 0);
   }
+  
   
   // -------------------------------- SCHEDULING ALGO --------------------------
   // Segment Scheduling Algorithm
