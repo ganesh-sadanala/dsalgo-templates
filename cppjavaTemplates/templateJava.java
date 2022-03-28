@@ -307,8 +307,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/problemset/problem/1632/C
-https://codeforces.com/contest/1530/problem/D
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1498/problem/C
 https://codeforces.com/contest/1498/problem/C -> See the comment section to learn more
@@ -414,6 +412,7 @@ https://codeforces.com/contest/1399/problem/D
 https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
 https://codeforces.com/contest/1282/problem/B2 
 https://codeforces.com/problemset/problem/1257/D
+https://codeforces.com/problemset/problem/1632/C
 */
 import java.util.*;
 import java.io.*;
