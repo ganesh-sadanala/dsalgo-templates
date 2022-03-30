@@ -308,7 +308,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1552/problem/D
 https://codeforces.com/contest/1487/problem/C
 https://codeforces.com/contest/1485/problem/C
@@ -404,6 +403,7 @@ https://codeforces.com/problemset/problem/1632/C
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1338/problem/A
 https://codeforces.com/contest/1491/problem/C
+https://codeforces.com/contest/1554/problem/C
 */
 import java.util.*;
 import java.io.*;
