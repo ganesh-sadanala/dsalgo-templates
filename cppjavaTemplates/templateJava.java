@@ -308,9 +308,6 @@ A=B*Q+R
 /*
 cur -> CF unsolved
 Queue 1 -----------------
-https://codeforces.com/contest/281/problem/D
-https://codeforces.com/contest/797/problem/C
-https://codeforces.com/contest/166/problem/E
 https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/contest/1343/problem/D
 https://codeforces.com/contest/401/problem/C
@@ -398,6 +395,7 @@ https://codeforces.com/contest/1491/problem/C
 https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1474/problem/C
 https://leetcode.com/problems/132-pattern/
+https://codeforces.com/contest/281/problem/D : Stack
 */
 import java.util.*;
 import java.io.*;
@@ -833,6 +831,19 @@ class Codechef {
      }
      return ans;
    }
+	
+	// https://codeforces.com/contest/166/problem/E
+	static void numberOfWaysInTetrahedron(){
+	    int n = Integer.parseInt(bf.readLine());
+	    long dp[][]=new long[2][n+1];
+	    dp[1][0] = 1;
+	    for (int i = 1; i <10000002; i++) {
+	      dp[1][i] = (int)((3L * dp[0][i - 1]) % mod);
+	      dp[0][i] = (int)((2L * dp[0][i - 1] + dp[1][i - 1]) % mod);
+	    }
+	    System.out.println(dp[1][n]);
+	}
+    
 	
     // ----------------------------------- BITWISE ---------------------------
     // submask generation
@@ -1515,6 +1526,31 @@ class Codechef {
     str.append(ans).append("\n");
   }
   
+
+ // -------------------------------- STACKS/QUEUES ---------------------------
+ // https://codeforces.com/contest/281/problem/D
+ // Maximum xor of two maximum numbers of every subarray
+ static void solve(){
+    Stack<Integer> fwd=new Stack<>();
+    fwd.push(0);
+    long res=0;
+    for(int i=0;i<n;i++){
+      while(!fwd.isEmpty() && a[fwd.peek()]<a[i]){
+        res=Math.max(res, a[fwd.pop()]^a[i]);
+      }
+      fwd.push(i);
+    }
+    Stack<Integer> bwd=new Stack<>();
+    bwd.push(n-1);
+    for(int i=n-1;i>=0;i--){
+      while(!bwd.isEmpty() && a[bwd.peek()]<a[i]){
+        res=Math.max(res, a[bwd.pop()]^a[i]);
+      }
+      bwd.push(i);
+    }
+    str.append(res).append("\n");
+  } 
+
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     int t = Integer.parseInt(bf.readLine().trim());
