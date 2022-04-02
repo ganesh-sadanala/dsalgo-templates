@@ -629,6 +629,29 @@ class Codechef {
 		}
 		
 	}
+	
+	static class Line{
+		static final double INF = 1e9, EPS = 1e-9;
+		double a, b, c;
+		
+		// Vector v(-b, a) is parallel to the line represented
+		// as two points p and q. pq vector is equal v vector
+		Line(Point p, Point q)
+		{
+			if(Math.abs(p.x - q.x) < EPS) {	a = 1; b = 0; c = -p.x;	}
+			else
+			{
+				a = (p.y - q.y) / (q.x - p.x);
+				b = 1.0;
+				c = -(a * p.x + p.y);
+			}
+
+		}
+		Line(Point p, double m) { a = -m; b = 1; c =  -(a * p.x + p.y); } 
+		boolean parallel(Line l) { return Math.abs(a - l.a) < EPS && Math.abs(b - l.b) < EPS; }
+		boolean same(Line l) { return parallel(l) && Math.abs(c - l.c) < EPS; }
+		
+	}
  
    // a is sorted non-decreasing manner : https://codeforces.com/problemset/problem/766/B
    static String findNonDegnerateSidesOfTriangle(long a[]){
