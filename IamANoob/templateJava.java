@@ -309,14 +309,6 @@ A=B*Q+R
 cur -> CF unsolved
 Queue 1 -----------------
 https://codeforces.com/blog/entry/65487?#comment-494720
-https://codeforces.com/contest/1311/problem/F
-https://codeforces.com/contest/1354/problem/C2
-https://codeforces.com/contest/1216/problem/E1
-https://www.hackerrank.com/challenges/misere-nim-1/problem?isFullScreen=true
-https://codeforces.com/contest/1528/problem/B
-https://www.codechef.com/problems/GRAYSC
-https://www.geeksforgeeks.org/find-a-non-empty-subset-in-an-array-of-n-integers-such-that-sum-of-elements-of-subset-is-divisible-by-n/. -> https://codeforces.com/blog/entry/80683
-https://codeforces.com/contest/1132/problem/C
 https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
 https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=false
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
@@ -393,6 +385,8 @@ https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D : Stack
 https://codeforces.com/contest/1343/problem/D
 https://codeforces.com/contest/1499/problem/C
+https://codeforces.com/contest/1311/problem/F
+https://codeforces.com/contest/1354/problem/C2
 */
 import java.util.*;
 import java.io.*;
@@ -405,7 +399,7 @@ class Codechef {
     static StringBuilder str = new StringBuilder("");
 
     static void solve() {
-
+	    
     }
     
     // ------------------------------ General or Miscellaneous or interesting ---------------------------------
