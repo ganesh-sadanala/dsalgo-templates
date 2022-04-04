@@ -219,6 +219,7 @@ Let us denote by 𝑑(𝑛) the sum of all divisors of the number 𝑛, i.e. �
 Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=1.
 
 a+b=(a^b)+2*(a&b)
+a+b=(a&b)+(a|b)
 
 (a^(b^c))%m != (a^((b^c)%m))%m -> https://codeforces.com/problemset/problem/1594/E1
 
@@ -304,20 +305,9 @@ A=B*Q+R
 
 
 
-**/
-/*
+**//*
 cur -> CF unsolved
-Queue 1 -----------------
-https://codeforces.com/blog/entry/65487?#comment-494720
-https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
-https://www.hackerrank.com/challenges/nimble-game-1/problem?isFullScreen=false
-https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
-https://codeforces.com/contest/274/problem/A
-https://codeforces.com/contest/455/problem/A
-https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
-https://codeforces.com/contest/1368/problem/D
-https://codeforces.com/contest/891/problem/A
-https://codeforces.com/contest/1242/problem/A?locale=en
+Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/contest/1373/problem/D
 https://codeforces.com/contest/1278/problem/B
 https://codeforces.com/contest/743/problem/C
@@ -387,6 +377,10 @@ https://codeforces.com/contest/1343/problem/D
 https://codeforces.com/contest/1499/problem/C
 https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1354/problem/C2
+https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
+https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
+https://codeforces.com/contest/1368/problem/D
+https://codeforces.com/contest/1242/problem/A?locale=en
 */
 import java.util.*;
 import java.io.*;
