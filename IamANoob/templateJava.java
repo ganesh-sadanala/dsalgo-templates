@@ -308,9 +308,6 @@ A=B*Q+R
 **//*
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
-https://codeforces.com/contest/1373/problem/D
-https://codeforces.com/contest/1278/problem/B
-https://codeforces.com/contest/743/problem/C
 https://codeforces.com/contest/1114/problem/B
 https://codeforces.com/contest/1299/problem/A
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
@@ -381,6 +378,7 @@ https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
 https://codeforces.com/contest/1368/problem/D
 https://codeforces.com/contest/1242/problem/A?locale=en
+https://codeforces.com/contest/1373/problem/D
 */
 import java.util.*;
 import java.io.*;
