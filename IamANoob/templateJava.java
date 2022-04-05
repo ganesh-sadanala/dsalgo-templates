@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
  
 To be learned
 -------------
+https://docs.google.com/document/d/1Qmh_suVjBv0F3LFC5CfO06knn2zW92nfTyVlQLrUnFs/edit
 https://www.csie.ntu.edu.tw/~r97002/temp/Concrete%20Mathematics%202e.pdf
 https://codeforces.com/blog/entry/72285 : https://codeforces.com/problemset/problem/1047/B
 cp-algo pending
@@ -303,19 +304,10 @@ A=B*Q+R
 
 
 
-
-
 **//*
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
-https://codeforces.com/contest/1114/problem/B
-https://codeforces.com/contest/1299/problem/A
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/contest/1557/problem/C
-https://codeforces.com/contest/868/problem/C
-https://codeforces.com/problemset/problem/1637/D
-https://codeforces.com/contest/1494/problem/B
-https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/961/problem/C
 https://codeforces.com/contest/1395/problem/C
 https://codeforces.com/contest/812/problem/B
@@ -379,6 +371,9 @@ https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) 
 https://codeforces.com/contest/1368/problem/D
 https://codeforces.com/contest/1242/problem/A?locale=en
 https://codeforces.com/contest/1373/problem/D
+https://codeforces.com/problemset/problem/1637/D
+https://codeforces.com/contest/1557/problem/C
+https://codeforces.com/contest/1367/problem/D
 */
 import java.util.*;
 import java.io.*;
