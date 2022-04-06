@@ -27,6 +27,7 @@ https://codeforces.com/blog/entry/100826
 https://codeforces.com/blog/entry/48122
 
 */
+// A forest is an undirected graph without cycles (not necessarily connected).
 // 5:1:1 => 5->Practice+Contests, 1->New Topics+Prac, 1->Revision of DSA and Math
 // Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 // online tools for cp - https://codeforces.com/blog/entry/82884
@@ -393,20 +394,10 @@ A=B*Q+R
 
 
 
-
 **//*
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/contest/1325/problem/D
-https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
-https://codeforces.com/contest/1560/problem/E
-https://codeforces.com/contest/960/problem/C
-https://codeforces.com/contest/484/problem/A
-https://codeforces.com/contest/1406/problem/C
-https://codeforces.com/contest/1381/problem/A2 : https://www.youtube.com/watch?v=WahbgoqJsj4
-https://codeforces.com/contest/1556/problem/B
-https://codeforces.com/contest/1292/problem/B
 https://codeforces.com/contest/1430/problem/D
 https://codeforces.com/contest/1383/problem/A
 https://codeforces.com/contest/1301/problem/C
@@ -459,6 +450,10 @@ https://codeforces.com/contest/1373/problem/D
 https://codeforces.com/problemset/problem/1637/D
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/1367/problem/D
+https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
+https://codeforces.com/contest/484/problem/A
+https://codeforces.com/contest/1381/problem/A2 : https://www.youtube.com/watch?v=WahbgoqJsj4
+https://codeforces.com/contest/1292/problem/B
 */
 import java.util.*;
 import java.io.*;
