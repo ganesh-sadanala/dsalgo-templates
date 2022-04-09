@@ -398,9 +398,6 @@ A=B*Q+R
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/contest/1543/problem/D1
-https://codeforces.com/contest/1624/problem/C
-https://codeforces.com/problemset/problem/1627/B
 https://codeforces.com/problemset/problem/1546/B
 https://codeforces.com/problemset/problem/1495/A
 https://codeforces.com/problemset/problem/1450/B
