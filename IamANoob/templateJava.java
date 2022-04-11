@@ -398,8 +398,6 @@ A=B*Q+R
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/problemset/problem/1307/B
-https://codeforces.com/problemset/problem/1119/B
 https://codeforces.com/problemset/problem/1100/C : https://codeforces.com/blog/entry/64545?#comment-599941
 https://codeforces.com/problemset/problem/840/A
 https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/entry/51962?#comment-359831
@@ -445,6 +443,7 @@ https://codeforces.com/contest/1292/problem/B
 https://codeforces.com/contest/1301/problem/C
 https://codeforces.com/contest/1567/problem/D
 https://codeforces.com/problemset/problem/1433/E
+https://codeforces.com/problemset/problem/1307/B
 */
 import java.util.*;
 import java.io.*;
