@@ -398,7 +398,6 @@ A=B*Q+R
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/problemset/problem/749/B : See the editorial for vector approach
 https://codeforces.com/problemset/problem/667/B
 https://codeforces.com/problemset/problem/312/B
 https://codeforces.com/problemset/problem/227/A : learned the vector approach to find angle and direction : https://codeforces.com/blog/entry/101047
