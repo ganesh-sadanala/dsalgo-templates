@@ -398,11 +398,6 @@ A=B*Q+R
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/problemset/problem/667/B
-https://codeforces.com/problemset/problem/312/B
-https://codeforces.com/problemset/problem/227/A : learned the vector approach to find angle and direction : https://codeforces.com/blog/entry/101047
-https://codeforces.com/contest/340/problem/D
-https://codeforces.com/contest/343/problem/A
 https://codeforces.com/contest/1385/problem/E
 https://codeforces.com/contest/704/problem/A
 https://codeforces.com/contest/763/problem/A
@@ -441,6 +436,7 @@ https://codeforces.com/problemset/problem/1433/E
 https://codeforces.com/problemset/problem/1307/B
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/entry/51962?#comment-359831
+https://codeforces.com/problemset/problem/667/B
 */
 import java.util.*;
 import java.io.*;
