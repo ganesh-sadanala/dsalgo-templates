@@ -11,6 +11,8 @@ https://codeforces.com/contest/559/problem/B
  
 To be learned
 -------------
+https://www.youtube.com/watch?v=bSdp2WeyuJY
+https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit
 https://docs.google.com/document/d/1Qmh_suVjBv0F3LFC5CfO06knn2zW92nfTyVlQLrUnFs/edit
 https://www.csie.ntu.edu.tw/~r97002/temp/Concrete%20Mathematics%202e.pdf
 https://codeforces.com/blog/entry/72285 : https://codeforces.com/problemset/problem/1047/B
@@ -392,27 +394,10 @@ A=B*Q+R
 
 
 
-
-
 **//*
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/contest/1385/problem/E
-https://codeforces.com/contest/704/problem/A
-https://codeforces.com/contest/763/problem/A
-https://www.hackerrank.com/challenges/zero-move-nim/problem?isFullScreen=true
-https://codeforces.com/contest/1399/problem/D
-https://codeforces.com/contest/1137/problem/B -> Try with all string methods -> https://cp-algorithms.com/string/string-hashing.html
-https://codeforces.com/contest/1282/problem/B2 
-https://codeforces.com/problemset/problem/1257/D
-https://codeforces.com/problemset/problem/1632/C
-https://codeforces.com/contest/1503/problem/A
-https://codeforces.com/contest/1338/problem/A
-https://codeforces.com/contest/1491/problem/C
-https://codeforces.com/contest/1554/problem/C
-https://codeforces.com/contest/1474/problem/C
-https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/281/problem/D : Stack
 https://codeforces.com/contest/1343/problem/D
 https://codeforces.com/contest/1499/problem/C
@@ -437,6 +422,11 @@ https://codeforces.com/problemset/problem/1307/B
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/entry/51962?#comment-359831
 https://codeforces.com/problemset/problem/667/B
+https://codeforces.com/problemset/problem/1257/D
+https://codeforces.com/contest/1503/problem/A
+https://codeforces.com/contest/1554/problem/C
+https://codeforces.com/contest/1474/problem/C
+https://leetcode.com/problems/132-pattern/
 */
 import java.util.*;
 import java.io.*;
