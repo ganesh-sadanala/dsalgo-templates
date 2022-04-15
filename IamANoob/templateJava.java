@@ -285,9 +285,9 @@ configuration2 (i-j) is same for same diagonal elements.
  Distance from line to a point in vector form: https://www.youtube.com/watch?v=tYUtWYGUqgw
  
 https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree : https://codeforces.com/contest/343/problem/A : https://codeforces.com/blog/entry/8860?#comment-351231
-GCD(A, B) => GCD(B, A%B)
+GCD(A, B) => GCD(B, A%B) => GCD(A-B, B)
 A=B*Q+R
-
+There are A/B steps to reach from GCD(A, B) to one euclidean step GCD(B, A%B) using GCD(A-B, B) where A>B
 
 
 
@@ -398,18 +398,6 @@ A=B*Q+R
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/contest/281/problem/D : Stack
-https://codeforces.com/contest/1343/problem/D
-https://codeforces.com/contest/1499/problem/C
-https://codeforces.com/contest/1311/problem/F
-https://codeforces.com/contest/1354/problem/C2
-https://codeforces.com/contest/1310/problem/A -> https://codeforces.com/contest/1310/submission/82178840
-https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
-https://codeforces.com/contest/1368/problem/D
-https://codeforces.com/contest/1242/problem/A?locale=en
-https://codeforces.com/contest/1373/problem/D
-https://codeforces.com/problemset/problem/1637/D
-https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/1367/problem/D
 https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
 https://codeforces.com/contest/484/problem/A
@@ -427,6 +415,12 @@ https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1474/problem/C
 https://leetcode.com/problems/132-pattern/
+https://codeforces.com/contest/1499/problem/C
+https://codeforces.com/contest/1311/problem/F
+https://codeforces.com/contest/1354/problem/C2
+https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
+https://codeforces.com/contest/1242/problem/A?locale=en
+https://codeforces.com/contest/1557/problem/C
 */
 import java.util.*;
 import java.io.*;
@@ -467,7 +461,9 @@ class Codechef {
 	      }
 	    }
 	    return cnt;
-   }
+    }
+	
+    // Awesome implementation => https://codeforces.com/contest/1310/problem/A
 	
    // pair datastructure 
     // equals and hashCode should be overriden when you want to 
@@ -1394,6 +1390,7 @@ class Codechef {
 
     // ------------------------- ADVANCED DATA STRUCTURES ------------------------
     // BIT
+    // Using 2 BIT structures => https://codeforces.com/contest/1311/problem/F
     static long query(int idx) {
         long sum = 0;
         idx++;
