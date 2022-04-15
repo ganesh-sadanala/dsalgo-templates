@@ -11,6 +11,8 @@ https://codeforces.com/contest/559/problem/B
  
 To be learned
 -------------
+https://mathworld.wolfram.com/
+https://brilliant.org/home/
 https://www.youtube.com/watch?v=bSdp2WeyuJY
 https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit
 https://docs.google.com/document/d/1Qmh_suVjBv0F3LFC5CfO06knn2zW92nfTyVlQLrUnFs/edit
@@ -409,6 +411,8 @@ https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) 
 https://codeforces.com/contest/1242/problem/A?locale=en
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
+https://codeforces.com/problemset/problem/1288/C
+https://codeforces.com/problemset/problem/553/A
 */
 import java.util.*;
 import java.io.*;
@@ -427,7 +431,6 @@ class Codechef {
     // ------------------------------ General or Miscellaneous or interesting ---------------------------------
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
-	
     // Number of distinct values of bitwise OR of all subarrays
     // i;e; distinct OR values for all 1<=l<=r<=n https://codeforces.com/problemset/problem/243/A
     static int distinctOROfAllSubarrays(int a[]){
@@ -1002,8 +1005,19 @@ class Codechef {
             }
         }
     }
+	
+   // calculate nCr
+   long[][] comb = new long[MAXN][MAXN];
+    comb[0][0] = 1;
+    for (int i = 1; i < MAXN; i++) {
+      comb[i][0] = 1;
+      for (int j = 1; j <= i; j++) {
+        comb[i][j] = (comb[i-1][j] + comb[i-1][j-1]) % mod;
+      }
+    }
 
     // --------------------------- PERMUTATIONS AND COMBINATIONS ------------------------------
+   
     // Heaps algorithm -> to find all the permutations of an array
     static void heapsAlgorithm() {
         https: //www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
