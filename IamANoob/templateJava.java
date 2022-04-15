@@ -398,19 +398,6 @@ There are A/B steps to reach from GCD(A, B) to one euclidean step GCD(B, A%B) us
 cur -> CF unsolved
 Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
-https://codeforces.com/contest/1367/problem/D
-https://codeforces.com/contest/1559/problem/D2 // The key idea is after performing the 1st operation i.e; merging all possible nodes with 1 in both the graphs. Then nodes that are not connected in L with 1 are connected in R with 1. The vice versa i.e; nodes that are not connected in R with 1 are connected in L with 1.
-https://codeforces.com/contest/484/problem/A
-https://codeforces.com/contest/1381/problem/A2 : https://www.youtube.com/watch?v=WahbgoqJsj4
-https://codeforces.com/contest/1292/problem/B
-https://codeforces.com/contest/1301/problem/C
-https://codeforces.com/contest/1567/problem/D
-https://codeforces.com/problemset/problem/1433/E
-https://codeforces.com/problemset/problem/1307/B
-https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
-https://codeforces.com/problemset/problem/794/B : https://codeforces.com/blog/entry/51962?#comment-359831
-https://codeforces.com/problemset/problem/667/B
-https://codeforces.com/problemset/problem/1257/D
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1474/problem/C
@@ -421,6 +408,7 @@ https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
 https://codeforces.com/contest/1242/problem/A?locale=en
 https://codeforces.com/contest/1557/problem/C
+https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 */
 import java.util.*;
 import java.io.*;
