@@ -47,6 +47,7 @@ Interesting hidden things in java
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
 https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
 https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
+Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 */
 /*
@@ -413,6 +414,8 @@ https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/problemset/problem/1288/C
 https://codeforces.com/problemset/problem/553/A
+https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
+
 */
 import java.util.*;
 import java.io.*;
