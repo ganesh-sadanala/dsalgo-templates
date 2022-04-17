@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
  
 To be learned
 -------------
+https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
 https://brilliant.org/home/
 https://www.youtube.com/watch?v=bSdp2WeyuJY
@@ -66,7 +67,7 @@ https://codeforces.com/blog/entry/45281#:~:text=Precision%20error%20problems%20%
 /* 
 sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
 
-Bi Partite graoh: https://www.geeksforgeeks.org/bipartite-graph/
+Bi Partite graph: https://www.geeksforgeeks.org/bipartite-graph/
 
 Next greatest element, Next least element, Monotonic stack
 Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
@@ -416,6 +417,8 @@ https://codeforces.com/problemset/problem/1288/C
 https://codeforces.com/problemset/problem/553/A
 https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 https://codeforces.com/problemset/problem/57/C : https://codeforces.com/blog/entry/1169#comment-20773
+https://codeforces.com/contest/1411/problem/C
+https://codeforces.com/contest/1451/problem/D
 */
 import java.util.*;
 import java.io.*;
