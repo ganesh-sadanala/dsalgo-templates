@@ -1,15 +1,15 @@
 /*
+Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
+
 God of:
+-------
 1. Maximum sum alternating sign subsequence in an array.
 
-
-*/
-/*
 Don't understand the Editorial
 ---------
 https://codeforces.com/contest/559/problem/B
  
-To be learned
+Tools and Resources
 -------------
 https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
@@ -30,32 +30,22 @@ https://codeforces.com/blog/entry/58747
 https://codeforces.com/blog/entry/55274
 https://codeforces.com/blog/entry/100826
 https://codeforces.com/blog/entry/48122
+Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
+online tools for cp - https://codeforces.com/blog/entry/82884
+https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
+Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
+cp book -> https://github.com/luisfcofv/competitive-programming-book
+https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/
 
-*/
-// A forest is an undirected graph without cycles (not necessarily connected).
-// 5:1:1 => 5->Practice+Contests, 1->New Topics+Prac, 1->Revision of DSA and Math
-// Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
-// online tools for cp - https://codeforces.com/blog/entry/82884
-// https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
-// Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
-// Not a Cycle of odd length or Bipartite: https://www.geeksforgeeks.org/check-graphs-cycle-odd-length/
-// cp book -> https://github.com/luisfcofv/competitive-programming-book
-// https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/
-// Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
-// Whenever you don't able to solve, it means u did not solve closer idea problem -> so make a lot of observations.
-/*
 Interesting hidden things in java
+---------------------------------
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
 https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
 https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 */
-/*
-Stars and Bars
-https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
-https://progvar.fun/problemsets/stars-and-bars
-*/
+
 /*
 Binary Search on Real Numbers -> https://codeforces.com/blog/entry/63085
 https://codeforces.com/blog/entry/73888
