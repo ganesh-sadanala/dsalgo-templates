@@ -49,7 +49,6 @@ Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(
 */
 /*
 Variation of coin sum dp problem (If can't form change and change given to us in back is also a cost) -> https://atcoder.jp/contests/abc231/tasks/abc231_e
-nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF prob:https://codeforces.com/problemset/problem/30/A
 Pigeon hole principle Ques: https://codeforces.com/contest/1619/problem/D : https://www.youtube.com/watch?v=UGLQtUVbkhg
 Topic question:
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
@@ -1134,6 +1133,12 @@ class Codechef {
 	Binary Search on Real Numbers -> https://codeforces.com/blog/entry/63085
 	https://codeforces.com/blog/entry/73888
 	https://codeforces.com/blog/entry/45281#:~:text=Precision%20error%20problems%20%2D%20Codeforces
+	
+	nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/  
+	https://www.geeksforgeeks.org/calculating-n-th-real-root-using-binary-search/   
+	CF prob:https://codeforces.com/problemset/problem/30/A
+	
+	
     */
     /*
     If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
