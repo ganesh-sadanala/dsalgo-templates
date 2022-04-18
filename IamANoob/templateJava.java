@@ -47,11 +47,7 @@ https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 */
-/* 
-Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
-https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
-Amazing variation of this: https://codeforces.com/problemset/problem/375/B
-
+/*
 Variation of coin sum dp problem (If can't form change and change given to us in back is also a cost) -> https://atcoder.jp/contests/abc231/tasks/abc231_e
 nth root of a number - https://www.geeksforgeeks.org/n-th-root-number/     CF prob:https://codeforces.com/problemset/problem/30/A
 Pigeon hole principle Ques: https://codeforces.com/contest/1619/problem/D : https://www.youtube.com/watch?v=UGLQtUVbkhg
@@ -697,6 +693,10 @@ class Codechef {
    
 	
     // ---------------------------------- #DP --------------------------------
+    /* Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
+       https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
+       Amazing variation of this: https://codeforces.com/problemset/problem/375/B
+    */
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
         int n=s.length;
