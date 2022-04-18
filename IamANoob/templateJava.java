@@ -48,13 +48,6 @@ Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(
 
 */
 /* 
-sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
-
-Bi Partite graph: https://www.geeksforgeeks.org/bipartite-graph/
-
-Next greatest element, Next least element, Monotonic stack
-Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article -> https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
-
 Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
 https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
 Amazing variation of this: https://codeforces.com/problemset/problem/375/B
@@ -128,8 +121,8 @@ Wonderful dp, greedy, bs, sortings question - https://codeforces.com/problemset/
 
 https://en.wikipedia.org/wiki/Gray_code
 *
-Math:
-----
+Math and Related
+-----------------
 
 https://codeforces.com/contest/735/problem/D
 Goldbach's conjecture: is one of the oldest and best-known unsolved problems in number theory and all of mathematics. 
@@ -417,7 +410,7 @@ class Codechef {
 	    
     }
     
-    // ------------------------------ General or Miscellaneous or interesting ---------------------------------
+    // ------------------------------ #General  #Miscellaneous  #interesting ---------------------------------
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
     // Number of distinct values of bitwise OR of all subarrays
@@ -478,7 +471,7 @@ class Codechef {
     }
 
 	
-   // ----------------------- SORTING -------------------------------
+   // ----------------------- #SORTING -------------------------------
 	
 	// sorting template of normal array []
     static void templateSortArray(int a[]) {
@@ -525,7 +518,7 @@ class Codechef {
             arr[i] = output[i];
     }
 	
-    // ----------------------------------Geometry----------------------------------
+    // ----------------------------------#Geometry----------------------------------
 	// ax^2+bx+c=0 , a!=0
 	// source: https://vlecomte.github.io/cp-geo.pdf Page: 22
 	static void quadraticRoots(double a, double b, double c){
@@ -703,7 +696,7 @@ class Codechef {
 	
    
 	
-    // ---------------------------------- DP --------------------------------
+    // ---------------------------------- #DP --------------------------------
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
         int n=s.length;
@@ -896,7 +889,8 @@ class Codechef {
 	}
     
 	
-    // ----------------------------------- BITWISE ---------------------------
+    // ----------------------------------- #BITWISE ---------------------------
+    // sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
     // submask generation
     // If you want 0 as a submask
     for(int submask = mask; ; submask = (submask - 1) & mask) {
@@ -912,7 +906,7 @@ class Codechef {
     	
     }
 	    
-    // ------------------------------- STRINGS ------------------------------
+    // ------------------------------- #STRINGS ------------------------------
     // string hashing - Polynomial Rolling Hash
     // https://ideone.com/0sgZWx
     // https://www.youtube.com/watch?v=X_YgMWvCRS8&list=PL2q4fbVm1Ik6ThrYKCzgEpmaS_XWDGHjx&index=6
@@ -1051,7 +1045,7 @@ class Codechef {
         return der[n];
     }
 
-    // ------------------------- NUMBER THEORY ------------------------ 
+    // ------------------------- #NUMBER THEORY ------------------------ 
     // https://www.youtube.com/watch?v=8Fqv4ddMC3I
     static void extendedGcd(long a, long b, long ar[]) {
         if (b == 0) {
@@ -1163,7 +1157,9 @@ class Codechef {
         iterations++;
     }
 
-    // ----------------------------- GRAPHS -------------------------
+    // ----------------------------- #GRAPHS -------------------------
+    // Bi Partite graph: https://www.geeksforgeeks.org/bipartite-graph/
+
     // DSU
     static int find(int i) {
         if (parent[i] != i)
@@ -1387,7 +1383,7 @@ class Codechef {
         return res;
     }
 
-    // ------------------------- ADVANCED DATA STRUCTURES ------------------------
+    // ------------------------- #ADVANCED DATA STRUCTURES ------------------------
     // BIT
     // Using 2 BIT structures => https://codeforces.com/contest/1311/problem/F
     static long query(int idx) {
@@ -1579,7 +1575,7 @@ class Codechef {
   }
   
   
-  // -------------------------------- SCHEDULING ALGO --------------------------
+  // -------------------------------- #SCHEDULING ALGO --------------------------
   // Segment Scheduling Algorithm
   // https://atcoder.jp/contests/abc230/tasks/abc230_d
   static void segmentScheduling(){
@@ -1598,7 +1594,9 @@ class Codechef {
   }
   
 
- // -------------------------------- STACKS/QUEUES ---------------------------
+ // -------------------------------- #STACKS/#QUEUES ---------------------------
+ // Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article  
+ // https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
  // https://codeforces.com/contest/281/problem/D
  // Maximum xor of two maximum numbers of every subarray
  static void solve(){
