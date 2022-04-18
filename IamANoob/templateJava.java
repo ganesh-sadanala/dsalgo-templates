@@ -36,7 +36,9 @@ https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If proble
 Google Interview Experience : https://docs.google.com/document/d/15PwjWY5leHJCvwtNQi9aCH9EASTa6HPmiQWTKbEnJkU/edit
 cp book -> https://github.com/luisfcofv/competitive-programming-book
 https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/
-
+Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
+Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog
+ 
 Interesting hidden things in java
 ---------------------------------
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
@@ -45,15 +47,6 @@ https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 */
-
-/*
-Binary Search on Real Numbers -> https://codeforces.com/blog/entry/63085
-https://codeforces.com/blog/entry/73888
-https://codeforces.com/blog/entry/45281#:~:text=Precision%20error%20problems%20%2D%20Codeforces
-
-*/
-// Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
-/* Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog */
 /* 
 sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
 
@@ -1012,8 +1005,12 @@ class Codechef {
       }
     }
 
-    // --------------------------- PERMUTATIONS AND COMBINATIONS ------------------------------
-   
+    // --------------------------- #PERMUTATIONS AND #COMBINATIONS ------------------------------
+    /*
+	Stars and Bars
+	https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
+	https://progvar.fun/problemsets/stars-and-bars
+    */
     // Heaps algorithm -> to find all the permutations of an array
     static void heapsAlgorithm() {
         https: //www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
@@ -1138,8 +1135,12 @@ class Codechef {
         }
     }
 
-    // -------------------------------  BINARY SEARCH -------------------------
-    // Binary search on float values
+    // -------------------------------  #BINARY SEARCH -------------------------
+    /*
+	Binary Search on Real Numbers -> https://codeforces.com/blog/entry/63085
+	https://codeforces.com/blog/entry/73888
+	https://codeforces.com/blog/entry/45281#:~:text=Precision%20error%20problems%20%2D%20Codeforces
+    */
     /*
     If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
     100 iterations might hurt you if TL is tight and 30 iterations would be enough. Maybe you'll get TLE this way. 
