@@ -545,6 +545,8 @@ class Codechef {
 		public double square() return x*x+y*y;
 		public double abs() return Math.sqrt(square());
 		Point translate(Vector v) { return new Point(x + v.x , y + v.y); }
+		Point scale(Vector v) { return new Point(x * v.x , y * v.y); }
+		// (x+iy) * (cosp + i sinp)
 		Point rotate(double angle)
 		{
 			double c = Math.cos(angle), s = Math.sin(angle);
@@ -613,14 +615,24 @@ class Codechef {
 
 		double cross(Vector v) { return x * v.y - y * v.x; }
 		
+		double dot2(Vector v) {return conjugate(this).multiply(v).x;}
+		
+		double cross2(Vector v) {return conjugate(this).multiply(v).y;}
+		
+		Vector conjugate() { return new Vector(this.x, -this.y);}
+		
+		// Vector multiply(Vector v){ return new Vector();}
+		
 		double norm2() { return x * x + y * y; }
 		
 		// [0, PI]
+		// ABC
 		double angle(Vector v){
 			double cosTheta = dot(v) / norm2() / v.norm2();
 			return Math.acos(Math.max(-1.0, Math.min(1.0, cosTheta)));
 		}
 		
+		// BAC
 		double orientedAngle(Vector v){
 			double crossProd = cross(v);
 			if(crossProd >= 0){
@@ -642,6 +654,8 @@ class Codechef {
 	}
 	
 	static class Line{
+		// EPS can be determined from the problem
+		// stating to pring upto x decimal places
 		static final double INF = 1e9, EPS = 1e-9;
 		double a, b, c;
 		
@@ -666,11 +680,12 @@ class Codechef {
 		// 0 if p is on v
 		// <0 if p is on right of v
 		// >0 if p is on left of v
-		boolean side(Point p){
-			return v.cross(new Vector(p))-c;
+		double side(Point p){
+			Vector v=new Vector(b, -a);
+			return v.cross(new Vector(p.x, p.y))-c;
 		}
 		double dist(Point p){
-			return Math.abs(side(p)/v.abs());
+			return Math.abs(side(p)/p.abs());
 		}
 		/*
 			The squared distance can be useful to check if a point is within a certain
