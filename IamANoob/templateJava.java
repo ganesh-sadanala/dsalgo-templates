@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
  
 Tools and Resources
 -------------
+https://www.omegalearn.org/thebookofformulas
 https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
 https://brilliant.org/home/
@@ -263,6 +264,30 @@ GCD(A, B) => GCD(B, A%B) => GCD(A-B, B)
 A=B*Q+R
 There are A/B steps to reach from GCD(A, B) to one euclidean step GCD(B, A%B) using GCD(A-B, B) where A>B
 
+Consider four integers ${a},{b},{c},{d}$ and a positive integer ${m}$ such that $a\equiv b\pmod {m}$ and $c\equiv d\pmod {m}$. In modular arithmetic, the following identities hold:
+
+Addition: $a+c\equiv b+d\pmod {m}$.
+Subtraction: $a-c\equiv b-d\pmod {m}$.
+Multiplication: $ac\equiv bd\pmod {m}$.
+Division: $\frac{a}{e}\equiv \frac{b}{e}\pmod {\frac{m}{\gcd(m,e)}}$, where $e$ is a positive integer that divides ${a}$ and $b$.
+Exponentiation: $a^e\equiv b^e\pmod {m}$ where $e$ is a positive integer.
+
+phi(p^x) = p^x-p^(x-1)    where p is a prime # and phi(x) is Euler Totient function
+phi(p) = p-1
+phi(a*b) = phi(a) * phi(b) * (gcd(a, b)/phi(gcd(a, b)))
+phi(a) = sum of phi(d) where d is the all divisors of a
+phi(n)<=n-1
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -370,7 +395,8 @@ There are A/B steps to reach from GCD(A, B) to one euclidean step GCD(B, A%B) us
 
 **//*
 cur -> CF unsolved
-Queue 1 -----------------https://codeforces.com/blog/entry/65487?#comment-494720
+------------------https://codeforces.com/blog/entry/65487?#comment-494720
+https://codeforces.com/blog/entry/79866
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1554/problem/C
@@ -395,7 +421,14 @@ https://codeforces.com/problemset/problem/1215/B // similar to number of subarra
 https://codeforces.com/problemset/problem/851/B
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/contest/1574/problem/D
+
+
+Math Problems Queue
+-------------------
+https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem - I1 : https://artofproblemsolving.com/wiki/index.php/1994_AIME_Problems/Problem_11
+
 */
+
 import java.util.*;
 import java.io.*;
 import java.math.*;
@@ -1110,6 +1143,24 @@ class Codechef {
         }
 
         return result % prod;
+    }
+	
+    // Euler Totient
+    static int phi(int n)
+    {
+	 int result = n;
+	 for (int p = 2; p * p <= n; ++p)
+	  {
+		if (n % p == 0)
+		{
+		    while (n % p == 0)
+			n /= p;
+		    result -= result / p;
+		}
+	  }
+	  if (n > 1)
+	     result -= result / n;
+	  return result;
     }
 
     // non prime b;
