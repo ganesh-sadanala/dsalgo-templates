@@ -14,7 +14,9 @@ Tools and Resources
 https://www.omegalearn.org/thebookofformulas
 https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
+https://artofproblemsolving.com/
 https://brilliant.org/home/
+https://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions
 https://www.youtube.com/watch?v=bSdp2WeyuJY
 https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit
 https://docs.google.com/document/d/1Qmh_suVjBv0F3LFC5CfO06knn2zW92nfTyVlQLrUnFs/edit
@@ -264,13 +266,13 @@ GCD(A, B) => GCD(B, A%B) => GCD(A-B, B)
 A=B*Q+R
 There are A/B steps to reach from GCD(A, B) to one euclidean step GCD(B, A%B) using GCD(A-B, B) where A>B
 
-Consider four integers ${a},{b},{c},{d}$ and a positive integer ${m}$ such that $a\equiv b\pmod {m}$ and $c\equiv d\pmod {m}$. In modular arithmetic, the following identities hold:
-
-Addition: $a+c\equiv b+d\pmod {m}$.
-Subtraction: $a-c\equiv b-d\pmod {m}$.
-Multiplication: $ac\equiv bd\pmod {m}$.
-Division: $\frac{a}{e}\equiv \frac{b}{e}\pmod {\frac{m}{\gcd(m,e)}}$, where $e$ is a positive integer that divides ${a}$ and $b$.
-Exponentiation: $a^e\equiv b^e\pmod {m}$ where $e$ is a positive integer.
+// AOPS modulo 
+Consider four integers ${a},{b},{c},{d}$ and a positive integer n such that a=b mod n and c=d mod n. In modular arithmetic, the following identities hold:
+Addition: a+c=(b+d) mod m
+Subtraction: a-c=(b-d)mod m
+Multiplication: a*c=(b*d)mod m
+Division: a/e=(b/e) mod (n/gcd(n,e)), where e is a positive integer that divides a and b.
+Exponentiation: a^e=(b^e)mod m where e is a positive integer.
 
 phi(p^x) = p^x-p^(x-1)    where p is a prime # and phi(x) is Euler Totient function
 phi(p) = p-1
@@ -278,7 +280,9 @@ phi(a*b) = phi(a) * phi(b) * (gcd(a, b)/phi(gcd(a, b)))
 phi(a) = sum of phi(d) where d is the all divisors of a
 phi(n)<=n-1
 
-
+Another useful idea is that d(n) is odd if and only if 'n' is a perfect square. d(n) is the number of divisors of n.
+https://artofproblemsolving.com/wiki/index.php/Diophantine_equation
+https://artofproblemsolving.com/wiki/index.php/Linear_congruence
 
 
 
@@ -422,10 +426,18 @@ https://codeforces.com/problemset/problem/851/B
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/contest/1574/problem/D
 
-
 Math Problems Queue
 -------------------
+https://artofproblemsolving.com/wiki/index.php/Simon%27s_Favorite_Factoring_Trick
+https://artofproblemsolving.com/wiki/index.php/Wilson%27s_Theorem
+https://artofproblemsolving.com/wiki/index.php/Wilson_Prime
 https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem - I1 : https://artofproblemsolving.com/wiki/index.php/1994_AIME_Problems/Problem_11
+https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem- I2
+https://artofproblemsolving.com/wiki/index.php/2006_AMC_10B_Problems/Problem_25
+https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate - Problem @ End
+https://artofproblemsolving.com/wiki/index.php/1989_AIME_Problems/Problem_9
+https://artofproblemsolving.com/wiki/index.php/Fermat%27s_Little_Theorem : I2
+https://artofproblemsolving.com/wiki/index.php/2006_AIME_II_Problems/Problem_3 : https://www.geeksforgeeks.org/finding-power-prime-number-p-n/
 
 */
 
@@ -1113,8 +1125,8 @@ class Codechef {
         return;
     }
 
-    // Linear Diophontine
-    static void findLinearDiophontineSol(int a, int b, int c) {
+    // Linear Diophantine
+    static void findLinearDiophantineSol(int a, int b, int c) {
         long ar[] = new long[3];
         extendedGcd(a, b, ar);
         int x0 = ar[0];
@@ -1169,6 +1181,9 @@ class Codechef {
         extendedGcd(a, b, ar);
         return ar[0];
     }
+    
+    // a raise to power of b
+    // fast exponentiation
     static long pow(long a, long b) {
     long res = 1;
     while (b > 0) {
@@ -1182,12 +1197,16 @@ class Codechef {
     }
     return res;
   }
+    
+    // ncr
     static long combination(int a, int b) {
         long val1 = fact[a];
         long val2 = ifact[a - b];
         long val3 = ifact[b];
         return (((val1 * val2) % mod) * val3) % mod;
     }
+
+    // factorial and inverse factorial under modulo
     static void cal() {
         fact[0] = ifact[0] = 1;
         for (int i = 1; i < sz; i++) {
