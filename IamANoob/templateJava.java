@@ -284,15 +284,11 @@ Another useful idea is that d(n) is odd if and only if 'n' is a perfect square. 
 https://artofproblemsolving.com/wiki/index.php/Diophantine_equation
 https://artofproblemsolving.com/wiki/index.php/Linear_congruence
 
+nCr = (n-1)Cr + (n-1)C(r-1)
+nCr = (n/r) * (n-1)C(r-1)
+sum(x=0 to n)nCx = 2^n
 
-
-
-
-
-
-
-
-
+Generating Functions in combinatorics are very useful.
 
 
 
@@ -438,6 +434,9 @@ https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate -
 https://artofproblemsolving.com/wiki/index.php/1989_AIME_Problems/Problem_9
 https://artofproblemsolving.com/wiki/index.php/Fermat%27s_Little_Theorem : I2
 https://artofproblemsolving.com/wiki/index.php/2006_AIME_II_Problems/Problem_3 : https://www.geeksforgeeks.org/finding-power-prime-number-p-n/
+https://artofproblemsolving.com/wiki/index.php/Combinatorial_identity
+https://artofproblemsolving.com/wiki/index.php/Pascal%27s_triangle
+https://artofproblemsolving.com/wiki/index.php/Generating_function : Simple Exercise Problem : https://math.illinoisstate.edu/day/courses/old/305/contentgeneratingfunctions.html
 
 */
 
