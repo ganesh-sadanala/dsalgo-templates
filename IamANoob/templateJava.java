@@ -8,7 +8,7 @@ God of:
 Don't understand the Editorial
 ---------
 https://codeforces.com/contest/559/problem/B
- 
+
 Tools and Resources
 -------------
 https://www.omegalearn.org/thebookofformulas
@@ -290,6 +290,14 @@ sum(x=0 to n)nCx = 2^n
 
 Generating Functions in combinatorics are very useful.
 
+PigeonHole: 
+1. If n+1 objects are placed in n boxes then one box contains more than one object.
+2. If kn objects are placed in n boxes alteast one box contains k+1 objects.
+3. If average of n positive numbers is t, then atleast one of the numbers is greater or equal to t. 
+   Further, atleast one of the numbers is less or equal to t.
+4. https://www.geeksforgeeks.org/discrete-mathematics-the-pigeonhole-principle/
+
+
 
 
 
@@ -436,8 +444,14 @@ https://artofproblemsolving.com/wiki/index.php/Fermat%27s_Little_Theorem : I2
 https://artofproblemsolving.com/wiki/index.php/2006_AIME_II_Problems/Problem_3 : https://www.geeksforgeeks.org/finding-power-prime-number-p-n/
 https://artofproblemsolving.com/wiki/index.php/Combinatorial_identity
 https://artofproblemsolving.com/wiki/index.php/Pascal%27s_triangle
-https://artofproblemsolving.com/wiki/index.php/Generating_function : Simple Exercise Problem : https://math.illinoisstate.edu/day/courses/old/305/contentgeneratingfunctions.html
-
+https://artofproblemsolving.com/wiki/index.php/Generating_function : Simple Exercise Problem : https://math.illinoisstate.edu/day/courses/old/305/contentgeneratingfunctions.html 
+https://math.stackexchange.com/questions/4434822/generating-function-approach-giving-wrong-combination-count-while-normal-brute-f
+https://artofproblemsolving.com/wiki/index.php/Casework : Last problem
+https://artofproblemsolving.com/wiki/index.php/2008_AMC_12B_Problems/Problem_22
+https://artofproblemsolving.com/wiki/index.php/2001_AMC_12_Problems/Problem_16
+https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
+https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
+https://artofproblemsolving.com/wiki/index.php/Distinguishability
 */
 
 import java.util.*;
