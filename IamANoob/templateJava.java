@@ -393,14 +393,6 @@ PigeonHole:
 
 
 
-
-
-
-
-
-
-
-
 **//*
 cur -> CF unsolved
 ------------------https://codeforces.com/blog/entry/65487?#comment-494720
