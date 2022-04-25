@@ -421,6 +421,7 @@ https://codeforces.com/problemset/problem/1215/B // similar to number of subarra
 https://codeforces.com/problemset/problem/851/B
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/contest/1574/problem/D
+https://codeforces.com/problemset/problem/1658/B
 
 Math Problems Queue
 -------------------
