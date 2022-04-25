@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------
+Galen Colin Topic STreams and Mashups
 https://www.omegalearn.org/thebookofformulas
 https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
@@ -422,6 +423,8 @@ https://codeforces.com/problemset/problem/851/B
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/contest/1574/problem/D
 https://codeforces.com/problemset/problem/1658/B
+https://codeforces.com/problemset/problem/1601/A
+https://codeforces.com/problemset/problem/1541/B
 
 Math Problems Queue
 -------------------
