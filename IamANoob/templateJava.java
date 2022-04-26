@@ -425,6 +425,7 @@ https://codeforces.com/contest/1574/problem/D
 https://codeforces.com/problemset/problem/1658/B
 https://codeforces.com/problemset/problem/1601/A
 https://codeforces.com/problemset/problem/1541/B
+https://codeforces.com/problemset/problem/1526/B
 
 Math Problems Queue
 -------------------
@@ -497,6 +498,7 @@ class Codechef {
     // use something like hashmap or hashset
     // to compare them
     // Make use of Intellij IDE to generate equals and hashcode
+    // #Pair class
     static class Pair {
         long x, y;
 
@@ -1120,6 +1122,7 @@ class Codechef {
 
     // ------------------------- #NUMBER THEORY ------------------------ 
     // https://www.youtube.com/watch?v=8Fqv4ddMC3I
+    // #Extended Euclidean Algorithm
     static void extendedGcd(long a, long b, long ar[]) {
         if (b == 0) {
             ar[0] = 1;
@@ -1135,18 +1138,39 @@ class Codechef {
     }
 
     // Linear Diophantine
-    static void findLinearDiophantineSol(int a, int b, int c) {
-        long ar[] = new long[3];
-        extendedGcd(a, b, ar);
-        int x0 = ar[0];
-        int y0 = ar[1];
-        int g = ar[2];
-        if (c % g != 0) return;
-        int x = x0 * c / g;
-        int y = y0 * c / g;
-        if (a < 0) x = -x;
-        if (b < 0) y = -y;
-    }
+    static String findLinearDiophantineSol(long a, long b, long c) {
+	    if(a==0 && b==0){
+	       if(c==0) return "YES\n";
+	       return "NO\n";
+	    }
+	    long ar[] = new long[3];
+	    extendedGcd(a, b, ar);
+	    long x0 = ar[0];
+	    long y0 = ar[1];
+	    long g = ar[2];
+	    if (c % g != 0) return "NO\n";
+	    x0 *= c / g;
+	    y0 *= c / g;
+	    if(y0<0) return "NO\n";
+	    if(x0<0){
+	      long l=0, r=(long)1e9;
+	      long ans=-1;
+	      while(l<=r){
+		long k=l+(r-l)/2;
+		long x=x0+k*b;
+		if(x>=0){
+		  ans=k;
+		  r=k-1;
+		}else l=k+1;
+	      }
+	      if(ans==-1 || y0-ans*a<0) return "NO\n";
+	    }
+	    return "YES\n";
+
+	    // All solutions
+	    // x=x0+k*(b/g)
+	    // y=y0-k*(a/g)
+  }
 
     // Chinese Remainder Theorem
     static void chineseRemainderTheorem(int num[], int rem[], int k) {
