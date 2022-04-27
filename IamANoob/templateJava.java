@@ -426,6 +426,8 @@ https://codeforces.com/problemset/problem/1658/B
 https://codeforces.com/problemset/problem/1601/A
 https://codeforces.com/problemset/problem/1541/B
 https://codeforces.com/problemset/problem/1526/B
+https://codeforces.com/problemset/problem/1485/A
+https://codeforces.com/problemset/problem/1474/B
 
 Math Problems Queue
 -------------------
