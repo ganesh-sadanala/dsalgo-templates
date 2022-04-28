@@ -121,11 +121,6 @@ https://en.wikipedia.org/wiki/Gray_code
 *
 Math and Related
 -----------------
-
-https://codeforces.com/contest/735/problem/D
-Goldbach's conjecture: is one of the oldest and best-known unsolved problems in number theory and all of mathematics. 
-It states that every even whole number greater than 2 is the sum of two prime numbers.
-
 Fibonacci: https://en.wikipedia.org/wiki/Fibonacci_number
 Interesting observations on Fibonocci : https://www.youtube.com/watch?v=SjSHVDfXHQ4
 Problems based on Fib:
@@ -298,7 +293,12 @@ PigeonHole:
    Further, atleast one of the numbers is less or equal to t.
 4. https://www.geeksforgeeks.org/discrete-mathematics-the-pigeonhole-principle/
 
-
+Every prime number can be represented in form of 6n+1 or 6n-1 except the prime number 2 and 3, where n is a natural number.
+Two and Three are only two consecutive natural numbers that are prime.
+Lemoine’s Conjecture: Any odd integer greater than 5 can be expressed as a sum of an odd prime (all primes other than 2 are odd) and an even semiprime. A semiprime number is a product of two prime numbers. 
+https://codeforces.com/contest/735/problem/D
+Goldbach's conjecture: is one of the oldest and best-known unsolved problems in number theory and all of mathematics. 
+It states that every even whole number greater than 2 is the sum of two prime numbers.
 
 
 
@@ -397,6 +397,7 @@ PigeonHole:
 **//*
 cur -> CF unsolved
 ------------------https://codeforces.com/blog/entry/65487?#comment-494720
+https://codeforces.com/blog/entry/82417 : Learn Problem B all approaches
 https://codeforces.com/blog/entry/79866
 https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
 https://codeforces.com/contest/1503/problem/A
@@ -428,6 +429,7 @@ https://codeforces.com/problemset/problem/1541/B
 https://codeforces.com/problemset/problem/1526/B
 https://codeforces.com/problemset/problem/1485/A
 https://codeforces.com/problemset/problem/1474/B
+https://codeforces.com/problemset/problem/1372/B
 
 Math Problems Queue
 -------------------
@@ -451,6 +453,7 @@ https://artofproblemsolving.com/wiki/index.php/2001_AMC_12_Problems/Problem_16
 https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
+https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 */
 
 import java.util.*;
