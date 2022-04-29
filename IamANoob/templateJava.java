@@ -280,10 +280,6 @@ Another useful idea is that d(n) is odd if and only if 'n' is a perfect square. 
 https://artofproblemsolving.com/wiki/index.php/Diophantine_equation
 https://artofproblemsolving.com/wiki/index.php/Linear_congruence
 
-nCr = (n-1)Cr + (n-1)C(r-1)
-nCr = (n/r) * (n-1)C(r-1)
-sum(x=0 to n)nCx = 2^n
-
 Generating Functions in combinatorics are very useful.
 
 PigeonHole: 
@@ -299,6 +295,23 @@ Lemoine’s Conjecture: Any odd integer greater than 5 can be expressed as a sum
 https://codeforces.com/contest/735/problem/D
 Goldbach's conjecture: is one of the oldest and best-known unsolved problems in number theory and all of mathematics. 
 It states that every even whole number greater than 2 is the sum of two prime numbers.
+
+Logic to construct Pascal's triangel: 
+     1
+   1 2 1
+ 1  3  3 1 (3=1+2, 3=1+2)
+1  4  6 4 1 (4=3+1, 6=3+3, 4=3+1)
+.
+.
+.
+
+nCr = (n-1)Cr + (n-1)C(r-1)  (see top) => Also think of selecting k balls out of n balls and using 0/1 strategy of dynamic programming.
+nCr = (n/r) * (n-1)C(r-1)
+sum(x=0 to n)nCx = 2^n
+
+
+
+Triangular numbers(nth term gives sum of first n numbers): 1, 3, 6, 10, 15, ...
 
 
 
@@ -430,6 +443,11 @@ https://codeforces.com/problemset/problem/1526/B
 https://codeforces.com/problemset/problem/1485/A
 https://codeforces.com/problemset/problem/1474/B
 https://codeforces.com/problemset/problem/1372/B
+https://codeforces.com/contest/1422/problem/C
+Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
+https://www.spoj.com/problems/GNY07H/
+https://www.geeksforgeeks.org/friends-pairing-problem/
+https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 
 Math Problems Queue
 -------------------
@@ -1124,6 +1142,10 @@ class Codechef {
         // Return result for n
         return der[n];
     }
+	
+    // Number of ways to partition number n into sum of positive integers
+    // Order matter: https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes/blob/main/Java%20Codes/CountOrdered.java 
+    // Order does not matter: See 94: https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes/blob/main/Java%20Codes/CountUnordered.java
 
     // ------------------------- #NUMBER THEORY ------------------------ 
     // https://www.youtube.com/watch?v=8Fqv4ddMC3I
