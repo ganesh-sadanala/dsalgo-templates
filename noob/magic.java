@@ -10,7 +10,10 @@ Don't understand the Editorial
 https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
--------------
+-------------------
+https://toph.co/p/lids
+https://vjudge.net/
+https://lightoj.com/
 Galen Colin Topic STreams and Mashups
 https://www.omegalearn.org/thebookofformulas
 https://www.desmos.com/calculator
@@ -308,10 +311,9 @@ Logic to construct Pascal's triangel:
 nCr = (n-1)Cr + (n-1)C(r-1)  (see top) => Also think of selecting k balls out of n balls and using 0/1 strategy of dynamic programming.
 nCr = (n/r) * (n-1)C(r-1)
 sum(x=0 to n)nCx = 2^n
-
-
-
 Triangular numbers(nth term gives sum of first n numbers): 1, 3, 6, 10, 15, ...
+
+If an operation gives a value always <=k then if we take a modulo with a number >k then there is no chance that the value%mod become 0 except the value=0.
 
 
 
@@ -433,7 +435,8 @@ Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-m
 https://www.spoj.com/problems/GNY07H/
 https://www.geeksforgeeks.org/friends-pairing-problem/
 https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
-109: Memory optimization: Digit DP Udemy
+109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
+
 
 Math Problems Queue
 -------------------
