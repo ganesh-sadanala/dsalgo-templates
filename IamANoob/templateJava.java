@@ -392,21 +392,6 @@ Triangular numbers(nth term gives sum of first n numbers): 1, 3, 6, 10, 15, ...
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **//*
 cur -> CF unsolved
 ------------------https://codeforces.com/blog/entry/65487?#comment-494720
