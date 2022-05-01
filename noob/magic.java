@@ -433,6 +433,7 @@ Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-m
 https://www.spoj.com/problems/GNY07H/
 https://www.geeksforgeeks.org/friends-pairing-problem/
 https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
+109: Memory optimization: Digit DP Udemy
 
 Math Problems Queue
 -------------------
