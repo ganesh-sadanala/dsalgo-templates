@@ -436,7 +436,10 @@ https://www.spoj.com/problems/GNY07H/
 https://www.geeksforgeeks.org/friends-pairing-problem/
 https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
-
+https://codeforces.com/contest/1422/problem/C
+https://codeforces.com/contest/1579/problem/E2
+https://codeforces.com/contest/1579/problem/E2
+https://codeforces.com/contest/1579/problem/F
 
 Math Problems Queue
 -------------------
@@ -461,6 +464,7 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
+
 */
 
 import java.util.*;
