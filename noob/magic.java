@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
+http://e-maxx.ru/
 https://toph.co/p/lids
 https://vjudge.net/
 https://lightoj.com/
@@ -315,10 +316,10 @@ Triangular numbers(nth term gives sum of first n numbers): 1, 3, 6, 10, 15, ...
 
 If an operation gives a value always <=k then if we take a modulo with a number >k then there is no chance that the value%mod become 0 except the value=0.
 
+In Number Theory, a Wilson Prime is a prime number $N$ such that $N^2$ divides $(N-1)!+1$. It bears a striking resemblance to Wilson's Theorem. 
+Although conjectured to be infinite in number, no other Wilson primes have been discovered besides 5,13, and 563.
 
-
-
-
+In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)! + 1$ is divisible by $p$ if and only if $p$ is prime.
 
 
 
@@ -442,12 +443,14 @@ https://codeforces.com/contest/1579/problem/E2
 https://codeforces.com/contest/1579/problem/F
 https://codeforces.com/contest/1674/problem/D
 https://codeforces.com/contest/1674/problem/E
+https://codeforces.com/contest/1592/problem/C
+https://codeforces.com/contest/1581/problem/C
+https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
 
 Math Problems Queue
 -------------------
 https://artofproblemsolving.com/wiki/index.php/Simon%27s_Favorite_Factoring_Trick
 https://artofproblemsolving.com/wiki/index.php/Wilson%27s_Theorem
-https://artofproblemsolving.com/wiki/index.php/Wilson_Prime
 https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem - I1 : https://artofproblemsolving.com/wiki/index.php/1994_AIME_Problems/Problem_11
 https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem- I2
 https://artofproblemsolving.com/wiki/index.php/2006_AMC_10B_Problems/Problem_25
@@ -466,6 +469,7 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
+https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtube.com/watch?v=0pTN0qzpt-Y
 
 */
 
