@@ -440,6 +440,8 @@ https://codeforces.com/contest/1422/problem/C
 https://codeforces.com/contest/1579/problem/E2
 https://codeforces.com/contest/1579/problem/E2
 https://codeforces.com/contest/1579/problem/F
+https://codeforces.com/contest/1674/problem/D
+https://codeforces.com/contest/1674/problem/E
 
 Math Problems Queue
 -------------------
