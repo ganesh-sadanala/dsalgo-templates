@@ -446,6 +446,7 @@ https://codeforces.com/contest/1674/problem/E
 https://codeforces.com/contest/1592/problem/C
 https://codeforces.com/contest/1581/problem/C
 https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
+https://codeforces.com/problemset/problem/1661/B
 
 Math Problems Queue
 -------------------
