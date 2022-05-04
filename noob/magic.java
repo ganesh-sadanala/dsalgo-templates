@@ -397,10 +397,7 @@ In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)!
 
 **//*
 cur -> CF unsolved
-------------------https://codeforces.com/blog/entry/65487?#comment-494720
-https://codeforces.com/blog/entry/82417 : Learn Problem B all approaches
-https://codeforces.com/blog/entry/79866
-https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
+------------------
 https://codeforces.com/contest/1503/problem/A
 https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1474/problem/C
@@ -446,6 +443,7 @@ https://codeforces.com/contest/1674/problem/E
 https://codeforces.com/contest/1592/problem/C
 https://codeforces.com/contest/1581/problem/C
 https://codeforces.com/problemset/problem/1661/B
+https://codeforces.com/contest/1525/problem/D
 
 Math Problems Queue
 -------------------
@@ -474,6 +472,10 @@ https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtu
 
 Articles
 --------
+https://codeforces.com/blog/entry/65487?#comment-494720
+https://codeforces.com/blog/entry/82417 : Learn Problem B all approaches
+https://codeforces.com/blog/entry/79866
+https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is great
 https://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/
 https://cp-algorithms.com/combinatorics/generating_combinations.html
 https://www.geeksforgeeks.org/make-combinations-size-k/
@@ -1154,6 +1156,11 @@ class Codechef {
     // Order does not matter: See 94: https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes/blob/main/Java%20Codes/CountUnordered.java
 
     // ------------------------- #NUMBER THEORY ------------------------ 
+	
+    // gray code
+    int g (int n) {
+        return n ^ (n >>> 1);
+    }
     // https://www.youtube.com/watch?v=8Fqv4ddMC3I
     // #Extended Euclidean Algorithm
     static void extendedGcd(long a, long b, long ar[]) {
