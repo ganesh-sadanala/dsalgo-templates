@@ -445,7 +445,6 @@ https://codeforces.com/contest/1674/problem/D
 https://codeforces.com/contest/1674/problem/E
 https://codeforces.com/contest/1592/problem/C
 https://codeforces.com/contest/1581/problem/C
-https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
 https://codeforces.com/problemset/problem/1661/B
 
 Math Problems Queue
@@ -471,6 +470,13 @@ https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermedi
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtube.com/watch?v=0pTN0qzpt-Y
+
+
+Articles
+--------
+https://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/
+https://cp-algorithms.com/combinatorics/generating_combinations.html
+https://www.geeksforgeeks.org/make-combinations-size-k/
 
 */
 
@@ -989,7 +995,7 @@ class Codechef {
 	
     // ----------------------------------- #BITWISE ---------------------------
     // sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
-    // submask generation
+    // #submask generation
     // If you want 0 as a submask
     for(int submask = mask; ; submask = (submask - 1) & mask) {
 	// do something
@@ -1750,6 +1756,10 @@ class Codechef {
   
 
  // -------------------------------- #STACKS/#QUEUES ---------------------------
+ 
+ // https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
+ // => Find the minimum element in all subarrays of size M in O(N) where N is the size of the array.
+	
  // Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article  
  // https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
  // https://codeforces.com/contest/281/problem/D
