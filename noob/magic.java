@@ -398,9 +398,6 @@ In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)!
 **//*
 cur -> CF unsolved
 ------------------
-https://codeforces.com/contest/1503/problem/A
-https://codeforces.com/contest/1554/problem/C
-https://codeforces.com/contest/1474/problem/C
 https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/1499/problem/C
 https://codeforces.com/contest/1311/problem/F
@@ -444,6 +441,7 @@ https://codeforces.com/contest/1592/problem/C
 https://codeforces.com/contest/1581/problem/C
 https://codeforces.com/problemset/problem/1661/B
 https://codeforces.com/contest/1525/problem/D
+https://codeforces.com/contest/1554/problem/C
 
 Math Problems Queue
 -------------------
@@ -1763,7 +1761,8 @@ class Codechef {
   
 
  // -------------------------------- #STACKS/#QUEUES ---------------------------
- 
+ // Good one => Try i, j and j, k and i, k combo to determine the answer: https://leetcode.com/problems/132-pattern/
+	
  // https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
  // => Find the minimum element in all subarrays of size M in O(N) where N is the size of the array.
 	
