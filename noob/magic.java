@@ -398,7 +398,6 @@ In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)!
 **//*
 cur -> CF unsolved
 ------------------
-https://leetcode.com/problems/132-pattern/
 https://codeforces.com/contest/1499/problem/C
 https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1354/problem/C2
