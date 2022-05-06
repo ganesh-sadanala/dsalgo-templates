@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
+https://codeforces.com/blog/entry/101958
 http://e-maxx.ru/
 https://toph.co/p/lids
 https://vjudge.net/
@@ -441,6 +442,9 @@ https://codeforces.com/problemset/problem/1661/B
 https://codeforces.com/contest/1554/problem/C
 https://codeforces.com/contest/1594/problem/D : https://www.codechef.com/INOIPRAC/problems/AMONGUS2
 https://codeforces.com/contest/1675/problem/C
+https://codeforces.com/problemset/problem/1659/B
+https://codeforces.com/problemset/problem/1600/J
+https://codeforces.com/problemset/problem/1600/J
 
 Math Problems Queue
 -------------------
