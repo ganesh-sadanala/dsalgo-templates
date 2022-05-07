@@ -395,7 +395,6 @@ In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)!
 
 
 
-
 **//*
 cur -> CF unsolved
 ------------------
@@ -444,7 +443,7 @@ https://codeforces.com/contest/1594/problem/D : https://www.codechef.com/INOIPRA
 https://codeforces.com/contest/1675/problem/C
 https://codeforces.com/problemset/problem/1659/B
 https://codeforces.com/problemset/problem/1600/J
-https://codeforces.com/problemset/problem/1600/J
+https://codeforces.com/contest/1582/problem/F1
 
 Math Problems Queue
 -------------------
@@ -876,7 +875,7 @@ class Codechef {
         }
     }
 
-    // LIS(Monotonically increasing or Strictly increasing) where elements are 
+  // LIS(Monotonically increasing or Strictly increasing) where elements are 
   // consecutive elements {eg: x, x+1, x+2, ... x+k}
   static void LISConsecutive(int []arr)
     {
