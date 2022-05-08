@@ -444,6 +444,7 @@ https://codeforces.com/contest/1675/problem/C
 https://codeforces.com/problemset/problem/1659/B
 https://codeforces.com/problemset/problem/1600/J
 https://codeforces.com/contest/1582/problem/F1
+https://codeforces.com/problemset/problem/1667/A
 
 Math Problems Queue
 -------------------
@@ -559,6 +560,8 @@ class Codechef {
 
 	
    // ----------------------- #SORTING -------------------------------
+	
+   // Optimization O(nlogn) to O(n) for Problem B: https://codeforces.com/blog/entry/102013
 	
 	// sorting template of normal array []
     static void templateSortArray(int a[]) {
