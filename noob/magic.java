@@ -322,6 +322,10 @@ Although conjectured to be infinite in number, no other Wilson primes have been 
 
 In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)! + 1$ is divisible by $p$ if and only if $p$ is prime.
 
+If a number is divisible by consective 10 elements from 1 to 10 then
+the number has factor called 10!
+Any number can have atleast one element that is not factor of that element between 1 and 10.
+    
 
 
 
@@ -445,6 +449,8 @@ https://codeforces.com/problemset/problem/1659/B
 https://codeforces.com/problemset/problem/1600/J
 https://codeforces.com/contest/1582/problem/F1
 https://codeforces.com/problemset/problem/1667/A
+https://codeforces.com/contest/1606/problem/C
+https://codeforces.com/contest/1604/problem/C
 
 Math Problems Queue
 -------------------
