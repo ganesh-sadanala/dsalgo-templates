@@ -1336,7 +1336,19 @@ class Codechef {
 
     // ----------------------------- #GRAPHS -------------------------
     // Bi Partite graph: https://www.geeksforgeeks.org/bipartite-graph/
-
+	
+    // count number of times each edge is counted in all simple paths
+    static long dfs(int u, int p){
+	    long ans=1;
+	    for(int v:l.get(u)){
+	      if(v!=p){
+			long num=dfs(v, u);
+			cost.add(num * (n-num));
+			ans+=num;
+		  }
+	    }
+	    return ans;
+    }
     // DSU
     static int find(int i) {
         if (parent[i] != i)
