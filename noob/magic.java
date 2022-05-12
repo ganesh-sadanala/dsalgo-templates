@@ -395,10 +395,6 @@ Any number can have atleast one element that is not factor of that element betwe
 
 
 
-
-
-
-
 **//*
 cur -> CF unsolved
 ------------------
@@ -451,6 +447,7 @@ https://codeforces.com/contest/1582/problem/F1
 https://codeforces.com/problemset/problem/1667/A
 https://codeforces.com/contest/1606/problem/C
 https://codeforces.com/contest/1604/problem/C
+https://codeforces.com/contest/1556/problem/C
 
 Math Problems Queue
 -------------------
