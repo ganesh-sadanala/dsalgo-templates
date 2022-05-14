@@ -448,6 +448,8 @@ https://codeforces.com/problemset/problem/1667/A
 https://codeforces.com/contest/1606/problem/C
 https://codeforces.com/contest/1604/problem/C
 https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entry/94384
+https://codeforces.com/contest/1605/problem/A
+https://codeforces.com/contest/1605/problem/B
 
 Math Problems Queue
 -------------------
