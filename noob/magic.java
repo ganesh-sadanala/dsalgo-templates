@@ -453,6 +453,7 @@ https://codeforces.com/contest/1005/problem/D
 https://codeforces.com/contest/630/problem/K
 https://codeforces.com/contest/1609/problem/D
 https://codeforces.com/contest/1311/problem/F
+https://codeforces.com/contest/1469/problem/C
 
 Math Problems Queue
 -------------------
