@@ -398,7 +398,6 @@ Any number can have atleast one element that is not factor of that element betwe
 **//*
 cur -> CF unsolved
 ------------------
-https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
 https://codeforces.com/contest/1242/problem/A?locale=en
@@ -453,6 +452,7 @@ https://codeforces.com/contest/1605/problem/B
 https://codeforces.com/contest/1005/problem/D
 https://codeforces.com/contest/630/problem/K
 https://codeforces.com/contest/1609/problem/D
+https://codeforces.com/contest/1311/problem/F
 
 Math Problems Queue
 -------------------
@@ -1575,7 +1575,7 @@ class Codechef {
     }
 
     // ------------------------- #ADVANCED DATA STRUCTURES ------------------------
-    // BIT
+    // #BIT
     // Using 2 BIT structures => https://codeforces.com/contest/1311/problem/F
     static long query(int idx) {
         long sum = 0;
