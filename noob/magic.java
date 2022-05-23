@@ -326,6 +326,21 @@ If a number is divisible by consective 10 elements from 1 to 10 then
 the number has factor called 10!
 Any number can have atleast one element that is not factor of that element between 1 and 10.
     
+For any two positive integers x, y that satisfy x>=y what is the maximum value of x%y?
+Key observation: x%y < (x+1)/2 if x>=y and x%y=x if x<y.
+https://math.stackexchange.com/questions/3961702/prove-that-for-any-two-positive-integers-x-and-y-the-value-of-x-pmod-y
+
+Problem B teaches u a lot of math: https://codeforces.com/blog/entry/97920
+finding the first prime that does not divide n — 1, which must exist within the first 10 primes since n is at most 1e9.
+Every integer can be expressed using congruent modulo 2 or 4.
+When 𝑛≡0(mod2), output (𝑛−3,2,1).
+When 𝑛≡1(mod4), output (⌊𝑛2⌋−1,⌊𝑛2⌋+1,1).
+When 𝑛≡3(mod4), output (⌊𝑛2⌋−2,⌊𝑛2⌋+2,1).
+
+
+
+
+
 
 
 
@@ -460,6 +475,8 @@ https://codeforces.com/contest/1684/problem/D
 https://codeforces.com/contest/1608/problem/C
 https://codeforces.com/contest/835/problem/C
 https://codeforces.com/contest/814/problem/C
+https://codeforces.com/contest/660/problem/C
+https://codeforces.com/contest/1617/problem/C
 
 Math Problems Queue
 -------------------
@@ -572,6 +589,19 @@ class Codechef {
         }
     }
 
+	// ----------------------- #TWO POINTER -------------------------------
+	// general template for two pointer which 
+	// would give AC by handling edge cases most
+	// of the time
+	int r=-1, si=0, ei=-1;
+    int cost=0, ans=0;
+    for(int l=0;l<n;l++){
+      while(r<n-1 && ...){
+        
+      }
+    }
+	
+	
 	
    // ----------------------- #SORTING -------------------------------
 	
