@@ -483,7 +483,6 @@ https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermedi
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtube.com/watch?v=0pTN0qzpt-Y
-https://www.geeksforgeeks.org/maximum-value-pair-array/
 
 Articles
 --------
