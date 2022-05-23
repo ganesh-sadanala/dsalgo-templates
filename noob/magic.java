@@ -459,6 +459,7 @@ https://codeforces.com/contest/1684/problem/C
 https://codeforces.com/contest/1684/problem/D
 https://codeforces.com/contest/1608/problem/C
 https://codeforces.com/contest/835/problem/C
+https://codeforces.com/contest/814/problem/C
 
 Math Problems Queue
 -------------------
