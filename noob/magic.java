@@ -1041,6 +1041,20 @@ class Codechef {
 	    System.out.println(dp[1][n]);
 	}
     
+	// Digit DP template
+	static void ddp(String ans, int index, boolean last) {
+        if (index == s.length()) {
+            System.out.println(ans);
+            return;
+        }
+
+        int till = (last ? (s.charAt(index) - '0') : 9);
+
+        for (int i = 0; i <= till; i++) {
+            ddp(ans + i, index + 1, (last && (i == till)) );
+        }
+    }
+	
 	
     // ----------------------------------- #BITWISE ---------------------------
     // sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
