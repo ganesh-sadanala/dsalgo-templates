@@ -337,8 +337,6 @@ When 𝑛≡0(mod2), output (𝑛−3,2,1).
 When 𝑛≡1(mod4), output (⌊𝑛2⌋−1,⌊𝑛2⌋+1,1).
 When 𝑛≡3(mod4), output (⌊𝑛2⌋−2,⌊𝑛2⌋+2,1).
 
-12345679*9 = 111111111
-
 
 
 
@@ -479,6 +477,7 @@ https://codeforces.com/contest/835/problem/C
 https://codeforces.com/contest/814/problem/C
 https://codeforces.com/contest/660/problem/C
 https://codeforces.com/contest/1617/problem/C
+https://codeforces.com/contest/1618/problem/D
 
 Math Problems Queue
 -------------------
