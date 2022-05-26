@@ -395,21 +395,6 @@ When 𝑛≡3(mod4), output (⌊𝑛2⌋−2,⌊𝑛2⌋+2,1).
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 **//*
 cur -> CF unsolved
 ------------------
@@ -479,6 +464,8 @@ https://codeforces.com/contest/660/problem/C
 https://codeforces.com/contest/1617/problem/C
 https://codeforces.com/contest/1618/problem/D
 https://codeforces.com/contest/1618/problem/E
+https://codeforces.com/contest/734/problem/C
+https://codeforces.com/contest/682/problem/C
 
 Math Problems Queue
 -------------------
