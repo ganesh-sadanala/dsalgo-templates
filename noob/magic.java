@@ -467,6 +467,7 @@ https://codeforces.com/contest/1618/problem/E
 https://codeforces.com/contest/734/problem/C
 https://codeforces.com/contest/682/problem/C
 https://codeforces.com/contest/286/problem/A
+https://codeforces.com/contest/1619/problem/E
 
 Math Problems Queue
 -------------------
@@ -490,7 +491,6 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
-https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtube.com/watch?v=0pTN0qzpt-Y
 
 Articles
 --------
@@ -501,6 +501,9 @@ https://codeforces.com/blog/entry/46450 : Div2B reasoning and comparison is grea
 https://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/
 https://cp-algorithms.com/combinatorics/generating_combinations.html
 https://www.geeksforgeeks.org/make-combinations-size-k/
+https://www.geeksforgeeks.org/n-th-root-number/
+https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtube.com/watch?v=0pTN0qzpt-Y
+https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
 
 */
 
