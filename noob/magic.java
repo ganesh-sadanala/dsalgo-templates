@@ -466,6 +466,7 @@ https://codeforces.com/contest/1618/problem/D
 https://codeforces.com/contest/1618/problem/E
 https://codeforces.com/contest/734/problem/C
 https://codeforces.com/contest/682/problem/C
+https://codeforces.com/contest/286/problem/A
 
 Math Problems Queue
 -------------------
