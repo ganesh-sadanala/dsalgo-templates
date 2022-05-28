@@ -467,7 +467,7 @@ https://codeforces.com/contest/1618/problem/E
 https://codeforces.com/contest/734/problem/C
 https://codeforces.com/contest/682/problem/C
 https://codeforces.com/contest/286/problem/A
-https://codeforces.com/contest/1619/problem/E
+https://codeforces.com/contest/1423/problem/K : solution proof is vere level : i got almost :)
 
 Math Problems Queue
 -------------------
