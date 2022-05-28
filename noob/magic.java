@@ -11,6 +11,9 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
+https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
+https://cses.fi/book/book.pdf
+https://acm.timus.ru/
 https://codeforces.com/blog/entry/101958
 http://e-maxx.ru/
 https://toph.co/p/lids
