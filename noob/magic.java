@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
+https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
 https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
 https://cses.fi/book/book.pdf
 https://acm.timus.ru/
