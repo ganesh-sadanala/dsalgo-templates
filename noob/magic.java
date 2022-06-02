@@ -473,6 +473,7 @@ https://codeforces.com/contest/1619/problem/D
 https://codeforces.com/contest/238/problem/A
 https://codeforces.com/contest/1620/problem/C
 https://codeforces.com/contest/1691/problem/C
+https://codeforces.com/contest/1342/problem/C
 
 Math Problems Queue
 -------------------
