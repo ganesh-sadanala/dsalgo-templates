@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
+http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf
 https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
 https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
 https://cses.fi/book/book.pdf
@@ -474,7 +475,7 @@ https://codeforces.com/contest/238/problem/A
 https://codeforces.com/contest/1620/problem/C
 https://codeforces.com/contest/1691/problem/C
 https://codeforces.com/contest/1342/problem/C
-https://codeforces.com/contest/1238/problem/C
+https://codeforces.com/contest/1622/problem/C
 
 Math Problems Queue
 -------------------
@@ -553,6 +554,14 @@ class Codechef {
 	    }
 	    return cnt;
     }
+    
+    // accurate floor if a or b is negative
+    long accurateFloor(long a, long b) {
+	long val = a / b;
+	while (val * b > a)
+		val--;
+	return val;
+     }
 	
     // Awesome implementation => https://codeforces.com/contest/1310/problem/A
 	
