@@ -12,6 +12,7 @@ https://codeforces.com/contest/559/problem/B
 Tools and Resources
 -------------------
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf
+http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
 https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
 https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
 https://cses.fi/book/book.pdf
@@ -62,31 +63,6 @@ Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(
 
 */
 /*
-Variation of coin sum dp problem (If can't form change and change given to us in back is also a cost) -> https://atcoder.jp/contests/abc231/tasks/abc231_e
-Pigeon hole principle Ques: https://codeforces.com/contest/1619/problem/D : https://www.youtube.com/watch?v=UGLQtUVbkhg
-Topic question:
-Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
-
-Array formed using sum of absolute differences of that element with all other elements -> https://www.geeksforgeeks.org/array-formed-using-sum-of-absolute-differences-of-that-element-with-all-other-elements/
-////
-The intuition behind this algorithm is that since the array is sorted, think how would you do it manually.
-Let's take an array as an example and do a dry run,
-[2, 3, 5, 6]
-For 2 -> (3+5+6) - (3*2)
-For 3 -> (5+6) - (2*3) + 3 - 2 {Since 3 is greater than 2}
-For 5 -> 6-(1*5) + (2*5) - (2+3) {Since 5 is greater than 2 and 3}
-For 6 -> 0-(0*6) + (3*6)-(2+3+5) {Since 6 is greater than 2, 3 and 5}
-
-In general,
-(sum of ele to the right) - (# ele to_the_right * current_value) + (# ele to_the_left * current_value) - (sum of ele to the left).
-
-If i > j then 2 * i greater than j+i => This is the key intuition behind this algorithm.
-////
-
-Amazing question on valid parentheseis which people usually get into the trap of Stack: https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
-
-https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/
-
 Hard:
 Number of distinct values of bitwise or value of all subarrays of an array: https://codeforces.com/problemset/problem/243/A
 Number of different triangle formed from the side ranges using Two Pointers: https://codeforces.com/problemset/problem/1355/C
@@ -94,12 +70,7 @@ Math + Dividing two number and taking ceil without using pre function + exponent
 Awesome question on LCM usage: https://codeforces.com/contest/1604/problem/C
 Number of subarrays with valid bracket sequence: https://codeforces.com/problemset/problem/1556/C => sol:https://www.youtube.com/watch?v=7AHvvTWSsqY
 **/
-/* 
 /*Interesting Observations
-the use of == ... The comparison was ok on Long < 128 but ko on greater values.
-Generally it's not a good idea to use == to compare Objects, use .equals() as much as possible ! Keep ==, >, <, <= etc. for primitives.
-More read on https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
-
 Amazing questions on composite and prime numbers: https://codeforces.com/problemset/problem/1423/K 
 Amazing question on combinatorics forming sequence from given elements such that there isn't a subarray in the sequence whose xor sum is 0 - https://codeforces.com/problemset/problem/238/A - https://codeforces.com/blog/entry/5765
 Similar to # subarray with given xor sum or sum 
@@ -342,6 +313,35 @@ When 𝑛≡0(mod2), output (𝑛−3,2,1).
 When 𝑛≡1(mod4), output (⌊𝑛2⌋−1,⌊𝑛2⌋+1,1).
 When 𝑛≡3(mod4), output (⌊𝑛2⌋−2,⌊𝑛2⌋+2,1).
 
+An upper bound for a harmonic sum is log2(n) + 1.
+
+https://artofproblemsolving.com/wiki/index.php/Binet%27s_Formula
+
+The number of digits of an integer(base 10) in base b is floor(log x to base b + 1).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -477,6 +477,8 @@ https://codeforces.com/contest/1622/problem/C
 https://codeforces.com/contest/573/problem/B
 https://codeforces.com/contest/219/problem/C
 https://codeforces.com/contest/1623/problem/C
+https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
+https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
 
 Math Problems Queue
 -------------------
@@ -513,6 +515,9 @@ https://www.geeksforgeeks.org/make-combinations-size-k/
 https://www.geeksforgeeks.org/n-th-root-number/
 https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtube.com/watch?v=0pTN0qzpt-Y
 https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
+https://codeforces.com/blog/entry/95571 : https://www.youtube.com/watch?v=18sJ3mK173s
+Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
+https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/
 
 */
 
