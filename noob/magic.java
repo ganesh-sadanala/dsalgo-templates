@@ -11,7 +11,6 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
-http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
 https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
 https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
@@ -62,25 +61,7 @@ https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 */
-/*
-Hard:
-Number of distinct values of bitwise or value of all subarrays of an array: https://codeforces.com/problemset/problem/243/A
-Number of different triangle formed from the side ranges using Two Pointers: https://codeforces.com/problemset/problem/1355/C
-Math + Dividing two number and taking ceil without using pre function + exponentiation : https://codeforces.com/contest/1606/problem/B
-Awesome question on LCM usage: https://codeforces.com/contest/1604/problem/C
-Number of subarrays with valid bracket sequence: https://codeforces.com/problemset/problem/1556/C => sol:https://www.youtube.com/watch?v=7AHvvTWSsqY
-**/
-/*Interesting Observations
-Amazing questions on composite and prime numbers: https://codeforces.com/problemset/problem/1423/K 
-Amazing question on combinatorics forming sequence from given elements such that there isn't a subarray in the sequence whose xor sum is 0 - https://codeforces.com/problemset/problem/238/A - https://codeforces.com/blog/entry/5765
-Similar to # subarray with given xor sum or sum 
-
-Amazing question on base of the number : https://codeforces.com/contest/1620/problem/C : See the editorial and https://www.youtube.com/watch?v=0wtOyCcdUWo
-Number system conversion: https://www.tutorialspoint.com/computer_logical_organization/number_system_conversion.htm
-
-Array of Doubled Pairs -> https://codeforces.com/problemset/problem/1305/C -> Interesting observation on modulus question (https://leetcode.com/problems/array-of-doubled-pairs/)
-Similar question -> https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
-
+/* Interesting Observations
 Getting the first n and last n digits of a huge multiplication -> https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
 
 Good problem to fall in trap of binary and ternary search : https://codeforces.com/contest/1622/problem/C
@@ -479,6 +460,7 @@ https://codeforces.com/contest/219/problem/C
 https://codeforces.com/contest/1623/problem/C
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
+https://codeforces.com/problemset/problem/1355/C
 
 Math Problems Queue
 -------------------
