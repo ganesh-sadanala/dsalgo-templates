@@ -60,27 +60,7 @@ https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Us
 https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
-*/
-/* Interesting Observations
-Getting the first n and last n digits of a huge multiplication -> https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
 
-Good problem to fall in trap of binary and ternary search : https://codeforces.com/contest/1622/problem/C
-
-Standard kind of dp problem (Asked in different ways) Min/Max l and r -> https://codeforces.com/problemset/problem/573/B
-
-Standard sorting and finding max cost/pay/ans -> sometimes greedy works and sometimes not -> https://codeforces.com/problemset/problem/416/C
-
-Standard problem of adjacent cells having different colors -> https://codeforces.com/problemset/problem/219/C
-
-Difficult to observe as binary search problem -> https://codeforces.com/contest/1623/problem/C 
-Note: Whenever you hear as max(min) or min(max), try to use binary search here. Most of the times binary search works.
-
-Wonderful Implementation question to use PAIR data structure to find the min and max easily? : https://codeforces.com/contest/1621/problem/B : https://www.youtube.com/watch?v=HsLu6Shu9iE
-
-Wonderful dp, greedy, bs, sortings question - https://codeforces.com/problemset/problem/1257/D
-
-https://en.wikipedia.org/wiki/Gray_code
-*
 Math and Related
 -----------------
 Fibonacci: https://en.wikipedia.org/wiki/Fibonacci_number
@@ -89,7 +69,7 @@ Problems based on Fib:
 https://codeforces.com/contest/1239/problem/A
 http://tech-queries.blogspot.com/2011/07/fit-12-dominos-in-2n-strip.html
 
-Golden Ratio: a>b>0 => a/b = (a+b)/a = k where k is a constant
+Golden Ratio: a>b>0 => a/b = (a+b)/a = k where k is a constant => dividing two consective numbers in F series = (1+sqrr(5))/2
 https://codeforces.com/contest/515/problem/C
 
 x is even, gcd(x-1, x+1) = 1
@@ -122,7 +102,6 @@ else ans=9;
 
 Number of perfect cubes or squares : https://www.geeksforgeeks.org/perfect-cubes-range/
 
-Find number of solutions of a linear equation of n variables -> https://www.geeksforgeeks.org/find-number-of-solutions-of-a-linear-equation-of-n-variables/
 Stars and bars problem: https://cp-algorithms.com/combinatorics/stars_and_bars.html     https://www.youtube.com/watch?v=qvqPZkPURCo  - 
 positive => with k boxes or k-1 bars and n balls is (n-1)Ck-1.
 Non-negative with sticks can overlap => with k boxes or k-1 bars and n balls is (n+k-1)Ck-1 or (n+k-1)Cn
@@ -461,6 +440,7 @@ https://codeforces.com/contest/1623/problem/C
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
 https://codeforces.com/problemset/problem/1355/C
+https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
 
 Math Problems Queue
 -------------------
