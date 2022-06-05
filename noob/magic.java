@@ -115,7 +115,7 @@ Amazing question on (x%a)%b) != (x%b)%a => Number of such x in a range => https:
 Amazing question on given a[i]-k and a[i]+k find array a -> https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
 
 Wonderful question on AP -> https://codeforces.com/contest/1616/problem/C
-Got to know some observation in AP
+In AP, (a[j]-a[i]) * (k-j) == (a[k] - a[j]) * (j-i) 
 
 min(-c) = max(c)
 max(-c) = min(c)
@@ -193,10 +193,10 @@ x<=y<=z are sides of triangle and if x and z are known, y=z-x+1 satisfies the pr
 In a square matrix n*n, In diagonal configuration1, i+j is same for same diagonal elements where is the row number and j is the column number and in 
 configuration2 (i-j) is same for same diagonal elements.
 
- star numbers: 6*n*(n-1) + 1.
- 
- Parallelogram vector area: https://www.quora.com/What-is-the-area-of-parallelogram-in-vector-form
- Distance from line to a point in vector form: https://www.youtube.com/watch?v=tYUtWYGUqgw
+star numbers: 6*n*(n-1) + 1.
+
+Parallelogram vector area: https://www.quora.com/What-is-the-area-of-parallelogram-in-vector-form
+Distance from line to a point in vector form: https://www.youtube.com/watch?v=tYUtWYGUqgw
  
 https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree : https://codeforces.com/contest/343/problem/A : https://codeforces.com/blog/entry/8860?#comment-351231
 GCD(A, B) => GCD(B, A%B) => GCD(A-B, B)
@@ -441,6 +441,8 @@ https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/
 https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
 https://codeforces.com/problemset/problem/1355/C
 https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
+https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
+https://codeforces.com/contest/1616/problem/C
 
 Math Problems Queue
 -------------------
@@ -479,7 +481,6 @@ https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtu
 https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
 https://codeforces.com/blog/entry/95571 : https://www.youtube.com/watch?v=18sJ3mK173s
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
-https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/
 
 */
 
