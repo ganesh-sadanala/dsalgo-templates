@@ -179,9 +179,10 @@ rotate right (rr) : Associative, Distributive, Identity (0x00), Inverse (rl)
 
 While shifts have no inverse, some expressions involving shifts do have inverses as consequence of other laws, for example:
 
-x + (x << k) has an inverse, because it is effectively a multiplication by an odd number and odd numbers have an modular multiplicative inverse modulo a power of two. For x + (x << 1) = x * 3, the inverse is x * 0xAAAAAAAB (for 32 bits, adjust the constant for other sizes)
+x + (x << k) has an inverse, because it is effectively a multiplication by an odd number and odd numbers have an modular multiplicative inverse modulo a power of two. 
+For x + (x << 1) = x * 3, the inverse is x * 0xAAAAAAAB (for 32 bits, adjust the constant for other sizes)
 x ^ (x << k) has an inverse for a similar reason, but through the correspondence with carryless multiplication.
-Similarly x ^ (x >> k) (with unsigned right shift) has an inverse, it's just the "mirror image" of the above.
+Similarly x ^ (x >>> k) (with unsigned right shift) has an inverse, it's just the "mirror image" of the above.
 
 (a^(b^c))%m != (a^((b^c)%m))%m -> https://codeforces.com/problemset/problem/1594/E1
 
@@ -278,7 +279,6 @@ An upper bound for a harmonic sum is log2(n) + 1.
 https://artofproblemsolving.com/wiki/index.php/Binet%27s_Formula
 
 The number of digits of an integer(base 10) in base b is floor(log x to base b + 1).
-
 
 
 
