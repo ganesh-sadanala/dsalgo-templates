@@ -355,6 +355,46 @@ The number of digits of an integer(base 10) in base b is floor(log x to base b +
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **//*
 cur -> CF unsolved
 ------------------
@@ -443,6 +483,7 @@ https://codeforces.com/problemset/problem/1355/C
 https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
 https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
 https://codeforces.com/contest/1616/problem/C
+https://codeforces.com/problemset/problem/1482/B
 
 Math Problems Queue
 -------------------
