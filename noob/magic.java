@@ -629,6 +629,7 @@ class Codechef {
 	
 	// sorting template of normal array []
     static void templateSortArray(int a[]) {
+	    int n=a.length;
         List < Integer > l = new ArrayList < > ();
         for (int i = 0; i < n; i++) l.add(a[i]);
         Collections.sort(l, Collections.reverseOrder());
