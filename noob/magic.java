@@ -487,12 +487,13 @@ https://codeforces.com/problemset/problem/1482/B
 
 Math Problems Queue
 -------------------
+https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Introduction : Exponentiation problems 1, 2, 3
+https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate - Problem @ End
 https://artofproblemsolving.com/wiki/index.php/Simon%27s_Favorite_Factoring_Trick
 https://artofproblemsolving.com/wiki/index.php/Wilson%27s_Theorem
 https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem - I1 : https://artofproblemsolving.com/wiki/index.php/1994_AIME_Problems/Problem_11
 https://artofproblemsolving.com/wiki/index.php/Chicken_McNugget_Theorem- I2
 https://artofproblemsolving.com/wiki/index.php/2006_AMC_10B_Problems/Problem_25
-https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate - Problem @ End
 https://artofproblemsolving.com/wiki/index.php/1989_AIME_Problems/Problem_9
 https://artofproblemsolving.com/wiki/index.php/Fermat%27s_Little_Theorem : I2
 https://artofproblemsolving.com/wiki/index.php/2006_AIME_II_Problems/Problem_3 : https://www.geeksforgeeks.org/finding-power-prime-number-p-n/
