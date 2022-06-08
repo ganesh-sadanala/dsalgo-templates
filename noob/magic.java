@@ -280,6 +280,8 @@ https://artofproblemsolving.com/wiki/index.php/Binet%27s_Formula
 
 The number of digits of an integer(base 10) in base b is floor(log x to base b + 1).
 
+https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate -> Addition, Subtraction and multiplication modulo n
+
 
 
 
@@ -1260,7 +1262,7 @@ class Codechef {
         return;
     }
 
-    // Linear Diophantine
+    // #Linear Diophantine
     static String findLinearDiophantineSol(long a, long b, long c) {
 	    if(a==0 && b==0){
 	       if(c==0) return "YES\n";
@@ -1279,15 +1281,15 @@ class Codechef {
 	      long l=0, r=(long)1e9;
 	      long ans=-1;
 	      while(l<=r){
-		long k=l+(r-l)/2;
-		long x=x0+k*b;
-		if(x>=0){
-		  ans=k;
-		  r=k-1;
-		}else l=k+1;
-	      }
-	      if(ans==-1 || y0-ans*a<0) return "NO\n";
-	    }
+			long k=l+(r-l)/2;
+			long x=x0+k*b;
+			if(x>=0){
+			  ans=k;
+			  r=k-1;
+			}else l=k+1;
+		  }
+		  if(ans==-1 || y0-ans*a<0) return "NO\n";
+		}
 	    return "YES\n";
 
 	    // All solutions
