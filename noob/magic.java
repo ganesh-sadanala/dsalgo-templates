@@ -282,6 +282,11 @@ The number of digits of an integer(base 10) in base b is floor(log x to base b +
 
 https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate -> Addition, Subtraction and multiplication modulo n
 
+Formally stated, the Chinese Remainder Theorem is as follows:
+
+Let m be relatively prime to n. Then each residue class mod mn is equal to the intersection of a unique residue class mod m
+and a unique residue class mod n, and the intersection of each residue class mod m with a residue class mod n is a residue class mod mn.
+
 
 
 
@@ -490,7 +495,7 @@ https://codeforces.com/contest/1690/problem/E
 
 Math Problems Queue
 -------------------
-https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Introduction : Exponentiation problems 1, 2, 3
+https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Introduction : Exponentiation problem 1
 https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate - Problem @ End
 https://artofproblemsolving.com/wiki/index.php/Simon%27s_Favorite_Factoring_Trick
 https://artofproblemsolving.com/wiki/index.php/Wilson%27s_Theorem
