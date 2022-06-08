@@ -484,6 +484,7 @@ https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-produ
 https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
 https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/problemset/problem/1482/B
+https://codeforces.com/contest/1690/problem/E
 
 Math Problems Queue
 -------------------
