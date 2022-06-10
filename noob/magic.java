@@ -395,13 +395,6 @@ and a unique residue class mod n, and the intersection of each residue class mod
 
 
 
-
-
-
-
-
-
-
 **//*
 cur -> CF unsolved
 ------------------
@@ -516,8 +509,8 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
-#53 - DP
-#59 - DP
+DP - #53 - #59 - #66
+ 
 
 Articles
 --------
@@ -534,6 +527,7 @@ https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
 https://codeforces.com/blog/entry/95571 : https://www.youtube.com/watch?v=18sJ3mK173s
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
 https://www.geeksforgeeks.org/subset-sum-divisible-m/
+https://discuss.codingblocks.com/t/knapsack-problem/33140/2 
 
 */
 
