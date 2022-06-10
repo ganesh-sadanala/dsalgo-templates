@@ -516,6 +516,8 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
+#53 - DP
+#59 - DP
 
 Articles
 --------
@@ -531,6 +533,7 @@ https://cp-algorithms.com/combinatorics/catalan-numbers.html : https://www.youtu
 https://www.geeksforgeeks.org/digital-rootrepeated-digital-sum-given-integer/
 https://codeforces.com/blog/entry/95571 : https://www.youtube.com/watch?v=18sJ3mK173s
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
+https://www.geeksforgeeks.org/subset-sum-divisible-m/
 
 */
 
