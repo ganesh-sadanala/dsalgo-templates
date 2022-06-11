@@ -215,26 +215,23 @@ Exponentiation: a^e=(b^e)mod m where e is a positive integer.
 phi(p^x) = p^x-p^(x-1)    where p is a prime # and phi(x) is Euler Totient function
 phi(p) = p-1
 phi(a*b) = phi(a) * phi(b) * (gcd(a, b)/phi(gcd(a, b)))
-phi(a) = sum of phi(d) where d is the all divisors of a
+a = sum of phi(d) where d is the all divisors of a
 phi(n)<=n-1
 
 Another useful idea is that d(n) is odd if and only if 'n' is a perfect square. d(n) is the number of divisors of n.
-https://artofproblemsolving.com/wiki/index.php/Diophantine_equation
-https://artofproblemsolving.com/wiki/index.php/Linear_congruence
-
 Generating Functions in combinatorics are very useful.
 
 PigeonHole: 
 1. If n+1 objects are placed in n boxes then one box contains more than one object.
-2. If kn objects are placed in n boxes alteast one box contains k+1 objects.
+2. If kn objects are placed in n boxes alteast one box contains atleast k+1 objects.
 3. If average of n positive numbers is t, then atleast one of the numbers is greater or equal to t. 
    Further, atleast one of the numbers is less or equal to t.
 4. https://www.geeksforgeeks.org/discrete-mathematics-the-pigeonhole-principle/
 
 Every prime number can be represented in form of 6n+1 or 6n-1 except the prime number 2 and 3, where n is a natural number.
 Two and Three are only two consecutive natural numbers that are prime.
-Lemoine’s Conjecture: Any odd integer greater than 5 can be expressed as a sum of an odd prime (all primes other than 2 are odd) and an even semiprime. A semiprime number is a product of two prime numbers. 
-https://codeforces.com/contest/735/problem/D
+Lemoine’s Conjecture: Any odd integer greater than 5 can be expressed as a sum of an odd prime (all primes other than 2 are odd) and an even semiprime. 
+A semiprime number is a product of two prime numbers. https://codeforces.com/contest/735/problem/D
 Goldbach's conjecture: is one of the oldest and best-known unsolved problems in number theory and all of mathematics. 
 It states that every even whole number greater than 2 is the sum of two prime numbers.
 
@@ -254,13 +251,12 @@ Triangular numbers(nth term gives sum of first n numbers): 1, 3, 6, 10, 15, ...
 
 If an operation gives a value always <=k then if we take a modulo with a number >k then there is no chance that the value%mod become 0 except the value=0.
 
-In Number Theory, a Wilson Prime is a prime number $N$ such that $N^2$ divides $(N-1)!+1$. It bears a striking resemblance to Wilson's Theorem. 
+In Number Theory, a Wilson Prime is a prime number N such that N^2 divides (N-1)!+1. It bears a striking resemblance to Wilson's Theorem. 
 Although conjectured to be infinite in number, no other Wilson primes have been discovered besides 5,13, and 563.
 
-In number theory, Wilson's Theorem states that if integer $p > 1$ , then $(p-1)! + 1$ is divisible by $p$ if and only if $p$ is prime.
+In number theory, Wilson's Theorem states that if integer p > 1 , then (p-1)! + 1 is divisible by p if and only if p is prime.
 
-If a number is divisible by consective 10 elements from 1 to 10 then
-the number has factor called 10!
+If a number is divisible by consective 10 elements from 1 to 10 then the number has factor called 10!
 Any number can have atleast one element that is not factor of that element between 1 and 10.
     
 For any two positive integers x, y that satisfy x>=y what is the maximum value of x%y?
@@ -283,7 +279,6 @@ The number of digits of an integer(base 10) in base b is floor(log x to base b +
 https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate -> Addition, Subtraction and multiplication modulo n
 
 Formally stated, the Chinese Remainder Theorem is as follows:
-
 Let m be relatively prime to n. Then each residue class mod mn is equal to the intersection of a unique residue class mod m
 and a unique residue class mod n, and the intersection of each residue class mod m with a residue class mod n is a residue class mod mn.
 
@@ -1302,7 +1297,7 @@ class Codechef {
 	    // y=y0-k*(a/g)
   }
 
-    // Chinese Remainder Theorem
+    // #Chinese Remainder Theorem
     static void chineseRemainderTheorem(int num[], int rem[], int k) {
         int prod = 1;
         for (int i = 0; i < k; i++)
@@ -1320,7 +1315,7 @@ class Codechef {
         return result % prod;
     }
 	
-    // Euler Totient
+    // #Euler Totient
     static int phi(int n)
     {
 	 int result = n;
