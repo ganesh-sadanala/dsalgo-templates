@@ -485,6 +485,8 @@ https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-ar
 https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/problemset/problem/1482/B
 https://codeforces.com/contest/1690/problem/E
+https://leetcode.com/problems/split-array-largest-sum/
+https://leetcode.com/problems/palindrome-partitioning-ii/
 
 Math Problems Queue
 -------------------
@@ -509,8 +511,8 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
-DP - #53 - #59 - #66
- 
+DP - #53 - #59 - #66 - #73
+
 
 Articles
 --------
@@ -528,6 +530,7 @@ https://codeforces.com/blog/entry/95571 : https://www.youtube.com/watch?v=18sJ3m
 Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-between-two-nodes-in-the-given-binary-tree-for-q-queries/
 https://www.geeksforgeeks.org/subset-sum-divisible-m/
 https://discuss.codingblocks.com/t/knapsack-problem/33140/2 
+https://www.geeksforgeeks.org/number-of-longest-increasing-subsequences/
 
 */
 
