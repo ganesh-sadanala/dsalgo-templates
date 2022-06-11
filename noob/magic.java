@@ -390,6 +390,11 @@ and a unique residue class mod n, and the intersection of each residue class mod
 
 
 
+
+
+
+
+
 **//*
 cur -> CF unsolved
 ------------------
@@ -482,6 +487,7 @@ https://codeforces.com/problemset/problem/1482/B
 https://codeforces.com/contest/1690/problem/E
 https://leetcode.com/problems/split-array-largest-sum/
 https://leetcode.com/problems/palindrome-partitioning-ii/
+https://codeforces.com/problemset/problem/264/B
 
 Math Problems Queue
 -------------------
