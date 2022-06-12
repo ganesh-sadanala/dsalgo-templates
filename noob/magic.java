@@ -487,7 +487,7 @@ https://codeforces.com/problemset/problem/1482/B
 https://codeforces.com/contest/1690/problem/E
 https://leetcode.com/problems/split-array-largest-sum/
 https://leetcode.com/problems/palindrome-partitioning-ii/
-https://codeforces.com/problemset/problem/264/B
+https://www.spoj.com/problems/PT07X/
 
 Math Problems Queue
 -------------------
@@ -512,8 +512,8 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
-DP - #53 - #59 - #66 - #73
-
+DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
+- #117
 
 Articles
 --------
