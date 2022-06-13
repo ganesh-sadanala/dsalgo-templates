@@ -398,7 +398,6 @@ and a unique residue class mod n, and the intersection of each residue class mod
 **//*
 cur -> CF unsolved
 ------------------
-https://codeforces.com/contest/1354/problem/C2
 https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
 https://codeforces.com/contest/1242/problem/A?locale=en
 https://codeforces.com/contest/1557/problem/C
