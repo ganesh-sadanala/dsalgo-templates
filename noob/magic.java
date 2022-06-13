@@ -488,6 +488,7 @@ https://codeforces.com/contest/1690/problem/E
 https://leetcode.com/problems/split-array-largest-sum/
 https://leetcode.com/problems/palindrome-partitioning-ii/
 https://www.spoj.com/problems/PT07X/
+https://codeforces.com/contest/1697/problem/C
 
 Math Problems Queue
 -------------------
