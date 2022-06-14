@@ -532,6 +532,8 @@ Weighted tree distance + Queries: https://www.geeksforgeeks.org/find-distance-be
 https://www.geeksforgeeks.org/subset-sum-divisible-m/
 https://discuss.codingblocks.com/t/knapsack-problem/33140/2 
 https://www.geeksforgeeks.org/number-of-longest-increasing-subsequences/
+https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-tree-set-2-using-parent-pointer/
+https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/
 
 */
 
@@ -1683,6 +1685,8 @@ class Codechef {
 		}
 	}
   
+	
+	// LCA on Binary Tree and Binary Search Tree
 	class BinarySearchTree
 	{
 		Node root;
@@ -1783,6 +1787,68 @@ class Codechef {
  
         // Else return NULL
         return null;
+    }
+	
+	// #BINARY LIFTING
+	// #LCA
+	// Pre-processing to calculate values of memo[][]
+    static void dfs(int u, int p)
+    {
+ 
+        // Using recursion formula to calculate
+        // the values of memo[][]
+        memo[u][0] = p;
+        for (int i = 1; i <= log; i++)
+            memo[u][i] = memo[memo[u][i - 1]][i - 1];
+        for (int v : g[u]) {
+            if (v != p) {
+ 
+                // Calculating the level of each node
+                lev[v] = lev[u] + 1;
+                dfs(v, u);
+            }
+        }
+    }
+	
+	// Function to return the LCA of nodes u and v
+    static int lca(int u, int v)
+    {
+        // The node which is present farthest
+        // from the root node is taken as u
+        // If v is farther from root node
+        // then swap the two
+        if (lev[u] < lev[v]) {
+            int temp = u;
+            u = v;
+            v = temp;
+        }
+ 
+        // Finding the ancestor of u
+        // which is at same level as v
+        for (int i = log; i >= 0; i--) {
+            if ((lev[u] - (int)Math.pow(2, i)) >= lev[v])
+                u = memo[u][i];
+        }
+ 
+        // If v is the ancestor of u
+        // then v is the LCA of u and v
+        if (u == v)
+            return u;
+ 
+        // Finding the node closest to the root which is
+        // not the common ancestor of u and v i.e. a node
+        // x such that x is not the common ancestor of u
+        // and v but memo[x][0] is
+        for (int i = log; i >= 0; i--) {
+            if (memo[u][i] != memo[v][i]) {
+                u = memo[u][i];
+                v = memo[v][i];
+            }
+        }
+ 
+        // Returning the first ancestor
+        // of above found node
+        return memo[u][0];
     }
 	
 	
