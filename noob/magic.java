@@ -52,6 +52,7 @@ cp book -> https://github.com/luisfcofv/competitive-programming-book
 https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/
 Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
 Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog
+https://codeforces.com/blog/entry/68138
  
 Interesting hidden things in java
 ---------------------------------
@@ -514,7 +515,7 @@ https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
 - #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
-
+- DP on graphs is enchanting 
 Articles
 --------
 https://codeforces.com/blog/entry/65487?#comment-494720
