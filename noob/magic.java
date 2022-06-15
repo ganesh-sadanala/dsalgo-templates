@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------
+http://www.dragonwins.com/domains/getteched/crypto/chinese_remainder_theorem.htm
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
 https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
 https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
@@ -53,7 +54,9 @@ https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-pro
 Game theory wonderful blog -> https://codeforces.com/blog/entry/66040
 Codefores catalog - Have an amazing blog posts (Read it when find time) - https://codeforces.com/catalog
 https://codeforces.com/blog/entry/68138
- 
+https://csacademy.com/
+https://docs.google.com/spreadsheets/d/1-kY6uiLOo1AKSBCSjbpGRBZbIldO_3dg6oTRKIJzT-g/edit#gid=0
+
 Interesting hidden things in java
 ---------------------------------
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
@@ -186,6 +189,8 @@ x ^ (x << k) has an inverse for a similar reason, but through the correspondence
 Similarly x ^ (x >>> k) (with unsigned right shift) has an inverse, it's just the "mirror image" of the above.
 
 (a^(b^c))%m != (a^((b^c)%m))%m -> https://codeforces.com/problemset/problem/1594/E1
+If possible always prefer to do LHS
+Similarly (((a^b)%m)^c)%m != (a^((b*c)%m))%m
 
 To cover a point (xi, yi), the length of the shorter side of the triangle should be at least xi + yi. 
 So the answer is max(xi + yi). : https://codeforces.com/problemset/problem/1047/B
@@ -279,25 +284,19 @@ The number of digits of an integer(base 10) in base b is floor(log x to base b +
 
 https://artofproblemsolving.com/wiki/index.php/Modular_arithmetic/Intermediate -> Addition, Subtraction and multiplication modulo n
 
-Formally stated, the Chinese Remainder Theorem is as follows:
-Let m be relatively prime to n. Then each residue class mod mn is equal to the intersection of a unique residue class mod m
-and a unique residue class mod n, and the intersection of each residue class mod m with a residue class mod n is a residue class mod mn.
+Formally stated, the Chinese Remainder Theorem is as follows: https://codeforces.com/contest/1242/problem/A?locale=en
+https://www.math.utah.edu/~bertram/AlgebraTopics/Chinese.pdf
+Let m be relatively prime to n. Then each residue class mod mn is equal to the cross product of a unique residue class mod m
+and a unique residue class mod n, and the cross product of each residue class mod m with a residue class mod n is a residue class mod mn.
+=> Which means that {0,1,2,3...,mn-1} is the residue class of mn and this can be obtained from m and n.
 
+https://codeforces.com/blog/entry/12545?#comment-922768 => Learned a lot about ternary search and time complexities
 
+If you can formulate that a function f(x) is unimodal then you can use ternary search. => https://codeforces.com/contest/439/problem/D
+Else if it is stictly or monotonically increasing or decreasing it is binary search.
+Note: Learn how to know if a function is unimodal.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Teach a lot of combinatorics although u get most of it: https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 
 
 
@@ -397,15 +396,8 @@ and a unique residue class mod n, and the intersection of each residue class mod
 
 
 **//*
-cur -> CF unsolved
-------------------
-https://codeforces.com/contest/439/problem/D -> Ternary Search (log(n)/log(3/2) times only) -> https://codeforces.com/blog/entry/12545?#comment-172751 -> Another easy sol https://codeforces.com/blog/entry/12545?#comment-172684
-https://codeforces.com/contest/1242/problem/A?locale=en
-https://codeforces.com/contest/1557/problem/C
-https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
-https://codeforces.com/problemset/problem/1288/C
-https://codeforces.com/problemset/problem/553/A
-https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
+CF unsolved/upsolved/master
+---------------------------
 https://codeforces.com/problemset/problem/57/C : https://codeforces.com/blog/entry/1169#comment-20773
 https://codeforces.com/contest/1411/problem/C
 https://codeforces.com/contest/1451/problem/D
@@ -489,6 +481,10 @@ https://leetcode.com/problems/split-array-largest-sum/
 https://leetcode.com/problems/palindrome-partitioning-ii/
 https://www.spoj.com/problems/PT07X/
 https://codeforces.com/contest/1697/problem/C
+https://codeforces.com/contest/1557/problem/C
+https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
+https://codeforces.com/problemset/problem/553/A
+https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 
 Math Problems Queue
 -------------------
@@ -1372,10 +1368,10 @@ class Codechef {
     long res = 1;
     while (b > 0) {
         if (b % 2 == 1) {
-            res = mod_mul(res, a);
+            res = (res * a)%mod;
             b--;
         } else {
-            a = mod_mul(a, a);
+            a = (a * a)%mod;
             b = b >> 1l;
         }
     }
