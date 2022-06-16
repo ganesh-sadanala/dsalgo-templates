@@ -1435,6 +1435,105 @@ class Codechef {
     // ----------------------------- #GRAPHS #TREES-------------------------
     // Bi Partite graph: https://www.geeksforgeeks.org/bipartite-graph/
 	
+	// undirected graph
+	boolean cycle = false
+	static void printBackEdges(int u, int p){
+		vis[u]=true;
+		for(int v:l.get(u)){
+		  if(!vis[v]){
+			dfs(v, u);
+		  }else if(v!=p){
+			cycle=true;
+			System.out.println(u+" "+v);
+		  }
+		}
+    }
+	
+	 // detect cycle in an undirected/directed graph using color
+    static int v, e;
+    static boolean flag;
+    static ArrayList < ArrayList < Integer >> edg = new ArrayList < > ();
+    static char color[];
+    static void dfs(int u, int p) {
+        color[u] = 'g';
+        ArrayList < Integer > list = edg.get(u);
+        for (int ver: list) {
+            char c = color[ver];
+            if (c == 'b' || ver == p)
+                continue;
+            if (c == 'g')
+                flag = true;
+            if (c == 'w')
+                dfs(ver, u);
+        }
+        color[u] = 'b';
+    }
+	
+	// print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
+    static int cyclenumber;
+    static void dfs_cycle(int u, int p, int[] color, int[] mark, int[] par) {
+        if (color[u] == 1) {
+            cyclenumber++;
+            int cur = p;
+            cycles[cyclenumber].add(cur);
+            while (cur != u) {
+                cur = par[cur];
+                cycles[cyclenumber].add(cur);
+            }
+            return;
+        }
+        par[u] = p;
+        color[u] = 1;
+        for (int v: graph[u]) {
+            if (v == par[u]) continue;
+            dfs_cycle(v, u, color, mark, par);
+        }
+        color[u] = 2;
+    }
+	
+	// find if there is a cycle in a directed graph by checking if it 
+    // has a valid TOPO sort or not
+    // or constructing a valid DAG using TOPO sort https://codeforces.com/contest/1385/problem/E
+    static void dfs(int u)
+    {
+      vis[u]=true;
+      for(int v:dedges.get(u))
+      {
+	  if(!vis[v])
+	    dfs(v);
+      }
+      stack.push(u); 
+    }
+
+    static void isValidTOPOSortOrCycleInDAG(){
+	 stack=new Stack<>();
+	 vis=new boolean[n+1];
+	 for(int i=1;i<=n;i++)
+	 {
+	     if(!vis[i])
+	        dfs(i);
+	 }
+	 ArrayList<Integer> top=new ArrayList<>();
+	 while(!stack.isEmpty())
+	    top.add(stack.pop());
+	 boolean flag=false;
+	 int pos[]=new int[n+1];
+	 for(int i=0;i<n;i++)
+	    pos[top.get(i)]=i;
+	 for(int i=1;i<=n;i++)
+	 {
+           for(int v:dedges.get(i))
+	    {
+	       if(pos[v]<pos[i])
+		{
+	            flag=true;
+		     break;
+		}
+	     }
+	  }
+	 return !flag; 
+    }
+	
     // count number of times each edge is counted in all simple paths
     static long dfs(int u, int p){
 	    long ans=1;
@@ -1466,48 +1565,6 @@ class Codechef {
             rank[yr]++;
         }
         return true;
-    }
-
-    // print all cycles in an undirected graph - correct algo (There is a wrong in GfG)
-    static int cyclenumber;
-    static void dfs_cycle(int u, int p, int[] color, int[] mark, int[] par) {
-        if (color[u] == 1) {
-            cyclenumber++;
-            int cur = p;
-            cycles[cyclenumber].add(cur);
-            while (cur != u) {
-                cur = par[cur];
-                cycles[cyclenumber].add(cur);
-            }
-            return;
-        }
-        par[u] = p;
-        color[u] = 1;
-        for (int v: graph[u]) {
-            if (v == par[u]) continue;
-            dfs_cycle(v, u, color, mark, par);
-        }
-        color[u] = 2;
-    }
-
-    // detect cycle in an undirected graph using color
-    static int v, e;
-    static boolean flag;
-    static ArrayList < ArrayList < Integer >> edg = new ArrayList < > ();
-    static char color[];
-    static void dfs(int u, int p) {
-        color[u] = 'g';
-        ArrayList < Integer > list = edg.get(u);
-        for (int ver: list) {
-            char c = color[ver];
-            if (c == 'b' || ver == p)
-                continue;
-            if (c == 'g')
-                flag = true;
-            if (c == 'w')
-                dfs(ver, u);
-        }
-        color[u] = 'b';
     }
 
     // TOPO - BFS
@@ -1574,49 +1631,6 @@ class Codechef {
         // Print contents of stack
         while (stack.empty() == false)
             System.out.print(stack.pop() + " ");
-    }
-	
-    // find if there is a cycle in a directed graph by checking if it 
-    // has a valid TOPO sort or not
-    // or constructing a valid DAG using TOPO sort https://codeforces.com/contest/1385/problem/E
-    static void dfs(int u)
-    {
-      vis[u]=true;
-      for(int v:dedges.get(u))
-      {
-	  if(!vis[v])
-	    dfs(v);
-      }
-      stack.push(u); 
-    }
-
-    static void isValidTOPOSortOrCycleInDAG(){
-	 stack=new Stack<>();
-	 vis=new boolean[n+1];
-	 for(int i=1;i<=n;i++)
-	 {
-	     if(!vis[i])
-	        dfs(i);
-	 }
-	 ArrayList<Integer> top=new ArrayList<>();
-	 while(!stack.isEmpty())
-	    top.add(stack.pop());
-	 boolean flag=false;
-	 int pos[]=new int[n+1];
-	 for(int i=0;i<n;i++)
-	    pos[top.get(i)]=i;
-	 for(int i=1;i<=n;i++)
-	 {
-           for(int v:dedges.get(i))
-	    {
-	       if(pos[v]<pos[i])
-		{
-	            flag=true;
-		     break;
-		}
-	     }
-	  }
-	 return !flag; 
     }
 
     // post order dfs
