@@ -512,6 +512,8 @@ https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
 - #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
 - DP on graphs is enchanting 
+- #145Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
+
 Articles
 --------
 https://codeforces.com/blog/entry/65487?#comment-494720
