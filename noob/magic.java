@@ -10,7 +10,7 @@ Don't understand the Editorial
 https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
--------------------
+-------------------Pa
 http://www.dragonwins.com/domains/getteched/crypto/chinese_remainder_theorem.htm
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
 https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
