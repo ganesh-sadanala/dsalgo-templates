@@ -1953,7 +1953,40 @@ class Codechef {
     return ans;
   }
   
-  
+  // maximum element in given submatrix queries using Sparse Matrix
+  // Source: StackOverflow
+  static long M[][][][];
+  static long matrix[][];
+ 
+	static void precompute_max(){
+	    for (int i = 0 ; (1<<i) <= n; i += 1){
+		for(int j = 0 ; (1<<j) <= m ; j += 1){
+		    for (int x = 0 ; x + (1<<i) -1 < n; x+= 1){
+			for (int y = 0 ;  y + (1<<j) -1 < m; y+= 1){
+			    if (i == 0 && j == 0)
+				M[x][y][i][j] = matrix[x][y]; // store x, y
+			    else if (i == 0)
+				M[x][y][i][j] = Math.max(M[x][y][i][j-1], M[x][y+(1<<(j-1))][i][j-1]);
+			    else if (j == 0)
+				M[x][y][i][j] = Math.max(M[x][y][i-1][j], M[x+ (1<<(i-1))][y][i-1][j]);
+			    else 
+				M[x][y][i][j] = Math.max(M[x][y][i-1][j-1], Math.max(M[x + (1<<(i-1))][y][i-1][j-1], Math.max(M[x][y+(1<<(j-1))][i-1][j-1], M[x + (1<<(i-1))][y+(1<<(j-1))][i-1][j-1])));
+			    // cout << "from i="<<x<<" j="<<y<<" of length="<<(1<<i)<<" and length="<<(1<<j) <<"max is: " << M[x][y][i][j] << endl;
+			}
+		    }
+		}
+	    }
+	}
+
+	// x,y are top left and x1, y1 are bottom right corners of a matrix
+	static long compute_max(int x, int y, int x1, int y1){
+	    int k = (int)(Math.log(x1 - x + 1)/Math.log(2));
+	    int l = (int)(Math.log(y1 - y + 1)/Math.log(2));
+	    // cout << "Value of k="<<k<<" l="<<l<<endl;
+	    long ans = Math.max(M[x][y][k][l], Math.max(M[x1 - (1<<k) + 1][y][k][l], Math.max(M[x][y1 - (1<<l) + 1][k][l], M[x1 - (1<<k) + 1][y1 - (1<<l) + 1][k][l])));
+	    return ans;
+	}
+	
   // Segment Tree
   static int a[];
   static HashSet<Integer> []seg;
