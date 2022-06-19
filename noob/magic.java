@@ -22,6 +22,7 @@ http://e-maxx.ru/
 https://toph.co/p/lids
 https://vjudge.net/
 https://lightoj.com/
+https://usaco.guide/CPH.pdf#page=75
 Galen Colin Topic STreams and Mashups
 https://www.omegalearn.org/thebookofformulas
 https://www.desmos.com/calculator
@@ -486,6 +487,7 @@ https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/en
 https://codeforces.com/problemset/problem/553/A
 https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 https://codeforces.com/problemset/problem/1340/B  : Awesome question on traversing a dp tree to find the path : https://www.youtube.com/watch?v=0TmuETwVit4&list=PLgUwDviBIf0r6cbcALplFqkgi3ftjPb9N&index=3
+https://codeforces.com/contest/1695/problem/C
 
 Math Problems Queue
 -------------------
