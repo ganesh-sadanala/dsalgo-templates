@@ -489,6 +489,7 @@ https://codeforces.com/problemset/problem/553/A
 https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 https://codeforces.com/problemset/problem/1340/B  : Awesome question on traversing a dp tree to find the path : https://www.youtube.com/watch?v=0TmuETwVit4&list=PLgUwDviBIf0r6cbcALplFqkgi3ftjPb9N&index=3
 https://codeforces.com/contest/1695/problem/C
+Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
 
 Math Problems Queue
 -------------------
@@ -537,6 +538,7 @@ https://discuss.codingblocks.com/t/knapsack-problem/33140/2
 https://www.geeksforgeeks.org/number-of-longest-increasing-subsequences/
 https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-tree-set-2-using-parent-pointer/
 https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/
+https://mathworld.wolfram.com/Multichoose.html : Multichosse is actually stars and bars
 
 */
 
