@@ -518,7 +518,7 @@ DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about struct
 - #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
 - DP on graphs is enchanting 
 - #145Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
-
+- #178, #179, #180, 
 Articles
 --------
 https://codeforces.com/blog/entry/65487?#comment-494720
@@ -539,6 +539,7 @@ https://www.geeksforgeeks.org/number-of-longest-increasing-subsequences/
 https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-tree-set-2-using-parent-pointer/
 https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/
 https://mathworld.wolfram.com/Multichoose.html : Multichosse is actually stars and bars
+https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 
 */
 
@@ -901,6 +902,51 @@ class Codechef {
 	
     // ---------------------------------- #DP --------------------------------
 
+	// Matrix Exponentation -> nth Fibonocci number where n<=1e18
+	static class Matrix{
+    int m[][];
+    int sz;
+    Matrix(int sz){
+      this.sz=sz;
+      m=new int[sz][sz];
+    }
+    void identity(){
+      for(int i=0;i<sz;i++){
+        m[i][i]=1;
+      }
+    }
+    void multiply(Matrix a){
+      Matrix res=new Matrix(a.sz);
+      for(int i=0;i<sz;i++){
+        for(int j=0;j<sz;j++){
+          for(int k=0;k<sz;k++){
+            res.m[i][j]+=m[i][k]*a.m[k][j];
+            res.m[i][j]%=mod;
+          }
+        }
+      }
+    }
+  }
+
+  int Fib(int n){
+    int sz=2;
+    Matrix res=new Matrix(sz);
+    res.identity();
+    Matrix T=new Matrix(sz);
+    T.m[0][0]=1;
+    T.m[0][1]=1;
+    T.m[1][0]=1;
+    if(n==1) return 0;
+    if(n==2) return 1;
+    n-=2;
+    while(n>0){
+      if(n%2==1) res=res.multiply(T);
+      T=T.multiply(T);
+      n=n >> 1l;
+    }
+    return (res.m[0][0]+res.m[0][1])%mod;
+  }
+	
     /* Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
        https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
        Amazing variation of this: https://codeforces.com/problemset/problem/375/B
@@ -1384,6 +1430,18 @@ class Codechef {
     while (b > 0) {
         if (b % 2 == 1) res = (res * a)%mod;
         a = (a * a)%mod;
+        b = b >> 1l;
+    }
+    return res;
+  }
+	
+	// (a*b)%mod where 1<=a,b,mod<=1e18
+    // fast multiplication / Russian Peasant Multiplication / Binary Multiplication
+  static long fastMultiplication(long a, long b) {
+    long res = 0;
+    while (b > 0) {
+        if (b % 2 == 1) res = (res + a)%mod;
+        a = (a + a)%mod;
         b = b >> 1l;
     }
     return res;
