@@ -490,6 +490,7 @@ https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/en
 https://codeforces.com/problemset/problem/1340/B  : Awesome question on traversing a dp tree to find the path : https://www.youtube.com/watch?v=0TmuETwVit4&list=PLgUwDviBIf0r6cbcALplFqkgi3ftjPb9N&index=3
 https://codeforces.com/contest/1695/problem/C
 Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
+https://www.spoj.com/problems/FIBOSUM/
 
 Math Problems Queue
 -------------------
