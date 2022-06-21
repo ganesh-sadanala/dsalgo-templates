@@ -1382,13 +1382,9 @@ class Codechef {
     static long pow(long a, long b) {
     long res = 1;
     while (b > 0) {
-        if (b % 2 == 1) {
-            res = (res * a)%mod;
-            b--;
-        } else {
-            a = (a * a)%mod;
-            b = b >> 1l;
-        }
+        if (b % 2 == 1) res = (res * a)%mod;
+        a = (a * a)%mod;
+        b = b >> 1l;
     }
     return res;
   }
