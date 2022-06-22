@@ -298,9 +298,7 @@ If you can formulate that a function f(x) is unimodal then you can use ternary s
 Else if it is stictly or monotonically increasing or decreasing it is binary search.
 Note: Learn how to know if a function is unimodal.
 
-Teach a lot of combinatorics although u get most of it: https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
-
-
+Teaches a lot of combinatorics although u get most of it: https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 
 
 
@@ -400,10 +398,6 @@ Teach a lot of combinatorics although u get most of it: https://codeforces.com/p
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/problemset/problem/57/C : https://codeforces.com/blog/entry/1169#comment-20773
-https://codeforces.com/contest/1411/problem/C
-https://codeforces.com/contest/1451/problem/D
-https://codeforces.com/contest/1253/problem/D
 https://codeforces.com/contest/1573/problem/C
 https://codeforces.com/problemset/problem/1215/B // similar to number of subarrays with k sum
 https://codeforces.com/problemset/problem/851/B
@@ -491,6 +485,9 @@ https://codeforces.com/problemset/problem/1340/B  : Awesome question on traversi
 https://codeforces.com/contest/1695/problem/C
 Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
 https://www.spoj.com/problems/FIBOSUM/
+https://codeforces.com/contest/1253/problem/D
+https://www.hackerrank.com/challenges/stone-division/problem
+https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
 
 Math Problems Queue
 -------------------
@@ -519,7 +516,7 @@ DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about struct
 - #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
 - DP on graphs is enchanting 
 - #145Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
-- #178, #179, #180, 
+- #178, #179, #180, #181, #182
 Articles
 --------
 https://codeforces.com/blog/entry/65487?#comment-494720
@@ -1438,6 +1435,7 @@ class Codechef {
 	
 	// (a*b)%mod where 1<=a,b,mod<=1e18
     // fast multiplication / Russian Peasant Multiplication / Binary Multiplication
+	// Reference: Apaarkamal, codeforces
   static long fastMultiplication(long a, long b) {
     long res = 0;
     while (b > 0) {
