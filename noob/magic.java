@@ -300,6 +300,7 @@ Note: Learn how to know if a function is unimodal.
 
 Teaches a lot of combinatorics although u get most of it: https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 
+The maximal number of divisors of of n<=1e18 is cube root of n or n^(1/3) => https://codeforces.com/blog/entry/14463
 
 
 
