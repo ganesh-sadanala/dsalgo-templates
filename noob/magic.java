@@ -399,7 +399,6 @@ The maximal number of divisors of of n<=1e18 is cube root of n or n^(1/3) => htt
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1573/problem/C
 https://codeforces.com/problemset/problem/1215/B // similar to number of subarrays with k sum
 https://codeforces.com/problemset/problem/851/B
 https://codeforces.com/problemset/problem/630/H
@@ -489,6 +488,7 @@ https://www.spoj.com/problems/FIBOSUM/
 https://codeforces.com/contest/1253/problem/D
 https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
+https://codeforces.com/contest/1573/problem/C : failed at dp
 
 Math Problems Queue
 -------------------
