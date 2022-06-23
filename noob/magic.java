@@ -302,7 +302,7 @@ Teaches a lot of combinatorics although u get most of it: https://codeforces.com
 
 The maximal number of divisors of of n<=1e18 is cube root of n or n^(1/3) => https://codeforces.com/blog/entry/14463
 
-
+LCM(x, n-x) = n-x iff x|n for some positibe integer n and x is a divisor of n. Proof(Problem B): https://codeforces.com/blog/entry/79974
 
 
 
@@ -398,15 +398,10 @@ The maximal number of divisors of of n<=1e18 is cube root of n or n^(1/3) => htt
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/problemset/problem/1485/A
-https://codeforces.com/problemset/problem/1474/B
-https://codeforces.com/problemset/problem/1372/B
 https://codeforces.com/contest/1422/problem/C
-Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 https://www.spoj.com/problems/GNY07H/
 https://www.geeksforgeeks.org/friends-pairing-problem/
 https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
-109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
 https://codeforces.com/contest/1422/problem/C
 https://codeforces.com/contest/1579/problem/E2
 https://codeforces.com/contest/1579/problem/E2
@@ -481,6 +476,14 @@ https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
 https://codeforces.com/contest/1573/problem/C : failed at dp
 https://codeforces.com/problemset/problem/630/H
+https://codeforces.com/problemset/problem/1474/B
+DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
+- #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
+- DP on graphs is enchanting 
+- #145Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
+- #178, #179, #180, #181, #182
+Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
+109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
 
 Math Problems Queue
 -------------------
@@ -506,11 +509,7 @@ https://artofproblemsolving.com/wiki/index.php/2004_AIME_I_Problems/Problem_6
 https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermediate 
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
-DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
-- #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
-- DP on graphs is enchanting 
-- #145Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
-- #178, #179, #180, #181, #182
+
 Articles
 --------
 https://codeforces.com/blog/entry/65487?#comment-494720
