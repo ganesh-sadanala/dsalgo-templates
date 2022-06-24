@@ -14,7 +14,7 @@ Tools and Resources
 https://www.desmos.com/
 http://www.dragonwins.com/domains/getteched/crypto/chinese_remainder_theorem.htm
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
-https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C
+https://academickids.com/encyclopedia/index.php/Mixed_radix : https://codeforces.com/contest/1620/problem/C => Mixed base number system
 https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes : Java codes for DP, Games, Graphs
 https://cses.fi/book/book.pdf
 https://acm.timus.ru/
@@ -398,13 +398,6 @@ LCM(x, n-x) = n-x iff x|n for some positibe integer n and x is a divisor of n. P
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1422/problem/C
-https://www.spoj.com/problems/GNY07H/
-https://www.geeksforgeeks.org/friends-pairing-problem/
-https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
-https://codeforces.com/contest/1422/problem/C
-https://codeforces.com/contest/1579/problem/E2
-https://codeforces.com/contest/1579/problem/E2
 https://codeforces.com/contest/1579/problem/F
 https://codeforces.com/contest/1674/problem/D
 https://codeforces.com/contest/1674/problem/E
@@ -469,14 +462,14 @@ https://codeforces.com/problemset/problem/553/A
 https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 https://codeforces.com/problemset/problem/1340/B  : Awesome question on traversing a dp tree to find the path : https://www.youtube.com/watch?v=0TmuETwVit4&list=PLgUwDviBIf0r6cbcALplFqkgi3ftjPb9N&index=3
 https://codeforces.com/contest/1695/problem/C
+https://www.geeksforgeeks.org/friends-pairing-problem/
+https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
 https://www.spoj.com/problems/FIBOSUM/
 https://codeforces.com/contest/1253/problem/D
 https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
-https://codeforces.com/contest/1573/problem/C : failed at dp
-https://codeforces.com/problemset/problem/630/H
-https://codeforces.com/problemset/problem/1474/B
+https://www.spoj.com/problems/GNY07H/
 DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
 - #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
 - DP on graphs is enchanting 
@@ -484,6 +477,9 @@ DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about struct
 - #178, #179, #180, #181, #182
 Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
+https://codeforces.com/contest/1573/problem/C : failed at dp
+https://codeforces.com/problemset/problem/630/H
+https://codeforces.com/problemset/problem/1474/B
 
 Math Problems Queue
 -------------------
@@ -531,6 +527,7 @@ https://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-tree-set-2-usin
 https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/
 https://mathworld.wolfram.com/Multichoose.html : Multichosse is actually stars and bars
 https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+https://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
 
 */
 
