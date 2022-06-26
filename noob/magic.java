@@ -463,6 +463,7 @@ https://codeforces.com/problemset/problem/1340/B  : Awesome question on traversi
 https://codeforces.com/contest/1695/problem/C
 https://codeforces.com/contest/1579/problem/F
 https://codeforces.com/contest/1696/problem/C
+https://codeforces.com/contest/1696/problem/D
 
 DP
 --
