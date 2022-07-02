@@ -47,6 +47,7 @@ https://codeforces.com/blog/entry/58747
 https://codeforces.com/blog/entry/55274
 https://codeforces.com/blog/entry/100826
 https://codeforces.com/blog/entry/48122
+https://codeforces.com/blog/entry/96699 => Good blog on Binary Search (different approaches to decide l and r)
 Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 online tools for cp - https://codeforces.com/blog/entry/82884
 https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
@@ -398,9 +399,6 @@ LCM(x, n-x) = n-x iff x|n for some positibe integer n and x is a divisor of n. P
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/problemset/problem/1659/B
-https://codeforces.com/problemset/problem/1600/J
-https://codeforces.com/contest/1582/problem/F1
 https://codeforces.com/problemset/problem/1667/A
 https://codeforces.com/contest/1606/problem/C
 https://codeforces.com/contest/1604/problem/C
