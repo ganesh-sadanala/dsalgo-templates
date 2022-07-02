@@ -464,9 +464,9 @@ https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
 https://www.spoj.com/problems/GNY07H/
 DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
-- #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree1 and 2
+- #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree 1 and 2
 - DP on graphs is enchanting 
-- #145Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
+- #145 Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
 - #178, #179, #180, #181, #182
 Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
