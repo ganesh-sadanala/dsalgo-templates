@@ -463,11 +463,9 @@ https://codeforces.com/contest/1253/problem/D
 https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
 https://www.spoj.com/problems/GNY07H/
-DP - #53 - #59 - #66 - #73 - #116(learned an insightful observation about structure of the tree)
-- #117(dp on trees or graph has 3 approaches - Recursion with memoization, dfs, bfs) - #121 - #122 - Distance Tree 1 and 2
 - DP on graphs is enchanting 
 - #145 Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
-- #178, #179, #180, #181, #182
+- #178, #179, #180, #181, #182, DP Bit masks problems Bottom Up, DP with combinatorics($90, #91, #93)
 Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
 https://codeforces.com/contest/1573/problem/C : failed at dp
@@ -1299,6 +1297,16 @@ class Codechef {
         // Return result for n
         return der[n];
     }
+	
+	// Get to see a lot like this for DP+Comb
+	int sum = 0;
+	int[] dp = new int[n + 1];
+
+	for (int i = 1; i <= n; i++) {
+		dp[i] = sum + 1;
+		sum += dp[i];
+	}
+
 	
     // Number of ways to partition number n into sum of positive integers
     // Order matter: https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes/blob/main/Java%20Codes/CountOrdered.java 
