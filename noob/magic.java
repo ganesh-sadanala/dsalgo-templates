@@ -278,6 +278,8 @@ Every integer can be expressed using congruent modulo 2 or 4.
 When 𝑛≡0(mod2), output (𝑛−3,2,1).
 When 𝑛≡1(mod4), output (⌊𝑛2⌋−1,⌊𝑛2⌋+1,1).
 When 𝑛≡3(mod4), output (⌊𝑛2⌋−2,⌊𝑛2⌋+2,1).
+https://codeforces.com/blog/entry/97920?#comment-868122
+https://codeforces.com/blog/entry/97920?#comment-868199
 
 An upper bound for a harmonic sum is log2(n) + 1.
 
@@ -301,9 +303,9 @@ Note: Learn how to know if a function is unimodal.
 
 Teaches a lot of combinatorics although u get most of it: https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
 
-The maximal number of divisors of of n<=1e18 is cube root of n or n^(1/3) => https://codeforces.com/blog/entry/14463
+The maximal number of divisors of n<=1e18 is cube root of n or n^(1/3) => https://codeforces.com/blog/entry/14463
 
-LCM(x, n-x) = n-x iff x|n for some positibe integer n and x is a divisor of n. Proof(Problem B): https://codeforces.com/blog/entry/79974
+LCM(x, n-x) = n-x iff x|n for some positive integer n and x is a divisor of n. Proof(Problem B): https://codeforces.com/blog/entry/79974
 
 
 
@@ -466,7 +468,6 @@ https://www.spoj.com/problems/GNY07H/
 - DP on graphs is enchanting 
 - #145 Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
 - #178, #179, #180, #181, #182, DP Bit masks problems Bottom Up, DP with combinatorics($90, #91, #93)
-Tiling Problem - 3 : 85 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
 109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
 https://codeforces.com/contest/1573/problem/C : failed at dp
 https://codeforces.com/problemset/problem/630/H
