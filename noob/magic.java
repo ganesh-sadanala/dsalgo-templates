@@ -451,6 +451,7 @@ https://codeforces.com/contest/1581/problem/C
 https://codeforces.com/problemset/problem/1661/B
 https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entry/94384
 https://codeforces.com/contest/1699/problem/C
+https://codeforces.com/problemset/problem/1700/C
 
 DP
 --
