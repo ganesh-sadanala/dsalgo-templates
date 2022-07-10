@@ -455,6 +455,7 @@ https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entr
 https://codeforces.com/contest/1699/problem/C
 https://codeforces.com/problemset/problem/1700/C
 https://codeforces.com/contest/1701/problem/C
+https://codeforces.com/problemset/problem/1694/B
 
 DP
 --
@@ -499,7 +500,7 @@ https://artofproblemsolving.com/wiki/index.php/Constructive_counting - Intermedi
 https://artofproblemsolving.com/wiki/index.php/Distinguishability
 https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 
-Articles
+Articles/Blogs
 --------
 https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/82417 : Learn Problem B all approaches
@@ -521,9 +522,10 @@ https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/
 https://mathworld.wolfram.com/Multichoose.html : Multichosse is actually stars and bars
 https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 https://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
+Eating Approach and Related - CONstructive
+https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/entry/103952?#comment-923675 : https://codeforces.com/blog/entry/85172
 
 */
-
 import java.util.*;
 import java.io.*;
 import java.math.*;
