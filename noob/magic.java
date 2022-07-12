@@ -458,6 +458,7 @@ https://codeforces.com/contest/1701/problem/C
 https://codeforces.com/problemset/problem/1694/B
 https://codeforces.com/contest/1442/problem/B
 https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=HIiX3r5n27M
+https://codeforces.com/problemset/problem/1436/D
 
 DP
 --
