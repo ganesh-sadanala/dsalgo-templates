@@ -1326,6 +1326,8 @@ class Codechef {
 
     // ------------------------- #NUMBER THEORY ------------------------ 
 	
+	// https://codeforces.com/blog/entry/48417#comment-931507 -> 3.Maximal possible subarray for any possible gcd value in an array
+	
     // gray code
     int g (int n) {
         return n ^ (n >>> 1);
