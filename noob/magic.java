@@ -30,6 +30,9 @@ https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
 https://artofproblemsolving.com/
 https://brilliant.org/home/
+https://codeforces.com/blog/entry/65133
+https://codeforces.com/blog/entry/79231
+https://cses.fi/book/book.pdf
 https://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions
 https://www.youtube.com/watch?v=bSdp2WeyuJY
 https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit
@@ -460,6 +463,7 @@ https://codeforces.com/contest/1442/problem/B
 https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=HIiX3r5n27M
 https://codeforces.com/problemset/problem/1436/D
 https://codeforces.com/problemset/problem/1091/D
+https://leetcode.com/problems/next-permutation/ : Funda for https://codeforces.com/contest/1091/problem/D
 
 Solved and Learned new approaches/ Took more time to solve
 ----------------------------------------------------------
