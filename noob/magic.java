@@ -467,10 +467,13 @@ https://codeforces.com/problemset/problem/1091/D
 https://leetcode.com/problems/next-permutation/ : Funda for https://codeforces.com/contest/1091/problem/D
 https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based on manhattan distances
 
-Solved and Learned new approaches/ Took more time to solve
+Solved and Learned other approaches / Took more time to solve
 ----------------------------------------------------------
 https://codeforces.com/problemset/problem/915/C
-https://codeforces.com/contest/1703/problem/F
+https://codeforces.com/contest/1703/problem/F : 
+https://codeforces.com/problemset/problem/1692/E : binary search
+https://codeforces.com/problemset/problem/1694/A : simple observation
+
 
 DP
 --
@@ -706,6 +709,12 @@ class Codechef {
     }
 	
     // ----------------------------------#Geometry----------------------------------
+	//https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based on manhattan distances
+	
+	
+	
+	
+	
 	// ax^2+bx+c=0 , a!=0
 	// source: https://vlecomte.github.io/cp-geo.pdf Page: 22
 	static void quadraticRoots(double a, double b, double c){
