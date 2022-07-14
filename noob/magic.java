@@ -465,7 +465,7 @@ https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=
 https://codeforces.com/problemset/problem/1436/D
 https://codeforces.com/problemset/problem/1091/D
 https://leetcode.com/problems/next-permutation/ : Funda for https://codeforces.com/contest/1091/problem/D
-https://codeforces.com/problemset/problem/1486/B
+https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based on manhattan distances
 
 Solved and Learned new approaches/ Took more time to solve
 ----------------------------------------------------------
