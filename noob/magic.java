@@ -33,11 +33,11 @@ https://brilliant.org/home/
 https://codeforces.com/blog/entry/65133
 https://codeforces.com/blog/entry/79231
 https://cses.fi/book/book.pdf
-https://docs.google.com/document/d/1-wkEQSYLLaKne-6GJ4Wc_dTGmnRn5Fv_Ax64LrheK_M/edit
+https://docs.google.com/document/d/1-wkEQSYLLaKne-6GJ4Wc_dTGmnRn5Fv_Ax64LrheK_M/edit - karthik arora
 https://artofproblemsolving.com/wiki/index.php/Resources_for_mathematics_competitions
 https://www.youtube.com/watch?v=bSdp2WeyuJY
-https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit
-https://docs.google.com/document/d/1Qmh_suVjBv0F3LFC5CfO06knn2zW92nfTyVlQLrUnFs/edit
+https://docs.google.com/document/d/1-7Co93b504uyXyMjjE8bnLJP3d3QXvp_m1UjvbvdR2Y/edit - 
+https://docs.google.com/document/d/1Qmh_suVjBv0F3LFC5CfO06knn2zW92nfTyVlQLrUnFs/edit - Priyansh Agarwal
 https://www.csie.ntu.edu.tw/~r97002/temp/Concrete%20Mathematics%202e.pdf
 https://codeforces.com/blog/entry/72285 : https://codeforces.com/problemset/problem/1047/B
 cp-algo pending
