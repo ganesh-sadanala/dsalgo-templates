@@ -466,13 +466,16 @@ https://codeforces.com/problemset/problem/1436/D
 https://codeforces.com/problemset/problem/1091/D
 https://leetcode.com/problems/next-permutation/ : Funda for https://codeforces.com/contest/1091/problem/D
 https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based on manhattan distances
+https://codeforces.com/problemset/problem/1312/A : https://codeforces.com/blog/entry/74640?#comment-655492
 
-Solved and Learned other approaches / Took more time to solve
-----------------------------------------------------------
+Solved and Learned other approaches / Took more time to solve / Got AC by luck
+------------------------------------------------------------------------------
 https://codeforces.com/problemset/problem/915/C
 https://codeforces.com/contest/1703/problem/F : 
 https://codeforces.com/problemset/problem/1692/E : binary search
 https://codeforces.com/problemset/problem/1694/A : simple observation
+https://codeforces.com/problemset/problem/1422/A
+https://codeforces.com/problemset/problem/1369/A : https://codeforces.com/blog/entry/79235?#comment-648708 : https://www.youtube.com/watch?v=qAV5KA0kY2E
 
 
 DP
