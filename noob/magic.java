@@ -561,6 +561,27 @@ class Codechef {
     // ------------------------------ #General  #Miscellaneous  #interesting ---------------------------------
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
+	
+	// set precision for double values
+	public static void setPrecision() {
+ 
+		 // Declaring and initializing
+		 // double value
+		double a = 0.9;
+
+		// Setting the precision
+		// to 20 places
+		System.out.println(
+		  String.format("%.20f", a));
+
+		double b = 1;
+
+		// Setting the precision
+		// to 5 places
+		System.out.println(
+		  String.format("%.5f", b));
+    }
+	
     // Number of distinct values of bitwise OR of all subarrays
     // i;e; distinct OR values for all 1<=l<=r<=n https://codeforces.com/problemset/problem/243/A
     static int distinctOROfAllSubarrays(int a[]){
