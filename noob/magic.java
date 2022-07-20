@@ -63,6 +63,7 @@ Codefores catalog - Have an amazing blog posts (Read it when find time) - https:
 https://codeforces.com/blog/entry/68138
 https://csacademy.com/
 https://docs.google.com/spreadsheets/d/1-kY6uiLOo1AKSBCSjbpGRBZbIldO_3dg6oTRKIJzT-g/edit#gid=0
+Exchange Arguments Greedy techniques: https://www.youtube.com/watch?v=Oq1seKJvfQU
 
 Interesting hidden things in java
 ---------------------------------
@@ -469,6 +470,8 @@ https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based 
 https://codeforces.com/problemset/problem/1312/A : https://codeforces.com/blog/entry/74640?#comment-655492
 https://codeforces.com/contest/1708/problem/C
 https://codeforces.com/contest/1706/problem/D1 : https://codeforces.com/blog/entry/105008?#comment-933980
+https://codeforces.com/contest/1705/problem/A : Teaches Exchange Argument
+
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
