@@ -472,7 +472,6 @@ https://codeforces.com/contest/1708/problem/C
 https://codeforces.com/contest/1706/problem/D1 : https://codeforces.com/blog/entry/105008?#comment-933980
 https://codeforces.com/contest/1705/problem/A : Teaches Exchange Argument
 
-
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
 https://codeforces.com/problemset/problem/915/C
