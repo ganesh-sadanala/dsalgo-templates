@@ -395,13 +395,6 @@ LCM(x, n-x) = n-x iff x|n for some positive integer n and x is a divisor of n. P
 
 
 
-
-
-
-
-
-
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -472,6 +465,7 @@ https://codeforces.com/contest/1708/problem/C
 https://codeforces.com/contest/1706/problem/D1 : https://codeforces.com/blog/entry/105008?#comment-933980
 https://codeforces.com/contest/1705/problem/A : Teaches Exchange Argument
 https://codeforces.com/contest/1709/problem/C
+https://codeforces.com/contest/1716/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
