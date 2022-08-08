@@ -466,6 +466,7 @@ https://codeforces.com/contest/1706/problem/D1 : https://codeforces.com/blog/ent
 https://codeforces.com/contest/1705/problem/A : Teaches Exchange Argument
 https://codeforces.com/contest/1709/problem/C
 https://codeforces.com/contest/1716/problem/C
+https://codeforces.com/problemset/problem/1714/E : Got the idea but could not implement covering all the edge cases
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -682,7 +683,7 @@ class Codechef {
 	
 	
    // ----------------------- #SORTING -------------------------------
-	
+
    // Optimization O(nlogn) to O(n) for Problem B: https://codeforces.com/blog/entry/102013
 	
 	// sorting template of normal array []
