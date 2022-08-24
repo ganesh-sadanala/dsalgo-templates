@@ -467,6 +467,7 @@ https://codeforces.com/contest/1705/problem/A : Teaches Exchange Argument
 https://codeforces.com/contest/1709/problem/C
 https://codeforces.com/contest/1716/problem/C
 https://codeforces.com/problemset/problem/1714/E : Got the idea but could not implement covering all the edge cases
+https://codeforces.com/contest/1713/problem/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
