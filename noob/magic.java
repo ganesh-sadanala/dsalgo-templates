@@ -74,7 +74,7 @@ https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 
-Math and Related
+Math and CS
 -----------------
 Fibonacci: https://en.wikipedia.org/wiki/Fibonacci_number
 Interesting observations on Fibonocci : https://www.youtube.com/watch?v=SjSHVDfXHQ4
@@ -313,6 +313,7 @@ The maximal number of divisors of n<=1e18 is cube root of n or n^(1/3) => https:
 
 LCM(x, n-x) = n-x iff x|n for some positive integer n and x is a divisor of n. Proof(Problem B): https://codeforces.com/blog/entry/79974
 
+Prefix Codes : https://www.youtube.com/watch?v=bWSHmC1eSyY : https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/C1
 
 
 
