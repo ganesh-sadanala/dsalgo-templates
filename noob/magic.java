@@ -63,7 +63,8 @@ Codefores catalog - Have an amazing blog posts (Read it when find time) - https:
 https://codeforces.com/blog/entry/68138
 https://csacademy.com/
 https://docs.google.com/spreadsheets/d/1-kY6uiLOo1AKSBCSjbpGRBZbIldO_3dg6oTRKIJzT-g/edit#gid=0
-Exchange Arguments Greedy techniques: https://www.youtube.com/watch?v=Oq1seKJvfQU
+Exchange Arguments Greedy techniques: https://www.youtube.com/watch?v=Oq1seKJvfQU : https://www.youtube.com/watch?v=5d5tVcUAzJU : 
+Stay Ahead Greedy(Interval Scheduling - Maximize compatible requests) : https://www.youtube.com/watch?v=WAf5fop1EZg
 
 Interesting hidden things in java
 ---------------------------------
