@@ -471,7 +471,7 @@ https://codeforces.com/contest/1716/problem/C
 https://codeforces.com/problemset/problem/1714/E : Got the idea but could not implement covering all the edge cases
 https://codeforces.com/contest/1713/problem/D : Time: Optimizing Implementation 
 https://codeforces.com/contest/1711/problem/C : Got the idea but taking a lot of time to get that
-
+https://codeforces.com/contest/1721/problem/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
