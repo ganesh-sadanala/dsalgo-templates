@@ -1980,6 +1980,65 @@ class Codechef {
         return memo[u][0];
     }
 	
+	// Prims Algo
+	class NodeCost {
+
+		int node; // Adjacent node
+		int cost; // Costance/cost to adjacent node
+
+		NodeCost (int node, int cost) {
+			this.node = node;
+			this.cost = cost;
+		}
+	}
+
+	int Find_MST(int source_node, List<List<NodeCost>> graph) {
+
+		// Comparator lambda function that enables the priority queue to store the nodes
+		// based on the cost in the ascending order.
+		Comparator<NodeCost> NodeCostComparator = (obj1, obj2) -> {
+			return obj1.cost - obj2.cost;
+		};
+
+		// Priority queue stores the object node-cost into the queue with 
+		// the smallest cost node at the top.
+		PriorityQueue<NodeCost> pq = new PriorityQueue<>(NodeCostComparator);
+
+		// The cost of the source node to itself is 0
+		pq.add(new NodeCost(source_node, 0));
+
+		boolean added[] = new boolean[graph.size()];
+		Arrays.fill(added, false);
+
+		int mst_cost = 0;
+
+		while (!pq.isEmpty()) {
+
+			// Select the item <node, cost> with minimum cost
+			NodeCost item = pq.peek();
+			pq.remove();
+
+			int node = item.node;
+			int cost = item.cost;
+
+			// If the node is node not yet added to the minimum spanning tree, add it and increment the cost.
+			if ( !added[node] ) {
+				mst_cost += cost;
+				added[node] = true;
+
+				// Iterate through all the nodes adjacent to the node taken out of priority queue.
+				// Push only those nodes (node, cost) that are not yet present in the minumum spanning tree.
+				for (NodeCost pair_node_cost : graph.get(node)) {
+					int adj_node = pair_node_cost.node;
+					if (added[adj_node] == false) {
+						pq.add(pair_node_cost);
+					}
+				}
+			}
+		}
+		return mst_cost;
+	}
+	
 	
     // ------------------------- #ADVANCED DATA STRUCTURES ------------------------
     // #BIT
