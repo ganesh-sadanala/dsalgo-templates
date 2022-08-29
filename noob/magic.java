@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------Pa
+https://codeforces.com/blog/entry/62690
 https://www.desmos.com/
 http://www.dragonwins.com/domains/getteched/crypto/chinese_remainder_theorem.htm
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
@@ -472,6 +473,7 @@ https://codeforces.com/problemset/problem/1714/E : Got the idea but could not im
 https://codeforces.com/contest/1713/problem/D : Time: Optimizing Implementation 
 https://codeforces.com/contest/1711/problem/C : Got the idea but taking a lot of time to get that
 https://codeforces.com/contest/1721/problem/D
+https://atcoder.jp/contests/abc266/tasks/abc266_e
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
