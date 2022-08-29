@@ -473,7 +473,7 @@ https://codeforces.com/problemset/problem/1714/E : Got the idea but could not im
 https://codeforces.com/contest/1713/problem/D : Time: Optimizing Implementation 
 https://codeforces.com/contest/1711/problem/C : Got the idea but taking a lot of time to get that
 https://codeforces.com/contest/1721/problem/D
-https://atcoder.jp/contests/abc266/tasks/abc266_e
+https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/problemset/problem/453/A : https://www.youtube.com/watch?v=U_h3IjreRek
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
