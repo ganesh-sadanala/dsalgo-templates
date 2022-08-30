@@ -479,6 +479,7 @@ https://codeforces.com/contest/1721/problem/D
 https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/problemset/problem/453/A : https://www.youtube.com/watch?v=U_h3IjreRek
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D
+https://codeforces.com/contest/1722/problem/E
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
