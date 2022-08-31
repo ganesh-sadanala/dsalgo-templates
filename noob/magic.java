@@ -400,7 +400,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 
 
 
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -2355,6 +2354,81 @@ class Codechef {
      constructSum(0, n-1, 0);
   }
   
+  // #MERGE SORT TREE
+  static List<Long> tree[];
+  static int sz=0;
+
+  /*
+  Given an array of N elements and you have to answer Q queries of the form L R K , To Count the numbers smaller than K in range L to R.
+  Reference: https://discuss.codechef.com/t/merge-sort-tree-tutorial/14277
+  */
+
+  static long lowerBound(List<Long> l, long k){
+    long idx=-1;
+    int le=0, ri=l.size()-1;
+    while(le<=ri){
+      int mid=le+(ri-le)/2;
+      if(l.get(mid)<k){
+        le=mid+1;
+        idx=mid;
+      }else ri=mid-1;
+    }
+    return idx==-1?0:idx+1;
+  }
+
+  static long query( int cur, int l, int r, int x, int y, long k)
+  {
+         if( r < x || l > y )
+        {
+                 return 0; //out of range
+        }
+        if( x<=l && r<=y )
+        {
+                //Binary search over the current sorted vector to find elements smaller than K
+
+                return lowerBound(tree[cur], k);
+        }
+        int mid=l+(r-l)/2;
+       return query(2*cur+1,l,mid,x,y,k)+query(2*cur+2,mid+1,r,x,y,k);
+  }
+
+  static void merge(List<Long> res, List<Long> a, List<Long> b){
+    int n1=a.size();
+    int n2=b.size();
+    int i=0, j=0;
+    while(i<n1 && j<n2){
+      if(a.get(i)<=b.get(j)){
+        res.add(a.get(i));
+        i++;
+      }else{
+        res.add(b.get(j));
+        j++;
+      }
+    }
+    while(i<n1){
+      res.add(a.get(i));
+      i++;
+    }
+    while(j<n2){
+      res.add(b.get(j));
+      j++;
+    }
+  }
+
+  static void build( int cur , int l , int r )
+  {
+       if(l==r)
+       {
+          if(tree[cur]==null) tree[cur]=new ArrayList<>();
+          tree[cur].add(w[l]);
+          return ;
+       }
+       int mid = l+(r-l)/2;
+       build(2*cur+1 , l , mid ); // Build left tree 
+       build(2*cur+2 , mid+1 , r ); // Build right tree
+       tree[cur] = new ArrayList<Long>();
+       merge(tree[cur], tree[2*cur+1] , tree[2*cur+2] ); //Merging the two sorted arrays
+  }
   
   // -------------------------------- #SCHEDULING ALGO --------------------------
   // Segment Scheduling Algorithm
