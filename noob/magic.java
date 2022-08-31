@@ -480,6 +480,7 @@ https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/probl
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 https://codeforces.com/contest/1722/problem/E
+https://www.hackerrank.com/challenges/coloring-tree/problem
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
