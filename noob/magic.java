@@ -2430,6 +2430,152 @@ class Codechef {
        merge(tree[cur], tree[2*cur+1] , tree[2*cur+2] ); //Merging the two sorted arrays
   }
   
+	
+	// #Segment Tree Lazy Propagation/Range Updates 
+	// Reference: GFG and CodeNCode
+	class LazySegmentTree
+{
+    final int MAX = 1000;     // Max tree size
+    int tree[] = new int[MAX]; // To store segment tree
+    int lazy[] = new int[MAX]; // To store pending updates
+  
+    void updateRangeUtil(int si, int ss, int se, int us,
+                        int ue, int diff)
+    {
+      
+        if (lazy[si] != 0)
+        {
+         
+            tree[si] += (se - ss + 1) * lazy[si];
+  
+          
+            if (ss != se)
+            {
+               
+                lazy[si * 2 + 1] += lazy[si];
+                lazy[si * 2 + 2] += lazy[si];
+            }
+  
+           
+            lazy[si] = 0;
+        }
+  
+        // out of range
+        if (ss > se || ss > ue || se < us)
+            return;
+  
+        // Current segment is fully in range
+        if (ss >= us && se <= ue)
+        {
+            // Add the difference to current node
+            tree[si] += (se - ss + 1) * diff;
+  
+            // same logic for checking leaf node or not
+            if (ss != se)
+            {
+               
+                lazy[si * 2 + 1] += diff;
+                lazy[si * 2 + 2] += diff;
+            }
+            return;
+        }
+  
+        // If not completely in rang, but overlaps, recur for
+        // children,
+        int mid = (ss + se) / 2;
+        updateRangeUtil(si * 2 + 1, ss, mid, us, ue, diff);
+        updateRangeUtil(si * 2 + 2, mid + 1, se, us, ue, diff);
+  
+        // And use the result of children calls to update this
+        // node
+        tree[si] = tree[si * 2 + 1] + tree[si * 2 + 2];
+    }
+  
+   
+    void updateRange(int n, int us, int ue, int diff) {
+        updateRangeUtil(0, 0, n - 1, us, ue, diff);
+    }
+  
+    int getSumUtil(int ss, int se, int qs, int qe, int si)
+    {
+     
+        if (lazy[si] != 0)
+        {
+            
+            tree[si] += (se - ss + 1) * lazy[si];
+  
+            // checking if it is not leaf node because if
+            // it is leaf node then we cannot go further
+            if (ss != se)
+            {
+                // Since we are not yet updating children os si,
+                // we need to set lazy values for the children
+                lazy[si * 2 + 1] += lazy[si];
+                lazy[si * 2 + 2] += lazy[si];
+            }
+  
+            // unset the lazy value for current node as it has
+            // been updated
+            lazy[si] = 0;
+        }
+  
+        // Out of range
+        if (ss > se || ss > qe || se < qs)
+            return 0;
+  
+      
+        if (ss >= qs && se <= qe)
+            return tree[si];
+  
+        // If a part of this segment overlaps with the given
+        // range
+        int mid = (ss + se) / 2;
+        return getSumUtil(ss, mid, qs, qe, 2 * si + 1) +
+            getSumUtil(mid + 1, se, qs, qe, 2 * si + 2);
+    }
+  
+    
+    int getSum(int n, int qs, int qe)
+    {
+        // Check for erroneous input values
+        if (qs < 0 || qe > n - 1 || qs > qe)
+        {
+            System.out.println("Invalid Input");
+            return -1;
+        }
+  
+        return getSumUtil(0, n - 1, qs, qe, 0);
+    }
+  
+   
+    void constructSTUtil(int arr[], int ss, int se, int si)
+    {
+        // out of range as ss can never be greater than se
+        if (ss > se)
+            return;
+  
+        /* If there is one element in array, store it in
+        current node of segment tree and return */
+        if (ss == se)
+        {
+            tree[si] = arr[ss];
+            return;
+        }
+  
+       
+        int mid = (ss + se) / 2;
+        constructSTUtil(arr, ss, mid, si * 2 + 1);
+        constructSTUtil(arr, mid + 1, se, si * 2 + 2);
+  
+        tree[si] = tree[si * 2 + 1] + tree[si * 2 + 2];
+    }
+  
+    void constructST(int arr[], int n)
+    {
+        // Fill the allocated memory st
+        constructSTUtil(arr, 0, n - 1, 0);
+    }
+		
   // -------------------------------- #SCHEDULING ALGO --------------------------
   // Segment Scheduling Algorithm
   // https://atcoder.jp/contests/abc230/tasks/abc230_d
