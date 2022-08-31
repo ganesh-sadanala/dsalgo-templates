@@ -67,7 +67,7 @@ https://docs.google.com/spreadsheets/d/1-kY6uiLOo1AKSBCSjbpGRBZbIldO_3dg6oTRKIJz
 Exchange Arguments Greedy techniques: https://www.youtube.com/watch?v=Oq1seKJvfQU : https://www.youtube.com/watch?v=5d5tVcUAzJU : 
 Stay Ahead Greedy(Interval Scheduling - Maximize compatible requests) : https://www.youtube.com/watch?v=WAf5fop1EZg
 number of four cycles in a graph -> Topuc to be mastererd
-Explore and read blogs on MergeSortTree, SQRT Decomposition and MOs algorithm
+Explore and read blogs on MergeSortTree, SQRT Decomposition and MOs algorithm, Persistent Segment tree and other data structures
 
 Interesting hidden things in java
 ---------------------------------
