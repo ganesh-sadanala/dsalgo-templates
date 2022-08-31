@@ -622,6 +622,7 @@ class Codechef {
     }
     
     // accurate floor if a or b is negative
+    // or Taking Math.floor((double)a/b) works
     long accurateFloor(long a, long b) {
 	long val = a / b;
 	while (val * b > a)
