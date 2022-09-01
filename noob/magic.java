@@ -481,6 +481,7 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 https://codeforces.com/contest/1722/problem/E
 https://www.hackerrank.com/challenges/coloring-tree/problem
+https://codeforces.com/contest/1722/problem/F
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
