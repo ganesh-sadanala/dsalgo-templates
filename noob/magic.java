@@ -395,12 +395,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 
 
 
-
-
-
-
-
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -482,6 +476,7 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/
 https://codeforces.com/contest/1722/problem/E
 https://www.hackerrank.com/challenges/coloring-tree/problem
 https://codeforces.com/contest/1722/problem/F
+https://codeforces.com/contest/1717/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
