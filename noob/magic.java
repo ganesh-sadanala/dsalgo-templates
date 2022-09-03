@@ -398,12 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1605/problem/A
-https://codeforces.com/contest/1605/problem/B
-https://codeforces.com/contest/1005/problem/D
-https://codeforces.com/contest/630/problem/K
-https://codeforces.com/contest/1609/problem/D
-https://codeforces.com/contest/1311/problem/F
 https://codeforces.com/contest/1469/problem/C
 https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but need to do in O(n)
 https://codeforces.com/contest/1684/problem/C
