@@ -12,6 +12,7 @@ https://codeforces.com/contest/559/problem/B
 Tools and Resources
 -------------------Pa
 https://codeforces.com/blog/entry/62690
+https://www.geeksforgeeks.org/count-ways-express-n-sum-odd-integers/
 https://www.desmos.com/
 http://www.dragonwins.com/domains/getteched/crypto/chinese_remainder_theorem.htm
 http://disi.unitn.it/~montreso/acm-icpc/CompetitiveProgrammersHandbook.pdf : Page 26 finds a lot of books
@@ -398,9 +399,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1469/problem/C
-https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but need to do in O(n)
-https://codeforces.com/contest/1684/problem/C
 https://codeforces.com/contest/1684/problem/D
 https://codeforces.com/contest/1608/problem/C
 https://codeforces.com/contest/835/problem/C
@@ -471,6 +469,8 @@ https://codeforces.com/contest/1722/problem/E
 https://www.hackerrank.com/challenges/coloring-tree/problem
 https://codeforces.com/contest/1722/problem/F
 https://codeforces.com/contest/1717/problem/C
+https://codeforces.com/contest/1469/problem/C
+https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but need to do in O(n)
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
