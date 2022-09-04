@@ -550,6 +550,7 @@ https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 https://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
 Eating Approach and Related - Constructive
 https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/entry/103952?#comment-923675 : https://codeforces.com/blog/entry/85172
+https://www.quora.com/Which-integers-cannot-be-represented-as-the-difference-of-two-squares : https://codeforces.com/contest/1725/problem/G
 
 */
 import java.util.*;
