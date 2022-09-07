@@ -482,6 +482,7 @@ https://codeforces.com/problemset/problem/1422/A
 https://codeforces.com/problemset/problem/1369/A : https://codeforces.com/blog/entry/79235?#comment-648708 : https://www.youtube.com/watch?v=qAV5KA0kY2E
 https://codeforces.com/contest/1706/problem/C
 https://codeforces.com/contest/1722/problem/G : Learned easy solution
+https://codeforces.com/contest/1726/problem/C : 
 
 DP
 --
