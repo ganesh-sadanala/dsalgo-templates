@@ -481,6 +481,8 @@ https://codeforces.com/problemset/problem/1369/A : https://codeforces.com/blog/e
 https://codeforces.com/contest/1706/problem/C
 https://codeforces.com/contest/1722/problem/G : Learned easy solution
 https://codeforces.com/contest/1726/problem/C : 
+https://codeforces.com/contest/1728/problem/C 
+
 
 DP
 --
