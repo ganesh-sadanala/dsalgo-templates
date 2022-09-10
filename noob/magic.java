@@ -470,6 +470,7 @@ https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but nee
 https://codeforces.com/contest/1725/problem/M
 https://codeforces.com/contest/1684/problem/D
 https://codeforces.com/contest/1728/problem/D
+https://codeforces.com/problemset/problem/1033/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
