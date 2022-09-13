@@ -78,6 +78,11 @@ https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
 Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 
+Learnings
+---------
+Interavtive Problems: https://codeforces.com/blog/entry/56040#comment-953045
+Append a new line after every query before flushing it.
+
 Math and CS
 -----------------
 Fibonacci: https://en.wikipedia.org/wiki/Fibonacci_number
