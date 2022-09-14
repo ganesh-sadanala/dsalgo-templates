@@ -403,7 +403,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/734/problem/C
 https://codeforces.com/contest/682/problem/C
 https://codeforces.com/contest/286/problem/A
 https://codeforces.com/contest/1423/problem/K : solution proof is vere level : i got almost :)
