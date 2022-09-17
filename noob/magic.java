@@ -398,7 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1342/problem/C
 https://codeforces.com/contest/1622/problem/C
 https://codeforces.com/contest/573/problem/B
 https://codeforces.com/contest/219/problem/C
@@ -459,6 +458,7 @@ https://codeforces.com/contest/1684/problem/D
 https://codeforces.com/contest/1728/problem/D
 https://codeforces.com/problemset/problem/1033/C
 https://codeforces.com/contest/1729/problem/E
+https://codeforces.com/contest/1342/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
