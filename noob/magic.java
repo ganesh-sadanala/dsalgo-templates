@@ -398,7 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/219/problem/C
 https://codeforces.com/contest/1623/problem/C
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
@@ -457,6 +456,7 @@ https://codeforces.com/contest/1728/problem/D
 https://codeforces.com/problemset/problem/1033/C
 https://codeforces.com/contest/1729/problem/E
 https://codeforces.com/contest/1342/problem/C
+https://codeforces.com/contest/219/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
