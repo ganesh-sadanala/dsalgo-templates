@@ -457,6 +457,7 @@ https://codeforces.com/problemset/problem/1033/C
 https://codeforces.com/contest/1729/problem/E
 https://codeforces.com/contest/1342/problem/C
 https://codeforces.com/contest/219/problem/C
+https://codingcompetitions.withgoogle.com/kickstart/round/0000000000201d27/0000000000201b7b#problem
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
