@@ -474,6 +474,7 @@ https://codeforces.com/contest/1726/problem/C :
 https://codeforces.com/contest/1728/problem/C 
 https://codeforces.com/contest/1620/problem/C
 https://codeforces.com/contest/817/problem/D : Interesting, with distinct values in the array ans is using stack, but complicated if duplicates are given. Almost solved, learned a new technique
+https://discord.com/channels/317970261263515648/805648502545186816/1021201931634495561
 
 DP
 --
