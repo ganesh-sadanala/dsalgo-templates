@@ -459,7 +459,6 @@ https://codeforces.com/contest/1342/problem/C
 https://codeforces.com/contest/219/problem/C
 https://codingcompetitions.withgoogle.com/kickstart/round/0000000000201d27/0000000000201b7b#problem
 https://atcoder.jp/contests/abc266/tasks/abc266_e
-https://codeforces.com/contest/817/problem/D : Interesting, with distinct values in the array ans is using stack, but complicated if duplicates are given.
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -474,7 +473,7 @@ https://codeforces.com/contest/1722/problem/G : Learned easy solution
 https://codeforces.com/contest/1726/problem/C : 
 https://codeforces.com/contest/1728/problem/C 
 https://codeforces.com/contest/1620/problem/C
-
+https://codeforces.com/contest/817/problem/D : Interesting, with distinct values in the array ans is using stack, but complicated if duplicates are given. Almost solved, learned a new technique
 
 DP
 --
