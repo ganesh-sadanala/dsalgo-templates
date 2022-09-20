@@ -456,6 +456,7 @@ https://codeforces.com/contest/1623/problem/C
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/\
 https://codeforces.com/contest/1616/problem/C
+https://codeforces.com/contest/1733/problem/D2
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
