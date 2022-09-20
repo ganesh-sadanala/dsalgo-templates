@@ -398,13 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1623/problem/C
-https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
-https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/
-https://codeforces.com/problemset/problem/1355/C
-https://leetcode.com/contest/biweekly-contest-68/problems/abbreviating-the-product-of-a-range/
-https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
-https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/problemset/problem/1482/B
 https://codeforces.com/contest/1690/problem/E
 https://leetcode.com/problems/split-array-largest-sum/
@@ -459,6 +452,10 @@ https://codeforces.com/contest/1342/problem/C
 https://codeforces.com/contest/219/problem/C
 https://codingcompetitions.withgoogle.com/kickstart/round/0000000000201d27/0000000000201b7b#problem
 https://atcoder.jp/contests/abc266/tasks/abc266_e
+https://codeforces.com/contest/1623/problem/C
+https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
+https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/\
+https://codeforces.com/contest/1616/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
