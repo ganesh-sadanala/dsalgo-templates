@@ -398,8 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://leetcode.com/problems/split-array-largest-sum/
-https://leetcode.com/problems/palindrome-partitioning-ii/
 https://codeforces.com/contest/1697/problem/C
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
@@ -457,6 +455,7 @@ https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/contest/1733/problem/D2
 https://codeforces.com/problemset/problem/1482/B
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
+https://leetcode.com/problems/palindrome-partitioning-ii/ : failed at optimization : Awesome(Similar to LIS): https://leetcode.com/problems/palindrome-partitioning-ii/discuss/42213/Easiest-Java-DP-Solution-(97.36)
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -540,6 +539,7 @@ https://mathworld.wolfram.com/Multichoose.html : Multichosse is actually stars a
 https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 https://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
 Eating Approach and Related - Constructive
+TODO: Manacher's algo
 https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/entry/103952?#comment-923675 : https://codeforces.com/blog/entry/85172
 https://www.quora.com/Which-integers-cannot-be-represented-as-the-difference-of-two-squares : https://codeforces.com/contest/1725/problem/G
 Balanced Bracket Sequences: https://cp-algorithms.com/combinatorics/bracket_sequences.html, https://www.geeksforgeeks.org/number-of-balanced-parenthesis-substrings/, https://codeforces.com/blog/entry/43944, https://stackoverflow.com/questions/36158950/substrings-with-balanced-parentheses
