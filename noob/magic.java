@@ -457,6 +457,7 @@ https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses
 https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/contest/1733/problem/D2
 https://codeforces.com/problemset/problem/1482/B
+https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
