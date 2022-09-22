@@ -398,7 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1697/problem/C
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/problemset/problem/553/A
@@ -472,6 +471,7 @@ https://codeforces.com/contest/1728/problem/C
 https://codeforces.com/contest/1620/problem/C
 https://codeforces.com/contest/817/problem/D : Interesting, with distinct values in the array ans is using stack, but complicated if duplicates are given. Almost solved, learned a new technique
 https://discord.com/channels/317970261263515648/805648502545186816/1021201931634495561
+https://codeforces.com/contest/1697/problem/C
 
 DP
 --
