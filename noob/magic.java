@@ -398,7 +398,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/problemset/problem/553/A
 https://codeforces.com/problemset/problem/294/C : https://codeforces.com/blog/entry/7271#comment-129018 : https://codeforces.com/blog/entry/7287
@@ -455,6 +454,7 @@ https://codeforces.com/contest/1733/problem/D2
 https://codeforces.com/problemset/problem/1482/B
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
 https://leetcode.com/problems/palindrome-partitioning-ii/ : failed at optimization : Awesome(Similar to LIS): https://leetcode.com/problems/palindrome-partitioning-ii/discuss/42213/Easiest-Java-DP-Solution-(97.36)
+https://codeforces.com/contest/1557/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
