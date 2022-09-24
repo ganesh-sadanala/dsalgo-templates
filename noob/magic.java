@@ -541,7 +541,7 @@ https://mathworld.wolfram.com/Multichoose.html : Multichosse is actually stars a
 https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 https://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
 Eating Approach and Related - Constructive
-TODO: Manacher's algo
+TODO: Manacher's algo, Mos algorithm
 https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/entry/103952?#comment-923675 : https://codeforces.com/blog/entry/85172
 https://www.quora.com/Which-integers-cannot-be-represented-as-the-difference-of-two-squares : https://codeforces.com/contest/1725/problem/G
 Balanced Bracket Sequences: https://cp-algorithms.com/combinatorics/bracket_sequences.html, https://www.geeksforgeeks.org/number-of-balanced-parenthesis-substrings/, https://codeforces.com/blog/entry/43944, https://stackoverflow.com/questions/36158950/substrings-with-balanced-parentheses
