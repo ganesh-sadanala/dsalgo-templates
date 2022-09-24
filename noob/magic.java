@@ -2523,6 +2523,8 @@ class Codechef {
       constructMax(0, n-1, 0);
   }
   
+	// segment sum
+	
   static int constructSum(int ss, int se, int si){
     if(ss==se){
       return sum[si]=a[ss];
@@ -2540,7 +2542,16 @@ class Codechef {
     return getSum(ss, mid, 2*si+1, qs, qe)+getSum(mid+1, se, 2*si+2, qs, qe);
   }
   
-  // segment sum
+  static void updateSum(int ss, int se, int si, int i, long diff)
+  {
+    if (i < ss || i > se) return;
+    sum[si] = sum[si] + diff;
+    if (se != ss) {
+      int mid = ss+(se-ss)/2;
+      updateSum(ss, mid, 2 * si + 1, i, diff);
+      updateSum(mid + 1, se, 2 * si + 2, i, diff);
+    }
+  }
    static void build(){
      int x=(int)Math.pow(2, (int)Math.ceil(Math.log(n)/Math.log(2)))
      int sz=(int)2*x-1;
@@ -2548,6 +2559,35 @@ class Codechef {
      constructSum(0, n-1, 0);
   }
   
+	// segment xor
+	static long constructXor(int ss, int se, int si){
+    if(ss==se){
+      return sxr[si]=a[ss];
+    }
+    
+    int mid=ss+(se-ss)/2;
+    return sxr[si]=constructXor(ss, mid, 2*si+1) ^ constructXor(mid+1, se, 2*si+2);
+  }
+  
+  static long getXor(int ss, int se, int si, int qs, int qe){
+    if(qs<=ss && qe>=se) return sxr[si];
+    
+    if(qs>se || qe<ss) return 0;
+    int mid=ss+(se-ss)/2;
+    return getXor(ss, mid, 2*si+1, qs, qe) ^ getXor(mid+1, se, 2*si+2, qs, qe);
+  }
+  
+  static void updateXor(int ss, int se, int si, int idx, long prev_val, long new_val){
+    if (idx < ss || idx > se) return;
+    sxr[si] = (sxr[si] ^ prev_val) ^ new_val;
+    if (se != ss) {
+      int mid = ss+(se-ss)/2;
+      updateXor(ss, mid, 2 * si + 1, idx, prev_val, new_val);
+      updateXor(mid + 1, se, 2*si+2, idx, prev_val, new_val);
+    }
+  }
+	
+	
   // #MERGE SORT TREE
   static List<Long> tree[];
   static int sz=0;
