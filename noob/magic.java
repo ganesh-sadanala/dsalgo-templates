@@ -53,7 +53,8 @@ https://codeforces.com/blog/entry/58747
 https://codeforces.com/blog/entry/55274
 https://codeforces.com/blog/entry/100826
 https://codeforces.com/blog/entry/48122
-https://codeforces.com/blog/entry/96699 => Good blog on Binary Search (different approaches to decide l and r)
+https://codeforces.com/blog/entry/96699 => Good blog on Binary Search (different approaches to decide l and r) : => 
+Problem : https://codeforces.com/contest/1698/problem/D this priblems helps to use it differently in many cases
 Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 online tools for cp - https://codeforces.com/blog/entry/82884
 https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
@@ -394,7 +395,6 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 
 
 
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -457,6 +457,7 @@ https://leetcode.com/problems/palindrome-partitioning-ii/ : failed at optimizati
 https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/1734/problem/D
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-2/problems/A2
+https://codeforces.com/contest/1730/problem/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
