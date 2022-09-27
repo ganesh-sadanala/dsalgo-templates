@@ -476,6 +476,7 @@ https://codeforces.com/contest/1620/problem/C
 https://codeforces.com/contest/817/problem/D : Interesting, with distinct values in the array ans is using stack, but complicated if duplicates are given. Almost solved, learned a new technique
 https://discord.com/channels/317970261263515648/805648502545186816/1021201931634495561
 https://codeforces.com/contest/1697/problem/C
+https://codeforces.com/contest/1730/problem/B : See Umnik solution to avoid doubles, learned a lot of different approaches
 
 DP
 --
