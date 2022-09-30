@@ -460,6 +460,7 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-2/problems/A2 
 https://codeforces.com/contest/1730/problem/D
 https://codeforces.com/contest/1730/problem/D
 https://codeforces.com/contest/1739/problem/C
+https://codeforces.com/problemset/problem/1610/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
