@@ -465,7 +465,7 @@ https://codeforces.com/problemset/problem/1610/D
 https://codeforces.com/problemset/problem/1426/F : https://www.youtube.com/watch?v=O3gOvIb4ACs : https://codeforces.com/blog/entry/83120?#comment-704181
 https://codeforces.com/problemset/problem/1391/C : Editorial
 https://codeforces.com/problemset/problem/1238/D
-https://codeforces.com/contest/1737/problem/B
+https://codeforces.com/contest/1737/problem/B : Math Proof https://www.youtube.com/watch?v=6bpLuSsK8L0
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
