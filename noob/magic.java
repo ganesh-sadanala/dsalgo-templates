@@ -571,9 +571,19 @@ class Codechef {
 	    
     }
     
-    // ------------------------------ #General  #Miscellaneous  #interesting ---------------------------------
+    // ------------------------------ #General  #Miscellaneous  #interesting #MATH---------------------------------
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
+	// square root function (Math.sqrt function causes precision problems for large values)
+	static long sqrt(long x) {
+		long left = 0, right = (long)2e9;
+		while (right > left) {
+		  long mid = left+(right-left)/2;
+		  if (mid * mid > x) right = mid;
+		  else left = mid + 1;
+		}
+		return left - 1;
+    }
 	
 	// set precision for double values
 	public static void setPrecision() {
