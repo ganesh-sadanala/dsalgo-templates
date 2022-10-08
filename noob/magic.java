@@ -1544,6 +1544,23 @@ class Codechef {
 	
 	
     */
+	https://codeforces.com/blog/entry/96699
+	/*
+		Always same for [l, r) approach no matter u want last true or first false
+		long ans=0;
+		for(int i=0;i<3;i++){
+		  long le=0, ri=(long)2e9+1;
+		  while(le<ri){
+			long mid=le+(ri-le)/2;
+			// System.out.println(le+" "+ri);
+			if(mid*mid>x-i*mid) ri=mid;
+			else le=mid+1;
+		  }
+		  ans+=ri;
+		}
+		return ans;
+	*/
+	
     /*
     If you want to say "relative or absolute error up to EPS", then I recommend while(R-L >= EPS * max(1., L)).
     100 iterations might hurt you if TL is tight and 30 iterations would be enough. Maybe you'll get TLE this way. 
