@@ -468,6 +468,7 @@ https://codeforces.com/problemset/problem/1238/D
 https://codeforces.com/contest/1737/problem/B : Math Proof https://www.youtube.com/watch?v=6bpLuSsK8L0
 https://codeforces.com/contest/1737/problem/A
 https://codeforces.com/problemset/problem/1738/D
+https://codeforces.com/problemset/problem/1739/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
