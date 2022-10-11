@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------Pa
+How to convert top-down(memoization) dp to bottom up(tabulation) dp => https://leetcode.com/discuss/study-guide/1971008/how-to-convert-top-down-to-bottom-up-in-dp-problem
 https://noi.ph/training/weekly/week3.pdf
 https://codeforces.com/blog/entry/62690 : EV: 5, 6, 8 ; CS: 4
 https://www.geeksforgeeks.org/count-ways-express-n-sum-odd-integers/
