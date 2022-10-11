@@ -11,6 +11,7 @@ https://codeforces.com/contest/559/problem/B
 
 Tools and Resources
 -------------------Pa
+https://noi.ph/training/weekly/week3.pdf
 https://codeforces.com/blog/entry/62690 : EV: 5, 6, 8 ; CS: 4
 https://www.geeksforgeeks.org/count-ways-express-n-sum-odd-integers/
 https://www.desmos.com/
