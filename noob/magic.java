@@ -535,6 +535,7 @@ https://artofproblemsolving.com/wiki/index.php/1986_AIME_Problems/Problem_13
 
 Articles/Blogs
 --------
+https://codeforces.com/blog/entry/57716
 https://codeforces.com/blog/entry/65487?#comment-494720
 https://codeforces.com/blog/entry/82417 : Learn Problem B all approaches
 https://codeforces.com/blog/entry/79866
