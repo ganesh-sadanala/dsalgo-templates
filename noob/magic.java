@@ -597,11 +597,9 @@ class Codechef {
 		return left - 1;
     }
 	
-	// https://stackoverflow.com/questions/59000377
+	// https://stackoverflow.com/a/74050104/8706759
 	static int findNumbers(int N, int L, int R, int REM){
-		L = (L % N == rem)? L :  L + (REM - L%N + N)%N;
-		R = (R % N == rem)? R : R - (N - (REM - R%N + N)%N)
-		return (R-L)/N + 1;
+		return floor((R-Rem)/N)-ceil((L-Rem)/N)+1;
 	}
 	
 	// set precision for double values
