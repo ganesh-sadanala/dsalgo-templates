@@ -491,6 +491,7 @@ https://codeforces.com/contest/817/problem/D : Interesting, with distinct values
 https://discord.com/channels/317970261263515648/805648502545186816/1021201931634495561
 https://codeforces.com/contest/1697/problem/C
 https://codeforces.com/contest/1730/problem/B : See Umnik solution to avoid doubles, learned a lot of different approaches
+https://codeforces.com/problemset/problem/1081/C : was able to get dp solution but not O(1) combinatorial solution
 
 DP
 --
