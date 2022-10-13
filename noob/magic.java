@@ -472,7 +472,7 @@ https://codeforces.com/contest/1737/problem/A
 https://codeforces.com/problemset/problem/1738/D
 https://codeforces.com/problemset/problem/1606/E
 https://codeforces.com/problemset/problem/1666/F
-https://codeforces.com/problemset/problem/414/B
+https://codeforces.com/problemset/problem/414/B : Understand Umnik solution
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
