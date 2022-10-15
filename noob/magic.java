@@ -330,7 +330,7 @@ The maximal number of divisors of n<=1e18 is cube root of n or n^(1/3) => https:
 
 LCM(x, n-x) = n-x iff x|n for some positive integer n and x is a divisor of n. Proof(Problem B): https://codeforces.com/blog/entry/79974
 
-Prefix Codes : https://www.youtube.com/watch?v=bWSHmC1eSyY : https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/C1
+Prefix Codes/Hamming Codes : https://www.youtube.com/watch?v=bWSHmC1eSyY : https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/C1
 
 https://www.youtube.com/watch?v=AbF6-TtkPLs : Learned a lot! In an undirected graph with M edges. The number of Big nodes: nodes having degree>sqrt(M) is atmost 2*sqrt(M) because total degree=2*M 
 which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the number of big nodes and second one is degree of each.
