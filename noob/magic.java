@@ -9,6 +9,10 @@ Don't understand the Editorial
 ---------
 https://codeforces.com/contest/559/problem/B
 
+Tech Interview
+--------------
+https://www.techinterviewhandbook.org/grind75
+
 Tools and Resources
 -------------------Pa
 How to convert top-down(memoization) dp to bottom up(tabulation) dp => https://leetcode.com/discuss/study-guide/1971008/how-to-convert-top-down-to-bottom-up-in-dp-problem
