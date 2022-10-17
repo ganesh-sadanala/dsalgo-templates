@@ -596,7 +596,7 @@ class Codechef {
 		  else left = mid + 1;
 		}
 		return left - 1;
-    }
+        }
 	
 	// https://stackoverflow.com/a/74050104/8706759
 	static int findNumbers(int N, int L, int R, int REM){
