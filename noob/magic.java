@@ -473,6 +473,7 @@ https://codeforces.com/problemset/problem/414/B : Understand Umnik solution
 https://codeforces.com/problemset/problem/869/C : https://codeforces.com/blog/entry/55009?#comment-389561
 https://codeforces.com/problemset/problem/1746/D
 https://codeforces.com/contest/1744/problem/E2
+https://codeforces.com/contest/1743/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
