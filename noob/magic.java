@@ -15,7 +15,6 @@ https://www.techinterviewhandbook.org/grind75
 
 Tools and Resources
 -------------------Pa
-How to convert top-down(memoization) dp to bottom up(tabulation) dp => https://leetcode.com/discuss/study-guide/1971008/how-to-convert-top-down-to-bottom-up-in-dp-problem
 https://noi.ph/training/weekly/week3.pdf
 https://codeforces.com/blog/entry/62690 : EV: 5, 6, 8 ; CS: 4
 https://www.geeksforgeeks.org/count-ways-express-n-sum-odd-integers/
@@ -498,8 +497,7 @@ https://codeforces.com/problemset/problem/1081/C : was able to get dp solution b
 https://codeforces.com/problemset/problem/518/D: Nice implementation: https://codeforces.com/contest/518/submission/9996175 , dp always works, fucl java [ower finction
 DP
 --
-https://www.geeksforgeeks.org/friends-pairing-problem/
-https://www.geeksforgeeks.org/generate-unique-partitions-of-an-integer/ : Partition N into integer sums(Ordered and Unordered) : 91 : https://pplearn.udemy.com/course/dynamic-programming-master-course-coding-minutes/learn/lecture/30851968#overview
+Unordered Partition(Master but learn botomm up dp approach):Udemy
 Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
 https://www.spoj.com/problems/FIBOSUM/
 https://codeforces.com/contest/1253/problem/D
@@ -776,8 +774,6 @@ class Codechef {
 	
     // ----------------------------------#Geometry----------------------------------
 	//https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based on manhattan distances
-	
-	
 	
 	
 	
