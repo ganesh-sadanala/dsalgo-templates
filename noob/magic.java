@@ -495,6 +495,7 @@ https://codeforces.com/contest/1697/problem/C
 https://codeforces.com/contest/1730/problem/B : See Umnik solution to avoid doubles, learned a lot of different approaches
 https://codeforces.com/problemset/problem/1081/C : was able to get dp solution but not O(1) combinatorial solution
 https://codeforces.com/problemset/problem/518/D: Nice implementation: https://codeforces.com/contest/518/submission/9996175 , dp always works, fucl java [ower finction
+
 DP
 --
 Unordered Partition(Master but learn botomm up dp approach):Udemy
@@ -507,7 +508,6 @@ https://www.spoj.com/problems/GNY07H/
 - DP on graphs is enchanting 
 - #145 Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
 - #178, #179, #180, #181, #182, DP Bit masks problems Bottom Up, DP with combinatorics($90, #91, #93)
-109: Memory optimization: Digit DP Udemy : https://lightoj.com/problem/investigation
 https://codeforces.com/contest/1573/problem/C : failed at dp
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/problemset/problem/1474/B
@@ -565,8 +565,9 @@ TODO: Manacher's algo, Mos algorithm
 https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/entry/103952?#comment-923675 : https://codeforces.com/blog/entry/85172
 https://www.quora.com/Which-integers-cannot-be-represented-as-the-difference-of-two-squares : https://codeforces.com/contest/1725/problem/G
 Balanced Bracket Sequences: https://cp-algorithms.com/combinatorics/bracket_sequences.html, https://www.geeksforgeeks.org/number-of-balanced-parenthesis-substrings/, https://codeforces.com/blog/entry/43944, https://stackoverflow.com/questions/36158950/substrings-with-balanced-parentheses
+https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/
 
-Combinatorics/DP COmbinatorics
+Combinatorics/DP Combinatorics
 -------------
 https://codeforces.com/blog/entry/54154
 
@@ -1022,8 +1023,6 @@ class Codechef {
 
        DP Tree Traversal/Path Questions
        https://codeforces.com/problemset/problem/1340/B
-
-
 
     */
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
@@ -1965,7 +1964,6 @@ class Codechef {
             memo[u][i] = memo[memo[u][i - 1]][i - 1];
         for (int v : g[u]) {
             if (v != p) {
- 
                 // Calculating the level of each node
                 lev[v] = lev[u] + 1;
                 dfs(v, u);
