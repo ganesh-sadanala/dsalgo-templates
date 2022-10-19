@@ -499,7 +499,7 @@ https://codeforces.com/problemset/problem/518/D: Nice implementation: https://co
 
 DP
 --
-Unordered Partition(Master but learn botomm up dp approach):Udemy
+Unordered Partition(Mastered but learn botomm up dp approach):Udemy
 Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
 https://www.spoj.com/problems/FIBOSUM/
 https://codeforces.com/contest/1253/problem/D
