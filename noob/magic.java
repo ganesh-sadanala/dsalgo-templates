@@ -592,6 +592,26 @@ class Codechef {
     // ------------------------------ #General  #Miscellaneous  #interesting #MATH---------------------------------
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
+	// MultiSet in C++ can be implemented using TreeMap 
+	// Binary Search on MultiSet is similar to TreeMap 
+	/*
+		TreeMap Methods
+		https://www.junhaow.com/lc/notes/treeset-treemap-usage-and-binarySearch
+		Any key >  the given key -> treeMap.higherKey(key)
+		Any key >= the given key -> treeMap.ceilingKey(key)
+		Any key <  the given key -> treeMap.lowerKey(key)
+		Any key <= the given key -> treeMap.floorKey(key)
+		First key -> treeMap.firstKey()
+		Last key -> treeMap.lastKey()
+		KeySet -> treeMap.keySet()
+		Descending Order KeySet -> treeMap.descendingKeySet()
+		
+		TreeSet Methods
+		Its method names are similar to TreeMap‘s.
+		ceiling(K) / higher(K)
+		floor(K) / lower(K)
+		first() / last()
+	*/
 	// square root function (Math.sqrt function causes precision problems for large values)
 	static long sqrt(long x) {
 		long left = 0, right = (long)2e9;
