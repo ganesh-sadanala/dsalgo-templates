@@ -15,6 +15,8 @@ https://www.techinterviewhandbook.org/grind75
 
 Tools and Resources
 -------------------Pa
+https://www.symbolab.com/solver?or=gms&query=(x%2Ba)%5E5
+https://www.mathway.com/Algebra
 https://csacademy.com/contest/archive/
 https://noi.ph/training/weekly/week3.pdf
 https://codeforces.com/blog/entry/62690 : EV: 5, 6, 8 ; CS: 4
