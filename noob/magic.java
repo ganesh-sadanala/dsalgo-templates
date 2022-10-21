@@ -15,7 +15,7 @@ https://www.techinterviewhandbook.org/grind75
 
 Tools and Resources
 -------------------Pa
-https://codeforces.com/blog/entry/103077 : Have to read
+https://codeforces.com/blog/entry/103077 : have to read
 https://www.symbolab.com/solver?or=gms&query=(x%2Ba)%5E5
 https://www.mathway.com/Algebra
 https://csacademy.com/contest/archive/
