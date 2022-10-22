@@ -451,7 +451,6 @@ https://codingcompetitions.withgoogle.com/kickstart/round/0000000000201d27/00000
 https://atcoder.jp/contests/abc266/tasks/abc266_e
 https://codeforces.com/contest/1623/problem/C
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
-https://leetcode.com/contest/biweekly-contest-68/problems/check-if-a-parentheses-string-can-be-valid/\
 https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/contest/1733/problem/D2
 https://codeforces.com/problemset/problem/1482/B
@@ -503,15 +502,11 @@ https://codeforces.com/problemset/problem/518/D: Nice implementation: https://co
 DP
 --
 Unordered Partition(Mastered but learn botomm up dp approach):Udemy
-Learned one beautiful trick in dp on strings where we leave if we don't need a par. char : https://leetcode.com/problems/wildcard-matching/submissions/
-https://www.spoj.com/problems/FIBOSUM/
 https://codeforces.com/contest/1253/problem/D
 https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
 https://www.spoj.com/problems/GNY07H/
-- DP on graphs is enchanting, Master Articulation Points and Bridges
-- #145 Edit Distance with operations can be performed on any of the strings == Edit Distance with operations can be performed on any one specific string.
-- #178, #179, #180, #181, #182, DP Bit masks problems Bottom Up, DP with combinatorics($90, #91, #93)
+- DP on graphs is enchanting, Master Articulation Points and Bridges, Master Matrix exponentation dp #179, #180, #181, #182
 https://codeforces.com/contest/1573/problem/C : failed at dp
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/problemset/problem/1474/B
@@ -570,7 +565,9 @@ https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/e
 https://www.quora.com/Which-integers-cannot-be-represented-as-the-difference-of-two-squares : https://codeforces.com/contest/1725/problem/G
 Balanced Bracket Sequences: https://cp-algorithms.com/combinatorics/bracket_sequences.html, https://www.geeksforgeeks.org/number-of-balanced-parenthesis-substrings/, https://codeforces.com/blog/entry/43944, https://stackoverflow.com/questions/36158950/substrings-with-balanced-parentheses
 https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/ : https://cp-algorithms.com/graph/lca.html : https://codeforces.com/blog/entry/43917
-
+https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/ : O(n*n) : Amazing variation of this: https://codeforces.com/problemset/problem/375/B
+DP Tree Traversal/Path Questions : https://codeforces.com/problemset/problem/1340/B
+	   
 Combinatorics/DP Combinatorics
 -------------
 https://codeforces.com/blog/entry/54154
@@ -1041,14 +1038,6 @@ class Codechef {
     return (res.m[0][0]+res.m[0][1])%mod;
   }
 	
-    /* Maximum size square sub-matrix with all 1s -> https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
-       https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/
-       Amazing variation of this: https://codeforces.com/problemset/problem/375/B
-
-       DP Tree Traversal/Path Questions
-       https://codeforces.com/problemset/problem/1340/B
-
-    */
     // Longest palindrome subsequence with O(n) space -> https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/
     public int longestPalindromicSubsequenceLinearSpace(char []s){
         int n=s.length;
@@ -3417,7 +3406,32 @@ class Codechef {
     }
     str.append(res).append("\n");
   } 
-
+	
+  public int largestRectangleHistogramArea(int[] a) {
+	int ans=0;
+	int n=a.length;
+	Stack<Integer> st=new Stack<>();
+	for(int i=0;i<n;i++){
+		while(!st.isEmpty() && a[st.peek()]>a[i]){
+			int idx=st.pop();
+			int cur=(i-idx)*a[idx];
+			if(st.size()==0) cur+=idx*a[idx];
+			else cur+=(idx-st.peek()-1)*a[idx];
+			ans=Math.max(ans, cur);
+		}
+		st.push(i);
+	}
+	int top=st.peek();
+	while(!st.isEmpty()){
+		int idx=st.pop();
+		int cur=(top-idx+1)*a[idx];
+		if(st.size()==0) cur+=idx*a[idx];
+		else cur+=(idx-st.peek()-1)*a[idx];
+		ans=Math.max(ans, cur);
+	}
+	return ans;
+  }
+		
   public static void main(String[] args) throws java.lang.Exception {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     int t = Integer.parseInt(bf.readLine().trim());
