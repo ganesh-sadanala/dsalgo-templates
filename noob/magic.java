@@ -565,8 +565,10 @@ https://codeforces.com/problemset/problem/1694/B : https://codeforces.com/blog/e
 https://www.quora.com/Which-integers-cannot-be-represented-as-the-difference-of-two-squares : https://codeforces.com/contest/1725/problem/G
 Balanced Bracket Sequences: https://cp-algorithms.com/combinatorics/bracket_sequences.html, https://www.geeksforgeeks.org/number-of-balanced-parenthesis-substrings/, https://codeforces.com/blog/entry/43944, https://stackoverflow.com/questions/36158950/substrings-with-balanced-parentheses
 https://www.geeksforgeeks.org/find-lca-in-binary-tree-using-rmq/ : https://cp-algorithms.com/graph/lca.html : https://codeforces.com/blog/entry/43917
-https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/ : O(n*n) : Amazing variation of this: https://codeforces.com/problemset/problem/375/B : https://leetcode.com/problems/count-submatrices-with-all-ones/discuss/720265/Java-Detailed-Explanation-From-O(MNM)-to-O(MN)-by-using-Stack
-DP Tree Traversal/Path Questions : https://codeforces.com/problemset/problem/1340/B
+https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/ : O(n*n) : Amazing variation of this: https://codeforces.com/problemset/problem/375/B 
+: https://leetcode.com/problems/count-submatrices-with-all-ones/discuss/720265/Java-Detailed-Explanation-From-O(MNM)-to-O(MN)-by-using-Stack : https://codeforces.com/blog/entry/10084?#comment-156346
+DP Tree Traversal/Path Questions : https://codeforces.com/problemset/problem/1340/B 
+https://codeforces.com/blog/entry/23613
 	   
 Combinatorics/DP Combinatorics
 -------------
