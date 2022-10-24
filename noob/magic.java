@@ -1152,72 +1152,88 @@ class Codechef {
 	
   // LIS(Monotonically or Strictly increasing) - nlogn
   // Minimum last element of length len+1 is stored
-  // t stores minium last element index of length len+1
-  // r is used to traverse the subsequence of length len+1
+  // index stores minium last element index of length len+1
+  // reversePath is used to traverse the subsequence of length len+1
   // first element i.e; >= a[i]
-  static int upperBoundIndex(int a[], int len, int i){
-    int l=0, r=len;
-    int idx=0;
-    while(l<=r){
-      int mid=l+(r-l)/2;
-      if(a[t[mid]]>=a[i]){
-        idx=mid;
-        r=mid-1;
-      }else l=mid+1;
-    }
-    return idx;
-  }
-  static void findLIS(int a[]){
-    int len=0;
-    for(int i=0;i<n;i++) r[i]=-1;
-    t[0]=0;
-    for(int i=1;i<n;i++){
-      if(a[t[0]] > a[i]){
-        t[0]=i;
-      }else if(a[t[len]] < a[i]){
-        r[i]=t[len];
-        len++;
-        t[len]=i;
-      }else{
-        int idx = upperBoundIndex(len, i);
-        t[idx]=i;
-        r[i]=t[idx-1];
-      }
+   public int ceilIndex(int []a, int n, int t[], int ele){
+        int l=-1, r=n+1;
+        while(r-l>1){
+            int mid=l+(r-l)/2;
+            if(a[t[mid]]<ele) l=mid;
+            else r=mid;
+        }
+        return r;
     }
     
-    // printing in reverse order
-    int idx=t[len];
-    while(idx!=-1){
-      str.append(a[idx]).append(" ");
-      idx=r[idx];
+    public int lengthOfLIS(int[] a) {
+        int n=a.length;
+        int index[]=new int[n];
+        int len=0;
+        index[len]=0;
+        int reversePath[]=new int[n];
+        for(int i=0;i<n;i++) reversePath[i]=-1;
+        for(int i=1;i<n;i++){
+            if(a[index[0]]>=a[i]){
+                index[0]=i;
+                reversePath[i]=-1;
+            }else if(a[index[len]]<a[i]){
+                reversePath[i]=index[len];
+                len++;
+                index[len]=i;
+            }else{
+                int idx=ceilIndex(a, len, index, a[i]);
+                reversePath[i]=index[idx-1];
+                index[idx]=i;
+            }
+        }
+        for(int i=0;i<n;i++) System.out.print(reversePath[i]+" ");
+        System.out.println();
+        // printing the LIS in reverseFashion
+        // we iterate the indexes in reverse
+        int idx=index[len];
+        while(idx!=-1){
+            System.out.print(a[idx]+" ");
+            idx=reversePath[idx];
+        }
+        return len+1;
     }
-  }
   
   // LIS(Non-Monotonically or Non-Strictly increasing or non-decreasing) - nlogn
   // Minimum last element of length len+1 is stored
-  // t stores minium last element index of length len+1
-  // r is used to traverse the subsequence of length len+1
+  // index stores minium last element index of length len+1
+  // reversePath is used to traverse the subsequence of length len+1
   // first element i.e; >= a[i]
-  // Reference: https://stackoverflow.com/questions/21715892/longest-nondecreasing-subsequence-in-onlgn
-   public static int findArray(List<Integer> a) {
-     int n=a.size();
-     int dp[]=new int[n];
-     int ans=0;
-     for(int i=0;i<n;i++){
-       int ele=a.get(i);
-       int idx=Arrays.binarySearch(dp, 0, ans, ele); 
-       if(idx<0){
-         idx=-(idx+1);
-       }
-       if(dp[idx]==ele){
-         idx=Arrays.binarySearch(dp, 0, ans, ele+1);
-         if(idx<0) idx=-(idx+1);
-       }
-       dp[idx]=ele;
-       if(idx==ans) ans++;
-     }
-     return ans;
-   }
+	// same as above one but slight modification
+	// https://leetcode.com/contest/weekly-contest-272/problems/minimum-operations-to-make-the-array-k-increasing/
+   public int higherKey(int ele, List<Integer> A, int []index, int n){
+        int l=-1, r=n+1;
+        while(r-l>1){
+            int mid=l+(r-l)/2;
+            if(A.get(index[mid])<=ele) l=mid;
+            else r=mid;
+        }
+        return r;
+    }
+    
+    public  int longestNondecreasingSubsequenceLength(List<Integer> A) {
+        int n = A.size();
+        int index[]=new int[n];
+        index[0]=0;
+        int len=0;
+        for(int i=1;i<n;i++){
+            int ele=A.get(i);
+            if(A.get(index[0])>ele){
+                index[0]=i;
+            }else if(A.get(index[len])<=ele){
+                len++;
+                index[len]=i;
+            }else{
+                int idx=higherKey(ele, A, index, len);
+                index[idx]=i;
+            }
+        }
+        return len+1;
+    }
 	
 	// https://codeforces.com/contest/166/problem/E
 	static void numberOfWaysInTetrahedron(){
@@ -1247,12 +1263,11 @@ class Codechef {
 	
 	
     // ----------------------------------- #BITWISE ---------------------------
-    // sum of xor of all subsequences - https://www.geeksforgeeks.org/sum-xor-possible-subsets/ - Realted problem: https://codeforces.com/problemset/problem/1614/C
     // #submask generation
     // If you want 0 as a submask
     for(int submask = mask; ; submask = (submask - 1) & mask) {
-	// do something
-	if(submask == 0) break;
+		// do something
+		if(submask == 0) break;
     }
 	
     // Number of pairs in an array having bitwise AND as zero : https://codeforces.com/blog/entry/20174?#comment-249715
