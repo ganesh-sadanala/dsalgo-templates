@@ -1272,8 +1272,6 @@ class Codechef {
 	    
     // ------------------------------- #STRINGS ------------------------------
     // string hashing - Polynomial Rolling Hash
-    // https://ideone.com/0sgZWx
-    // https://www.youtube.com/watch?v=X_YgMWvCRS8&list=PL2q4fbVm1Ik6ThrYKCzgEpmaS_XWDGHjx&index=6
      public void rollHash(char []s){
         // prefix sum
         int n=s.length;
@@ -1281,14 +1279,14 @@ class Codechef {
         inv=new long[n];
         
         // prime>=size of character set
-        long p=2;
+        long p=31;
         long pw=1;
-        rh[n-1]=(s[n-1]-'0')%mod;
-        inv[n-1]=1;
-        for(int i=n-2;i>=0;i--){
+        rh[0]=(s[0]-'a'+1)%mod;
+        inv[0]=1;
+        for(int i=1;i<n;i++){
             pw=(pw * p)%mod;
-            rh[i]=mod_add(rh[i+1], (s[i]-'0') * pw);
-            inv[i]=pow(pw, mod-2);
+			inv[i]=pow(pw, mod-2);
+            rh[i]=mod_add(rh[i-1], (s[i]-'a'+1) * pw);
         }
      }
 
