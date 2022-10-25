@@ -15,6 +15,7 @@ https://www.techinterviewhandbook.org/grind75
 
 Tools and Resources
 -------------------Pa
+https://codedrills.io/
 https://codeforces.com/blog/entry/103077 : have to read
 https://www.symbolab.com/solver?or=gms&query=(x%2Ba)%5E5
 https://www.mathway.com/Algebra
@@ -394,13 +395,9 @@ Maximum number of divisors for a n digit number O(n^(1/3)) : https://codeforces.
 
 
 
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1696/problem/C
-https://codeforces.com/contest/1696/problem/D
-https://codeforces.com/contest/1581/problem/C
 https://codeforces.com/problemset/problem/1661/B
 https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entry/94384
 https://codeforces.com/contest/1699/problem/C
@@ -471,6 +468,7 @@ https://codeforces.com/contest/1743/problem/C
 https://codeforces.com/contest/1743/problem/D
 https://codeforces.com/contest/1668/problem/B
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
+https://codeforces.com/contest/1696/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
