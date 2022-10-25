@@ -469,6 +469,7 @@ https://codeforces.com/contest/1743/problem/D
 https://codeforces.com/contest/1668/problem/B
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/contest/1696/problem/C
+https://codeforces.com/problemset/problem/580/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
