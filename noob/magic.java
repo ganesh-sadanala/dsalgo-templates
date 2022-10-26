@@ -470,6 +470,7 @@ https://codeforces.com/contest/1668/problem/B
 https://codeforces.com/problemset/problem/840/A : https://codeforces.com/blog/entry/62690 : https://codeforces.com/blog/entry/72285
 https://codeforces.com/contest/1696/problem/C
 https://codeforces.com/problemset/problem/580/D
+https://codeforces.com/problemset/problem/1491/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -1362,14 +1363,10 @@ class Codechef {
     }
 
     // --------------------------- #PERMUTATIONS AND #COMBINATIONS ------------------------------
-    /*
-	Stars and Bars
-	https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/
-	https://progvar.fun/problemsets/stars-and-bars
-    */
+// 	Amazing idea: https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/discuss/898830/Python-O(N)-Solution-with-Prove
     // Heaps algorithm -> to find all the permutations of an array
     static void heapsAlgorithm() {
-        https: //www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
+//         https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/
     }
 
     static long mod_mul(long a, long b) {
@@ -1416,11 +1413,6 @@ class Codechef {
 		sum += dp[i];
 	}
 
-	
-    // Number of ways to partition number n into sum of positive integers
-    // Order matter: https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes/blob/main/Java%20Codes/CountOrdered.java 
-    // Order does not matter: See 94: https://github.com/apaarkamal/Dynammic-Programming-Coding-Minutes/blob/main/Java%20Codes/CountUnordered.java
-
     // ------------------------- #NUMBER THEORY ------------------------ 
 	
 	// https://codeforces.com/blog/entry/48417#comment-931507 -> 3.Maximal possible subarray for any possible gcd value in an array
@@ -1429,7 +1421,15 @@ class Codechef {
     int g (int n) {
         return n ^ (n >>> 1);
     }
-    // https://www.youtube.com/watch?v=8Fqv4ddMC3I
+	
+	// reverse Gray code
+	int rev_g (int g) {
+	  int n = 0;
+	  for (; g; g >>= 1)
+		n ^= g;
+	  return n;
+	}
+
     // #Extended Euclidean Algorithm
     static void extendedGcd(long a, long b, long ar[]) {
         if (b == 0) {
@@ -1442,7 +1442,6 @@ class Codechef {
         long temp = ar[1];
         ar[1] = (ar[0] - ar[1] * (a / b));
         ar[0] = temp;
-        return;
     }
 
     // #Linear Diophantine
@@ -1459,6 +1458,8 @@ class Codechef {
 	    if (c % g != 0) return "NO\n";
 	    x0 *= c / g;
 	    y0 *= c / g;
+		if(a<0) x0-=x0;
+		if(b<0) y0=-y0;
 	    if(y0<0) return "NO\n";
 	    if(x0<0){
 	      long l=0, r=(long)1e9;
