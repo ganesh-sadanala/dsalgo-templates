@@ -470,7 +470,6 @@ https://codeforces.com/contest/1696/problem/C
 https://codeforces.com/problemset/problem/580/D
 https://codeforces.com/problemset/problem/1491/D
 https://codeforces.com/problemset/problem/1635/D
-https://codeforces.com/problemset/problem/1680/E
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
