@@ -398,12 +398,6 @@ Maximum number of divisors for a n digit number O(n^(1/3)) : https://codeforces.
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entry/94384
-https://codeforces.com/contest/1699/problem/C
-https://codeforces.com/problemset/problem/1700/C
-https://codeforces.com/contest/1701/problem/C
-https://codeforces.com/problemset/problem/1694/B
-https://codeforces.com/contest/1442/problem/B
 https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=HIiX3r5n27M
 https://codeforces.com/problemset/problem/1436/D
 https://codeforces.com/problemset/problem/1091/D
@@ -470,6 +464,9 @@ https://codeforces.com/contest/1696/problem/C
 https://codeforces.com/problemset/problem/580/D
 https://codeforces.com/problemset/problem/1491/D
 https://codeforces.com/problemset/problem/1635/D
+https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entry/94384 : https://codeforces.com/blog/entry/94384?#comment-838048
+https://codeforces.com/problemset/problem/1700/C
+https://codeforces.com/contest/1701/problem/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -481,7 +478,7 @@ https://codeforces.com/problemset/problem/1422/A
 https://codeforces.com/problemset/problem/1369/A : https://codeforces.com/blog/entry/79235?#comment-648708 : https://www.youtube.com/watch?v=qAV5KA0kY2E
 https://codeforces.com/contest/1706/problem/C
 https://codeforces.com/contest/1722/problem/G : Learned easy solution
-https://codeforces.com/contest/1726/problem/C : 
+https://codeforces.com/contest/1726/problem/C : Learned new approaches
 https://codeforces.com/contest/1728/problem/C 
 https://codeforces.com/contest/1620/problem/C
 https://codeforces.com/contest/817/problem/D : Interesting, with distinct values in the array ans is using stack, but complicated if duplicates are given. Almost solved, learned a new technique
