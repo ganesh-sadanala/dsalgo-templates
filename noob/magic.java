@@ -92,8 +92,8 @@ Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(
 
 Learnings
 ---------
-Interavtive Problems: https://codeforces.com/blog/entry/56040#comment-953045
-Append a new line after every query before flushing it.
+Interactive Problems: https://codeforces.com/blog/entry/56040#comment-953045
+Append a new line after every query before flushing it otherwise you would get Idleness time limit excedded.
 
 Math and CS
 -----------------
@@ -142,21 +142,14 @@ Non-negative with sticks can overlap => with k boxes or k-1 bars and n balls is 
 Non-negative with sticks cannot overlap => with k boxes or k-1 bars and n balls is (n+1)Ck-1.
 
 https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/ - https://www.codechef.com/DEC21B/problems/PYRAMIDMOVES
-https://atcoder.jp/contests/abc232/tasks/abc232_e
 
 Amazing question on (x%a)%b) != (x%b)%a => Number of such x in a range => https://codeforces.com/problemset/problem/1342/C
-
-Amazing question on given a[i]-k and a[i]+k find array a -> https://leetcode.com/contest/weekly-contest-273/problems/recover-the-original-array/
 
 Wonderful question on AP -> https://codeforces.com/contest/1616/problem/C
 In AP, (a[j]-a[i]) * (k-j) == (a[k] - a[j]) * (j-i) 
 
 min(-c) = max(c)
 max(-c) = min(c)
-
-Interesting math question: https://codeforces.com/problemset/problem/1482/B
-
-https://codeforces.com/contest/110/problem/C => Equation type questions (but not coin sum dp)
 
 Notes: https://stackoverflow.com/questions/3269013/difference-between-hamiltonian-path-and-euler-path
 An Euler path is a path that passes through every edge exactly once. If it ends at the initial vertex then it is an Euler cycle.
@@ -169,7 +162,6 @@ Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=
 
 a+b=(a^b)+2*(a&b)
 a+b=(a&b)+(a|b)
-38
 
 Bitwise operations that are just a boolean operator applied between corresponding bits of the operands follow laws analogous to the laws of Boolean algebra, for example:
 
@@ -395,6 +387,7 @@ Maximum number of divisors for a n digit number O(n^(1/3)) : https://codeforces.
 
 
 
+
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -433,7 +426,6 @@ https://codeforces.com/contest/1623/problem/C
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/contest/1733/problem/D2
-https://codeforces.com/problemset/problem/1482/B
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
 https://leetcode.com/problems/palindrome-partitioning-ii/ : failed at optimization : Awesome(Similar to LIS): https://leetcode.com/problems/palindrome-partitioning-ii/discuss/42213/Easiest-Java-DP-Solution-(97.36)
 https://codeforces.com/contest/1557/problem/C
@@ -467,6 +459,7 @@ https://codeforces.com/contest/1556/problem/C : https://codeforces.com/blog/entr
 https://codeforces.com/problemset/problem/1700/C
 https://codeforces.com/contest/1701/problem/C
 https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=HIiX3r5n27M
+https://atcoder.jp/contests/abc232/tasks/abc232_e
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
