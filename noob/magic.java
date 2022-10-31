@@ -388,6 +388,13 @@ Maximum number of divisors for a n digit number O(n^(1/3)) : https://codeforces.
 
 
 
+
+
+
+
+
+
+
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -460,6 +467,7 @@ https://codeforces.com/problemset/problem/1700/C
 https://codeforces.com/contest/1701/problem/C
 https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=HIiX3r5n27M
 https://atcoder.jp/contests/abc232/tasks/abc232_e
+https://codeforces.com/problemset/problem/575/H : Hockey Stick Theorem : Christmas Stocking Theorem : https://codeforces.com/blog/entry/20176?#comment-249790
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
