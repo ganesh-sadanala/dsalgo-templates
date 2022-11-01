@@ -1,6 +1,22 @@
 /*
 Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
 
+Interview Failed
+----------------
+Given n tasks with [begin, end, timeTaken] where begin and end is the time period between(inclusive of begin and end) which the task should be completed and it takes
+timeTaken time to complete. Note that the job need not be worked on continuously. For example, if a task t described as [1, 6, 5] is worked from 1 to 3 sec and again 
+started from 5 to 6sec. Overall it took 5 sec from 1 to 3 and 5 to 6. A computer is multitasking so it can do any number of tasks at the same time. Find the minimum time 
+required for the computer to complet the tasks.
+Example:
+3
+1 3 2 
+2 5 3
+5 6 2
+
+The answer is 4. The computer can work in the timeperiods [2, 3], [5, 6], to complete the given tasks.
+I can think of brute solution which takes O(n*n) for each test case. Could any provide a better solution? 
+I know that it is a greedy question and requires some sorting + greedy idea. I am not able to come out with that.
+
 God of:
 -------
 1. Maximum sum alternating sign subsequence in an array.
