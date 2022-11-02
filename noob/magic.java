@@ -17,6 +17,18 @@ The answer is 4. The computer can work in the timeperiods [2, 3], [5, 6], to com
 I can think of brute solution which takes O(n*n) for each test case. Could any provide a better solution? 
 I know that it is a greedy question and requires some sorting + greedy idea. I am not able to come out with that.
 
+Discussion: https://codeforces.com/blog/entry/108625
+Code: https://pastebin.com/CvaDS6L5
+
+Idea: I think greedy works. Sort tasks by start time. Sweep over the time units. At each point we have a choice — 
+Take this time unit or wait and take a later one. If we can take a later time and still complete the task with the smallest 
+difference (time left in interval — time units still needed), it's better to choose the later time. Reason is that choosing the later time 
+still guarantees that we complete that task, but going to a later time might mean that we step over a new interval start and share the chosen unit 
+with more tasks. We can never share with less tasks by taking a later time because if some task completes before this one we are guaranteed to 
+share all their remaining time units. "But wait, that takes 1e3*1e6=1e9 and is too slow!?" Not if we go by intervals — There are only 3*1e3 
+interesting times total. Just step to each of them and do math to see if/how many units we need to choose on each interval. 
+Also consider keeping active intervals in a heap by (time remaining — time still required).
+
 God of:
 -------
 1. Maximum sum alternating sign subsequence in an array.
