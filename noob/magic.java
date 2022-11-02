@@ -569,7 +569,6 @@ https://codeforces.com/contest/1702/problem/F : https://www.youtube.com/watch?v=
 https://atcoder.jp/contests/abc232/tasks/abc232_e : https://atcoder.jp/contests/abc232/submissions/36147880
 https://codeforces.com/problemset/problem/575/H : Hockey Stick Theorem : Christmas Stocking Theorem : https://codeforces.com/blog/entry/20176?#comment-249790
 https://codeforces.com/contest/877/problem/E
-https://codeforces.com/problemset/problem/1753/B
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
