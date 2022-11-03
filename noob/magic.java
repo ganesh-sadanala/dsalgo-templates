@@ -1626,6 +1626,8 @@ class Codechef {
     // a raise to power of b
     // fast exponentiation
     static long pow(long a, long b) {
+    a%=mod;
+    b%=mod;
     long res = 1;
     while (b > 0) {
         if (b % 2 == 1) res = (res * a)%mod;
