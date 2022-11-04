@@ -498,13 +498,9 @@ Maximum number of divisors for a n digit number O(n^(1/3)) : https://codeforces.
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/problemset/problem/1091/D
-https://leetcode.com/problems/next-permutation/ : Funda for https://codeforces.com/contest/1091/problem/D
-https://codeforces.com/problemset/problem/1486/B : Wonderful Geometry pbm based on manhattan distances
 https://codeforces.com/problemset/problem/1312/A : https://codeforces.com/blog/entry/74640?#comment-655492
 https://codeforces.com/contest/1708/problem/C
 https://codeforces.com/contest/1706/problem/D1 : https://codeforces.com/blog/entry/105008?#comment-933980
-https://codeforces.com/contest/1705/problem/A : Teaches Exchange Argument
 https://codeforces.com/contest/1709/problem/C
 https://codeforces.com/contest/1716/problem/C
 https://codeforces.com/problemset/problem/1714/E : Got the idea but could not implement covering all the edge cases
@@ -570,6 +566,7 @@ https://codeforces.com/problemset/problem/575/H : Hockey Stick Theorem : Christm
 https://codeforces.com/contest/877/problem/E
 https://codeforces.com/problemset/problem/1753/C
 https://codeforces.com/contest/1753/problem/A1
+https://codeforces.com/problemset/problem/1091/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
