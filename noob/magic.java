@@ -65,7 +65,7 @@ https://vjudge.net/
 https://atcoder-tags.herokuapp.com/
 https://lightoj.com/
 https://usaco.guide/CPH.pdf#page=75
-Galen Colin Topic STreams and Mashups
+Galen Colin Topic Streams and Mashups
 https://www.omegalearn.org/thebookofformulas
 https://www.desmos.com/calculator
 https://mathworld.wolfram.com/
@@ -566,6 +566,7 @@ https://codeforces.com/problemset/problem/1742/G
 https://codeforces.com/problemset/problem/1312/A : https://codeforces.com/blog/entry/74640?#comment-655492
 https://codeforces.com/contest/1709/problem/C
 https://codeforces.com/contest/1716/problem/C
+https://codeforces.com/problemset/problem/1741/E
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
