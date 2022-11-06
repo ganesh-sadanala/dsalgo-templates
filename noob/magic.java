@@ -565,6 +565,7 @@ https://codeforces.com/contest/1709/problem/C
 https://codeforces.com/contest/1716/problem/C
 https://codeforces.com/problemset/problem/1740/E
 https://codeforces.com/problemset/problem/1741/E
+https://codeforces.com/contest/1747/problem/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
