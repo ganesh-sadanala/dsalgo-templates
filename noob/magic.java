@@ -566,6 +566,7 @@ https://codeforces.com/contest/1716/problem/C
 https://codeforces.com/problemset/problem/1740/E
 https://codeforces.com/problemset/problem/1741/E
 https://codeforces.com/contest/1747/problem/D
+https://codeforces.com/problemset/problem/1750/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -586,6 +587,7 @@ https://codeforces.com/contest/1697/problem/C
 https://codeforces.com/contest/1730/problem/B : See Umnik solution to avoid doubles, learned a lot of different approaches
 https://codeforces.com/problemset/problem/1081/C : was able to get dp solution but not O(1) combinatorial solution
 https://codeforces.com/problemset/problem/518/D: Nice implementation: https://codeforces.com/contest/518/submission/9996175 , dp always works, fucl java [ower finction
+https://codeforces.com/contest/1738/problem/C: Learn dp on games approach
 
 DP
 --
