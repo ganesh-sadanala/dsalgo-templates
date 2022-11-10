@@ -1651,6 +1651,7 @@ class Codechef {
     
     // ncr
     static long combination(int a, int b) {
+	    if(a<b) return 0;
         long val1 = fact[a];
         long val2 = ifact[a - b];
         long val3 = ifact[b];
