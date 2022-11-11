@@ -568,6 +568,7 @@ https://codeforces.com/problemset/problem/1741/E
 https://codeforces.com/contest/1747/problem/D
 https://codeforces.com/problemset/problem/1750/D
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-2/problems/C
+https://codeforces.com/problemset/problem/1732/D1
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
