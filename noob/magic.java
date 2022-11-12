@@ -504,7 +504,6 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 https://codeforces.com/contest/1722/problem/E
 https://www.hackerrank.com/challenges/coloring-tree/problem
-https://codeforces.com/contest/1722/problem/F
 https://codeforces.com/contest/1717/problem/C
 https://codeforces.com/contest/1469/problem/C
 https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but need to do in O(n)
@@ -559,7 +558,6 @@ https://codeforces.com/contest/877/problem/E
 https://codeforces.com/problemset/problem/1753/C
 https://codeforces.com/contest/1753/problem/A1
 https://codeforces.com/problemset/problem/1091/D
-https://codeforces.com/problemset/problem/1742/G
 https://codeforces.com/problemset/problem/1312/A : https://codeforces.com/blog/entry/74640?#comment-655492
 https://codeforces.com/contest/1709/problem/C
 https://codeforces.com/contest/1716/problem/C
