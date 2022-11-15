@@ -568,6 +568,7 @@ https://codeforces.com/problemset/problem/1750/D
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-2/problems/C
 https://codeforces.com/problemset/problem/1732/D1
 https://codeforces.com/contest/1748/problem/C
+https://codeforces.com/contest/1748/problem/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -660,6 +661,8 @@ https://www.geeksforgeeks.org/number-of-submatrices-with-all-1s/ : O(n*n) : Amaz
 : https://leetcode.com/problems/count-submatrices-with-all-ones/discuss/720265/Java-Detailed-Explanation-From-O(MNM)-to-O(MN)-by-using-Stack : https://codeforces.com/blog/entry/10084?#comment-156346
 DP Tree Traversal/Path Questions : https://codeforces.com/problemset/problem/1340/B 
 https://codeforces.com/blog/entry/23613
+https://cp-algorithms.com/algebra/chinese-remainder-theorem.html#garners-algorithm
+https://codeforces.com/blog/entry/103374
 	   
 Combinatorics/DP Combinatorics
 -------------
