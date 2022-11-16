@@ -663,6 +663,7 @@ DP Tree Traversal/Path Questions : https://codeforces.com/problemset/problem/134
 https://codeforces.com/blog/entry/23613
 https://cp-algorithms.com/algebra/chinese-remainder-theorem.html#garners-algorithm
 https://codeforces.com/blog/entry/103374
+	   https://cp-algorithms.com/algebra/module-inverse.html#mod-inv-all-num
 	   
 Combinatorics/DP Combinatorics
 -------------
