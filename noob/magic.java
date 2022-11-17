@@ -575,8 +575,6 @@ https://codeforces.com/problemset/problem/1732/B
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
-https://codeforces.com/problemset/problem/915/C
-https://codeforces.com/contest/1703/problem/F : 
 https://codeforces.com/problemset/problem/1692/E : binary search
 https://codeforces.com/problemset/problem/1694/A : simple observation
 https://codeforces.com/problemset/problem/1422/A
