@@ -569,6 +569,7 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-2/problems/C
 https://codeforces.com/problemset/problem/1732/D1
 https://codeforces.com/contest/1748/problem/C
 https://codeforces.com/contest/1748/problem/D
+https://codeforces.com/problemset/problem/1732/C1
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
