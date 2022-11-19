@@ -495,18 +495,13 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 
 
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1721/problem/D
 https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/problemset/problem/453/A : https://www.youtube.com/watch?v=U_h3IjreRek
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
-https://codeforces.com/contest/1722/problem/E
 https://www.hackerrank.com/challenges/coloring-tree/problem
-https://codeforces.com/contest/1717/problem/C
-https://codeforces.com/contest/1469/problem/C
 https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but need to do in O(n)
 https://codeforces.com/contest/1684/problem/D
 https://codeforces.com/contest/1728/problem/D
@@ -574,6 +569,8 @@ https://codeforces.com/problemset/problem/1732/C1
 https://codeforces.com/problemset/problem/1732/A
 https://codeforces.com/problemset/problem/1732/B
 https://codeforces.com/contest/1759/problem/E
+https://codeforces.com/contest/1721/problem/D
+https://codeforces.com/contest/1722/problem/E
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
