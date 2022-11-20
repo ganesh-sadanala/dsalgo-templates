@@ -502,9 +502,6 @@ https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/probl
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 https://www.hackerrank.com/challenges/coloring-tree/problem
-https://codeforces.com/contest/1452/problem/D : was able to do in O(n^2) but need to do in O(n)
-https://codeforces.com/contest/1684/problem/D
-https://codeforces.com/contest/1728/problem/D
 https://codeforces.com/problemset/problem/1033/C
 https://codeforces.com/contest/1729/problem/E
 https://codeforces.com/contest/1342/problem/C
