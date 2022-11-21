@@ -362,6 +362,7 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 
 Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
+𝑓(𝑥,𝑦) be the number of carries of 𝑥+𝑦 in binary (i.e; 𝑓(𝑥,𝑦)=𝑔(𝑥)+𝑔(𝑦)−𝑔(𝑥+𝑦), where 𝑔(𝑥) is the number of ones in the binary representation of 𝑥).
 
 
 
