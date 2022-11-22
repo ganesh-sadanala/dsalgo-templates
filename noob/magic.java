@@ -572,6 +572,8 @@ https://codeforces.com/contest/1722/problem/E
 https://codeforces.com/contest/1761/problem/E : Learned k-Clique in graph and a problem on Articulation Point and briges
 https://codeforces.com/contest/1760/problem/G
 https://codeforces.com/contest/1761/problem/D : https://www.youtube.com/watch?v=AGBUglzNPSU
+https://codeforces.com/problemset/problem/1312/D : Almost there
+https://codeforces.com/problemset/problem/1715/C
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
