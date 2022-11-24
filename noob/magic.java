@@ -111,6 +111,7 @@ Exchange Arguments Greedy techniques: https://www.youtube.com/watch?v=Oq1seKJvfQ
 Stay Ahead Greedy(Interval Scheduling - Maximize compatible requests) : https://www.youtube.com/watch?v=WAf5fop1EZg
 number of four cycles in a graph -> Topuc to be mastererd
 Explore and read blogs on MergeSortTree, SQRT Decomposition and MOs algorithm, Persistent Segment tree and other data structures
+https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 
 Interesting hidden things in java
 ---------------------------------
@@ -494,15 +495,9 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 
 
-
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/problemset/problem/453/A : https://www.youtube.com/watch?v=U_h3IjreRek
-https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
-https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
-https://www.hackerrank.com/challenges/coloring-tree/problem
 https://codeforces.com/problemset/problem/1033/C
 https://codeforces.com/contest/1729/problem/E
 https://codeforces.com/contest/1342/problem/C
@@ -574,6 +569,9 @@ https://codeforces.com/contest/1760/problem/G
 https://codeforces.com/contest/1761/problem/D : https://www.youtube.com/watch?v=AGBUglzNPSU
 https://codeforces.com/problemset/problem/1312/D : Almost there
 https://codeforces.com/problemset/problem/1715/C
+https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/problemset/problem/453/A : https://www.youtube.com/watch?v=U_h3IjreRek
+https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
+https://www.hackerrank.com/challenges/coloring-tree/problem : Segment trees and Offline queries
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -593,6 +591,7 @@ https://codeforces.com/contest/1730/problem/B : See Umnik solution to avoid doub
 https://codeforces.com/problemset/problem/1081/C : was able to get dp solution but not O(1) combinatorial solution
 https://codeforces.com/problemset/problem/518/D: Nice implementation: https://codeforces.com/contest/518/submission/9996175 , dp always works, fucl java [ower finction
 https://codeforces.com/contest/1738/problem/C: Learn dp on games approach
+https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 
 DP
 --
