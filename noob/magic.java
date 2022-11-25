@@ -577,6 +577,7 @@ https://cses.fi/problemset/task/1144
 https://www.spoj.com/problems/MKTHNUM/
 https://cses.fi/problemset/task/1144
 https://codeforces.com/contest/1758/problem/C
+https://codeforces.com/contest/1758/problem/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
