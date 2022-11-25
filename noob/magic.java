@@ -112,6 +112,7 @@ Stay Ahead Greedy(Interval Scheduling - Maximize compatible requests) : https://
 number of four cycles in a graph -> Topuc to be mastererd
 Explore and read blogs on MergeSortTree, SQRT Decomposition and MOs algorithm, Persistent Segment tree and other data structures
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
+https://codeforces.com/blog/entry/325
 
 Interesting hidden things in java
 ---------------------------------
@@ -494,7 +495,6 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 
 
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
@@ -572,6 +572,9 @@ https://codeforces.com/problemset/problem/1715/C
 https://atcoder.jp/contests/abc266/tasks/abc266_e : https://codeforces.com/problemset/problem/453/A : https://www.youtube.com/watch?v=U_h3IjreRek
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/B2
 https://www.hackerrank.com/challenges/coloring-tree/problem : Segment trees and Offline queries
+https://codeforces.com/contest/877/problem/E
+https://cses.fi/problemset/task/1144
+https://www.spoj.com/problems/MKTHNUM/
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
@@ -665,11 +668,15 @@ DP Tree Traversal/Path Questions : https://codeforces.com/problemset/problem/134
 https://codeforces.com/blog/entry/23613
 https://cp-algorithms.com/algebra/chinese-remainder-theorem.html#garners-algorithm
 https://codeforces.com/blog/entry/103374
-	   https://cp-algorithms.com/algebra/module-inverse.html#mod-inv-all-num
+https://cp-algorithms.com/algebra/module-inverse.html#mod-inv-all-num
 	   
 Combinatorics/DP Combinatorics
 -------------
 https://codeforces.com/blog/entry/54154
+
+Segment Tree
+-------------
+https://codeforces.com/gym/100739/problem/A
 
 */
 import java.util.*;
@@ -3335,10 +3342,8 @@ class Codechef {
     int tree[] = new int[MAX]; // To store segment tree
     int lazy[] = new int[MAX]; // To store pending updates
   
-    void updateRangeUtil(int si, int ss, int se, int us,
-                        int ue, int diff)
+    void updateRangeUtil(int si, int ss, int se, int us, int ue, int diff)
     {
-      
         if (lazy[si] != 0)
         {
          
