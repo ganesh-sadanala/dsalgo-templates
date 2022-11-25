@@ -113,6 +113,7 @@ number of four cycles in a graph -> Topuc to be mastererd
 Explore and read blogs on MergeSortTree, SQRT Decomposition and MOs algorithm, Persistent Segment tree and other data structures
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
 https://codeforces.com/blog/entry/325
+https://codeforces.com/blog/entry/109430
 
 Interesting hidden things in java
 ---------------------------------
