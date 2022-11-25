@@ -575,6 +575,7 @@ https://www.hackerrank.com/challenges/coloring-tree/problem : Segment trees and 
 https://codeforces.com/contest/877/problem/E
 https://cses.fi/problemset/task/1144
 https://www.spoj.com/problems/MKTHNUM/
+https://cses.fi/problemset/task/1144
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
