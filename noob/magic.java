@@ -115,6 +115,7 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/
 https://codeforces.com/blog/entry/325
 https://codeforces.com/blog/entry/109430
 https://codeforces.com/blog/entry/22317 : https://www.geeksforgeeks.org/count-divisors-n-on13/
+https://cses.fi/book/index.php
 
 Interesting hidden things in java
 ---------------------------------
