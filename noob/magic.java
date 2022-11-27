@@ -602,6 +602,7 @@ https://codeforces.com/problemset/problem/1081/C : was able to get dp solution b
 https://codeforces.com/problemset/problem/518/D: Nice implementation: https://codeforces.com/contest/518/submission/9996175 , dp always works, fucl java [ower finction
 https://codeforces.com/contest/1738/problem/C: Learn dp on games approach
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/qualification-round/problems/D : https://ideone.com/bqEx8s
+https://codeforces.com/contest/1759/problem/F : Learned a binary search approach
 
 DP
 --
