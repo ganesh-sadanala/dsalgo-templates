@@ -677,7 +677,8 @@ https://codeforces.com/blog/entry/23613
 https://cp-algorithms.com/algebra/chinese-remainder-theorem.html#garners-algorithm
 https://codeforces.com/blog/entry/103374
 https://cp-algorithms.com/algebra/module-inverse.html#mod-inv-all-num
-	   
+https://cp-algorithms.com/graph/min_cost_flow.html : https://www.topcoder.com/thrive/articles/Assignment%20Problem%20and%20Hungarian%20Algorithm : https://cses.fi/problemset/task/2130/
+
 Combinatorics/DP Combinatorics
 -------------
 https://codeforces.com/blog/entry/54154
