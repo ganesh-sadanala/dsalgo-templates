@@ -322,7 +322,7 @@ If a number is divisible by consective 10 elements from 1 to 10 then the number 
 Any number can have atleast one element that is not factor of that element between 1 and 10.
     
 For any two positive integers x, y that satisfy x>=y what is the maximum value of x%y?
-Key observation: x%y < (x+1)/2 if x>=y and x%y=x if x<y.
+Key observation: x%y < x/2 if x>=y and x%y=x if x<y.
 https://math.stackexchange.com/questions/3961702/prove-that-for-any-two-positive-integers-x-and-y-the-value-of-x-pmod-y
 
 Problem B teaches u a lot of math: https://codeforces.com/blog/entry/97920
@@ -495,14 +495,9 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 
 
-
-
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/problemset/problem/1033/C
-https://codeforces.com/contest/1729/problem/E
 https://codeforces.com/contest/1342/problem/C
 https://codeforces.com/contest/219/problem/C
 https://codingcompetitions.withgoogle.com/kickstart/round/0000000000201d27/0000000000201b7b#problem
