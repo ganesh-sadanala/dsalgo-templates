@@ -574,6 +574,7 @@ https://codeforces.com/contest/1758/problem/C
 https://codeforces.com/contest/1758/problem/D : https://codeforces.com/contest/1758/submission/182515472
 https://codeforces.com/contest/1764/problem/C
 https://codeforces.com/problemset/problem/1765/N
+https://codeforces.com/problemset/problem/1765/D : Lerned to implement the idea in right way to avoid edge cases
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
