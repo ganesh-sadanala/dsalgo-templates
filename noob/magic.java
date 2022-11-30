@@ -3128,6 +3128,118 @@ class Codechef {
 		}
 	}
 	
+	// #FLOWS 
+	
+	// Max Flow - Dinic's algorithm O(E*V*V)
+	  static class Dinic{
+
+    static class Edge{
+      // from x->y with residual capacity w
+      int x, y, w;
+      Edge(int x, int y, int w){
+        this.x=x;
+        this.y=y;
+        this.w=w;
+      }
+    }
+
+    int n, source, sink, ec=0;
+    List<List<Integer>> l;
+    List<Edge> edges;
+    int level[];
+    int edge_sz[];
+
+    Dinic(int n, int source, int sink){
+      this.n=n;
+      this.source=source;
+      this.sink=sink;
+      l=new ArrayList<>();
+      for(int i=0;i<=n;i++) l.add(new ArrayList<>());
+      edges=new ArrayList<>();
+      level=new int[n+1];
+      edge_sz=new int[n+1];
+    }
+
+    void addEdge(int x, int y, int w){
+      edges.add(new Edge(x, y, w));
+      l.get(x).add(ec++);
+      edges.add(new Edge(y, x, 0));
+      l.get(y).add(ec++);
+    }
+
+    boolean levelGraph(){
+      for(int i=0;i<=n;i++) level[i]=-1;
+      Queue<Integer> q=new LinkedList<>();
+      q.add(source);
+      level[source]=-1;
+      while(!q.isEmpty()){
+        int u=q.remove();
+        for(int v:l.get(u)){
+          Edge edge=edges.get(v);
+          int to=edge.y;
+          int w=edge.w;
+          if(w>0 && level[to]==-1){
+            level[to]=level[u]+1;
+            q.add(to);
+          }
+        }
+      }
+      return level[sink]!=-1;
+    }
+
+    int augment(int cur, int flow){
+      if(cur==sink) return flow;
+      for(int i=edge_sz[cur];i>=0;i--){
+        int edge_index=l.get(cur).get(i);
+        int w=edges.get(edge_index).w;
+        int y=edges.get(edge_index).y;
+        if(w>0 && level[y]==level[cur]+1){
+          int bottleNeckFlow=augment(y, Math.min(flow, w));
+          if(bottleNeckFlow>0){
+            edge_sz[cur]=i;
+            edges.get(edge_index).w-=bottleNeckFlow;
+            edges.get(edge_index^1).w+=bottleNeckFlow;
+            return bottleNeckFlow;
+          }
+        }
+      }
+      edge_sz[cur]=-1;
+      return 0;
+    }
+
+    int dinicsMaxFlow(){
+      int totalFlow=0;
+      while(levelGraph()){
+        // find augmenting paths and update in residual network
+
+        // stores number of edges for node i
+        for(int i=0;i<=n;i++) edge_sz[i]=l.get(i).size()-1;
+
+        int flow=augment(0, (int)1e9);
+        while(flow>0){
+          totalFlow+=flow;
+          flow=augment(0, (int)1e9);
+        }
+      }
+      return totalFlow;
+    }
+  }
+
+  static void solve(int te) throws Exception{
+
+    // n, source, sink
+    Dinic g=new Dinic(4, 0, 3);
+
+    // Edges
+    g.addEdge(0, 1, 5);
+    g.addEdge(1, 2, 2);
+    g.addEdge(2, 3, 3);
+
+    // Max Flow
+    str.append(g.dinicsMaxFlow());
+  }
+	
+	
     // ------------------------- #ADVANCED DATA STRUCTURES ------------------------
     // #BIT
     // Using 2 BIT structures => https://codeforces.com/contest/1311/problem/F
