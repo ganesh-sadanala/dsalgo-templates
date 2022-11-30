@@ -495,13 +495,9 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 
 
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1623/problem/C
-https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
-https://codeforces.com/contest/1616/problem/C
 https://codeforces.com/contest/1733/problem/D2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
 https://leetcode.com/problems/palindrome-partitioning-ii/ : failed at optimization : Awesome(Similar to LIS): https://leetcode.com/problems/palindrome-partitioning-ii/discuss/42213/Easiest-Java-DP-Solution-(97.36)
@@ -576,6 +572,7 @@ https://codeforces.com/contest/1758/problem/D : https://codeforces.com/contest/1
 https://codeforces.com/contest/1764/problem/C
 https://codeforces.com/problemset/problem/1765/N
 https://codeforces.com/problemset/problem/1765/D : Lerned to implement the idea in right way to avoid edge cases
+https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
