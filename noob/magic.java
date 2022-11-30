@@ -573,6 +573,8 @@ https://codeforces.com/contest/1764/problem/C
 https://codeforces.com/problemset/problem/1765/N
 https://codeforces.com/problemset/problem/1765/D : Lerned to implement the idea in right way to avoid edge cases
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
+https://codeforces.com/problemset/problem/1675/F
+https://codeforces.com/problemset/problem/1646/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
