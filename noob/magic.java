@@ -43,6 +43,7 @@ https://www.techinterviewhandbook.org/grind75
 
 Tools and Resources
 -------------------Pa
+https://codedrills.io/contests/icpc-amritapuri-2021-regional-round/problems/bitcoin
 https://math.libretexts.org/Courses/SUNY_Schenectady_County_Community_College/Discrete_Structures
 https://yandex.com/cup/algorithm/
 https://codedrills.io/
