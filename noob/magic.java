@@ -670,6 +670,7 @@ https://codeforces.com/blog/entry/23613
 https://cp-algorithms.com/algebra/chinese-remainder-theorem.html#garners-algorithm
 https://codeforces.com/blog/entry/103374
 https://cp-algorithms.com/algebra/module-inverse.html#mod-inv-all-num
+https://codeforces.com/blog/entry/73558
 
 Combinatorics/DP Combinatorics
 -------------
