@@ -3327,6 +3327,35 @@ class Codechef {
 
 	}
 	
+	// condensed graph implementation -> https://cp-algorithms.com/graph/strongly-connected-components.html#condensation-graph-implementation
+	component=new ArrayList<>();
+	    for(int i=0;i<n;i++){
+	      int ele=order.get(i);
+	      if(!vis.get(ele)){
+		dfs2(ele);
+		int root=component.get(0);
+		for(int j=0;j<component.size();j++){
+		  roots[component.get(j)]=root;
+		  bitSet[root].set(component.get(j));
+		}
+		rootNodes.add(root);
+		component.clear();
+	      }
+	    }
+	    adj=new ArrayList<>();
+	    int sz=rootNodes.size();
+	    for(int i=0;i<=n;i++) adj.add(new ArrayList<>());
+	    for(int u=1;u<=n;u++){
+	      for(int v:l.get(u)){
+		int root_u=roots[u];
+		int root_v=roots[v];
+		if(root_u!=root_v){
+		  adj.get(root_u).add(root_v);
+		}
+	      }
+	    }
+	
+	
     // ------------------------- #ADVANCED DATA STRUCTURES ------------------------
     // #BIT
     // Using 2 BIT structures => https://codeforces.com/contest/1311/problem/F
