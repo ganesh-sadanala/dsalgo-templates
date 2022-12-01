@@ -575,7 +575,8 @@ https://codeforces.com/problemset/problem/1765/D : Lerned to implement the idea 
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://codeforces.com/problemset/problem/1675/F
 https://codeforces.com/problemset/problem/1646/D
-https://cses.fi/problemset/task/2143 : Unnative way of solving
+https://cses.fi/problemset/task/2138 : Unnative way of solving
+https://cses.fi/problemset/task/2143
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
