@@ -118,6 +118,7 @@ https://codeforces.com/blog/entry/325
 https://codeforces.com/blog/entry/109430
 https://codeforces.com/blog/entry/22317 : https://www.geeksforgeeks.org/count-divisors-n-on13/
 https://cses.fi/book/index.php
+https://www.isinj.com/mt-usamo/1001%20Problems%20in%20Classical%20Number%20Theory%20(Problems).pdf
 
 Interesting hidden things in java
 ---------------------------------
