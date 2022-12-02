@@ -119,6 +119,7 @@ https://codeforces.com/blog/entry/109430
 https://codeforces.com/blog/entry/22317 : https://www.geeksforgeeks.org/count-divisors-n-on13/
 https://cses.fi/book/index.php
 https://www.isinj.com/mt-usamo/1001%20Problems%20in%20Classical%20Number%20Theory%20(Problems).pdf
+https://adventofcode.com/2022
 
 Interesting hidden things in java
 ---------------------------------
@@ -494,16 +495,9 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 
 
-
-
-
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/contest/1733/problem/D2
-https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
-https://leetcode.com/problems/palindrome-partitioning-ii/ : failed at optimization : Awesome(Similar to LIS): https://leetcode.com/problems/palindrome-partitioning-ii/discuss/42213/Easiest-Java-DP-Solution-(97.36)
-https://codeforces.com/contest/1557/problem/C
 https://codeforces.com/contest/1734/problem/D
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-2/problems/A2 : https://codeforces.com/blog/entry/107302#comment-956427 : Codeforces Talk with Taranpreet Singh
 https://codeforces.com/contest/1730/problem/D
@@ -579,6 +573,8 @@ https://codeforces.com/problemset/problem/1675/F
 https://codeforces.com/problemset/problem/1646/D
 https://cses.fi/problemset/task/2138 : Unnative way of solving
 https://cses.fi/problemset/task/2143
+https://codeforces.com/contest/1733/problem/D2
+https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
