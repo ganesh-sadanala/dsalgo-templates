@@ -574,6 +574,7 @@ https://cses.fi/problemset/task/2143
 https://codeforces.com/contest/1733/problem/D2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
 https://codeforces.com/contest/1734/problem/D
+https://codeforces.com/problemset/problem/1774/E
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
