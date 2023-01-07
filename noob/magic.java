@@ -569,7 +569,6 @@ https://codeforces.com/problemset/problem/1765/D : Lerned to implement the idea 
 https://atcoder.jp/contests/abc231/tasks/abc231_e : https://codeforces.com/blog/entry/97814#comment-870082
 https://codeforces.com/problemset/problem/1675/F
 https://codeforces.com/problemset/problem/1646/D
-https://cses.fi/problemset/task/2138 : Unnative way of solving
 https://cses.fi/problemset/task/2143
 https://codeforces.com/contest/1733/problem/D2
 https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/solution
