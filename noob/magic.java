@@ -575,6 +575,7 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022/round-1/problems/C/s
 https://codeforces.com/contest/1734/problem/D
 https://codeforces.com/problemset/problem/1774/E
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e762e#problem
+https://codingcompetitions.withgoogle.com/kickstart/round/00000000008caa74/0000000000acef55#problem
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
