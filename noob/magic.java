@@ -43,6 +43,7 @@ https://www.techinterviewhandbook.org/grind75
 
 Tools and Resources
 -------------------Pa
+https://math.hmc.edu/funfacts/
 https://www.iarcs.org.in/inoi/online-study-material/topics/games.php
 https://codedrills.io/contests/icpc-amritapuri-2021-regional-round/problems/bitcoin
 https://math.libretexts.org/Courses/SUNY_Schenectady_County_Community_College/Discrete_Structures
@@ -576,6 +577,7 @@ https://codeforces.com/contest/1734/problem/D
 https://codeforces.com/problemset/problem/1774/E
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e762e#problem
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008caa74/0000000000acef55#problem
+https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb4d1/0000000000b209bc#problem
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
