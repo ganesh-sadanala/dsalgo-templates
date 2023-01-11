@@ -578,6 +578,7 @@ https://codeforces.com/problemset/problem/1774/E
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000000009e762e#problem
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008caa74/0000000000acef55#problem
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb4d1/0000000000b209bc#problem
+https://codeforces.com/problemset/problem/1774/D
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
