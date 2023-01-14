@@ -1475,6 +1475,46 @@ class Codechef {
         }
     }
 	
+	// Z-Function
+  static int[] Z_Func(char c[]){
+    int n=c.length;
+    int l=0, r=0;
+    int z[]=new int[n];
+    z[0]=n;
+    for(int i=1;i<n;i++){
+      if(i<=r) z[i]=Math.min(r-i+1, z[i-l]);
+      while(i+z[i]<n && c[i+z[i]]==c[z[i]]) z[i]++;
+      if(r<i+z[i]-1){
+        l=i;
+        r=i+z[i]-1;
+      }
+    }
+    return z;
+  }
+	
+	// Manachers
+   static int[] manachers(String st){
+    int n=st.length();
+    st="!"+st+"$";
+    c=st.trim().toCharArray();
+    int l=1, r=1;
+    int p[]=new int[n+2];
+    for(int i=1;i<=n;i++){
+      p[i]=Math.max(0, Math.min(r-i, p[l+r-i]));
+      while(c[i+p[i]]==c[i-p[i]]) p[i]++;
+      if(r<i+p[i]){
+        l=i-p[i];
+        r=i+p[i];
+      }
+    }
+    int np[]=new int[n];
+    for(int i=1;i<=n;i++) np[i-1]=p[i];
+    return np;
+   }
+	
+	// Z-Function
+	
+	
    // calculate nCr
    long[][] comb = new long[MAXN][MAXN];
     comb[0][0] = 1;
