@@ -498,8 +498,6 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 **//*
 CF unsolved/upsolved/master
 ---------------------------
-https://codeforces.com/problemset/problem/1610/D
-https://codeforces.com/problemset/problem/1426/F : https://www.youtube.com/watch?v=O3gOvIb4ACs : https://codeforces.com/blog/entry/83120?#comment-704181
 https://codeforces.com/problemset/problem/1391/C : Editorial
 https://codeforces.com/problemset/problem/1238/D
 https://codeforces.com/contest/1737/problem/B : Math Proof https://www.youtube.com/watch?v=6bpLuSsK8L0
@@ -577,6 +575,8 @@ https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb4d1/00000
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb0f5/0000000000ba82c5#problem
 https://codeforces.com/contest/1730/problem/D : https://codeforces.com/blog/entry/107293?#comment-956367
 https://codeforces.com/contest/1739/problem/C
+https://codeforces.com/problemset/problem/1610/D
+https://codeforces.com/problemset/problem/1426/F : https://www.youtube.com/watch?v=O3gOvIb4ACs : https://codeforces.com/blog/entry/83120?#comment-704181
 
 Solved and Learned other approaches / Took more time to solve / Got AC by luck
 ------------------------------------------------------------------------------
