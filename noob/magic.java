@@ -569,6 +569,7 @@ https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb33e/00000
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008caa74/0000000000acef55#problem
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb4d1/0000000000b209bc#problem
 https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb0f5/0000000000ba82c5#problem
+https://codingcompetitions.withgoogle.com/kickstart/round/00000000008cb409/0000000000bef319#problem
 https://codeforces.com/contest/1730/problem/D : https://codeforces.com/blog/entry/107293?#comment-956367
 https://codeforces.com/contest/1739/problem/C
 https://codeforces.com/problemset/problem/1610/D
