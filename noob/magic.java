@@ -126,6 +126,7 @@ https://www.isinj.com/mt-usamo/1001%20Problems%20in%20Classical%20Number%20Theor
 https://adventofcode.com/2022
 https://www.quora.com/The-height-of-any-binary-tree-of-n-nodes-is-between-log-n-and-n-1-What-is-the-proof-for-this-observation
 https://www.cs.purdue.edu/homes/spa/courses/cs182/mod8.pdf
+https://dp-book.com/
 
 Interesting hidden things in java
 ---------------------------------
