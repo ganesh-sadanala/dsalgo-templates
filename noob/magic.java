@@ -1,6 +1,18 @@
 /*
 Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
 
+System Design
+-------------
+https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124?crid=3KGEODHTJOTP7&keywords=Design+Patterns&qid=1661754556&sprefix=design+pattern,aps,150&sr=8-4&linkCode=sl1&tag=alexcancode0d-20&linkId=91f113dc52313d7fff831c6001f521b3&language=en_US&ref_=as_li_ss_tl
+https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612?crid=3KGEODHTJOTP7&keywords=Design+Patterns&qid=1661754541&sprefix=design+pattern,aps,150&sr=8-1&linkCode=sl1&tag=alexcancode0d-20&linkId=0b4e14e7e26bbd72549a278cecfb06d5&language=en_US&ref_=as_li_ss_tl
+https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers
+https://www.educative.io/blog/complete-guide-system-design-interview?aff=xmg1
+https://github.com/donnemartin/system-design-primer
+https://bytebytego.com/?fpr=alexcancode
+https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119?crid=3L0FRPQ1KYA4A&keywords=System+design+interview&qid=1661754503&sprefix=system+design+intervie,aps,150&sr=8-1&linkCode=sl1&tag=alexcancode0d-20&linkId=370349904b36104be0a66d623f1ebf79&language=en_US&ref_=as_li_ss_tl
+https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook/dp/B08B3FWYBX?crid=3L0FRPQ1KYA4A&keywords=System+design+interview&qid=1661754503&sprefix=system+design+intervie,aps,150&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMUZGOEJSNlBHQ1FKJmVuY3J5cHRlZElkPUEwNzg4MjYzMTZGNVdIOFlQWlY2UCZlbmNyeXB0ZWRBZElkPUEwNjg0Mjc5Mzg2VUk0QVNVOEVLMyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=sl1&tag=alexcancode0d-20&linkId=89f705f9eddc2374b61c346080a7bdfd&language=en_US&ref_=as_li_ss_tl
+
+
 Interview Failed
 ----------------
 Given n tasks with [begin, end, timeTaken] where begin and end is the time period between(inclusive of begin and end) which the task should be completed and it takes
