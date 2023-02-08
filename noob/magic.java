@@ -1,6 +1,11 @@
 /*
 Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
 
+Blockchain/Web3 Distributed Systems Project
+-------------------------------------------
+
+
+
 System Design
 -------------
 https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124?crid=3KGEODHTJOTP7&keywords=Design+Patterns&qid=1661754556&sprefix=design+pattern,aps,150&sr=8-4&linkCode=sl1&tag=alexcancode0d-20&linkId=91f113dc52313d7fff831c6001f521b3&language=en_US&ref_=as_li_ss_tl
