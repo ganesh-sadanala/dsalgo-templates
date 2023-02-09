@@ -3,8 +3,11 @@ Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg
 
 Blockchain/Web3 Distributed Systems Project
 -------------------------------------------
-
-
+https://andersbrownworth.com/blockchain/
+https://mempool.space/ -> Bitcoin explorer
+https://etherscan.io/ -> Ethereum explorer
+https://polygonscan.com/ -> Polygon POS Explorer
+https://explorer.solana.com/ -> Solana Explorer
 
 System Design
 -------------
