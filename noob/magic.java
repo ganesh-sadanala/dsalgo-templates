@@ -1,7 +1,7 @@
 /*
 Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
 
-Blockchain/Web3 Distributed Systems Project
+Blockchain/Web3 Distributed Systems Project.  https://whimsical.com/
 -------------------------------------------
 https://andersbrownworth.com/blockchain/
 https://mempool.space/ -> Bitcoin explorer
