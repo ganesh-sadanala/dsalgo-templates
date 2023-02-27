@@ -1,6 +1,10 @@
 /*
 Motivation: https://www.youtube.com/watch?v=KNviwfDeRKg 
 
+Stocks:
+-------
+https://go.stocknavigators.com/echo-mapping-page?gc_id=19692355140&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g7d5AtH6gn5Hi-4f6FgyOgfzwM5Kx7fMtTtdNYx6qphNlOioQvpFUgaAh3mEALw_wcB&h_ad_id=648434426628
+
 Blockchain/Web3 Distributed Systems Project.  https://whimsical.com/
 -------------------------------------------
 https://andersbrownworth.com/blockchain/
@@ -19,7 +23,7 @@ https://github.com/donnemartin/system-design-primer
 https://bytebytego.com/?fpr=alexcancode
 https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119?crid=3L0FRPQ1KYA4A&keywords=System+design+interview&qid=1661754503&sprefix=system+design+intervie,aps,150&sr=8-1&linkCode=sl1&tag=alexcancode0d-20&linkId=370349904b36104be0a66d623f1ebf79&language=en_US&ref_=as_li_ss_tl
 https://www.amazon.com/System-Design-Interview-Insiders-Guide-ebook/dp/B08B3FWYBX?crid=3L0FRPQ1KYA4A&keywords=System+design+interview&qid=1661754503&sprefix=system+design+intervie,aps,150&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzMUZGOEJSNlBHQ1FKJmVuY3J5cHRlZElkPUEwNzg4MjYzMTZGNVdIOFlQWlY2UCZlbmNyeXB0ZWRBZElkPUEwNjg0Mjc5Mzg2VUk0QVNVOEVLMyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=sl1&tag=alexcancode0d-20&linkId=89f705f9eddc2374b61c346080a7bdfd&language=en_US&ref_=as_li_ss_tl
-
+https://www.lucidchart.com/pages/examples/uml_diagram_tool
 
 Interview Failed
 ----------------
