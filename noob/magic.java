@@ -12,6 +12,7 @@ https://mempool.space/ -> Bitcoin explorer
 https://etherscan.io/ -> Ethereum explorer
 https://polygonscan.com/ -> Polygon POS Explorer
 https://explorer.solana.com/ -> Solana Explorer
+https://learnweb3.io/
 
 System Design
 -------------
