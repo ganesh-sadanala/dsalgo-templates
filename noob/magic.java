@@ -159,9 +159,6 @@ https://www.desmos.com/calculator/rluttfnaj9
 Interesting hidden things in java
 ---------------------------------
 https://stackoverflow.com/questions/19485818/why-are-2-long-variables-not-equal-with-operator-in-java
-https://www.journaldev.com/31869/java-list-remove-methods-arraylist-remove -> Use objects such as Character, Integer and not int, char for removal of element
-https://www.geeksforgeeks.org/treemap-lowerkey-in-java-with-examples/
-Map<Long, Long> map; // map.get(3l) is not equal to map.get(3) and also map.put(3) is not supported.
 
 Learnings
 ---------
@@ -178,9 +175,6 @@ http://tech-queries.blogspot.com/2011/07/fit-12-dominos-in-2n-strip.html
 
 Golden Ratio: a>b>0 => a/b = (a+b)/a = k where k is a constant => dividing two consective numbers in F series = (1+sqrr(5))/2
 https://codeforces.com/contest/515/problem/C
-
-x is even, gcd(x-1, x+1) = 1
-x is odd, gcd(x-2, x+2) = 1
 
 lcm(gcd(x, y), gcd(x, z)) = gcd(x, lcm(y, z))
 gcd(lcm(x, y), lcm(x, z)) = lcm(x, gcd(y, z))
@@ -207,42 +201,18 @@ DMCA or digital root: https://codeforces.com/problemset/problem/1505/B => https:
 ans = n%9 if ans!=0
 else ans=9;
 
-Number of perfect cubes or squares : https://www.geeksforgeeks.org/perfect-cubes-range/
-
 Stars and bars problem: https://cp-algorithms.com/combinatorics/stars_and_bars.html     https://www.youtube.com/watch?v=qvqPZkPURCo  - 
 positive => with k boxes or k-1 bars and n balls is (n-1)Ck-1.
 Non-negative with sticks can overlap => with k boxes or k-1 bars and n balls is (n+k-1)Ck-1 or (n+k-1)Cn
 Non-negative with sticks cannot overlap => with k boxes or k-1 bars and n balls is (n+1)Ck-1.
 
-https://www.geeksforgeeks.org/count-possible-paths-top-left-bottom-right-nxm-matrix/ - https://www.codechef.com/DEC21B/problems/PYRAMIDMOVES
-
 Amazing question on (x%a)%b) != (x%b)%a => Number of such x in a range => https://codeforces.com/problemset/problem/1342/C
-
-Wonderful question on AP -> https://codeforces.com/contest/1616/problem/C
-In AP, (a[j]-a[i]) * (k-j) == (a[k] - a[j]) * (j-i) 
-
-min(-c) = max(c)
-max(-c) = min(c)
-
-Notes: https://stackoverflow.com/questions/3269013/difference-between-hamiltonian-path-and-euler-path
-An Euler path is a path that passes through every edge exactly once. If it ends at the initial vertex then it is an Euler cycle.
-A Hamiltonian path is a path that passes through every vertex exactly once (NOT every edge). If it ends at the initial vertex then it is a Hamiltonian cycle.
-In an Euler path you might pass through a vertex more than once.
-In a Hamiltonian path you may not pass through all edges.
 
 Let us denote by 𝑑(𝑛) the sum of all divisors of the number 𝑛, i.e. 𝑑(𝑛)=∑𝑘 such that k is a divisor of n.
 Then the multiplicative identity holds i.e; d(a * b) = d(a) * d(b) if gcd(a, b)=1.
 
 a+b=(a^b)+2*(a&b)
 a+b=(a&b)+(a|b)
-
-Bitwise operations that are just a boolean operator applied between corresponding bits of the operands follow laws analogous to the laws of Boolean algebra, for example:
-
-AND (&) : Commutative, Associative, Identity (0xFF), Annihilator (0x00), Idempotent
-OR  (|) : Commutative, Associative, Identity (0x00), Annihilator (0xFF), Idempotent
-XOR (^) : Commutative, Associative, Identity (0x00), Inverse (itself)
-NOT (~) : Inverse (itself)
-AND and OR absorb each other:
 
 a & (a | b) = a
 a | (a & b) = a
@@ -301,17 +271,6 @@ Parallelogram vector area: https://www.quora.com/What-is-the-area-of-parallelogr
 Distance from line to a point in vector form: https://www.youtube.com/watch?v=tYUtWYGUqgw
  
 https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree : https://codeforces.com/contest/343/problem/A : https://codeforces.com/blog/entry/8860?#comment-351231
-GCD(A, B) => GCD(B, A%B) => GCD(A-B, B)
-A=B*Q+R
-There are A/B steps to reach from GCD(A, B) to one euclidean step GCD(B, A%B) using GCD(A-B, B) where A>B
-
-// AOPS modulo 
-Consider four integers ${a},{b},{c},{d}$ and a positive integer n such that a=b mod n and c=d mod n. In modular arithmetic, the following identities hold:
-Addition: a+c=(b+d) mod m
-Subtraction: a-c=(b-d)mod m
-Multiplication: a*c=(b*d)mod m
-Division: a/e=(b/e) mod (n/gcd(n,e)), where e is a positive integer that divides a and b.
-Exponentiation: a^e=(b^e)mod m where e is a positive integer.
 
 phi(p^x) = p^x-p^(x-1)    where p is a prime # and phi(x) is Euler Totient function
 phi(p) = p-1
@@ -407,6 +366,8 @@ which can be obtained by 2*sqrt(M) * sqrt(M) = M where first 2*sqrt(M) is the nu
 Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 
 𝑓(𝑥,𝑦) be the number of carries of 𝑥+𝑦 in binary (i.e; 𝑓(𝑥,𝑦)=𝑔(𝑥)+𝑔(𝑦)−𝑔(𝑥+𝑦), where 𝑔(𝑥) is the number of ones in the binary representation of 𝑥).
+
+
 
 
 
@@ -1150,7 +1111,7 @@ class Codechef {
         m[i][i]=1;
       }
     }
-    void multiply(Matrix a){
+    Matrix multiply(Matrix a){
       Matrix res=new Matrix(a.sz);
       for(int i=0;i<sz;i++){
         for(int j=0;j<sz;j++){
@@ -1160,6 +1121,7 @@ class Codechef {
           }
         }
       }
+	    return res;
     }
   }
 
@@ -1537,8 +1499,6 @@ class Codechef {
     for(int i=1;i<=n;i++) np[i-1]=p[i];
     return np;
    }
-	
-	// Z-Function
 	
 	
    // calculate nCr
