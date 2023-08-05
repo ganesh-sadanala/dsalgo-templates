@@ -3905,6 +3905,69 @@ class Codechef {
         // Fill the allocated memory st
         constructSTUtil(arr, 0, n - 1, 0);
     }
+
+	// ------------------------------- #TRIE -----------------------------------
+	// gfg
+	 // Recursive function to delete a key from given Trie
+    static TrieNode remove(TrieNode root, String key, int depth)
+    {
+        // If tree is empty
+        if (root == null)
+            return null;
+ 
+        // If last character of key is being processed
+        if (depth == key.length()) {
+ 
+            // This node is no more end of word after
+            // removal of given key
+            if (root.isEndOfWord)
+                root.isEndOfWord = false;
+ 
+            // If given is not prefix of any other word
+            if (isEmpty(root)) {
+                root = null;
+            }
+ 
+            return root;
+        }
+ 
+        // If not last character, recur for the child
+        // obtained using ASCII value
+        int index = key.charAt(depth) - 'a';
+        root.children[index] =
+            remove(root.children[index], key, depth + 1);
+ 
+        // If root does not have any child (its only child got
+        // deleted), and it is not end of another word.
+        if (isEmpty(root) && root.isEndOfWord == false){
+            root = null;
+        }
+ 
+        return root;
+    }
+
+	void display(TrieNode root, char[] str, int level) {
+	    // If node is leaf node, it indicates end
+	    // of string, so a null character is added
+	    // and string is displayed
+	    if (isLeafNode(root)) {
+	        for (int k = level; k < str.length; k++)
+	        str[k] = 0;
+	        System.out.println(str);
+	    }
+	 
+	    int i;
+	    for (i = 0; i < 26; i++) {
+	        // if NON NULL child is found
+	        // add parent key to str and
+	        // call the display function recursively
+	        // for child node
+	        if (root.children[i] != null) {
+	            str[level] = (char) (i + 'a');
+	            display(root.children[i], str, level + 1);
+	        }
+	    }
+	}
 		
   // -------------------------------- #SCHEDULING ALGO --------------------------
   // Segment Scheduling Algorithm
