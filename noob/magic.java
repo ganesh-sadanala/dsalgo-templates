@@ -368,7 +368,36 @@ Maximum number of divisors: O(n^(1/3)) : https://codeforces.com/blog/entry/14463
 𝑓(𝑥,𝑦) be the number of carries of 𝑥+𝑦 in binary (i.e; 𝑓(𝑥,𝑦)=𝑔(𝑥)+𝑔(𝑦)−𝑔(𝑥+𝑦), where 𝑔(𝑥) is the number of ones in the binary representation of 𝑥).
 
 
+Add two number without using + or - operator
+https://leetcode.com/problems/sum-of-two-integers/
+For this problem, the main crux is that, we are dividing the task of adding 2 numbers into two parts -
 
+Let a = 13 and b = 10. Then we want to add them, a+b
+In binary, it would look as follows -
+a      =  1 1 0 1
+b      =  1 0 1 0
+--------------------
+a+b = (1) 0 1 1 1
+Now we can break the addition into two parts, one is simple addition without taking care of carry, and other is taking the carry.
+With that strategy in mind, we have the following -
+simpleAddition(a, b):
+a      =  1 1 0 1
+b      =  1 0 1 0
+--------------------
+a+b    =  0 1 1 1  
+
+carry(a, b):
+carry = 1 0 0 0 0
+*shift left by one, because we add the carry next left step :P
+Now if we can add the carry to our simpleAddition result, we can get our final answer. So add them using the simpleAddition method, and take care of the new carry again, unless carry becomes zero.
+This simpleAddition is performed by XOR ^operator, and the carry is performed by AND &operator.
+So our final answer would look as -
+(a^b) =    0 1 1 1 
++carry = 1 0 0 0 0 
+-----------------------------
+ans =    1 0 1 1 1
+-----------------------------
+which is 23
 
 
 
