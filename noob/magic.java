@@ -749,10 +749,10 @@ class Codechef {
 		long left = 0, right = (long)2e9;
 		while (right > left) {
 		  long mid = left+(right-left)/2;
-		  if (mid * mid > x) right = mid;
+		  if (mid * mid >= x) right = mid;
 		  else left = mid + 1;
 		}
-		return left - 1;
+		return right;
         }
 	
 	// https://stackoverflow.com/a/74050104/8706759
