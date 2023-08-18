@@ -1462,7 +1462,7 @@ class Codechef {
         inv[0]=1;
         for(int i=1;i<n;i++){
             pw=(pw * p)%mod;
-	    inv[i]=pow(pw, mod-2);
+	    	inv[i]=pow(pw, mod-2);
             rh[i]=mod_add(rh[i-1], (s[i]-'a'+1) * pw);
         }
      }
