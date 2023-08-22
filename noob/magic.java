@@ -1417,17 +1417,20 @@ class Codechef {
 	}
     
 	// Digit DP template
-	static void ddp(String ans, int index, boolean last) {
+	static int ddp(String ans, int index, boolean last) {
         if (index == s.length()) {
             System.out.println(ans);
             return;
         }
 
-        int till = (last ? (s.charAt(index) - '0') : 9);
+		if(dp[index][last]!=null) return dp[index][last];
 
+        int till = (last ? (s.charAt(index) - '0') : 9);
+		int res=0;
         for (int i = 0; i <= till; i++) {
-            ddp(ans + i, index + 1, (last && (i == till)) );
+            res+=ddp(ans + i, index + 1, (last && (i == till)) );
         }
+		return dp[index][last]=res;
     }
 	
 	
