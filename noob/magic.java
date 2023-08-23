@@ -1567,7 +1567,39 @@ class Codechef {
     for(int i=1;i<=n;i++) np[i-1]=p[i];
     return np;
    }
-	
+
+	// Manachers
+	public int countSubstrings(String s) {
+        // manachers algorithm
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            sb.append('#');
+            sb.append(s.charAt(i));
+        }
+        sb.append('#');
+        String ns=sb.toString();
+        ns="$"+ns+"-";
+        char ch[]=ns.toCharArray();
+        int n=ch.length;
+        int z[]=new int[n];
+        int l=0, r=0;
+        for(int i=1;i<n-1;i++){
+            if(i<r) z[i]=Math.min(z[l+r-i], r-i);
+
+            while(ch[i-z[i]]==ch[i+z[i]]) z[i]++;
+            if(r<i+z[i]){
+                l=i-z[i];
+                r=i+z[i];
+            }
+        }
+        int sum=0;
+        for(int i=0;i<n;i++) System.out.print(z[i]+" ");
+
+        for(int i=2;i<n-2;i++){
+            sum+=z[i]/2;
+        }
+        return sum;
+    }
 	
    // calculate nCr
    long[][] comb = new long[MAXN][MAXN];
