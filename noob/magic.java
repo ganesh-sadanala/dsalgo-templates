@@ -2646,63 +2646,111 @@ class Codechef {
 	}
 	
 	// #Prims Algo
-	class NodeCost {
-
-		int node; // Adjacent node
-		int cost; // Costance/cost to adjacent node
-
-		NodeCost (int node, int cost) {
-			this.node = node;
-			this.cost = cost;
-		}
-	}
-
-	int Find_MST(int source_node, List<List<NodeCost>> graph) {
-
-		// Comparator lambda function that enables the priority queue to store the nodes
-		// based on the cost in the ascending order.
-		Comparator<NodeCost> NodeCostComparator = (obj1, obj2) -> {
-			return obj1.cost - obj2.cost;
-		};
-
-		// Priority queue stores the object node-cost into the queue with 
-		// the smallest cost node at the top.
-		PriorityQueue<NodeCost> pq = new PriorityQueue<>(NodeCostComparator);
-
-		// The cost of the source node to itself is 0
-		pq.add(new NodeCost(source_node, 0));
-
-		boolean added[] = new boolean[graph.size()];
-		Arrays.fill(added, false);
-
-		int mst_cost = 0;
-
-		while (!pq.isEmpty()) {
-
-			// Select the item <node, cost> with minimum cost
-			NodeCost item = pq.peek();
-			pq.remove();
-
-			int node = item.node;
-			int cost = item.cost;
-
-			// If the node is node not yet added to the minimum spanning tree, add it and increment the cost.
-			if ( !added[node] ) {
-				mst_cost += cost;
-				added[node] = true;
-
-				// Iterate through all the nodes adjacent to the node taken out of priority queue.
-				// Push only those nodes (node, cost) that are not yet present in the minumum spanning tree.
-				for (NodeCost pair_node_cost : graph.get(node)) {
-					int adj_node = pair_node_cost.node;
-					if (added[adj_node] == false) {
-						pq.add(pair_node_cost);
+	// java program for Prim's MST for adjacency list
+	// representation of graph
+	
+	import java.util.ArrayList;
+	import java.util.PriorityQueue;
+	
+	public class Main {
+		static class Graph {
+			int V;
+			ArrayList<ArrayList<Node>> adj;
+	
+			// Inner class to represent an edge (destination and weight)
+			static class Node {
+				int dest;
+				int weight;
+	
+				Node(int dest, int weight) {
+					this.dest = dest;
+					this.weight = weight;
+				}
+			}
+	
+			Graph(int V) {
+				this.V = V;
+				adj = new ArrayList<>(V);
+				for (int i = 0; i < V; i++)
+					adj.add(new ArrayList<>());
+			}
+	
+			// Function to add an undirected edge between two vertices with given weight
+			void addEdge(int src, int dest, int weight) {
+				adj.get(src).add(new Node(dest, weight));
+				adj.get(dest).add(new Node(src, weight));
+			}
+	
+			// Function to find the Minimum Spanning Tree using Prim's algorithm
+			void primMST() {
+				int[] parent = new int[V];
+				int[] key = new int[V];
+				boolean[] inMST = new boolean[V];
+	
+				for (int i = 0; i < V; i++) {
+					parent[i] = -1;		 // Array to store the parent node of each vertex in the MST
+					key[i] = Integer.MAX_VALUE; // Array to store the minimum key value for each vertex
+					inMST[i] = false;	 // Array to track if the vertex is in the MST or not
+				}
+	
+				PriorityQueue<Node> minHeap = new PriorityQueue<>((a, b) -> a.weight - b.weight);
+	
+				key[0] = 0;					 // Start the MST from vertex 0
+				minHeap.add(new Node(0, key[0]));
+	
+				while (!minHeap.isEmpty()) {
+					Node u = minHeap.poll(); // Extract the node with the minimum key value
+					int uVertex = u.dest;
+					inMST[uVertex] = true;
+	
+					// Traverse through all adjacent vertices of u (the extracted vertex) and update their key values
+					for (Node v : adj.get(uVertex)) {
+						int vVertex = v.dest;
+						int weight = v.weight;
+	
+						// If v is not yet included in MST and weight of u-v is less than key value of v, then update key value and parent of v
+						if (!inMST[vVertex] && weight < key[vVertex]) {
+							parent[vVertex] = uVertex;
+							key[vVertex] = weight;
+							minHeap.add(new Node(vVertex, key[vVertex]));
+						}
 					}
+				}
+	
+				printMST(parent);
+			}
+	
+			// Function to print the edges of the Minimum Spanning Tree
+			void printMST(int[] parent) {
+				System.out.println("Edges of Minimum Spanning Tree:");
+				for (int i = 1; i < V; i++) {
+					System.out.println(parent[i] + " - " + i);
 				}
 			}
 		}
-		return mst_cost;
+	
+		public static void main(String[] args) {
+			int V = 9;
+			Graph graph = new Graph(V);
+			graph.addEdge(0, 1, 4);
+			graph.addEdge(0, 7, 8);
+			graph.addEdge(1, 2, 8);
+			graph.addEdge(1, 7, 11);
+			graph.addEdge(2, 3, 7);
+			graph.addEdge(2, 8, 2);
+			graph.addEdge(2, 5, 4);
+			graph.addEdge(3, 4, 9);
+			graph.addEdge(3, 5, 14);
+			graph.addEdge(4, 5, 10);
+			graph.addEdge(5, 6, 2);
+			graph.addEdge(6, 7, 1);
+			graph.addEdge(6, 8, 6);
+			graph.addEdge(7, 8, 7);
+	
+			graph.primMST();
+		}
 	}
+
 	
 	// #Kruskals
 	class Node 
