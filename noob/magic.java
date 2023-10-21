@@ -4019,6 +4019,14 @@ class Codechef {
     }
 
 	// ------------------------------- #TRIE -----------------------------------
+	static boolean isEmpty(TrieNode root)
+    {
+        for (int i = 0; i < ALPHABET_SIZE; i++)
+            if (root.children[i] != null)
+                return false;
+        return true;
+    }
+	
 	// gfg
 	 // Recursive function to delete a key from given Trie
     static TrieNode remove(TrieNode root, String key, int depth)
