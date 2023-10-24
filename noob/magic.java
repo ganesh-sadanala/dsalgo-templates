@@ -723,6 +723,7 @@ class Codechef {
     }
     
     // ------------------------------ #General  #Miscellaneous  #interesting #MATH---------------------------------
+    // Backtracking: https://www.hackerrank.com/challenges/crossword-puzzle/problem
     // Range Queries on MEX : https://stackoverflow.com/questions/41633225/please-tell-me-the-efficient-algorithm-of-range-mex-query
     
 	// MultiSet in C++ can be implemented using TreeMap 
@@ -1955,6 +1956,7 @@ class Codechef {
     // -------------------------------  #BINARY SEARCH -------------------------
     /*
 	Binary Search on Real Numbers -> https://codeforces.com/blog/entry/63085
+        
 	https://codeforces.com/blog/entry/73888
 	https://codeforces.com/blog/entry/45281#:~:text=Precision%20error%20problems%20%2D%20Codeforces
 	
