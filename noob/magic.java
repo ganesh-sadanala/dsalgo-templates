@@ -1990,6 +1990,10 @@ class Codechef {
     }
 
     // ----------------------------- #GRAPHS #TREES-------------------------
+    // Reminds us that BFS can only be used in undirected unweighted graph
+    // Even in matrix there can be weighted paths
+    https://aaronice.gitbook.io/lintcode/graph_search/the-maze-ii
+
     // Bi Partite graph: https://www.geeksforgeeks.org/bipartite-graph/
 	
 	// undirected graph
