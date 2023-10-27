@@ -4117,12 +4117,7 @@ class Codechef {
 
  // -------------------------------- #STACKS/#QUEUES ---------------------------
  // Good one => Try i, j and j, k and i, k combo to determine the answer: https://leetcode.com/problems/132-pattern/
-	
  // https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
- // => Find the minimum element in all subarrays of size M in O(N) where N is the size of the array.
-	
- // Sum of all min/max elememnts of all subarrys/Good stack problems/ Monotonous incr/decr stack article  
- // https://leetcode.com/problems/sum-of-subarray-minimums/discuss/178876/stack-solution-with-very-detailed-explanation-step-by-step
  // https://codeforces.com/contest/281/problem/D
  // Maximum xor of two maximum numbers of every subarray
  static void solve(){
