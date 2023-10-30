@@ -129,7 +129,7 @@ https://codeforces.com/blog/entry/55274
 https://codeforces.com/blog/entry/100826
 https://codeforces.com/blog/entry/48122
 https://codeforces.com/blog/entry/96699 => Good blog on Binary Search (different approaches to decide l and r) : => 
-Problem : https://codeforces.com/contest/1698/problem/D this priblems helps to use it differently in many cases
+Problem : https://codeforces.com/contest/1698/problem/D This problem helps to use it differently in many cases
 Game to learn Geometry - https://www.euclidea.xyz/en/game/packs
 online tools for cp - https://codeforces.com/blog/entry/82884
 https://oeis.org/ ->  The On-Line Encyclopedia of Integer Sequences -> If problem in contests are about sequences
@@ -628,7 +628,7 @@ https://codeforces.com/contest/1253/problem/D
 https://www.hackerrank.com/challenges/stone-division/problem
 https://www.hackerrank.com/challenges/tower-breakers-revisited-1/problem
 https://www.spoj.com/problems/GNY07H/
-- DP on graphs is enchanting, Master Articulation Points and Bridges, Master Matrix exponentation dp #179, #180, #181, #182
+- DP on graphs, Master Matrix exponentation dp #179, #180, #181, #182
 https://codeforces.com/contest/1573/problem/C : failed at dp
 https://codeforces.com/problemset/problem/630/H
 https://codeforces.com/problemset/problem/1474/B
