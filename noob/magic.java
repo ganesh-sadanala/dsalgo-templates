@@ -2653,110 +2653,175 @@ class Codechef {
 	}
 	
 	// #Prims Algo
-	// java program for Prim's MST for adjacency list
+	// java program for Prim's MST for adjacency list & matrix
 	// representation of graph
 	
-	import java.util.ArrayList;
-	import java.util.PriorityQueue;
-	
-	public class Main {
-		static class Graph {
-			int V;
-			ArrayList<ArrayList<Node>> adj;
-	
-			// Inner class to represent an edge (destination and weight)
-			static class Node {
-				int dest;
-				int weight;
-	
-				Node(int dest, int weight) {
-					this.dest = dest;
-					this.weight = weight;
-				}
-			}
-	
-			Graph(int V) {
-				this.V = V;
-				adj = new ArrayList<>(V);
-				for (int i = 0; i < V; i++)
-					adj.add(new ArrayList<>());
-			}
-	
-			// Function to add an undirected edge between two vertices with given weight
-			void addEdge(int src, int dest, int weight) {
-				adj.get(src).add(new Node(dest, weight));
-				adj.get(dest).add(new Node(src, weight));
-			}
-	
-			// Function to find the Minimum Spanning Tree using Prim's algorithm
-			void primMST() {
-				int[] parent = new int[V];
-				int[] key = new int[V];
-				boolean[] inMST = new boolean[V];
-	
-				for (int i = 0; i < V; i++) {
-					parent[i] = -1;		 // Array to store the parent node of each vertex in the MST
-					key[i] = Integer.MAX_VALUE; // Array to store the minimum key value for each vertex
-					inMST[i] = false;	 // Array to track if the vertex is in the MST or not
-				}
-	
-				PriorityQueue<Node> minHeap = new PriorityQueue<>((a, b) -> a.weight - b.weight);
-	
-				key[0] = 0;					 // Start the MST from vertex 0
-				minHeap.add(new Node(0, key[0]));
-	
-				while (!minHeap.isEmpty()) {
-					Node u = minHeap.poll(); // Extract the node with the minimum key value
-					int uVertex = u.dest;
-					inMST[uVertex] = true;
-	
-					// Traverse through all adjacent vertices of u (the extracted vertex) and update their key values
-					for (Node v : adj.get(uVertex)) {
-						int vVertex = v.dest;
-						int weight = v.weight;
-	
-						// If v is not yet included in MST and weight of u-v is less than key value of v, then update key value and parent of v
-						if (!inMST[vVertex] && weight < key[vVertex]) {
-							parent[vVertex] = uVertex;
-							key[vVertex] = weight;
-							minHeap.add(new Node(vVertex, key[vVertex]));
-						}
-					}
-				}
-	
-				printMST(parent);
-			}
-	
-			// Function to print the edges of the Minimum Spanning Tree
-			void printMST(int[] parent) {
-				System.out.println("Edges of Minimum Spanning Tree:");
-				for (int i = 1; i < V; i++) {
-					System.out.println(parent[i] + " - " + i);
-				}
-			}
-		}
-	
-		public static void main(String[] args) {
-			int V = 9;
-			Graph graph = new Graph(V);
-			graph.addEdge(0, 1, 4);
-			graph.addEdge(0, 7, 8);
-			graph.addEdge(1, 2, 8);
-			graph.addEdge(1, 7, 11);
-			graph.addEdge(2, 3, 7);
-			graph.addEdge(2, 8, 2);
-			graph.addEdge(2, 5, 4);
-			graph.addEdge(3, 4, 9);
-			graph.addEdge(3, 5, 14);
-			graph.addEdge(4, 5, 10);
-			graph.addEdge(5, 6, 2);
-			graph.addEdge(6, 7, 1);
-			graph.addEdge(6, 8, 6);
-			graph.addEdge(7, 8, 7);
-	
-			graph.primMST();
-		}
-	}
+	// Prim's Algorithm
+        import java.util.*;
+
+        public class PrimsAlgorithm {
+            private static final int V = 5; // Number of vertices
+
+            public static void primMST(int[][] graph) {
+                int[] parent = new int[V];
+                int[] key = new int[V];
+                boolean[] mstSet = new boolean[V];
+
+                // Initialize all keys as INFINITE and mstSet[] as false
+                for (int i = 0; i < V; i++) {
+                    key[i] = Integer.MAX_VALUE;
+                    mstSet[i] = false;
+                }
+
+                // Always include the first vertex in MST
+                key[0] = 0;
+                parent[0] = -1;
+
+                for (int count = 0; count < V - 1; count++) {
+                    int u = minKey(key, mstSet);
+                    mstSet[u] = true;
+
+                    for (int v = 0; v < V; v++) {
+                        if (graph[u][v] != 0 && !mstSet[v] && graph[u][v] < key[v]) {
+                            parent[v] = u;
+                            key[v] = graph[u][v];
+                        }
+                    }
+                }
+
+                printMST(parent, graph);
+            }
+
+            private static int minKey(int[] key, boolean[] mstSet) {
+                int min = Integer.MAX_VALUE, minIndex = -1;
+
+                for (int v = 0; v < V; v++) {
+                    if (!mstSet[v] && key[v] < min) {
+                        min = key[v];
+                        minIndex = v;
+                    }
+                }
+
+                return minIndex;
+            }
+
+            private static void printMST(int[] parent, int[][] graph) {
+                System.out.println("Edge \tWeight");
+                for (int i = 1; i < V; i++) {
+                    System.out.println(parent[i] + " - " + i + "\t" + graph[i][parent[i]]);
+                }
+            }
+
+            public static void main(String[] args) {
+                int[][] graph = {
+                    {0, 2, 0, 6, 0},
+                    {2, 0, 3, 8, 5},
+                    {0, 3, 0, 0, 7},
+                    {6, 8, 0, 0, 9},
+                    {0, 5, 7, 9, 0}
+                };
+
+                primMST(graph);
+            }
+        }
+
+        import java.util.*;
+
+        class Edge {
+            int dest;
+            int weight;
+
+            public Edge(int dest, int weight) {
+                this.dest = dest;
+                this.weight = weight;
+            }
+        }
+
+        public class PrimsAlgorithmAdjList {
+            private static final int V = 5; // Number of vertices
+
+            public static void primMST(List<List<Edge>> adjList) {
+                int[] parent = new int[V];
+                int[] key = new int[V];
+                boolean[] mstSet = new boolean[V];
+
+                // Initialize all keys as INFINITE and mstSet[] as false
+                for (int i = 0; i < V; i++) {
+                    key[i] = Integer.MAX_VALUE;
+                    mstSet[i] = false;
+                }
+
+                // Always include the first vertex in MST
+                key[0] = 0;
+                parent[0] = -1;
+
+                // Create a priority queue to store vertices and their key values
+                PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+                pq.offer(new int[]{0, 0}); // Add the first vertex with key 0
+
+                while (!pq.isEmpty()) {
+                    int[] curr = pq.poll();
+                    int u = curr[0];
+                    mstSet[u] = true;
+
+                    for (Edge edge : adjList.get(u)) {
+                        int v = edge.dest;
+                        int weight = edge.weight;
+
+                        if (!mstSet[v] && weight < key[v]) {
+                            parent[v] = u;
+                            key[v] = weight;
+                            pq.offer(new int[]{v, key[v]});
+                        }
+                    }
+                }
+
+                printMST(parent, adjList);
+            }
+
+            private static void printMST(int[] parent, List<List<Edge>> adjList) {
+                System.out.println("Edge \tWeight");
+                for (int i = 1; i < V; i++) {
+                    System.out.println(parent[i] + " - " + i + "\t" + getWeight(parent[i], i, adjList));
+                }
+            }
+
+            private static int getWeight(int src, int dest, List<List<Edge>> adjList) {
+                for (Edge edge : adjList.get(src)) {
+                    if (edge.dest == dest) {
+                        return edge.weight;
+                    }
+                }
+                return 0;
+            }
+
+            public static void main(String[] args) {
+                List<List<Edge>> adjList = new ArrayList<>();
+
+                // Initialize adjacency list with empty lists
+                for (int i = 0; i < V; i++) {
+                    adjList.add(new ArrayList<>());
+                }
+
+                // Add edges to the adjacency list
+                addEdge(adjList, 0, 1, 2);
+                addEdge(adjList, 0, 3, 6);
+                addEdge(adjList, 1, 2, 3);
+                addEdge(adjList, 1, 3, 8);
+                addEdge(adjList, 1, 4, 5);
+                addEdge(adjList, 2, 4, 7);
+                addEdge(adjList, 3, 4, 9);
+
+                primMST(adjList);
+            }
+
+            private static void addEdge(List<List<Edge>> adjList, int src, int dest, int weight) {
+                adjList.get(src).add(new Edge(dest, weight));
+                adjList.get(dest).add(new Edge(src, weight));
+            }
+        }
+
+
 
 	
 	// #Kruskals
@@ -2838,83 +2903,172 @@ class Codechef {
 	}
 	
 	// #Dijkstra's : Single Source Shortest Path with non negative weights 
-	private int dist[];
-    private Set<Integer> settled;
-    private PriorityQueue<Node> pq;
-    // Number of vertices
-    private int V;
-    List<List<Node> > adj;
+	// Both list and matrix
 
-    public GFG(int V)
-    {
-        this.V = V;
-        dist = new int[V];
-        settled = new HashSet<Integer>();
-        pq = new PriorityQueue<Node>(V, new Node());
-    }
-	
-    public void dijkstra(List<List<Node> > adj, int src)
-    {
-        this.adj = adj;
- 
-        for (int i = 0; i < V; i++)
-            dist[i] = Integer.MAX_VALUE;
- 
-        // Add source node to the priority queue
-        pq.add(new Node(src, 0));
- 
-        // Distance to the source is 0
-        dist[src] = 0;
- 
-        while (settled.size() != V) {
-            if (pq.isEmpty())
-                return;
+    // Dijkstra's Algorithm
+        import java.util.*;
 
-            int u = pq.remove().node;
- 
-            // Adding the node whose distance is
-            // finalized
-            if (settled.contains(u))
- 
-                // Continue keyword skips execution for
-                // following check
-                continue;
- 
-            // We don't have to call e_Neighbors(u)
-            // if u is already present in the settled set.
-            settled.add(u);
- 
-            e_Neighbours(u);
-        }
-    }
- 
-    // Method 2
-    // To process all the neighbours
-    // of the passed node
-    private void e_Neighbours(int u)
-    {
- 
-        int edgeDistance = -1;
-        int newDistance = -1;
- 
-        // All the neighbors of v
-        for (int i = 0; i < adj.get(u).size(); i++) {
-            Node v = adj.get(u).get(i);
- 
-            // If current node hasn't already been processed
-            if (!settled.contains(v.node)) {
-                edgeDistance = v.cost;
-                newDistance = dist[u] + edgeDistance;
- 
-                // If new distance is cheaper in cost
-                if (newDistance < dist[v.node])
-                    dist[v.node] = newDistance;
- 
-                // Add the current node to the queue
-                pq.add(new Node(v.node, dist[v.node]));
+        public class DijkstrasAlgorithm {
+            private static final int V = 9; // Number of vertices
+
+            public static void dijkstra(int[][] graph, int src) {
+                int[] dist = new int[V];
+                boolean[] sptSet = new boolean[V];
+
+                // Initialize dist array with INFINITE and sptSet[] as false
+                for (int i = 0; i < V; i++) {
+                    dist[i] = Integer.MAX_VALUE;
+                    sptSet[i] = false;
+                }
+
+                // Distance of source vertex from itself is always 0
+                dist[src] = 0;
+
+                for (int count = 0; count < V - 1; count++) {
+                    int u = minDistance(dist, sptSet);
+                    sptSet[u] = true;
+
+                    for (int v = 0; v < V; v++) {
+                        if (!sptSet[v] && graph[u][v] != 0 && dist[u] != Integer.MAX_VALUE
+                                && dist[u] + graph[u][v] < dist[v]) {
+                            dist[v] = dist[u] + graph[u][v];
+                        }
+                    }
+                }
+
+                printSolution(dist);
+            }
+
+            private static int minDistance(int[] dist, boolean[] sptSet) {
+                int min = Integer.MAX_VALUE, minIndex = -1;
+
+                for (int v = 0; v < V; v++) {
+                    if (!sptSet[v] && dist[v] <= min) {
+                        min = dist[v];
+                        minIndex = v;
+                    }
+                }
+
+                return minIndex;
+            }
+
+            private static void printSolution(int[] dist) {
+                System.out.println("Vertex \tDistance from Source");
+                for (int i = 0; i < V; i++) {
+                    System.out.println(i + " \t" + dist[i]);
+                }
+            }
+
+            public static void main(String[] args) {
+                int[][] graph = {
+                    {0, 4, 0, 0, 0, 0, 0, 8, 0},
+                    {4, 0, 8, 0, 0, 0, 0, 11, 0},
+                    {0, 8, 0, 7, 0, 4, 0, 0, 2},
+                    {0, 0, 7, 0, 9, 14, 0, 0, 0},
+                    {0, 0, 0, 9, 0, 10, 0, 0, 0},
+                    {0, 0, 4, 14, 10, 0, 2, 0, 0},
+                    {0, 0, 0, 0, 0, 2, 0, 1, 6},
+                    {8, 11, 0, 0, 0, 0, 1, 0, 7},
+                    {0, 0, 2, 0, 0, 0, 6, 7, 0}
+                };
+
+                dijkstra(graph, 0);
             }
         }
+
+        import java.util.*;
+
+class Edge {
+    int dest;
+    int weight;
+
+    public Edge(int dest, int weight) {
+        this.dest = dest;
+        this.weight = weight;
     }
+}
+
+public class DijkstrasAlgorithmAdjList {
+    private static final int INF = Integer.MAX_VALUE;
+
+    public static void dijkstra(List<List<Edge>> adjList, int src) {
+        int V = adjList.size();
+        int[] dist = new int[V];
+        boolean[] visited = new boolean[V];
+
+        // Initialize dist array with INF and visited array as false
+        Arrays.fill(dist, INF);
+        dist[src] = 0;
+
+        // Create a priority queue to store vertices and their distances
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
+        pq.offer(new int[]{src, 0});
+
+        while (!pq.isEmpty()) {
+            int[] curr = pq.poll();
+            int u = curr[0];
+
+            if (visited[u]) {
+                continue;
+            }
+
+            visited[u] = true;
+
+            for (Edge edge : adjList.get(u)) {
+                int v = edge.dest;
+                int weight = edge.weight;
+
+                if (!visited[v] && dist[u] + weight < dist[v]) {
+                    dist[v] = dist[u] + weight;
+                    pq.offer(new int[]{v, dist[v]});
+                }
+            }
+        }
+
+        printSolution(dist);
+    }
+
+    private static void printSolution(int[] dist) {
+        System.out.println("Vertex \tDistance from Source");
+        for (int i = 0; i < dist.length; i++) {
+            System.out.println(i + " \t" + dist[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        int V = 9;
+        List<List<Edge>> adjList = new ArrayList<>();
+
+        // Initialize adjacency list with empty lists
+        for (int i = 0; i < V; i++) {
+            adjList.add(new ArrayList<>());
+        }
+
+        // Add edges to the adjacency list
+        addEdge(adjList, 0, 1, 4);
+        addEdge(adjList, 0, 7, 8);
+        addEdge(adjList, 1, 2, 8);
+        addEdge(adjList, 1, 7, 11);
+        addEdge(adjList, 2, 3, 7);
+        addEdge(adjList, 2, 8, 2);
+        addEdge(adjList, 2, 5, 4);
+        addEdge(adjList, 3, 4, 9);
+        addEdge(adjList, 3, 5, 14);
+        addEdge(adjList, 4, 5, 10);
+        addEdge(adjList, 5, 6, 2);
+        addEdge(adjList, 6, 7, 1);
+        addEdge(adjList, 6, 8, 6);
+        addEdge(adjList, 7, 8, 7);
+
+        dijkstra(adjList, 0);
+    }
+
+    private static void addEdge(List<List<Edge>> adjList, int src, int dest, int weight) {
+        adjList.get(src).add(new Edge(dest, weight));
+        adjList.get(dest).add(new Edge(src, weight));
+    }
+}
+
 	
 	// Bellman Ford -> Single Source Shortest Path with negative edge weights, fails for negative weight cycles
 	class Edge {
@@ -4114,7 +4268,7 @@ class Codechef {
     str.append(ans).append("\n");
   }
   
-
+ 
  // -------------------------------- #STACKS/#QUEUES ---------------------------
  // Good one => Try i, j and j, k and i, k combo to determine the answer: https://leetcode.com/problems/132-pattern/
  // https://cp-algorithms.com/data_structures/stack_queue_modification.html#finding-the-minimum-for-all-subarrays-of-fixed-length
